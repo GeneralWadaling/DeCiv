@@ -836,7 +836,7 @@
 		"uniques": ["+[15]% production when building [land units] in this city"]
 	},
 	{
-		"name": "Scrapyard", 
+		"name": "Salvage Yard", 
 		"replaces": "Forge",
 		"uniqueTo": "Children of Rust",
 	//	"maintenance": 1,

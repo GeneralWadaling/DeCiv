@@ -2,7 +2,7 @@
 
 // Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/
 
-	{
+	/*{
 		"name": "Debug Scout",
 		"unitType": "Civilian",
 		"movement": 5,
@@ -11,7 +11,7 @@
 		"hurryCostModifier": 20,
 		"uniques": ["+2 Visibility Range","Ignores terrain cost","May withdraw before melee"],
 		"promotions": ["Sentry"],
-	},
+	},*/
 	{	//a nuke, lol
 		"name": "Warrior",
 		"unitType": "Missile",
@@ -770,7 +770,7 @@
 		"requiredResource": "Oil",
 		"upgradesTo": "Missile Vehicle",
 		"obsoleteTech": "Lasers",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","Penalty vs City 33%","Penalty vs Armor 33%","May withdraw before melee"],
+		"uniques": ["Can move after attacking","No defensive terrain bonus","Penalty vs City 33%","Penalty vs Armor 33%","May withdraw before melee ([75]%)"],
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"
 	},		
@@ -891,7 +891,7 @@
 		"cost": 325,
 		"requiredTech": "Lasers",
 		"requiredResource": "Oil",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","Bonus vs Armor 150%","May withdraw before melee"],
+		"uniques": ["Can move after attacking","No defensive terrain bonus","Bonus vs Armor 150%","May withdraw before melee ([75]%)"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -1070,7 +1070,7 @@
 		"cost": 300,
 		"requiredResource": "Oil",
 		"requiredTech": "Radar",
-		"uniques": ["Can attack submarines","[50]% chance to intercept air attacks","Bonus vs air units 100%","May withdraw before melee"], // todo: add bonus vs submarines
+		"uniques": ["Can attack submarines","[50]% chance to intercept air attacks","Bonus vs air units 100%","May withdraw before melee ([75]%)"], // todo: add bonus vs submarines
 		"hurryCostModifier": 20
 	},
 		{

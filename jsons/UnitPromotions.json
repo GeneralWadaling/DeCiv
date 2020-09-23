@@ -400,7 +400,7 @@
 	{
 		"name": "Skirmish",
 		"prerequisites": ["Shock III","Drill III","Mobility I"],
-		"effect": "May withdraw before melee",
+		"effect": "May withdraw before melee ([75]%)",
 		"unitTypes": ["Melee","Ranged","Mounted","Scout"]
 	},
 	{
