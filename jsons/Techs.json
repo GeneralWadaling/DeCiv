@@ -1,0 +1,621 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Ancient era",
+		"techCost": 20,
+		"buildingCost": 40,
+		"wonderCost": 100,
+		"techs": [
+			{
+			//Survivalism  - salvage, weapons, make farm
+				"name": "The Wheel",
+				"row": 5,
+				"quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster",
+				"uniques": ["Starting tech"]
+			}
+		]	
+	},
+	{
+		"columnNumber": 1,
+		"era": "Ancient era",
+		"techCost": 50, 
+		"buildingCost": 60,
+		"wonderCost": 125,
+		"techs": [			
+			{
+				"name": "Sailing",
+				"row": 1,
+				"prerequisites": ["The Wheel"],
+				"uniques": ["Enables embarkation for land units"],
+				"quote": "'He who commands the sea has command of everything.' - Themistocles"
+			},
+
+			{
+				"name": "Secrets of the Past",
+				"row": 5,
+				"prerequisites": ["The Wheel"],
+				"quote": "'Sending this message was important to us. We considered ourselves to be a powerful culture.'"
+			},
+			{
+				"name": "Iron Working",
+				"row": 7,
+				"prerequisites": ["The Wheel"],
+				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
+			}			
+			{
+				"name": "Construction",
+				"row": 9,
+				"prerequisites": ["The Wheel"],
+				"quote": "'My name is Ozymandias, king of kings; Look on my works, ye Mighty, and despair!' - Percy Shelley"
+			}
+		]	
+	},
+	{
+	// level 2 - 
+		"columnNumber": 2,
+		"era": "Ancient era",
+		"techCost": 100, 
+		"buildingCost": 75,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Redomestication",
+				"row": 3,
+				"prerequisites": ["The Wheel"],
+				"quote": "'Thou shalt not muzzle the ox when he treadeth out the corn.' - Bible Deuteronomy 25:4"
+			},
+			{
+				"name": "Writing",
+				"row": 5,
+				"prerequisites": ["Secrets of the Past"],
+				"quote": "'This place is not a place of honor... no highly esteemed deed is commemorated here... nothing valued is here.'"
+			},
+			{
+				"name": "Machinery",
+				"row": 7,
+				"prerequisites": ["Iron Working"],
+				"uniques": ["Improves movement speed on roads"],
+				"quote": "'The press is the best instrument for enlightening the mind of man, and improving him as a rational, moral and social being.' - Thomas Jefferson"
+			},
+			{
+				"name": "Mining",
+				"row": 9,
+				"prerequisites": ["Construction"],
+				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
+			},				
+			{
+				"name": "Trade",
+				"row": 10,
+				"prerequisites": ["Construction"],
+				"uniques": ["Enables Open Borders agreements"],
+				"quote": "'Better is bread with a happy heart than wealth with vexation.' - Amenemope"
+			},
+		]	
+	},
+	{
+		"columnNumber": 3,
+		"era": "Classical era",
+		"techCost": 200, 
+		"buildingCost": 100,
+		"wonderCost": 250,
+		"techs": [
+			{
+				"name": "Astronomy",
+				"row": 1,
+				"prerequisites": ["Writing","Sailing"],
+				"uniques": ["Increases embarked movement +1","Enables embarked units to enter ocean tiles"],
+				"quote": "'He made an instrument to know if the moon shine at full or no.' - Samuel Butler"
+			},
+			{
+				"name": "Botany",
+				"row": 3,
+				"prerequisites": ["Redomestication","Writing"],
+				"quote": "'Education is the best provision for old age.' - Aristotle"
+			},
+			
+			{
+				"name": "Chemistry",
+				"row": 6,
+				"prerequisites": ["Writing"],
+				"quote": "'Wherever we look, the work of the chemist has raised the level of our civilization and has increased the productive capacity of the nation.' - Calvin Coolidge"
+			},
+
+
+			{
+				"name": "Engineering",
+				"row": 8,
+				"prerequisites": ["Mining","Machinery"],
+				"uniques": ["Roads connect tiles across rivers"],
+				"quote": "'History doesn't repeat itself but it often rhymes.' - Mark Twain"
+			},			
+		]	
+	},
+	{
+		"columnNumber": 4,
+		"era": "Classical era",
+		"techCost": 350, 
+		"buildingCost": 120,
+		"wonderCost": 300,
+		"techs": [
+		
+			{
+				"name": "Education",
+				"row": 4,
+				"prerequisites": ["Writing"],
+				"uniques": ["Enables Research agreements"],
+				"quote": "'Education is the best provision for old age.' - Aristotle"
+			},
+
+			{
+				"name": "Steel",
+				"row": 8,
+				"prerequisites": ["Chemistry","Engineering"],
+				"quote": "'John Henry said to his Captain, / 'A man ain't nothin' but a man, / And before I'll let your steam drill beat me down, / I'll die with the hammer in my hand.'' - Anonymous: The Ballad of John Henry, the Steel-Drivin' Man"
+			},
+			{
+				"name": "Currency",
+				"row": 10,
+				"prerequisites": ["Chemistry","Trade","Engineering"],
+				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein",
+				"uniques": ["Enables conversion of city production to gold"],
+			},
+		]	
+	},
+	{
+		"columnNumber": 5,
+		"era": "Medieval era",
+		"techCost": 550,
+		"buildingCost": 160,
+		"wonderCost": 400,
+		"techs": [
+					
+			{
+				"name": "Ecology",
+				"row": 3,
+				"prerequisites": ["Education","Botany"],
+				"quote": "'Modern industrial farming is largely a strategy for turning fossil fuels into food.' - Jeff Rubin"
+			},		
+			{
+				"name": "Biology",
+				"row": 5,
+				"prerequisites": ["Chemistry","Education"],
+				"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
+			},				
+			{
+				"name": "Electricity",
+				"row": 7,
+				"prerequisites": ["Steel"],
+				"uniques": ["Increases embarked movement +1"],
+				"quote": "'Is it a fact - or have I dreamt it - that, by means of electricity, the world of matter has become a great nerve, vibrating thousands of miles in a breathless point of time?' - Nathaniel Hawthorne"
+			},			
+			{
+				"name": "Civil Service",
+				"row": 10,
+				"prerequisites": ["Currency"],
+				"quote": "'They are casting their problems on society. And, you know, there is no such thing as society.' - Margaret Thatcher"
+			},
+			
+		]
+	},
+	{
+		"columnNumber": 6,
+		"era": "Medieval era",
+		"techCost": 800, 
+		"buildingCost": 200,
+		"wonderCost": 500,
+		"techs": [
+					
+
+			{
+				"name": "Decontamination",
+				"row": 3,
+				"prerequisites": ["Biology", "Ecology"],
+				"quote": "'A society grows great when old men plant trees under whose shade they will never sit.' - Hyacinthe Loyson"
+			},
+			{
+				"name": "Refrigeration",
+				"row": 5,
+				"prerequisites": ["Biology","Electricity"]
+				"quote": "'And homeless near a thousand homes I stood, and near a thousand tables pined and wanted food.' - William Wordsworth"
+			},
+					
+			{
+				"name": "Manufacturing",
+				"row": 7,
+				"prerequisites": ["Electricity"],
+				"quote": "'Manufacturing based on machinery, already referred to as a characteristic of our age, is but one aspect of the revolution that is being wrought by technology.' - Emily Greene Balch"
+			},				
+			{
+				"name": "Rifling",
+				"row": 8,
+				"prerequisites": ["Steel"],
+				"quote": "'It is well that war is so terrible, or we should grow too fond of it.' - Robert E. Lee"
+			},
+			{
+				"name": "Radio",
+				"row": 9,
+				"prerequisites": ["Civil Service","Electricity"],
+				"quote": "'The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.' - Woody Allen"
+			},	
+
+		]	
+	},
+	{
+		"columnNumber": 7,
+		"era": "Renaissance era",
+		"techCost": 1100, 
+		"buildingCost": 250,
+		"wonderCost": 625,
+		"techs": [	
+			{
+				"name": "Desalination",
+				"row": 1,
+				"prerequisites": ["Decontamination","Astronomy"],
+				"quote": "'I find the great thing in this world is not so much where we stand, as in what direction we are moving.' - Oliver Wendell Holmes"
+			},	
+			{			
+				"name": "Laboratory",
+				"row": 3,
+				"uniques": ["Enables conversion of city production to science"],
+				"prerequisites": ["Decontamination","Refrigeration"],
+				"quote": "'There is a plague on Man: his opinion that he knows something.' - Michel de Montaigne"
+			},
+		
+			{
+				"name": "Electronics",
+				"row": 5,
+				"prerequisites": ["Manufacturing"],
+				"quote": "'What is here was dangerous and repulsive to us. This message is a warning about danger. The danger is still present, in your time, as it was in ours.'"
+			},	
+			{
+				"name": "Replaceable Parts",
+				"row": 7,
+				"prerequisites": ["Manufacturing","Rifling"],
+				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
+			},			
+			{
+				"name": "Munitions",
+				"row": 8,
+				"prerequisites": ["Rifling"],
+				"quote": "'As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy.' - Christopher Dawson"
+			}	
+			
+		]	
+	},
+	{
+		"columnNumber": 8,
+		"era": "Renaissance era",
+		"techCost": 1600, 
+		"buildingCost": 300,
+		"wonderCost": 750,
+		"techs": [
+
+			{
+				"name": "Hydroponics",
+				"row": 2,
+				"prerequisites": ["Laboratory"],
+				"quote": "'In nothing do men more nearly approach the gods than in giving health to men.' - Cicero"
+			},
+			{
+				"name": "Plastics",
+				"row": 5,
+				"prerequisites": ["Manufacturing","Laboratory"],
+				"quote": "'Ben, I want to say one word to you, just one word: plastics.' - Buck Henry and Calder Willingham, The Graduate"
+			},				
+			{
+				"name": "Flight",
+				"row": 7,
+				"prerequisites": ["Electronics","Replaceable Parts"],
+				"quote": "'Aeronautics was neither an industry nor a science. It was a miracle.' - Igor Sikorsky"
+			},				
+			{
+				"name": "Ballistics",
+				"row": 8,
+				"prerequisites": ["Munitions","Replaceable Parts"],
+				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"
+			},			
+			{
+				"name": "Television",
+				"row": 10,
+				"prerequisites": ["Radio","Electronics"],
+				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"//
+			},
+
+		]	
+	},
+	{
+		"columnNumber": 9,
+		"era": "Industrial era",
+		"techCost": 2350,
+		"buildingCost": 360,
+		"wonderCost": 920,
+		"techs": [
+			{
+				"name": "Land Remediation",
+				"row": 3,
+				"prerequisites": ["Laboratory","Hydroponics"],
+				"quote": "'The nation that destroys its soil destroys itself.' - Franklin Delano Roosevelt",
+			},	
+			{
+				"name": "Computers",
+				"row": 4,
+				"prerequisites": ["Plastics","Laboratory"],
+				"uniques": ["+10% science and production in all cities"],
+				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
+			},				
+
+			/*{
+				"name": "Gyroscopes",
+				"row": 7,
+				"prerequisites": ["Flight","Ballistics"],
+				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
+			},*/
+		
+			{
+			//ALLOYS - allows adv.inf,tank
+				"name": "Combined Arms",
+				"row": 8,
+				"prerequisites": ["Ballistics"],
+				"quote": "'The root of the evil is not the construction of new, more dreadful weapons. It is the spirit of conquest.' - Ludwig von Mises"
+			},
+			{
+				"name": "Radar",
+				"row": 9,
+				"prerequisites": ["Radio"],
+				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
+			},
+		]	
+	},
+	{
+		"columnNumber": 10,
+		"era": "Industrial era",
+		"techCost": 3100,
+		"buildingCost": 500,
+		"wonderCost": 1060,
+		"techs": [
+
+			{
+				"name": "Networking",
+				"row": 4,
+				"prerequisites": ["Computers"],
+				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"//
+			},	
+			{
+				"name": "Avionics",
+				"row": 6,
+				"prerequisites": ["Radar","Flight","Computers"],
+				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"//
+			},			
+			
+
+
+		]	
+	},
+	{
+		"columnNumber": 11,
+		"era": "Modern era",
+		"techCost": 4100,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Ocean Remediation",
+				"row": 1,
+				"prerequisites": ["Desalination","Land Remediation"],
+				"quote": "'Only within the moment of time represented by the present century has one species, man, acquired significant power to alter the nature of his world.' - Rachel Carson"
+			},
+			{
+			//add decryption center wonder
+				"name": "Decryption",
+				"row": 4,
+				"prerequisites": ["Networking"],
+				"quote": "'The accounts are encrypted with a 1024-bit cipher. Even I can't break through the firewall.' - Stanley Jobson"
+			},
+			{
+				"name": "Mobile Tactics",
+				"row": 6,
+				"prerequisites": ["Combined Arms","Avionics","Networking"],
+				"quote": "'All men can see these tactics whereby I conquer, but what none can see is the strategy out of which victory is evolved.' - Sun Tzu"
+			},	
+			{
+				"name": "Rocketry",
+				"row": 7,
+				"prerequisites": ["Flight"],
+				"quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
+			},	
+			{
+				"name": "Social Engineering",
+				"row": 10,
+				"prerequisites": ["Television","Networking"],
+				"quote": "'Anyone who believes exponential growth can go on forever in a finite world is either a madman or an economist.' - Kenneth Boulding"
+			},
+		]	
+	},
+	{
+		"columnNumber": 12,
+		"era": "Modern era",
+		"techCost": 5100,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Genetics",
+				"row": 2,
+				"prerequisites": ["Decryption"],
+				"quote": "'Never try to teach a pig to sing; it wastes your time and it annoys the pig.' - Robert Heinlein"
+			},		
+			{
+				"name": "Pharmaceuticals",
+				"row": 3,
+				"prerequisites": ["Decryption"],
+				"quote": "'In nothing do men more nearly approach the gods than in giving health to men.' - Cicero"
+			},
+		
+			
+			{
+				"name": "Nuclear Fission",
+				"row": 4,
+				"prerequisites": ["Decryption"],
+				"quote": "'Our legends tell of weapons, wielded by kings of old; crafted by evil wizards, unholy to behold...'"
+			},
+			{
+				"name": "Lasers",
+				"row": 6,
+				"prerequisites": ["Mobile Tactics","Rocketry","Decryption"],
+				"quote": "'The night is far spent, the day is at hand: let us therefore cast off the works of darkness, and let us put on the armor of light.' - The Holy Bible: Romans, 13:12"
+			},	
+		
+			{
+				"name": "Satellites",
+				"row": 7,
+				"prerequisites": ["Rocketry"],
+				"quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"
+			},
+			
+
+
+		]	
+	},
+	{
+		"columnNumber": 13,
+		"era": "Information era",
+		"techCost": 6600,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Human Genome",
+				"row": 2,
+				"prerequisites": ["Genetics","Pharmaceuticals"],
+				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"//
+			},	
+			{
+				"name": "Plastics Recycling",
+				"row": 3,
+				"prerequisites": ["Lasers"],
+				"quote": "'... Could be the only reason the earth allowed us to be spawned from it in the first place. It wanted plastic for itself. Didn’t know how to make it. Needed us.' - George Carlin"
+			},
+			{
+				"name": "Advanced Materials",
+				"row": 8,
+				"prerequisites": ["Combined Arms"],
+				"quote": "'Now, somehow, in some new way, the sky seemed almost alien.' - Lyndon B. Johnson"//
+			},
+			{
+				"name": "Incentivization",
+				"row": 10,
+				"prerequisites": ["Social Engineering", "Satellites"],
+				"quote": "'Men, like bullets, go farthest when they are smoothest.' - Jean Paul"//
+			},
+		]	
+	},
+	{
+		"columnNumber": 14,
+		"era": "Information era",
+		"techCost": 8600,
+		"buildingCost": 750,
+		"wonderCost": 2000,
+		"techs": [
+
+
+			{
+				"name": "Particle Physics",
+				"row": 4,
+				"prerequisites": ["Lasers","Nuclear Fission"],
+				"quote": "'Every particle of matter is attracted by or gravitates to every other particle of matter with a force inversely proportional to the squares of their distances.' - Isaac Newton"
+			},			
+			{
+				"name": "Energy Weapons",
+				"row": 6,
+				"prerequisites": ["Lasers","Advanced Materials"],
+				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"//
+			},
+			{
+				"name": "Robotics",
+				"row": 7,
+				"prerequisites": ["Lasers","Satellites"],
+				"quote": "'1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the First Law. 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.' - Isaac Asimov"
+			},
+
+
+
+
+		]
+	},
+	{
+		"columnNumber": 15,
+		"era": "Future era",
+		"techCost": 10600,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+	
+			{
+				"name": "Atmosphere Remediation",
+				"row": 1,
+				"prerequisites": ["Plastics Recycling","Ocean Remediation"],
+				"quote": "'All analysed pathways limiting warming to 1.5°C with no or limited overshoot use CO2 removal to some extent to neutralize emissions.' - IPCC, 2018"
+			},	
+		
+			/*{
+				"name": "Nanotechnology",
+				"row": 5,
+				"prerequisites": ["Robotics"],
+				"quote": "'The impact of nanotechnology is expected to exceed the impact that the electronics revolution has had on our lives.' - Richard Schwartz"
+			},*/
+			{
+				"name": "Artificial Intelligence",
+				"row": 6,
+				"prerequisites": ["Robotics"],
+				"quote": "'This is only a foretaste of what is to come, and only the shadow of what is going to be.' - Alan Turing"
+			},
+
+			{
+				"name": "Future Materials",
+				"row": 8,
+				"prerequisites": ["Advanced Materials"],
+				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"//
+			}
+		]	
+	},
+	
+	{
+		"columnNumber": 16,
+		"era": "Future era",
+		"techCost": 12600,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Geo Engineering",
+				"row": 2,
+				"prerequisites": ["Atmosphere Remediation"],
+				"quote": "'It always seems impossible until it's done.' - Nelson Mandela"
+			},
+			{
+				"name": "Future Power",
+				"row": 4,
+				"prerequisites": ["Particle Physics"],
+				"quote": "'The introduction of so powerful an agent as steam to a carriage on wheels will make a great change in the situation of man.' - Thomas Jefferson"//
+			},
+
+
+		]
+	},
+	{
+		"columnNumber": 17,
+		"era": "Future era",
+		"techCost": 15000,
+		"buildingCost": 750,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Future Tech",
+				"row": 5,
+				"prerequisites": ["Geo Engineering","Future Power","Artificial Intelligence","Future Materials"],
+				"uniques": ["Who knows what the future holds?", "Can be continually researched"],
+				"quote": "'I think we agree, the past is over.' - George W. Bush"
+			}
+		]	
+	}
+]

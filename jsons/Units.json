@@ -1,0 +1,1166 @@
+[
+
+// Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/
+
+	{
+		"name": "Debug Scout",
+		"unitType": "Civilian",
+		"movement": 5,
+		"cost": 5,
+	//	"requiredTech": "Avionics",
+		"hurryCostModifier": 20,
+		"uniques": ["+2 Visibility Range","Ignores terrain cost","May withdraw before melee"],
+		"promotions": ["Sentry"],
+	},
+	{	//a nuke, lol
+		"name": "Warrior",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 300,
+		"rangedStrength": 300,
+		"range": 7,
+		"cost": 600,
+	//	"requiredTech": "Avionics",
+	//	"requiredResource": "Uranium",
+		"uniques": ["Unbuildable"],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Tactical Nuke",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 300,
+		"rangedStrength": 300,
+		"range": 8,
+		"cost": 600,
+		"requiredTech": "Avionics",
+		"requiredResource": "Uranium",
+		"uniques": ["Requires Manhattan Project"],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Nuclear Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 300,
+		"rangedStrength": 300,
+		"range": 16,
+		"cost": 1000,
+		"requiredTech": "Rocketry",
+		"requiredResource": "Uranium",
+		"uniques": ["Requires Manhattan Project"],
+		"hurryCostModifier": 20
+	},
+	
+	/* Ancient Era */
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"hurryCostModifier": 20,
+		"uniques": ["Can build improvements on tiles"],
+		"cost": 70
+		//"Can build improvement: Farm"
+	},
+	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 106,
+		"uniques": ["Founds a new city"],
+		"hurryCostModifier": 20
+	},	
+	
+	{
+		"name": "Work Boats",
+		"unitType": "WaterCivilian",
+		"movement": 4,
+		"cost": 30,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles until Astronomy","May create improvements on water resources"],
+		"hurryCostModifier": 20
+	},
+	
+	{
+		"name": "Scout",
+		"unitType": "Scout",
+		"movement": 2,
+		"strength": 5,
+		"cost": 25,
+		"promotions": ["Mobility I"],
+		"attackSound": "nonmetalhit"
+	},		
+
+	
+
+
+//	T0 infantry
+	{
+		"name": "Spearman",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 10,
+		"cost": 35,
+		"upgradesTo": "Militia",
+		"hurryCostModifier": 20,
+		"obsoleteTech": "Rifling",
+		"uniques": ["Bonus vs Mounted 50%"],
+		"attackSound": "nonmetalhit"
+	},	
+	{
+		"name": "Scavenger",
+		"unitType": "Melee",
+		"uniqueTo": "Children of Rust",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 10,
+		"cost": 35,
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Militia",
+		"uniques": ["Can construct roads"],
+		"promotions": ["Urban Warfare"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Auxiliary",
+		"unitType": "Melee",
+		"uniqueTo": "Crimson Legion",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 10,
+		"cost": 25,
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Swordsman",
+		"uniques": ["Bonus vs Mounted 50%"],
+		"attackSound": "metalhit"
+	},	
+	{
+		"name": "Security",
+		"unitType": "Melee",
+		"uniqueTo": "Blackwarden",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 16,
+		"cost": 125,
+		"obsoleteTech": "Electricity",
+		"upgradesTo": "Contractor",
+		"hurryCostModifier": 50,
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Conscript",
+		"unitType": "Melee",
+		"uniqueTo": "The Patriots",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 12,
+		"cost": 30,
+		"upgradesTo": "Militia",
+		"hurryCostModifier": 20,
+		"obsoleteTech": "Rifling",
+		"uniques": ["Penalty as Attacker [33]%"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Surveyor",
+		"unitType": "Melee",
+		"uniqueTo": "Atlas",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 10,
+		"cost": 40,
+		"upgradesTo": "Militia",
+		"hurryCostModifier": 20,
+		"obsoleteTech": "Rifling",
+		"uniques": ["Can construct roads","Penalty as Attacker [25]%"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Militia",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 19,
+		"cost": 40,
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Trooper",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},	
+
+	{
+		"name": "Swordsman",
+		"unitType": "Melee",
+		"uniqueTo": "Crimson Legion",
+		"replaces": "Militia",
+		"movement": 2,
+		"strength": 15,
+		"cost": 40,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Trooper",
+		"hurryCostModifier": 20,
+		"uniques": ["Bonus vs City 33%","+10 HP when healing"],
+		"attackSound": "metalhit"
+	},		
+	{
+		"name": "Guerilla",
+		"unitType": "Melee",
+		"uniqueTo": "Enclavers",
+		"replaces": "Militia",
+		"movement": 2,
+		"strength": 19,
+		"cost": 40,
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Trooper",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,
+		"uniques": ["Heals 25 damage if it kills an Unit"],
+		"promotions": ["Drill I"],
+		"attackSound": "shot"
+	},	
+
+	
+	{
+		"name": "Archer",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 6,
+		"rangedStrength": 9,
+		"cost": 40,
+		"hurryCostModifier": 20,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Gunman",
+		"promotions": ["Skirmish"],
+		"attackSound": "arrow"
+	},	
+	{
+		"name": "Spec Ops",
+		"unitType": "Ranged",
+		"uniqueTo": "The Patriots",
+		"replaces": "Archer",
+		"range": 1,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 20,
+		"cost": 300,
+		"hurryCostModifier": 20,
+		"requiredTech": "The Wheel",
+	//	"requiredResource": "Weapons",
+		"uniques": ["Bonus vs Armor [100]%"],
+		"promotions": ["Mobility I","Sabotage"],
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "Gunman",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 19,
+		"cost": 45,
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Rifleman",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,
+		"promotions": ["Skirmish"],
+		"attackSound": "shot"
+	},		
+	
+	{
+		"name": "Ranger",
+		"unitType": "Ranged",
+		"uniqueTo": "Commonwealth",
+		"replaces": "Scout",
+		"range": 1,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 25,
+		"cost": 300,
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Mobile Tactics",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,
+		"uniques": ["+20% bonus outside friendly territory","Penalty vs Armor 20%"],
+		"promotions": ["Mobility I"],
+		"attackSound": "shot"
+	},
+
+
+
+	//t1
+		
+	{
+		"name": "Trooper",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 20,
+		"cost": 120,
+		"upgradesTo": "Infantry",
+		"hurryCostModifier": 20,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Combined Arms",
+		"uniques": ["Bonus vs City 25%"],
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "Legion",
+		"unitType": "Melee",
+		"uniqueTo": "Crimson Legion",
+		"replaces": "Trooper",
+		"movement": 2,
+		"strength": 18,
+		"cost": 60,
+		"requiredTech": "Steel",
+		"upgradesTo": "Infantry",
+		"requiredResource": "Weapons",
+		"uniques": ["Bonus vs City 33%","Bonus as Attacker [25]%","+10 HP when healing"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Contractor",
+		"unitType": "Melee",
+		"uniqueTo": "Blackwarden",
+		"replaces": "Infantry",
+		"movement": 2,
+		"strength": 26,
+		"cost": 225,
+	//	"upgradesTo": "Linked Infantry",
+		"requiredResource": "Weapons",
+		"requiredTech": "Electricity",
+		"obsoleteTech": "Mobile Tactics",
+		"uniques": ["Bonus vs City 25%"],
+		"promotions": ["Drones I"],
+		"hurryCostModifier": 50,
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "Infantry",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 26,
+		"cost": 125,
+		"requiredTech": "Replaceable Parts",
+		"obsoleteTech": "Combined Arms",
+		"upgradesTo": "Modern Infantry",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,
+		"uniques": ["Bonus vs City 25%"],
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "Rifleman",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 20,
+		"cost": 120,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Combined Arms",
+		"upgradesTo": "Marksman",
+		"hurryCostModifier": 20,
+		"promotions": ["Skirmish"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Marksman",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 25,
+		"cost": 125,
+		"requiredTech": "Replaceable Parts",
+		"obsoleteTech": "Combined Arms",
+		"upgradesTo": "Sharpshooter",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,
+		"uniques": ["Penalty vs Armor 20%"],
+		"promotions": ["Skirmish"],
+		"attackSound": "shot"
+	},		
+	
+	
+	//t2
+	
+	{
+		"name": "Modern Infantry",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 26,
+		"cost": 225,
+		"requiredTech": "Combined Arms",
+	//	"upgradesTo": "Linked Infantry",
+		"obsoleteTech": "Mobile Tactics",
+		"hurryCostModifier": 20,
+		"uniques": ["Bonus vs City 50%"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Sharpshooter",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 25,
+		"cost": 225,
+		"requiredTech": "Combined Arms",
+	//	"upgradesTo": "Linked Sharpshooter",
+		"obsoleteTech": "Mobile Tactics",
+		"hurryCostModifier": 20,
+		"uniques": ["Penalty vs Armor 20%"],
+		"promotions": ["Skirmish","Precision"],
+		"attackSound": "shot"
+	},		
+	{
+		"name": "Sniper",
+		"unitType": "Ranged",
+		"uniqueTo": "The Patriots",
+		"replaces": "Sharpshooter",
+		"range": 1,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 25,
+		"cost": 225,
+		"requiredTech": "Combined Arms",
+	//	"upgradesTo": "Linked Sharpshooter",
+		"obsoleteTech": "Mobile Tactics",
+		"hurryCostModifier": 20,
+		"uniques": ["Penalty vs Armor 20%"],
+		"promotions": ["Skirmish","Extended Range","Precision"],
+		"attackSound": "shot"
+	},	
+	/*{
+		"name": "Linked Infantry",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 26,
+		"cost": 250,
+		"requiredTech": "Mobile Tactics",
+		"hurryCostModifier": 20,
+		"promotions": ["Drones I"],
+		"uniques": ["Bonus vs City 50%"],
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "Linked Sharpshooter",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 25,
+		"cost": 250,
+		"requiredTech": "Mobile Tactics",
+		"hurryCostModifier": 20,
+		"uniques": ["Penalty vs Armor 20%"],
+		"promotions": ["Skirmish","Drones I","Precision"],
+		"attackSound": "shot"
+	},		
+	{
+		"name": "Linked Sniper",
+		"unitType": "Ranged",
+		"uniqueTo": "The Patriots",
+		"replaces": "Linked Sharpshooter",
+		"range": 1,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 25,
+		"cost": 250,
+		"requiredTech": "Mobile Tactics",
+		"hurryCostModifier": 20,
+		"uniques": ["Penalty vs Armor 20%"],
+		"promotions": ["Skirmish","Extended Range","Precision"],
+		"attackSound": "shot"
+	},	*/
+	
+	//unique inf	
+
+	
+	//non player UNIQUES
+	{
+
+		"name": "Biker",
+		"unitType": "Armor",
+		"uniqueTo": "Barbarians",
+		"replaces": "Scout",
+		"movement": 5,
+		"strength": 16,
+		"cost": 55,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Armored Car",
+		"obsoleteTech": "Replaceable Parts",
+		"uniques": ["Penalty vs City 33%","Can move after attacking","No defensive terrain bonus","+10 HP when healing"],
+		"promotions": ["Skirmish","March"],
+		"hurryCostModifier": 20
+	},	
+	{
+		"name": "Bandit",
+		"unitType": "Melee",
+		"uniqueTo": "Barbarians",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 10,
+		"cost": 20,
+		"obsoleteTech": "Engineering",
+		"upgradesTo": "Infantry",
+		"uniques": ["Bonus vs City 50%","+10 HP when healing","Heals 25 damage if it kills an Unit"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Raider",
+		"unitType": "Melee",
+		"uniqueTo": "Barbarians",
+		"replaces": "Trooper",
+		"movement": 2,
+		"strength": 20,
+		"cost": 50,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Infantry",
+		"uniques": ["Bonus vs City 33%","+10 HP when healing","Heals 25 damage if it kills an Unit"],
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Skirmisher",
+		"unitType": "Ranged",
+		"uniqueTo": "Barbarians",
+		"replaces": "Archer",
+		"range": 1,
+		"movement": 2,
+		"strength": 6,
+		"rangedStrength": 9,
+		"cost": 40,
+		"hurryCostModifier": 20,
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Rifleman",
+		"uniques": ["+10 HP when healing","Heals 25 damage if it kills an Unit"],
+		"promotions": ["Skirmish"],
+		"attackSound": "arrow"
+	},		
+	{
+		"name": "Marauder",
+		"unitType": "Ranged",
+		"uniqueTo": "Barbarians",
+		"replaces": "Rifleman",
+		"range": 1,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 20,
+		"cost": 50,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Sharpshooter",
+		"hurryCostModifier": 20,
+		"uniques": ["+10 HP when healing","Heals 25 damage if it kills an Unit"],
+		"promotions": ["Skirmish"],
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Insurgent",
+		"unitType": "Melee",
+		"uniqueTo": "Barbarians",
+		"replaces": "Modern Infantry",
+		"movement": 2,
+		"strength": 26,
+		"cost": 225,
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 20,
+		"uniques": ["Bonus vs City 50%","+10 HP when healing","Heals 25 damage if it kills an Unit"],
+		"promotions": ["Skirmish","Drill I","Urban Tactics","Ambush I"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Partizan",
+		"unitType": "Ranged",
+		"uniqueTo": "Barbarians",
+		"replaces": "Sharpshooter",
+		"range": 1,
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 25,
+		"cost": 225,
+		"requiredTech": "Replaceable Parts",
+		"hurryCostModifier": 20,
+		"promotions": ["Skirmish","Extended Range","Urban Tactics","Precision"],
+		"uniques": ["+10 HP when healing","Heals 25 damage if it kills an Unit","Penalty vs Armor 20%"],
+		"attackSound": "shot"
+	},			
+	{
+		"name": "Arroyo Warrior",
+		"unitType": "Melee",
+		"uniqueTo": "Arroyo",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 12,
+		"cost": 20,
+		"upgradesTo": "Infantry",	
+		"uniques": ["Bonus vs Mounted 50%"],
+		"attackSound": "nonmetalhit"
+	},	
+	{
+		"name": "Arroyo Archer",
+		"unitType": "Ranged",
+		"uniqueTo": "Arroyo",
+		"replaces": "Archer",
+		"range": 1,
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 12,
+		"cost": 30,
+		"hurryCostModifier": 20,
+		"upgradesTo": "Rifleman",
+		"promotions": ["Skirmish"],
+		"attackSound": "arrow"
+	},	
+	{
+		"name": "Ghost Warrior",
+		"unitType": "Melee",
+		"uniqueTo": "Ghost Mountain",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 12,
+		"cost": 20,
+		"upgradesTo": "Trooper",
+		"promotions": ["Drill I"],
+		"attackSound": "nonmetalhit"
+	},		
+	{
+		"name": "Ghost Archer",
+		"unitType": "Ranged",
+		"uniqueTo": "Ghost Mountain",
+		"replaces": "Archer",
+		"range": 1,
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 12,
+		"cost": 30,
+		"hurryCostModifier": 20,
+		"upgradesTo": "Rifleman",
+		"promotions": ["Skirmish"],
+		"attackSound": "arrow"
+	},		
+
+	{
+		"name": "Howitzer",
+		"unitType": "Ranged",
+		"uniqueTo": "Almaty",
+		"replaces": "Archer",
+		"movement": 2,
+		"strength": 10,
+		"rangedStrength": 30,
+		"range": 3,
+		"cost": 55,
+	//	"requiredTech": "Munitions",
+		"upgradesTo": "Rocket Artillery",
+		"uniques": ["Bonus vs City 50%","No defensive terrain bonus",
+			"Must set up to ranged attack","Limited Visibility","Ranged attacks may be performed over obstacles"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},	
+	//cav
+	{
+		"name": "Horseman",
+		"unitType": "Melee",
+		"movement": 4,
+		"strength": 12,
+		"cost": 55,
+		"requiredTech": "Redomestication",
+		"requiredResource": "Horses",
+		"upgradesTo": "Cavalry",
+		"obsoleteTech": "Rifling",
+		"uniques": ["Can move after attacking","Bonus as Attacker [50]%","Penalty vs City 33%"],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},	
+	{
+		"name": "Cavalry",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 15,
+		"cost": 120,
+		"requiredTech": "Rifling",
+		"requiredResource": "Horses",
+	//	"upgradesTo": "Dragoon",
+		"uniques": ["Can move after attacking","Bonus as Attacker [50]%","Penalty vs City 33%"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	
+	//armor
+	{
+
+		"name": "Attack Vehicle",
+		"unitType": "Armor",
+		"movement": 5,
+		"strength": 18,
+		"cost": 70,
+		"requiredTech": "Machinery",
+		"requiredResource": "Oil",
+		"upgradesTo": "Armored Car",
+		"obsoleteTech": "Replaceable Parts",
+		"uniques": ["Penalty vs City 33%","Can move after attacking","No defensive terrain bonus"],
+		"hurryCostModifier": 20
+	},		
+
+	{
+
+		"name": "War Buggy",
+		"unitType": "Armor",
+		"uniqueTo": "Cult of Ignis",
+		"replaces": "Attack Vehicle",
+		"movement": 5,
+		"strength": 18,
+		"cost": 55,
+		"requiredTech": "Machinery",
+		"requiredResource": "Oil",
+		"upgradesTo": "Armored Car",
+		"obsoleteTech": "Combined Arms",
+		"uniques": ["Penalty vs City 33%","Can move after attacking","No defensive terrain bonus"],
+		"hurryCostModifier": 20
+	},	
+	
+/* Tier 1 */
+	
+	{
+
+		"name": "Armored Car",
+		"unitType": "Armor",
+		"movement": 5,
+		"strength": 25,
+		"cost": 150,
+		"requiredTech": "Replaceable Parts",
+		"requiredResource": "Oil",
+		"upgradesTo": "Tank",
+		"obsoleteTech": "Combined Arms",
+		"uniques": ["Penalty vs City 20%","Can move after attacking","No defensive terrain bonus","Penalty vs Armor 20%"],
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},			
+	{
+
+		"name": "Big Rig",
+		"unitType": "Armor",
+		"uniqueTo": "Cult of Ignis",
+		"replaces": "Armored Car",
+		"movement": 4,
+		"strength": 25,
+		"cost": 185,
+		"requiredTech": "Steel",
+		"requiredResource": "Oil",
+		"upgradesTo": "Tank",
+		"obsoleteTech": "Combined Arms",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","Penalty vs City 20%","Penalty vs Armor 20%"],
+		"hurryCostModifier": 20
+	},	
+	{
+		"name": "Technical",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 5,
+		"strength": 15,
+		"rangedStrength": 30,
+		"cost": 150,
+		"requiredTech": "Replaceable Parts",
+		"requiredResource": "Oil",
+		"upgradesTo": "Missile Vehicle",
+		"obsoleteTech": "Lasers",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","Penalty vs City 33%","Penalty vs Armor 33%","May withdraw before melee"],
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},		
+	{
+		"name": "Anti-Tank Gun",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 15,
+		"rangedStrength": 20,
+		"cost": 150,
+		"requiredTech": "Munitions",
+		"upgradesTo": "Missile Vehicle",
+		"uniques": ["Bonus vs Armor 200%"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Artillery",
+		"unitType": "Ranged",
+		"range": 3,
+		"movement": 2,
+		"strength": 10,
+		"rangedStrength": 30,
+		"cost": 185,
+		"requiredTech": "Munitions",
+		"upgradesTo": "Rocket Artillery",
+		"uniques": ["Bonus vs City 33%","No defensive terrain bonus",
+			"Must set up to ranged attack","Limited Visibility","Ranged attacks may be performed over obstacles"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},	
+	{
+		"name": "Machine Gun",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 30,
+		"cost": 150,
+		"requiredTech": "Replaceable Parts",
+		"uniques": ["Penalty vs Armor 33%"],
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Anti-Aircraft Gun",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"interceptRange": 2,
+		"strength": 20,
+		"rangedStrength": 30,
+		"cost": 185,
+		"requiredTech": "Ballistics",
+		"uniques": ["[75]% chance to intercept air attacks","Bonus vs air units 50%","Penalty vs City 33%","Penalty vs Armor 33%","Must set up to ranged attack"],
+		//"Bonus vs Siege 200%",
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},
+
+	
+	//T2
+	
+
+	{
+		"name": "Tank",
+		"unitType": "Armor",
+		"movement": 4,
+		"strength": 30,
+		"cost": 225,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"upgradesTo": "Modern Armor",
+		"obsoleteTech": "Advanced Materials",
+		"uniques": ["Can move after attacking","No defensive terrain bonus"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	
+	//T3
+	
+	{
+		"name": "Modern Armor",
+		"unitType": "Armor",
+		"movement": 5,
+		"strength": 40,
+		"cost": 375,
+		"requiredTech": "Advanced Materials",
+		"requiredResource": "Oil",
+		"upgradesTo": "Advanced Armor",
+		"uniques": ["Can move after attacking","No defensive terrain bonus"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Rocket Artillery",
+		"unitType": "Ranged",
+		"movement": 3,
+		"strength": 20,
+		"rangedStrength": 40,
+		"range": 3,
+		"cost": 350,
+		"requiredTech": "Rocketry",
+		"requiredResource": "Oil",
+		"uniques": ["Bonus vs City 25%","No defensive terrain bonus",
+			"Limited Visibility","Ranged attacks may be performed over obstacles"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Missile Vehicle",
+		"unitType": "Ranged",
+		"range": 2,
+		"movement": 5,
+		"strength": 15,
+		"rangedStrength": 20,
+		"cost": 325,
+		"requiredTech": "Lasers",
+		"requiredResource": "Oil",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","Bonus vs Armor 150%","May withdraw before melee"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Mobile SAM",
+		"unitType": "Ranged",
+		"range": 2,
+		"movement": 3,
+		"interceptRange": 3,
+		"strength": 15,
+		"rangedStrength": 15,
+		"cost": 375,
+		"requiredTech": "Lasers",
+		"requiredResource": "Oil",
+		"uniques": ["[100]% chance to intercept air attacks","Bonus vs air units 250%","No defensive terrain bonus"],
+		//"Bonus vs Siege 400%",
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	{
+		"name": "Advanced Armor",
+		"unitType": "Armor",
+		"movement": 5,
+		"strength": 60,
+		"cost": 425,
+		"requiredTech": "Energy Weapons",
+		"requiredResource": "Oil",
+		/*
+		"upgradesTo": "Giant Death Robot",
+		"obsoleteTech": "Nuclear Fusion",
+		*/
+		"uniques": ["Can move after attacking","No defensive terrain bonus"],		
+		"promotions": ["Point Defence Laser","Drones I"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
+	//air
+
+	{
+		"name": "Fighter",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 25,
+		"rangedStrength": 25,
+		"range": 8,
+		"cost": 185,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Jet Fighter",
+		"obsoleteTech": "Lasers",
+		"hurryCostModifier": 20,
+		"uniques": ["[100]% chance to intercept air attacks","Bonus vs Bomber 150%",
+			"6 tiles in every direction always visible"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Bomber",
+		"unitType": "Bomber",
+		"movement": 1,
+		"strength": 30,
+		"rangedStrength": 30,
+		"range": 10,
+		"cost": 185,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Drone",
+		"obsoleteTech": "Lasers",
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},		
+
+	{
+		"name": "Drone",
+		"unitType": "Bomber",
+		"movement": 1,
+		"strength": 25,
+		"rangedStrength": 40,
+		"range": 10,
+		"cost": 325,
+		"requiredTech": "Lasers",
+		"hurryCostModifier": 20,
+		"uniques": ["6 tiles in every direction always visible","Bonus vs Armor 50%"],
+		"attackSound": "shot"
+	},	
+	{
+	//how about some unique promotions? anti tank missile, exocet
+		"name": "Jet Fighter",
+		"unitType": "Fighter",
+		"movement": 2,
+		"strength": 40,
+		"rangedStrength": 40,
+		"range": 10,
+		"cost": 400,
+		"requiredTech": "Lasers",
+		"requiredResource": "Oil",
+		"hurryCostModifier": 20,
+		"uniques": ["[100]% chance to intercept air attacks",
+			"Bonus vs Bomber 150%",
+			"6 tiles in every direction always visible"]
+		"attackSound": "shot"
+	},
+	/*{
+		"name": "Helicopter",
+		"unitType": "Siege",
+		"range": 1,
+		"movement": 6,
+		"strength": 20,
+		"rangedStrength": 30,
+		"cost": 225,
+		"requiredResource": "Oil",
+		"requiredTech": "Gyroscopes",
+		"upgradesTo": "Attack Helicopter",	
+		"uniques": ["[33]% chance to intercept air attacks","+1 Visibility Range",
+		"Penalty vs Armor 20%",
+		"Can move after attacking","Must set up to ranged attack","Amphibious","No defensive terrain bonus","Ignores terrain cost"],
+		"promotions": ["Skirmish"],
+		"requiredResource": "Oil",
+		"hurryCostModifier": 20,
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Attack Helicopter",
+		"unitType": "Siege",
+		"range": 2,
+		"movement": 6,
+		"strength": 25,
+		"rangedStrength": 40,
+		"cost": 375,
+		"requiredResource": "Oil",
+		"requiredTech": "Lasers",
+		"uniques": ["[33]% chance to intercept air attacks","+1 Visibility Range",
+		"Bonus vs Armor 100%","Ranged attacks may be performed over obstacles",
+		"Can move after attacking","Must set up to ranged attack","Amphibious","No defensive terrain bonus","Ignores terrain cost"],
+		"promotions": ["Skirmish"],
+		"requiredResource": "Oil",
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},*/
+	
+	//naval
+	
+	{
+		"name": "Patrol Boat",
+		"unitType": "WaterMelee",
+		"movement": 3,
+		"strength": 20,
+		"cost": 90,
+		"requiredTech": "Astronomy",
+		"requiredResource": "Oil",
+		"upgradesTo": "Attack Boat",
+		"obsoleteTech": "Electricity",
+		"uniques": ["Double movement in coast"],
+		"hurryCostModifier": 20
+	},		
+	{
+		"name": "Attack Boat",
+		"unitType": "WaterMelee",
+		"movement": 3,
+		"strength": 20,
+		"cost": 100,
+		"requiredTech": "Electricity",
+	//	"requiredResource": "Oil",
+	//	"upgradesTo": "Destroyer",
+	//	"obsoleteTech": "Astronomy",
+		"uniques": ["Double movement in coast"],
+		"hurryCostModifier": 20
+	},		
+	{
+		"name": "Destroyer",
+		"unitType": "WaterRanged",
+		"movement": 6,
+		"strength": 20,
+		"rangedStrength": 30,
+		"range": 2,
+		"interceptRange": 2,
+		"cost": 300,
+		"requiredResource": "Oil",
+		"requiredTech": "Radar",
+		"uniques": ["Can attack submarines","[50]% chance to intercept air attacks","Bonus vs air units 100%","May withdraw before melee"], // todo: add bonus vs submarines
+		"hurryCostModifier": 20
+	},
+		{
+		"name": "Carrier",
+		"unitType": "WaterAircraftCarrier",
+		"movement": 5,
+		"strength": 20,
+		"rangedStrength": 30,
+		"cost": 400,
+		"requiredResource": "Oil",
+		"requiredTech": "Radar",
+        "uniques": ["Can carry 2 aircraft"],
+		"hurryCostModifier": 20
+	},
+		{
+		"name": "Battleship",
+		"unitType": "WaterRanged",
+		"movement": 5,
+		"strength": 30,
+		"rangedStrength": 35,
+		"range": 3,
+		"cost": 400,
+		"requiredResource": "Oil",
+		"requiredTech": "Ballistics",
+		"uniques": ["Ranged attacks may be performed over obstacles", "Bonus vs City 20%"],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Submarine",
+		"unitType": "WaterSubmarine",
+		"movement": 5,
+		"strength": 20,
+		"rangedStrength": 30,
+		"cost": 300,
+		"requiredResource": "Oil",
+		"requiredTech": "Plastics",
+		"uniques": ["Bonus as Attacker [66]%", "Invisible to others", "Can only attack water", "Can attack submarines", "Can enter ice tiles"],
+		"hurryCostModifier": 20
+	},
+
+	
+
+	
+	/* Great people */
+	{
+		"name": "Great Artist",
+		"unitType": "Civilian",
+		"uniques": ["Can start an 8-turn golden age","Can build improvement: Landmark", "Great Person - [Culture]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Scientist",
+		"unitType": "Civilian",
+		"uniques": ["Can hurry technology research","Can build improvement: Academy", "Great Person - [Science]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Merchant",
+		"unitType": "Civilian",
+		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence","Can start an 8-turn golden age", "Great Person - [Gold]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Engineer",
+		"unitType": "Civilian",
+		"uniques": ["Can speed up construction of a wonder","Can build improvement: Manufactory", "Great Person - [Production]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Great General",
+		"unitType": "Civilian",
+		"uniques": ["Can start an 8-turn golden age","Bonus for units in 2 tile radius 15%","Can build improvement: Citadel", "Great Person - [War]", "Unbuildable"],
+		"movement": 2
+	},	
+	{
+		"name": "Standard Bearer",
+		"uniqueTo": "Crimson Legion",
+		"replaces": "Great General",
+		"unitType": "Civilian",
+		"uniques": ["Can start an 8-turn golden age", "Bonus for units in 2 tile radius 15%","This unit and all others in adjacent tiles heal 5 additional HP per turn",
+					"Can build improvement: Citadel","Great Person - [War]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Bugler",
+		"uniqueTo": "Cult of Ignis",
+		"replaces": "Great General",
+		"unitType": "Civilian",
+		"uniques": ["Can start an 8-turn golden age", "Bonus for units in 2 tile radius 15%", "Heal adjacent units for an additional 15 HP per turn",
+					"Great Person - [War]", "Unbuildable"],
+		"movement": 5
+	},
+]

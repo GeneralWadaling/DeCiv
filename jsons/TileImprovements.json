@@ -1,0 +1,245 @@
+[	
+	{
+		"name": "Farm",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Flood plains","Tundra"],
+		"food": 2,
+		"gold": -1,
+		"turnsToBuild": 7,
+	//	"techRequired": "Agriculture",
+		"improvingTech": "Ecology",
+		"improvingTechStats": {"gold": 1,}
+	},
+
+	{
+		"name": "Tree plantation",
+		"terrainsCanBeBuiltOn": ["Grassland","Tundra"],
+		"production": 1,
+	//	"gold": -1,
+		"turnsToBuild": 8,
+		"techRequired": "Ecology",
+		"improvingTech": "Land Remediation",
+		"improvingTechStats": {"food":1}
+	},
+	{
+		"name": "Mine",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"production": 1,
+		"turnsToBuild": 9,
+		"techRequired": "Mining",
+		"improvingTech": "Electricity",
+		"improvingTechStats": {"production": 1}
+	},
+
+	/*{
+		"name": "Moisture trap",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Forest","Jungle","Flood plains","Tundra","Snow"],
+		"gold": 1,
+		"turnsToBuild": 5,
+	//	"techRequired": "Chemistry",
+		"improvingTech": "Plastics",
+		"improvingTechStats": {"gold": 1}
+	},*/
+	{
+	//hard coded
+		"name": "Trading post",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Forest","Jungle","Flood plains","Tundra","Snow"],
+		"gold": 1,
+		"turnsToBuild": 5,
+	//	"techRequired": "Chemistry",
+		"improvingTech": "Plastics",
+		"improvingTechStats": {"gold": 1}
+	},
+	// Resource-specific
+	{
+		"name": "Research site",
+		"resourceTerrainAllow": ["Forest","Jungle"],
+		"turnsToBuild": 7,
+		"techRequired": "Secrets of the Past",
+		"improvingTech": "Computers",
+		"improvingTechStats": {"science": 1}
+	},	
+	{
+		"name": "Hacking site",
+		"resourceTerrainAllow": ["Forest","Jungle"],
+		"turnsToBuild": 7,
+		"techRequired": "Decryption",
+		"improvingTech": "Artificial Intelligence",
+		"improvingTechStats": {"science": 4}
+	},
+	{
+		"name": "Salvage site",
+		"resourceTerrainAllow": ["Forest","Jungle"],
+		"turnsToBuild": 5,
+		"improvingTech": "Manufacturing",
+		"improvingTechStats": {"production": 1}
+	},
+	{
+		"name": "Water pump",
+		"resourceTerrainAllow": ["Forest","Jungle"],
+		"turnsToBuild": 7,
+		"techRequired": "Iron Working",
+		"improvingTech": "Decontamination",
+		"improvingTechStats": {"gold": 1}
+	},
+	{
+		"name": "Camp",
+		"resourceTerrainAllow": ["Forest","Jungle"],
+		"turnsToBuild": 5,
+		"improvingTech": "Genetics",
+		"improvingTechStats": {"food": 1}
+	},
+	{
+		"name": "Oil well",
+		"turnsToBuild": 9,
+		"techRequired": "Machinery",
+	},
+	{
+		"name": "Pasture",
+		"turnsToBuild": 7,
+		"techRequired": "Redomestication",
+		"improvingTech": "Genetics",
+		"improvingTechStats": {"food": 1}
+	},
+
+	{
+		"name": "Quarry",
+		"turnsToBuild": 8,
+	},
+	{
+		"name": "Fishing Boats",
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"food": 1,
+		"techRequired": "Sailing",
+		"improvingTech": "Ocean Remediation",
+		"improvingTechStats": {"food": 1}
+	},
+
+	// Military improvement
+	{
+		name: "Fort",
+		terrainsCanBeBuiltOn: ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		turnsToBuild: 6,
+		techRequired: "Engineering",
+		uniques: ["Gives a defensive bonus of 50%"]
+	},
+
+	// Transportation
+	{
+		"name": "Road",
+		"turnsToBuild": 4,
+		"techRequired": "Construction"
+	},
+	{
+		"name": "Railroad",
+		"turnsToBuild": 4,
+		"techRequired": "Railroad"
+	},
+	
+	// Removals
+	{
+		"name": "Remove Forest",
+		"turnsToBuild": 4,
+		"terrainsCanBeBuiltOn": ["Forest"],
+	},
+	{
+		"name": "Remove Jungle",
+		"turnsToBuild": 7,
+		"terrainsCanBeBuiltOn": ["Jungle"],
+		"techRequired": "Construction"
+	},
+	{
+		"name": "Remove Fallout",
+		"turnsToBuild": 12,
+		"terrainsCanBeBuiltOn": ["Fallout"],
+		"techRequired": "Decontamination"
+	},
+	{
+		"name": "Remove Marsh",
+		"turnsToBuild": 15,
+		"terrainsCanBeBuiltOn": ["Marsh"],
+		"techRequired": "Land Remediation"
+	},
+
+	// These are unique and have unique in-game checks related to them
+	{
+		"name": "Remove Road",
+		"turnsToBuild": 2
+	},
+	{
+		"name": "Remove Railroad",
+		"turnsToBuild": 2
+	},
+	{
+		"name": "Cancel improvement order",
+	},
+	
+	// Great Person improvements
+	{
+		"name": "Academy",
+		"science": 8,
+		"improvingTech": "Laboratory",
+		"improvingTechStats": {"science": 2}
+	},
+	{
+		"name": "Landmark",
+		"culture": 6
+	},
+	{
+		"name": "Manufactory",
+		"production": 4,
+		"improvingTech": "Electricity",
+		"improvingTechStats": {"production": 1}
+	},
+	{
+		"name": "Customs house",
+		"gold": 4,
+		"improvingTech": "Economics",
+		"improvingTechStats": {"gold": 1}
+	},
+	{
+		name: "Citadel",
+		uniques: ["Gives a defensive bonus of 100%", "Deal 30 damage to adjacent enemy units"]
+		// TODO (G&K): adds every tile around it to your territory
+	},
+	{
+	//removed
+		"name": "Lumber mill",
+	//	"terrainsCanBeBuiltOn": ["Grassland","Tundra"],
+		"production": 1,
+	//	"gold": -1,
+		"turnsToBuild": 9,
+	//	"techRequired": "Ecology",
+	//	"improvingTech": "Land Remediation",
+	//	"improvingTechStats": {"food":1,"production": 1}
+	},		
+	
+
+	//Civilization unique improvements
+	/*{
+		"name": "Moai",
+		"uniqueTo": "Polynesia",
+		"culture": 1,
+		"turnsToBuild": 4,
+		"uniques": ["+1 additional Culture for each adjacent Moai","Can only be built on Coastal tiles"],
+	//	"techRequired": "Construction",
+		"improvingTech": "Flight",
+		"improvingTechStats": {"gold": 1}
+	},*/
+
+	{
+		"name": "Terrace farm",
+		"uniqueTo": "Survivors",
+		"terrainsCanBeBuiltOn": ["Hill"],
+		"food": 2,
+		"gold": -1,
+		"turnsToBuild": 7,
+		"uniques": ["+1 food for each adjacent Mountain", "Cannot be built on bonus resource"],
+		"techRequired": "Construction",
+		"improvingTech": "Ecology",
+		"improvingTechStats": {"gold": 1,}
+	},
+	
+	{ "name": "Ancient ruins" },
+	{ "name": "City ruins" },
+	{ "name": "Barbarian encampment" }
+]
