@@ -30,7 +30,7 @@
 				"name": "Planned Economy",
 				"effect": "",
 				"uniques": ["+[10]% growth in all cities","+[25]% [Production] from every [Council]"],
-				"requires": ["Castle Doctrine","Centralisation"],
+				"requires": ["Castle Doctrine","Centralization"],
 				"row": 2,
 				"column": 2
 			},
@@ -38,7 +38,7 @@
 				"name": "Parallel Markets",
 				"effect": "",
 				"uniques": ["+1 gold and -1 unhappiness for every 2 citizens in capital"],
-				"requires": ["Centralisation", "Differential Rationing"],
+				"requires": ["Centralization", "Differential Rationing"],
 				"row": 2,
 				"column": 4
 			},			
@@ -231,7 +231,7 @@
 				"name": "Venture Capital",
 				"effect": "",
 				"uniques": ["Cost of purchasing items in cities reduced by [25]%", "Double gold from Great Merchant trade missions" ],
-				"requires": ["Entrepreneurship","Privatisation"],
+				"requires": ["Entrepreneurship","Privatization"],
 				"row": 2,
 				"column": 2
 			},
@@ -252,7 +252,7 @@
 				"column": 3
 			},
 			{
-				"name": "Monopoly",
+				"name": "Commerce Complete",
 				"effect": "",
 				"uniques": ["-50% cost when purchasing tiles","[+2 Production, -1 Happiness, -1 Food] from every [Factory]","[+2 Production, -1 Happiness, -1 Food] from every [Automated Factory]"],
 			}
@@ -341,7 +341,7 @@
 			},	
 			{
 				"name": "Populism",
-				"effect": "Wounded military units deal +25% damage",
+				"effect": "",
 				"uniques": ["Wounded military units deal +25% damage","+10% Strength for all units during Golden Age"],
 				"requires": ["Militarism"],
 				"row": 2,
@@ -349,15 +349,15 @@
 			},					
 			{
 				"name": "Fascism",
-				"effect": "Quantity of strategic resources produced by the empire increased by 100%",
-				"uniques": ["Quantity of strategic resources produced by the empire increased by 100%","[-2 Food] from every [Courthouse]"],
+				"effect": "",
+				"uniques": ["Quantity of strategic resources produced by the empire increased by 100%","[-4 Food] from every [Courthouse]"],
 				"requires": ["Scorched Earth","Militarism"],
 				"row": 2,
 				"column": 3
 			},		
 			{
 				"name": "Total War",
-				"effect": "+15% production when building military units and new military units start with 15 Experience",
+				"effect": "",
 				"uniques": ["+[15]% Production when constructing [military units]", "New military units start with [15] Experience"],
 				"requires": ["Populism"],
 				"row": 3,
@@ -366,7 +366,7 @@
 		
 			{
 				"name": "Police State",
-				"effect": "+3 Happiness from every Courthouse. Build Courthouses in half the usual time.",
+				"effect": "",
 				"uniques": ["[+3 Happiness] from every [Courthouse]","[+1 Happiness] from every [Town Hall]"],
 				"requires": ["Fascism"],
 				"row": 3,
@@ -374,7 +374,7 @@
 			},
 			{
 				"name": "Supremacy Complete",
-				"effect": "+20% attack bonus to all Military Units for 30 turns",
+				"effect": "",
 				"uniques": ["+20% attack bonus to all Military Units for 30 turns"]
 			}
 		]

@@ -969,7 +969,7 @@
 			"maintenance": 3,
 			"culture": 5,
 			"cityStrength": 5,
-			"cityHealth": 250,
+			"cityHealth": 400,
 			"hurryCostModifier": 100,
 			"requiredBuilding": "Arcology Project",
 			"requiredTech": "Atmosphere Remediation"
@@ -994,23 +994,55 @@
 		"isWonder": true,
 		"uniques": ["[-10]% of food is carried over after population increases","Empire enters golden age"],		
 		"percentStatBonus": {"culture": 10},
+		"quote": "A fortified, self sustaining bunker where, with minimal staffing and maintenance, survivors can wait in suspended animation, in theory to emerge when conditions are more favourable to life."
 		"requiredTech": "Human Genome"
 	},	
 		{
-			"name": "Cryo Vaults",
+			"name": "Cryo Vault A",
+			"Cost": 3000,
 			"maintenance": 3,
 			"culture": 5,
 			"hurryCostModifier": 100,
-			"uniques": ["[-20]% of food is carried over after population increases"],//
+			"uniques": ["[-5]% of food is carried over after population increases"],//
 			"requiredBuilding": "Cryo Sanctum",
 			"requiredTech": "Human Genome"
 		},			
+		{
+			"name": "Cryo Vault B",
+			"Cost": 3000,
+			"maintenance": 3,
+			"culture": 5,
+			"hurryCostModifier": 100,
+			"uniques": ["[-5]% of food is carried over after population increases"],//
+			"requiredBuilding": "Cryo Sanctum",
+			"requiredTech": "Human Genome"
+		},			
+		{
+			"name": "Cryo Vault C",
+			"Cost": 3000,
+			"maintenance": 3,
+			"culture": 5,
+			"hurryCostModifier": 100,
+			"uniques": ["[-5]% of food is carried over after population increases"],//
+			"requiredBuilding": "Cryo Sanctum",
+			"requiredTech": "Human Genome"
+		},		
+		{
+			"name": "Cryo Vault D",
+			"Cost": 3000,
+			"maintenance": 3,
+			"culture": 5,
+			"hurryCostModifier": 100,
+			"uniques": ["[-5]% of food is carried over after population increases"],//
+			"requiredBuilding": "Cryo Sanctum",
+			"requiredTech": "Human Genome"
+		},		
 		{
 			"name": "Cryo Bunker",
 			"maintenance": 3,
 			"culture": 5,
 			"cityStrength": 10,
-			"cityHealth": 100,
+			"cityHealth": 500,
 			"hurryCostModifier": 100,
 			"requiredBuilding": "Cryo Sanctum",
 			"requiredTech": "Future Materials"
