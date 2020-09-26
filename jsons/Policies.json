@@ -258,7 +258,57 @@
 			}
 		]
 	},
-
+	{
+		"name": "Constitution",
+		"era": "Medieval era",
+		"effect": "",
+		"uniques": ["+25% great people rate"],
+		"policies": [
+			{
+				"name": "Civil Society",
+				"effect": "",
+				"uniques": ["Specialists produce half normal unhappiness","[+1 Happiness] from every [Town Hall]"],
+				"row": 1,
+				"column": 1
+			},			
+			{
+				"name": "Protected Speech",
+				"effect": "",
+				"uniques": ["[+1 Culture] per [2] population in all cities","[+1 Culture] from every [Town Hall]"],
+				"row": 1,
+				"column": 3
+			},
+			{
+				"name": "Public Good",
+				"effect": "",
+				"uniques": ["+[2 Gold] from every [Hospital]","Maintenance on roads & railroads reduced by 33%"],
+				"requires": ["Civil Society"],
+				"row": 2,
+				"column": 1
+			},
+			{
+				"name": "Legislative Process",
+				"effect": "",
+				"uniques": ["+[25]% [Culture] from every [Congress]","[+1 Happiness] per [10] population in all cities",],//
+				"requires": ["Civil Society","Protected Speech"],
+				"row": 2,
+				"column": 2
+			},			
+			{
+				"name": "Voting Rights",
+				"effect": "",
+				"uniques": ["50% of excess happiness added to culture towards policies"],
+				"requires": ["Protected Speech"],
+				"row": 2,
+				"column": 3
+			},
+			{
+				"name": "Constitution Complete",
+				"effect": "",
+				"uniques": ["Tile yield from Great Improvements +100%", "Free Social Policy"]
+			}
+		],
+	}
 	{
 		"name": "Legacy",
 		"era": "Modern era",
