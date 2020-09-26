@@ -711,17 +711,6 @@
 		"uniques": ["Gold from all trade routes +25%","All military naval units receive +1 movement and +1 sight"],
 		"requiredTech": "Satellites"
 	},
-
-
-	{
-	//test, plus GPP generation?
-		"name": "Human Genome Project",
-		"science": 5,
-		"isWonder": true,
-		"uniques": ["+1 population in each city"],
-		"requiredTech": "Human Genome"
-	},	
-
 	
 	//military
 	{
@@ -1005,18 +994,16 @@
 		"isWonder": true,
 		"uniques": ["[-10]% of food is carried over after population increases","Empire enters golden age"],		
 		"percentStatBonus": {"culture": 10},
-		"requiredTech": "Future Materials"
+		"requiredTech": "Human Genome"
 	},	
 		{
 			"name": "Cryo Vaults",
-			"food": 1,
 			"maintenance": 3,
 			"culture": 5,
 			"hurryCostModifier": 100,
-			"isWonder": true,
 			"uniques": ["[-20]% of food is carried over after population increases"],//
-			"requiredBuilding": "Arcology Project",
-			"requiredTech": "Future Tech"
+			"requiredBuilding": "Cryo Sanctum",
+			"requiredTech": "Human Genome"
 		},			
 		{
 			"name": "Cryo Bunker",
@@ -1025,8 +1012,8 @@
 			"cityStrength": 10,
 			"cityHealth": 100,
 			"hurryCostModifier": 100,
-			"requiredBuilding": "Arcology Project",
-			"requiredTech": "Atmosphere Remediation"
+			"requiredBuilding": "Cryo Sanctum",
+			"requiredTech": "Future Materials"
 		},	*/	
 	{
 		"name": "Coal Plant",
@@ -1100,7 +1087,7 @@
 		"requiredTech": "Manufacturing"
 	},
 	{
-		"name": "Lighthouse",
+		"name": "Ocean Seeder",
 		"hurryCostModifier": 25,
 		"maintenance": 2,
 		"resourceBonusStats": {"food": 1},

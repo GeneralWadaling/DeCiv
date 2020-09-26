@@ -59,7 +59,7 @@
 	},	
 	{
 		// aquifier hardcoded bonus
-		"name": "Marble",
+		"name": "Aquifier",
 		"resourceType": "Bonus",
 		"revealedBy": "Radar",
 		"terrainsCanBeFoundOn": ["Desert","Plains","Grassland","Tundra","Marsh","Snow"],
