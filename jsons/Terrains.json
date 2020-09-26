@@ -85,7 +85,8 @@
 		"unbuildable": true,
 		"defenceBonus": 0.10,
 		"occursOn": ["Desert","Tundra","Plains","Grassland","Hill"],
-		"rough": true
+		"rough": true,
+		"uniques": ["Provides a one-time Production bonus to the closest city when cut down"]
 	},
 	{
 		"name": "Jungle",
@@ -96,7 +97,8 @@
 		"unbuildable": true,
 		"defenceBonus": 0.25,
 		"occursOn": ["Desert","Tundra","Plains","Grassland","Hill"],
-		"rough": true
+		"rough": true,
+		"uniques": ["Provides a one-time Production bonus to the closest city when cut down"]
 	},
 	{
 		"name": "Marsh",
