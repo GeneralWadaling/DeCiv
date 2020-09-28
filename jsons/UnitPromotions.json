@@ -356,7 +356,7 @@
 		"effect": "Double movement rate through Forest and Jungle",
 		"unitTypes": ["Melee","Ranged"]
 	},	
-{
+	{
 		"name": "Urban Warfare",
 		"prerequisites": ["Accuracy III","Barrage III","Shock III","Drill III"],
 		"effect": "+[33]% combat bonus in [Jungle]",
@@ -455,19 +455,19 @@
 		"name": "Combat Analytics",
 		"prerequisites": ["Drones I"],
 		"effect": "50% Bonus XP gain",
-		"unitTypes": ["Melee","Ranged"]
+		"unitTypes": ["Melee","Ranged","Armor"]
 	},
 	{
 		"name": "Care Package",
 		"prerequisites": ["Drones II"],
 		"effect": "+10 HP when healing",
-		"unitTypes": ["Melee","Ranged"]
+		"unitTypes": ["Melee","Ranged","Armor"]
 	},	
 	{
 		"name": "Drones II",
 		"prerequisites": ["Drones I"],
 		"effect": "-10% combat strength for adjacent enemy units",
-		"unitTypes": ["Melee","Ranged"]
+		"unitTypes": ["Melee","Ranged","Armor"]
 	},
 		//scout, special units
 	{
@@ -491,5 +491,8 @@
 		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth- "Heals 25 damage if it kills an Unit" for ranged seems wrong
 		"effect": "All healing effects doubled"
 	},
-
+	{
+		"name": "Gas Mask",
+		"effect": "+[25]% combat bonus in [Fallout]",
+	},
 ]

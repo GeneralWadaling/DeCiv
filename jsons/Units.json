@@ -252,7 +252,7 @@
 		"requiredTech": "The Wheel",
 	//	"requiredResource": "Weapons",
 		"uniques": ["Bonus vs Armor [100]%"],
-		"promotions": ["Mobility I","Sabotage"],
+		"promotions": ["Mobility I","Sabotage","Gas Mask"],
 		"attackSound": "machinegun"
 	},	
 	{
@@ -286,7 +286,7 @@
 		"obsoleteTech": "Mobile Tactics",
 		"requiredResource": "Weapons",
 		"hurryCostModifier": 20,
-		"uniques": ["+20% bonus outside friendly territory","Penalty vs Armor 20%"],
+		"uniques": ["+20% bonus outside friendly territory","Gas Mask","Penalty vs Armor 20%"],
 		"promotions": ["Mobility I"],
 		"attackSound": "shot"
 	},
@@ -400,6 +400,7 @@
 		"obsoleteTech": "Mobile Tactics",
 		"hurryCostModifier": 20,
 		"uniques": ["Bonus vs City 50%"],
+		"promotions": ["Gas Mask"],
 		"attackSound": "machinegun"
 	},
 	{
@@ -862,6 +863,7 @@
 		"requiredTech": "Advanced Materials",
 		"requiredResource": "Oil",
 		"upgradesTo": "Advanced Armor",
+		"obsoleteTech": "Energy Weapons",
 		"uniques": ["Can move after attacking","No defensive terrain bonus"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
@@ -924,7 +926,7 @@
 		"obsoleteTech": "Nuclear Fusion",
 		*/
 		"uniques": ["Can move after attacking","No defensive terrain bonus"],		
-		"promotions": ["Point Defence Laser","Drones I"],
+		"promotions": ["Point Defense Laser","Drones I"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
