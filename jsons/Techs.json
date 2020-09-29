@@ -40,7 +40,7 @@
 				"name": "Iron Working",
 				"row": 7,
 				"prerequisites": ["The Wheel"],
-				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
+				"quote": "'I know not with what weapons World War III will be fought, but World War IV will be fought with sticks and stones.' - Albert Einstein"
 			}			
 			{
 				"name": "Construction",
@@ -156,7 +156,7 @@
 				"name": "Currency",
 				"row": 10,
 				"prerequisites": ["Chemistry","Trade","Engineering"],
-				"quote": "'Compound interest is the most powerful force in the universe.' - Albert Einstein",
+				"quote": "'Do not, my friends, become addicted to water. It will take hold of you, and you will resent its absence!'",
 				"uniques": ["Enables conversion of city production to gold"],
 			},
 		]	

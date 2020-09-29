@@ -215,7 +215,7 @@
 			{
 				"name": "Entrepreneurship",
 				"effect": "",
-				"uniques": ["[Great Merchant] is earned [25]% faster", "[+1 Science] from every [Bank]", "[+1 Science] from every [Market]",
+				"uniques": ["[Great Merchant] is earned [25]% faster", "[+1 Science] from every [Market]",
 					"[+1 Science] from every [Factory]", "[+1 Science] from every [Automated Factory]"],
 				"row": 1,
 				"column": 1
