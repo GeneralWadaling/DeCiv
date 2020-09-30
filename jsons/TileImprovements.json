@@ -5,9 +5,7 @@
 		"food": 2,
 		"gold": -1,
 		"turnsToBuild": 7,
-	//	"techRequired": "Agriculture",
-		"improvingTech": "Ecology",
-		"improvingTechStats": {"gold": 1,}
+		"uniques": ["[+1 Gold] once [Ecology] is discovered"]
 	},
 
 	{
@@ -17,8 +15,7 @@
 	//	"gold": -1,
 		"turnsToBuild": 8,
 		"techRequired": "Ecology",
-		"improvingTech": "Land Remediation",
-		"improvingTechStats": {"food":1}
+		"uniques": ["[+1 Food] once [Land Remediation] is discovered"]
 	},
 	{
 		"name": "Mine",
@@ -26,8 +23,7 @@
 		"production": 1,
 		"turnsToBuild": 9,
 		"techRequired": "Mining",
-		"improvingTech": "Electricity",
-		"improvingTechStats": {"production": 1}
+		"uniques": ["[+1 Food] once [Electricity] is discovered"]
 	},
 
 	/*{
@@ -35,9 +31,7 @@
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Forest","Jungle","Flood plains","Tundra","Snow"],
 		"gold": 1,
 		"turnsToBuild": 5,
-	//	"techRequired": "Chemistry",
-		"improvingTech": "Plastics",
-		"improvingTechStats": {"gold": 1}
+		"uniques": ["[+1 Gold] once [Plastics] is discovered"]
 	},*/
 	{
 	//hard coded
@@ -45,9 +39,7 @@
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Forest","Jungle","Flood plains","Tundra","Snow"],
 		"gold": 1,
 		"turnsToBuild": 5,
-	//	"techRequired": "Chemistry",
-		"improvingTech": "Plastics",
-		"improvingTechStats": {"gold": 1}
+		"uniques": ["[+1 Gold] once [Plastics] is discovered"]
 	},
 	// Resource-specific
 	{
@@ -55,38 +47,33 @@
 		"resourceTerrainAllow": ["Forest","Jungle"],
 		"turnsToBuild": 7,
 		"techRequired": "Secrets of the Past",
-		"improvingTech": "Computers",
-		"improvingTechStats": {"science": 1}
+		"uniques": ["[+1 Science] once [Computers] is discovered"]
 	},	
 	{
 		"name": "Hacking site",
-		"resourceTerrainAllow": ["Forest","Jungle"],
+		"resourceTerrainAllow": ["Forest","Jungle","Silo"],
 		"turnsToBuild": 7,
 		"techRequired": "Decryption",
-		"improvingTech": "Artificial Intelligence",
-		"improvingTechStats": {"science": 4}
+		"uniques": ["[+3 Science] once [Artificial Intelligence] is discovered"]
 	},
 	{
 		"name": "Salvage site",
-		"resourceTerrainAllow": ["Forest","Jungle"],
+		"resourceTerrainAllow": ["Forest","Jungle","Silo"],
 		"turnsToBuild": 5,
-		"improvingTech": "Manufacturing",
-		"improvingTechStats": {"production": 1}
+		"uniques": ["[+1 Production] once [Manufacturing] is discovered"]
 	},
 	{
 		"name": "Water pump",
 		"resourceTerrainAllow": ["Forest","Jungle"],
 		"turnsToBuild": 7,
 		"techRequired": "Iron Working",
-		"improvingTech": "Decontamination",
-		"improvingTechStats": {"gold": 1}
+		"uniques": ["[+1 Gold] once [Decontamination] is discovered"]
 	},
 	{
 		"name": "Camp",
 		"resourceTerrainAllow": ["Forest","Jungle"],
 		"turnsToBuild": 5,
-		"improvingTech": "Genetics",
-		"improvingTechStats": {"food": 1}
+		"uniques": ["[+1 Food] once [Genetics] is discovered"]
 	},
 	{
 		"name": "Oil well",
@@ -97,8 +84,7 @@
 		"name": "Pasture",
 		"turnsToBuild": 7,
 		"techRequired": "Redomestication",
-		"improvingTech": "Genetics",
-		"improvingTechStats": {"food": 1}
+		"uniques": ["[+1 Food] once [Genetics] is discovered"]
 	},
 
 	{
@@ -110,17 +96,16 @@
 		"terrainsCanBeBuiltOn": ["Coast"],
 		"food": 1,
 		"techRequired": "Sailing",
-		"improvingTech": "Ocean Remediation",
-		"improvingTechStats": {"food": 1}
+		"uniques": ["[+1 Food] once [Ocean Remediation] is discovered"]
 	},
 
 	// Military improvement
 	{
-		name: "Fort",
-		terrainsCanBeBuiltOn: ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
-		turnsToBuild: 6,
-		techRequired: "Engineering",
-		uniques: ["Gives a defensive bonus of 50%"]
+		"name": "Fort",
+		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
+		"turnsToBuild": 6,
+		"techRequired": "Engineering",
+		"uniques": ["Gives a defensive bonus of 50%","Can be built outside your borders"]
 	},
 
 	// Transportation
@@ -128,6 +113,7 @@
 		"name": "Road",
 		"turnsToBuild": 4,
 		"techRequired": "Construction"
+		"uniques": ["Can be built outside your borders"]
 	},
 	{
 		"name": "Railroad",
@@ -140,66 +126,71 @@
 		"name": "Remove Forest",
 		"turnsToBuild": 4,
 		"terrainsCanBeBuiltOn": ["Forest"],
+		"uniques": ["Can be built outside your borders"]
 	},
 	{
 		"name": "Remove Jungle",
 		"turnsToBuild": 7,
 		"terrainsCanBeBuiltOn": ["Jungle"],
 		"techRequired": "Construction"
+		"uniques": ["Can be built outside your borders"]
 	},
 	{
 		"name": "Remove Fallout",
 		"turnsToBuild": 12,
 		"terrainsCanBeBuiltOn": ["Fallout"],
 		"techRequired": "Decontamination"
+		"uniques": ["Can be built outside your borders"]
 	},
 	{
 		"name": "Remove Marsh",
 		"turnsToBuild": 15,
 		"terrainsCanBeBuiltOn": ["Marsh"],
 		"techRequired": "Land Remediation"
+		"uniques": ["Can be built outside your borders"]
 	},
 
 	// These are unique and have unique in-game checks related to them
 	{
 		"name": "Remove Road",
 		"turnsToBuild": 2
+		"uniques": ["Can be built outside your borders"]
 	},
 	{
 		"name": "Remove Railroad",
 		"turnsToBuild": 2
+		"uniques": ["Can be built outside your borders"]
 	},
 	{
 		"name": "Cancel improvement order",
+		"uniques": ["Can be built outside your borders"]
 	},
 	
 	// Great Person improvements
-	{
+{
 		"name": "Academy",
 		"science": 8,
-		"improvingTech": "Laboratory",
-		"improvingTechStats": {"science": 2}
+		"uniques": ["Great Improvement", "[+2 Science] once [Scientific Theory] is discovered"]
+		// in Gods & Kings academy will also have "[+2 Science] once [Atomic Theory] is discovered"
 	},
 	{
 		"name": "Landmark",
-		"culture": 6
+		"culture": 6,
+		"uniques": ["Great Improvement"]
 	},
 	{
 		"name": "Manufactory",
 		"production": 4,
-		"improvingTech": "Electricity",
-		"improvingTechStats": {"production": 1}
+		"uniques": ["Great Improvement", "[+1 Production] once [Chemistry] is discovered"]
 	},
 	{
 		"name": "Customs house",
 		"gold": 4,
-		"improvingTech": "Economics",
-		"improvingTechStats": {"gold": 1}
+		"uniques": ["Great Improvement", "[+1 Gold] once [Economics] is discovered"]
 	},
 	{
-		name: "Citadel",
-		uniques: ["Gives a defensive bonus of 100%", "Deal 30 damage to adjacent enemy units"]
-		// TODO (G&K): adds every tile around it to your territory
+		"name": "Citadel",
+		"uniques": ["Gives a defensive bonus of [100]%", "Deal 30 damage to adjacent enemy units", "Great Improvement"]
 	},
 	{
 	//removed
