@@ -107,8 +107,16 @@
 		"movementCost": 3,
 		"unbuildable": true,
 		"defenceBonus": -0.2,
-		"occursOn": ["Grassland"],
+		"occursOn": ["Snow","Tundra","Plains","Grassland"],
 		"uniques": ["Rare feature"]
+	},	
+	{
+		"name": "Spring",
+		"type": "TerrainFeature",
+		"gold": 1,
+		"unbuildable": true,
+		"occursOn": ["Snow","Tundra","Plains","Grassland","Hill"],
+		"uniques": ["Rare feature","Fresh water"]
 	},
 	{
 		"name": "Fallout",
@@ -122,17 +130,14 @@
 		"occursOn": ["Snow","Desert","Tundra","Plains","Grassland","Hill","Flood plains"],
 		"uniques": ["Rare feature"]
 	},
-	{
-		"name": "Oasis",
+	/*{
+		"name": "Silo",
 		"type": "TerrainFeature",
-		"food": 3,
-		"gold": 1,
 		"movementCost": 1,
 		"unbuildable": true,
-		"defenceBonus": -0.1,
-		"uniques": ["Fresh water"],
-	//	"occursOn": ["Desert"]
-	},
+		"uniques": ["Rare feature"],
+		"occursOn": ["Hill"]
+	},*/
 	{
 		"name": "Flood plains",
 		"type": "TerrainFeature",
@@ -170,15 +175,15 @@
 		"turnsInto": "Coast",
 		"impassable": true,
 		"unbuildable": true,
-		"weight": 5
+		"weight": 2
 	},
 	{
 		"name": "Old Faithful",
 		"type": "NaturalWonder",
-		"science": 2,
-		"happiness": 3,
-		"occursOn": ["Grassland","Plains","Tundra","Mountain"],
-		"turnsInto": "Mountain",
+		"science": 1,
+		"culture": 3,
+		"occursOn": ["Hill"],
+		"turnsInto": "Hill",
 		"impassable": true,
 		"unbuildable": true,
 		"weight": 5
@@ -241,7 +246,7 @@
 		"turnsInto": "Mountain",
 		"impassable": true,
 		"unbuildable": true,
-		"weight": 5
+		"weight": 2
 	},
 	{
 		"name": "Rock of Gibraltar",//seed vault
@@ -253,7 +258,7 @@
 		"turnsInto": "Tundra",
 		"impassable": true,
 		"unbuildable": true,
-		"weight": 5
+		"weight": 4
 	},
 	{
 		"name": "Cerro de Potosi",//dam

@@ -1,11 +1,11 @@
 [	
 	{
 		"name": "Farm",
-		"terrainsCanBeBuiltOn": ["Plains","Grassland","Flood plains","Tundra"],
+	//	"terrainsCanBeBuiltOn": ["Plains","Grassland","Flood plains","Tundra"],
 		"food": 2,
 		"gold": -1,
 		"turnsToBuild": 7,
-		"uniques": ["[+1 Gold] once [Ecology] is discovered"]
+		"uniques": ["Can also be built on tiles adjacent to fresh water","[+1 Food] once [Ecology] is discovered"]
 	},
 
 	{
@@ -23,7 +23,7 @@
 		"production": 1,
 		"turnsToBuild": 9,
 		"techRequired": "Mining",
-		"uniques": ["[+1 Food] once [Electricity] is discovered"]
+		"uniques": ["[+1 Production] once [Electricity] is discovered"]
 	},
 
 	/*{
@@ -51,23 +51,29 @@
 	},	
 	{
 		"name": "Hacking site",
-		"resourceTerrainAllow": ["Forest","Jungle","Silo"],
+		"resourceTerrainAllow": ["Forest","Jungle"],
 		"turnsToBuild": 7,
 		"techRequired": "Decryption",
 		"uniques": ["[+3 Science] once [Artificial Intelligence] is discovered"]
 	},
 	{
 		"name": "Salvage site",
-		"resourceTerrainAllow": ["Forest","Jungle","Silo"],
+		"resourceTerrainAllow": ["Forest","Jungle"],
 		"turnsToBuild": 5,
 		"uniques": ["[+1 Production] once [Manufacturing] is discovered"]
 	},
 	{
 		"name": "Water pump",
-		"resourceTerrainAllow": ["Forest","Jungle"],
+		"terrainsCanBeBuiltOn": ["Spring"],
+		"gold": 3,
 		"turnsToBuild": 7,
 		"techRequired": "Iron Working",
 		"uniques": ["[+1 Gold] once [Decontamination] is discovered"]
+	},	
+	{
+		"name": "Generator",
+		"turnsToBuild": 10,
+		"techRequired": "Electricity",
 	},
 	{
 		"name": "Camp",
@@ -94,7 +100,6 @@
 	{
 		"name": "Fishing Boats",
 		"terrainsCanBeBuiltOn": ["Coast"],
-		"food": 1,
 		"techRequired": "Sailing",
 		"uniques": ["[+1 Food] once [Ocean Remediation] is discovered"]
 	},
@@ -217,18 +222,17 @@
 		"improvingTechStats": {"gold": 1}
 	},*/
 
-	{
+	/*{
 		"name": "Terrace farm",
 		"uniqueTo": "Enclavers",
 		"terrainsCanBeBuiltOn": ["Hill"],
 		"food": 2,
 		"gold": -1,
 		"turnsToBuild": 7,
-		"uniques": ["+1 food for each adjacent Mountain", "Cannot be built on bonus resource"],
+		"uniques": ["[+1 Food] for each adjacent [Mountain]", "Cannot be built on bonus resource","Can also be built on tiles adjacent to fresh water"],
 		"techRequired": "Construction",
-		"improvingTech": "Ecology",
-		"improvingTechStats": {"gold": 1,}
-	},
+		"uniques": ["[+1 Gold] once [Economics] is discovered"]
+	},*/
 	
 	{ "name": "Ancient ruins" },
 	{ "name": "City ruins" 

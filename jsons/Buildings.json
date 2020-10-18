@@ -31,7 +31,7 @@
 		"cityHealth": 80,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[20]% of food is carried over after population increases"]
+		"uniques": ["[20]% of food is carried over after population increases","Provides [1] [Power]"]
 	},
 	{
 		"name": "Atlas Refuge",
@@ -44,7 +44,7 @@
 		"cityHealth": 60,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[20]% of food is carried over after population increases"]
+		"uniques": ["[20]% of food is carried over after population increases","Provides [1] [Power]"]
 	},
 	{
 		"name": "Eagle Rock Complex",
@@ -57,7 +57,7 @@
 		"cityHealth": 100,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[20]% of food is carried over after population increases"]
+		"uniques": ["[20]% of food is carried over after population increases","Provides [1] [Power]","Provides [1] [Weapons]"]
 	},	
 	{
 		"name": "Forum",
@@ -82,7 +82,7 @@
 		"cityHealth": 40,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[+1 Science, +2 Culture] once [Machinery] is discovered"]
+		"uniques": ["[+1 Science, +2 Culture] once [Machinery] is discovered", "Provides [1] [Oil]"]
 	},
 
 	
@@ -247,16 +247,16 @@
 		
 	
 	
-	/*	{
+	/*{
 		"name": "Faust Project",
-	//	"culture": 3,
 		"isWonder": true,
-	//	"requiredBuilding": "Broadcast Tower",		
-	//	"requiredTech": "Radio",
 		"cost": 1,
-		"uniques": ["Must be next to [Barringer Crater]","Free [Warrior] appears","Free [Warrior] appears"],
+		"requiredNearbyImprovedResources": ["Warheads"],
+		"uniques": ["Free [Warrior] appears","Free [Warrior] appears"],
 		"quote": "'The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.'  - Sun Tzu"
 	},*/
+	
+	
 	//	CULTURE, HAPPPINESS
 	
 	{
@@ -271,7 +271,7 @@
 		"name": "Town Hall",
 		"culture": 1,
 		"happiness": 1,
-		"specialistSlots": {"culture": 1},
+		"specialistSlots": {"Artist": 1},
 		"maintenance": 1,	
 		"uniques": ["Culture and Gold costs of acquiring new tiles reduced by 25% in this city"],
 		"hurryCostModifier": 25,
@@ -290,8 +290,9 @@
 		"name": "Broadcast Tower",
 		"culture": 1,
 		"happiness": 1,
-		"specialistSlots": {"culture": 1},
+		"specialistSlots": {"Artist": 1},
 		"percentStatBonus": {"culture": 33},
+		"requiredResource": "Power",	//power
 	//	"maintenance": 3,
 		"requiredTech": "Radio"
 	},	
@@ -299,9 +300,10 @@
 		"name": "Television Studio",
 		"culture": 1,
 		"happiness": 2,
-		"specialistSlots": {"culture": 1},
+		"specialistSlots": {"Artist": 1},
 		"maintenance": 1,
 		"requiredBuilding": "Broadcast Tower",		
+		"requiredResource": "Power",	//power
 		"requiredTech": "Television"
 	},	
 	{
@@ -310,7 +312,7 @@
 		"culture": 2,
 		"uniques": ["Provides 1 happiness per 2 additional social policies adopted"],
 		"isNationalWonder": true,
-		"requiredBuildingInAllCities": "Television Studio",
+		"requiredBuilding": "Television Studio",
 		"requiredTech": "Social Engineering"
 	},
 	{
@@ -357,7 +359,7 @@
 	
 	{
 		"name": "Market", 
-		"specialistSlots": {"gold": 2},
+		"specialistSlots": {"Merchant": 2},
 		"hurryCostModifier": 25,
 		"requiredTech": "Trade",
 		"resourceBonusStats": {"gold": 1},
@@ -366,7 +368,7 @@
 		"name": "Caravan Office", 
 		"replaces": "Market",
 		"uniqueTo": "Commonwealth",
-		"specialistSlots": {"gold": 2},
+		"specialistSlots": {"Merchant": 2},
 		"hurryCostModifier": 25,
 		"greatPersonPoints": {"gold": 1},
 		"uniques": ["+5% Production for every Trade Route with a City-State in the empire"],
@@ -391,7 +393,7 @@
 		//policy hardcoding +science
 		"name": "Stock Exchange", //water exchange
 		"percentStatBonus": {"gold": 10},
-		"specialistSlots": {"gold": 2},
+		"specialistSlots": {"Merchant": 2},
 		"hurryCostModifier": 15,
 		"requiredBuilding": "Bank",		
 		"requiredTech": "Social Engineering",
@@ -437,10 +439,11 @@
 	
 	{
 		"name": "Cold Store", 
-		"percentStatBonus": {"food": 5},
+		"percentStatBonus": {"food": 10},
 		"maintenance": 1,
 		"resourceBonusStats": {"food": 1},
 		"hurryCostModifier": 25,
+		"requiredResource": "Power",	//power
 		"requiredTech": "Refrigeration"
 	},		
 	/*
@@ -462,6 +465,7 @@
 	{
 		"name": "Greenhouse", 
 		"food": 2,
+		"specialistSlots": {"Farmer": 1},
 		"resourceBonusStats": {"food": 1},
 		"maintenance": 1,
 		"hurryCostModifier": 25,
@@ -469,9 +473,11 @@
 	},			
 	{
 		"name": "Hydroponic Farming", 
-		"food": 7,
-		"maintenance": 4,
+		"food": 2,
+		"specialistSlots": {"Farmer": 3},
+		"maintenance": 1,
 		"hurryCostModifier": 25,
+		"requiredResource": "Power",	//power
 		"requiredTech": "Hydroponics"
 	},		
 	{
@@ -479,12 +485,13 @@
 		"food": 6,
 		"maintenance": 3,
 		"hurryCostModifier": 25,
+		"requiredResource": "Power",	//power
 		"requiredTech": "Genetics"
 	},	
 	{
 		"name": "Reclaimation Vats", 
 		"percentStatBonus": {"food": 25},
-		"maintenance": 6,
+		"maintenance": 4,
 		"hurryCostModifier": 25,
 		"requiredTech": "Human Genome"
 	},	
@@ -495,6 +502,7 @@
 		"maintenance": 3,
 		"hurryCostModifier": 0,
 		"requiredTech": "Biology",
+		"requiredResource": "Power",	//power
 		"uniques": ["[40]% of food is carried over after population increases"]
 	},	
 	{
@@ -563,7 +571,7 @@
 		"maintenance": 1,
 		"hurryCostModifier": 15,
 		"percentStatBonus": {"science": 33},
-		"specialistSlots": {"science": 1},
+		"specialistSlots": {"Scientist": 1},
 		"requiredBuilding": "Library",
 		"uniques": ["[+2 Science] from [Jungle] tiles in this city"],
 		"requiredTech": "Education"
@@ -577,7 +585,7 @@
 		"maintenance": 1,
 		"hurryCostModifier": 15,
 		"percentStatBonus": {"science": 33},
-		"specialistSlots": {"science": 1},
+		"specialistSlots": {"Scientist": 1},
 		"requiredTech": "Education"
 	},	
 	{
@@ -615,7 +623,7 @@
 		"maintenance": 1,
 		"hurryCostModifier": 0,
 		"uniques": ["[+2 Science] from [Jungle] tiles in this city"],
-		"specialistSlots": {"science": 1},
+		"specialistSlots": {"Scientist": 1},
 		"requiredTech": "Civil Service"
 	},
 	
@@ -623,7 +631,8 @@
 		"name": "Research Lab",
 		"science": 3,		
 		"percentStatBonus": {"science": 50},
-		"specialistSlots": {"science": 2},
+		"specialistSlots": {"Scientist": 2},
+		"requiredResource": "Power",	//power
 		"maintenance": 1,
 		"requiredBuilding": "University",
 		"requiredTech": "Laboratory"
@@ -634,7 +643,8 @@
 		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"percentStatBonus": {"science": 50},
-		"specialistSlots": {"science": 1},
+		"specialistSlots": {"Scientist": 1},
+		"requiredResource": "Power",	//power
 	//	"requiredBuilding": "Library",
 	//	"uniques": ["Must be next to mountain"],
 		"requiredTech": "Networking"
@@ -646,6 +656,7 @@
 		"culture": 3,
 		"isNationalWonder": true,
 		"requiredNearbyImprovedResources": ["Data"],
+		"requiredResource": "Power",	//power
 		"resourceBonusStats": {"culture": 2},
 		"greatPersonPoints": {"culture": 2},
 	//	"uniques": ["Culture in all cities increased by 25%"],
@@ -676,8 +687,8 @@
 		"science": 5,
 		"culture": 1,
 		"greatPersonPoints": {"science": 2},
-		"isWonder": true,		
-		"requiredResource": "Encrypted Data",
+		"isWonder": true,
+		"requiredResource": "Power",	//power
 		"uniques": ["2 free great scientists appear"],
 		"percentStatBonus": {"science": 50},
 		"requiredTech": "Particle Physics"
@@ -734,6 +745,7 @@
 		"maintenance": 1,
 		"cityHealth": 25,
 		"hurryCostModifier": 25,
+		"requiredResource": "Power",	//power
 		"requiredTech": "Energy Weapons"
 	},	
 	{
@@ -857,7 +869,42 @@
 		"resourceBonusStats": {"food": -1, "production": 4, "gold": -1},
 		"hurryCostModifier": 25,
 		"requiredTech": "Chemistry"
+	},		
+	{
+		"name": "Hydro Plant",
+		"cost": 320,
+		"hurryCostModifier": 25,
+		"uniques": ["Must be on [River]","Provides [2] [Power]"],
+		"requiredTech": "Electricity"
+	},		
+	{
+		"name": "Tidal Plant",
+		"cost": 320,
+		"hurryCostModifier": 25,
+		"uniques": ["Must be next to [Coast]","Provides [1] [Power]"],
+		"requiredTech": "Electricity"
 	},	
+	{
+		"name": "Coal Plant",
+		"maintenance": 4,	
+		"cost": 320,
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"food": -20},
+		"uniques": ["Provides [5] [Power]"],
+		"cannotBeBuiltWith": "Nuclear Plant",
+		"requiredResource": "Coal",
+		"requiredTech": "Electricity"
+	},	
+	{
+		"name": "Nuclear Plant",	
+		"maintenance": 4,
+		"cost": 750,
+		"hurryCostModifier": 33,
+		"uniques": ["Provides [5] [Power]"],
+		"cannotBeBuiltWith": "Coal Plant",
+		"requiredResource": "Uranium",
+		"requiredTech": "Nuclear Fission"
+	},
 	{
 		"name": "Aluminum Smelter", 
 	//	"food": -1,
@@ -866,19 +913,27 @@
 		"hurryCostModifier": 25,
 		"requiredNearbyImprovedResources": ["Aluminum"],
 		"resourceBonusStats": {"food": -1,"production": 2, "gold": -1},
-		"requiredResource": "Coal",
+		"requiredResource": "Power",	//power
 		"requiredTech": "Manufacturing"
+	},	
+	{
+		"name": "Desalination Plant",
+		"gold": 10,
+		"hurryCostModifier": 25,
+		"uniques": ["Can only be built in coastal cities"],
+		"requiredResource": "Power",	//power
+		"requiredTech": "Desalination"
 	},	
 	{
 		"name": "Factory",
 	//	"food": -1,
 		"production": 2,
-		"specialistSlots": {"production": 2},
+		"specialistSlots": {"Engineer": 2},
 	//	"requiredBuilding": "Workshop",
 		"maintenance": 2,
 		"hurryCostModifier": 0,
 		"cannotBeBuiltWith": "Automated Factory",
-	//	"requiredResource": "Coal",
+		"requiredResource": "Power",	//power
 		"requiredTech": "Manufacturing"
 	},	
 	{
@@ -888,29 +943,31 @@
 		"uniques": ["+[25]% production when building [Spaceship part] in this city"],
 		"maintenance": 3,
 		"cannotBeBuiltWith": "Factory",
+		"requiredResource": "Power",	//power
 		"requiredTech": "Robotics"
 	},
 	{
 		"name": "Plastics Factory",
 		"food": -1,
 		"production": 2,
-		"specialistSlots": {"production": 1},
+		"specialistSlots": {"Engineer": 1},
 	//	"requiredBuilding": "Workshop",
 		"maintenance": 2,
 		"hurryCostModifier": 0,
 		"requiredNearbyImprovedResources": ["Oil"],
-	//	"requiredResource": "Oil",
+		"requiredResource": "Power",	//power
 		"requiredTech": "Plastics"
 	},
 	{
 		"name": "Plastics Reprocessor",
 	//	"production": 4,
 	//	"percentStatBonus": {"production": 10},
-		"specialistSlots": {"production": 1},
+		"specialistSlots": {"Engineer": 1},
 		"maintenance": 1,
 		"hurryCostModifier": 0,
 		"requiredNearbyImprovedResources": ["Plastics","Marine Plastics"],
 		"resourceBonusStats": {"production": 2},
+		"requiredResource": "Power",	//power
 		"requiredTech": "Plastics Recycling"
 	},		
 	{
@@ -930,7 +987,7 @@
 		"maintenance": 3,
 		"hurryCostModifier": 0,
 		"cannotBeBuiltWith": "Carbon Capture",//
-		"requiredBuilding": "Nuclear Plant",
+		"requiredResource": "Power",	//power
 		"requiredTech": "Atmosphere Remediation"
 	},	*/
 	{
@@ -941,6 +998,7 @@
 		"isWonder": true,
 		"uniques": ["Free [Great Scientist] appears","Empire enters golden age","+[15]% production when building [Spaceship part] in this city"],		
 		"percentStatBonus": {"science": 50},
+		"requiredResource": "Power",	//power
 		"requiredTech": "Artificial Intelligence"
 	},	
 	/*{
@@ -1047,27 +1105,6 @@
 			"requiredBuilding": "Cryo Sanctum",
 			"requiredTech": "Future Materials"
 		},	*/	
-	{
-		"name": "Coal Plant",
-		"food": -3,
-		"maintenance": 4,	
-		"cost": 320,
-		"hurryCostModifier": 25,
-		"percentStatBonus": {"production": 100},
-		"cannotBeBuiltWith": "Nuclear Plant",
-		"requiredResource": "Coal",
-		"requiredTech": "Electricity"
-	},	
-	{
-		"name": "Nuclear Plant",	
-		"maintenance": 4,
-		"cost": 750,
-		"hurryCostModifier": 33,
-		"percentStatBonus": {"production": 100},
-		"cannotBeBuiltWith": "Coal Plant",
-		"requiredResource": "Uranium",
-		"requiredTech": "Nuclear Fission"
-	},
 
 
 	//water purifier
@@ -1084,24 +1121,7 @@
 		"requiredTech": "Ecology",
 		"uniques": ["Can only be built in coastal cities"]
 	},
-	{
-		"name": "Coal Desalination Plant",
-		"gold": 10,
-		"hurryCostModifier": 25,
-		"uniques": ["Can only be built in coastal cities"],
-		"cannotBeBuiltWith": "Clean Desalination Plant",
-		"requiredBuilding": "Coal Plant",
-		"requiredTech": "Desalination"
-	},	
-	{
-		"name": "Nuclear Desalination Plant",
-		"gold": 10,
-		"hurryCostModifier": 25,
-		"uniques": ["Can only be built in coastal cities"],
-		"cannotBeBuiltWith": "Desalination Plant",
-		"requiredBuilding": "Nuclear Plant",
-		"requiredTech": "Desalination"
-	},
+
 	{
 		"name": "Harbor",
 	//	"maintenance": 2,
@@ -1114,7 +1134,7 @@
 		"hurryCostModifier": 25,
 	//	"maintenance": 2,"+1 production and gold from all sea resources worked by the city",
 		"requiredBuilding": "Harbor",
-		"uniques": ["[+1 Production, +1 Gold] from [Water resource] tiles in this city",
+		"uniques": ["[+1 Production] from [Water resource] tiles in this city",
 			"Can only be built in coastal cities", "+[15]% production when building [naval units] in this city"],
 		"requiredTech": "Manufacturing"
 	},

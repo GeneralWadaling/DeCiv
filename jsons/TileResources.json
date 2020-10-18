@@ -33,7 +33,7 @@
 		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert"],
 		"food": 1,
 		"improvement": "Farm",
-		"improvementStats": {"food": 1,"gold": -1},
+		"improvementStats": {"food": 1},
 		"building": "Greenhouse"
 	},
 
@@ -47,41 +47,29 @@
 		"building": "Cold Store"
 	},	
 
-	{
-	//water
-		"name": "Gold",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Plains","Grassland","Hill","Tundra","Snow"],
-		"gold": 1,
-		"improvement": "Water pump",
-		"improvementStats": {"gold": 3},
-		"building": "Mint"
-	},	
+	
 	{
 		// aquifier hardcoded bonus
-		"name": "Aquifier",
+		"name": "Water",
 		"resourceType": "Bonus",
 		"revealedBy": "Radar",
 		"terrainsCanBeFoundOn": ["Desert","Plains","Grassland","Tundra","Marsh","Snow"],
-		"gold": 1,
+	//	"gold": 1,
 		"improvement": "Water pump",
-		"improvementStats": {"gold": 3},
-		"building": "Mint"
+		"improvementStats": {"gold": 1},
 	},		
 	{
-	//tuber
 		"name": "Tubers",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Marsh","Plains","Tundra","Grassland"],
 		"food": 1,
 		"revealedBy": "Botany",
 		"improvement": "Farm",
-		"improvementStats": {"food": 1,"gold": -1},
+		"improvementStats": {"food": 1},
 		"building": "Greenhouse"
 	},
 
 	{
-		// Scrap hardcoded bonus
 		"name": "Scrap",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Jungle","Forest","Desert","Snow","Marsh","Plains","Tundra","Grassland"],
@@ -91,7 +79,7 @@
 		"building": "Blast Furnace"
 	},			
 	{
-		"name": "Metal",
+		"name": "Metal",		//it comes from HELL
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Jungle","Forest","Hill"],
 		"production": 1,
@@ -121,9 +109,24 @@
 		"building": "Plastics Reprocessor"
 	},
 
-	
+	//pollution
+
+	/*{
+		"name": "Smog",
+		"resourceType": "Bonus",
+		"unique": "[+1 Gold] from every [Monument]",
+	},	*/
 	// Strategic resources
 	
+	{
+		"name": "Power",
+		"resourceType": "Strategic",
+		"revealedBy": "Secrets of the Past",
+		"improvement": "Generator",
+		"improvementStats": {"production": 1},
+		"terrainsCanBeFoundOn": ["Desert","Plains","Hill"],//																..
+	//	"unique": "+[10]% Production when constructing [buildings]",
+	},	
 	{
 		"name": "Oil",
 		"resourceType": "Strategic",
@@ -171,6 +174,15 @@
 		"improvement": "Mine",
 		"improvementStats": {"food": -1,"production": 2}
 	},	
+	/*{
+		"name": "Warheads",
+		"resourceType": "Strategic",
+		"revealedBy": "Engineering",
+		"terrainsCanBeFoundOn": ["Silo"],
+		"unique": "+[10]% Production when constructing [missile units]",
+		"improvement": "Salvage site",
+		"improvementStats": {"science": 1}
+	},	*/
 	{	
 		"name": "Weapons",
 		"resourceType": "Strategic",
@@ -210,11 +222,11 @@
 		"resourceType": "Strategic",
 		"revealedBy": "Electronics",
 	//	"terrainsCanBeFoundOn": ["Jungle","Forest","Hill","Desert"],
-		"terrainsCanBeFoundOn": ["Jungle","Forest","Hill"],
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Silo"],
 		"improvement": "Hacking site",
 		"improvementStats": {"science": 4},
-		"unique": "+15% production towards Wonder construction",
-		"building": "Observatory"
+		"unique": "+[10]% Production when constructing [Wonders]",
+		"building": "Data Center"
 	},
 	
 //luxury	
@@ -231,6 +243,7 @@
 	{
 		"name": "Marine Artifacts",
 		"resourceType": "Luxury",
+		"revealedBy": "Sailing",
 		"terrainsCanBeFoundOn": ["Atoll"],
 		"culture": 1,
 		"improvement": "Fishing Boats",
