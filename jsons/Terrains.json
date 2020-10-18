@@ -150,7 +150,7 @@
 		"type": "TerrainFeature",
 		"impassable": true,
 		"overrideStats": true,
-		"occursOn": ["Ocean", "Coast"]
+	//	"occursOn": ["Ocean", "Coast"]
 	},
 	{
 		"name": "Atoll",
