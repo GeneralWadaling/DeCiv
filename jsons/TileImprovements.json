@@ -1,11 +1,10 @@
 [	
 	{
 		"name": "Farm",
-	//	"terrainsCanBeBuiltOn": ["Plains","Grassland","Flood plains","Tundra"],
-		"food": 2,
-		"gold": -1,
+		"terrainsCanBeBuiltOn": ["Plains","Desert","Flood plains"],
+		"food": 1,
 		"turnsToBuild": 7,
-		"uniques": ["Can also be built on tiles adjacent to fresh water","[+1 Food] once [Ecology] is discovered"]
+		"uniques": ["[+1 Food, -1 Gold] on [fresh water] tiles once [The Wheel] is discovered","Can also be built on tiles adjacent to fresh water","[+1 Food] once [Ecology] is discovered"]
 	},
 
 	{
@@ -15,7 +14,7 @@
 	//	"gold": -1,
 		"turnsToBuild": 8,
 		"techRequired": "Ecology",
-		"uniques": ["[+1 Food] once [Land Remediation] is discovered"]
+		"uniques": ["[+1 Food, -1 Gold] on [fresh water] tiles once [Ecology] is discovered","[+1 Food] once [Land Remediation] is discovered"]
 	},
 	{
 		"name": "Mine",
@@ -174,25 +173,28 @@
 	// Great Person improvements
 {
 		"name": "Academy",
-		"science": 8,
-		"uniques": ["Great Improvement", "[+2 Science] once [Scientific Theory] is discovered"]
+		"science": 4,
+		"uniques": ["Great Improvement", "[+2 Science] once [Scientific Theory] is discovered", "[+2 Science] once [Decryption] is discovered"]
 		// in Gods & Kings academy will also have "[+2 Science] once [Atomic Theory] is discovered"
 	},
 	{
-		"name": "Landmark",
-		"culture": 6,
-		"uniques": ["Great Improvement"]
+		"name": "Settlement",
+		"gold": 1,
+		"food": 1,
+		"uniques": ["Great Improvement", "Gives a defensive bonus of [10]%",  "[+1 Food] once [Ecology] is discovered", "[+1 Gold] once [Currency] is discovered", "[+1 Culture] once [Civil Service] is discovered"]
+	},
+	{
+		"name": "Oracle",
+		"culture": 3,
+		"happiness": 1,
+		"uniques": ["Great Improvement","[+1 Gold] once [Civil Service] is discovered"]
 	},
 	{
 		"name": "Manufactory",
-		"production": 4,
-		"uniques": ["Great Improvement", "[+1 Production] once [Chemistry] is discovered"]
+		"production": 3,
+		"uniques": ["Great Improvement", "[+1 Production] once [Chemistry] is discovered","[+1 Production] once [Electricity] is discovered"]
 	},
-	{
-		"name": "Customs house",
-		"gold": 4,
-		"uniques": ["Great Improvement", "[+1 Gold] once [Economics] is discovered"]
-	},
+
 	{
 		"name": "Citadel",
 		"uniques": ["Gives a defensive bonus of [100]%", "Deal 30 damage to adjacent enemy units", "Great Improvement"]

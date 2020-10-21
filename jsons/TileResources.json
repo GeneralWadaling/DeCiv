@@ -121,21 +121,26 @@
 	{
 		"name": "Power",
 		"resourceType": "Strategic",
-		"revealedBy": "Secrets of the Past",
+		"revealedBy": "Writing",
 		"improvement": "Generator",
 		"improvementStats": {"production": 1},
 		"terrainsCanBeFoundOn": ["Desert","Plains","Hill"],//																..
 	//	"unique": "+[10]% Production when constructing [buildings]",
-	},	
+	},
 	{
 		"name": "Oil",
 		"resourceType": "Strategic",
-		"revealedBy": "Secrets of the Past",
+	//	"revealedBy": "Secrets of the Past",
 		"terrainsCanBeFoundOn": ["Desert","Tundra","Snow"],
 		"production": 1,
 		"improvement": "Oil well",
 		"improvementStats": {"production": 1},
 		"building": "Oil Refinery"
+	},		
+	{
+		"name": "Slaves",
+		"resourceType": "Strategic",
+		"production": 1,
 	},
 	{
 		"name": "Horses",
@@ -225,12 +230,13 @@
 		"terrainsCanBeFoundOn": ["Jungle","Forest","Silo"],
 		"improvement": "Hacking site",
 		"improvementStats": {"science": 4},
-		"unique": "+[10]% Production when constructing [Wonders]",
+		"unique": "+15% production towards Wonder construction",
 		"building": "Data Center"
 	},
 	
 //luxury	
 	
+
 	{
 		"name": "Artifacts",
 		"resourceType": "Luxury",

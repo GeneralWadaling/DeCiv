@@ -281,7 +281,7 @@
 			{
 				"name": "Public Good",
 				"effect": "",
-				"uniques": ["+[2 Gold] from every [Hospital]","Maintenance on roads & railroads reduced by 33%"],
+				"uniques": ["[+2 Gold] from every [Hospital]","Maintenance on roads & railroads reduced by 33%"],
 				"requires": ["Civil Society"],
 				"row": 2,
 				"column": 1
@@ -297,7 +297,7 @@
 			{
 				"name": "Voting Rights",
 				"effect": "",
-				"uniques": ["50% of excess happiness added to culture towards policies"],
+				"uniques": ["50% of excess happiness added to culture towards policies","[-1 Happiness] from every [Work Camp]"],
 				"requires": ["Protected Speech"],
 				"row": 2,
 				"column": 3
@@ -400,7 +400,7 @@
 			{
 				"name": "Fascism",
 				"effect": "",
-				"uniques": ["Quantity of strategic resources produced by the empire increased by 100%","[-4 Food] from every [Courthouse]"],
+				"uniques": ["Quantity of strategic resources produced by the empire increased by 100%","[-2 Food] from every [Courthouse]","[-6 Food, +4 Production] from every [Prison Camp]"],
 				"requires": ["Scorched Earth","Militarism"],
 				"row": 2,
 				"column": 3
@@ -417,7 +417,7 @@
 			{
 				"name": "Police State",
 				"effect": "",
-				"uniques": ["[+3 Happiness] from every [Courthouse]","[+1 Happiness] from every [Town Hall]"],
+				"uniques": ["[+1 Happiness] from every [Town Hall]","[+3 Happiness] from every [Courthouse]","[+5 Happiness] from every [Prison Camp]"],
 				"requires": ["Fascism"],
 				"row": 3,
 				"column": 3

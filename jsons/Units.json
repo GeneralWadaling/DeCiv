@@ -61,6 +61,17 @@
 		"uniques": ["Can build improvements on tiles"],
 		"cost": 70
 		//"Can build improvement: Farm"
+	},	
+	{
+		"name": "Slave",
+	/*	"uniqueTo": "Cult of Ignis",
+		"replaces": "Worker",*/
+		"unitType": "Civilian",
+		"requiredResource": "Slaves",
+		"movement": 2,
+		"uniques": ["Can build improvements on tiles"],
+		"cost": 25
+		//"Can build improvement: Farm"
 	},
 	{
 		"name": "Settler",
@@ -128,10 +139,11 @@
 		"replaces": "Spearman",
 		"movement": 2,
 		"strength": 10,
-		"cost": 25,
-		"obsoleteTech": "Rifling",
+		"cost": 15,
+	//	"obsoleteTech": "Rifling",
+		"requiredResource": "Slaves",
 		"upgradesTo": "Swordsman",
-		"uniques": ["Bonus vs Mounted 50%"],
+		"uniques": ["Can construct roads","Bonus vs Mounted 50%"],
 		"attackSound": "metalhit"
 	},	
 	{
@@ -141,7 +153,7 @@
 		"replaces": "Spearman",
 		"movement": 2,
 		"strength": 16,
-		"cost": 125,
+		"cost": 150,
 		"obsoleteTech": "Electricity",
 		"upgradesTo": "Contractor",
 		"hurryCostModifier": 50,
@@ -153,11 +165,11 @@
 		"uniqueTo": "The Patriots",
 		"replaces": "Spearman",
 		"movement": 2,
-		"strength": 12,
-		"cost": 30,
+		"strength": 15,
+		"cost": 35,
+	//	"requiredResource": "Slaves",
 		"upgradesTo": "Militia",
-		"hurryCostModifier": 20,
-		"obsoleteTech": "Rifling",
+	//	"obsoleteTech": "Rifling",
 		"uniques": ["Penalty as Attacker [33]%"],
 		"attackSound": "shot"
 	},
@@ -197,7 +209,7 @@
 		"movement": 2,
 		"strength": 15,
 		"cost": 40,
-		"requiredTech": "Iron Working",
+	//	"requiredTech": "Iron Working",
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Trooper",
 		"hurryCostModifier": 20,
@@ -217,7 +229,7 @@
 		"upgradesTo": "Trooper",
 		"requiredResource": "Weapons",
 		"hurryCostModifier": 20,
-		"uniques": ["Heals 25 damage if it kills an Unit"],
+		"uniques": ["Heals [25] damage if it kills an Unit"],
 		"promotions": ["Drill I"],
 		"attackSound": "shot"
 	},	
@@ -242,7 +254,7 @@
 		"name": "Spec Ops",
 		"unitType": "Ranged",
 		"uniqueTo": "The Patriots",
-		"replaces": "Archer",
+		"replaces": "Gunman",
 		"range": 1,
 		"movement": 2,
 		"strength": 15,
@@ -250,11 +262,11 @@
 		"cost": 300,
 		"hurryCostModifier": 20,
 		"requiredTech": "The Wheel",
-	//	"requiredResource": "Weapons",
+		"requiredResource": "Weapons",
 		"uniques": ["Bonus vs Armor [100]%"],
 		"promotions": ["Mobility I","Sabotage","Gas Mask"],
 		"attackSound": "machinegun"
-	},	
+	},
 	{
 		"name": "Gunman",
 		"unitType": "Ranged",
@@ -276,17 +288,17 @@
 		"name": "Ranger",
 		"unitType": "Ranged",
 		"uniqueTo": "Commonwealth",
-		"replaces": "Scout",
+		"replaces": "Great Administrator",
 		"range": 1,
 		"movement": 2,
 		"strength": 15,
 		"rangedStrength": 25,
-		"cost": 300,
-		"requiredTech": "The Wheel",
-		"obsoleteTech": "Mobile Tactics",
+	//	"cost": 300,
+	//	"requiredTech": "Secrets of the Past",
+	//	"obsoleteTech": "Mobile Tactics",
+	//	"hurryCostModifier": 20,
 		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,
-		"uniques": ["+20% bonus outside friendly territory","Gas Mask","Penalty vs Armor 20%"],
+		"uniques": ["+20% bonus outside friendly territory","Gas Mask","Great Person - [Culture]","Unbuildable"],
 		"promotions": ["Mobility I"],
 		"attackSound": "shot"
 	},
@@ -321,7 +333,8 @@
 		"requiredResource": "Weapons",
 		"uniques": ["Bonus vs City 33%","Bonus as Attacker [25]%","+10 HP when healing"],
 		"attackSound": "metalhit"
-	},
+	},	
+
 	{
 		"name": "Contractor",
 		"unitType": "Melee",
@@ -333,10 +346,10 @@
 	//	"upgradesTo": "Linked Infantry",
 		"requiredResource": "Weapons",
 		"requiredTech": "Electricity",
-		"obsoleteTech": "Mobile Tactics",
-		"uniques": ["Bonus vs City 25%"],
+	//	"obsoleteTech": "Mobile Tactics",
+		"uniques": ["Bonus vs City 25%","Can move immediately once bought"],
 		"promotions": ["Drones I"],
-		"hurryCostModifier": 50,
+		"hurryCostModifier": -25,
 		"attackSound": "machinegun"
 	},	
 	{
@@ -397,7 +410,7 @@
 		"cost": 225,
 		"requiredTech": "Combined Arms",
 	//	"upgradesTo": "Linked Infantry",
-		"obsoleteTech": "Mobile Tactics",
+	//	"obsoleteTech": "Mobile Tactics",
 		"hurryCostModifier": 20,
 		"uniques": ["Bonus vs City 50%"],
 		"promotions": ["Gas Mask"],
@@ -413,7 +426,7 @@
 		"cost": 225,
 		"requiredTech": "Combined Arms",
 	//	"upgradesTo": "Linked Sharpshooter",
-		"obsoleteTech": "Mobile Tactics",
+	//	"obsoleteTech": "Mobile Tactics",
 		"hurryCostModifier": 20,
 		"uniques": ["Penalty vs Armor 20%"],
 		"promotions": ["Skirmish","Precision"],
@@ -431,7 +444,7 @@
 		"cost": 225,
 		"requiredTech": "Combined Arms",
 	//	"upgradesTo": "Linked Sharpshooter",
-		"obsoleteTech": "Mobile Tactics",
+	//	"obsoleteTech": "Mobile Tactics",
 		"hurryCostModifier": 20,
 		"uniques": ["Penalty vs Armor 20%"],
 		"promotions": ["Skirmish","Extended Range","Precision"],
@@ -496,7 +509,7 @@
 		"requiredTech": "Iron Working",
 		"upgradesTo": "Armored Car",
 		"obsoleteTech": "Replaceable Parts",
-		"uniques": ["Penalty vs City 33%","Can move after attacking","No defensive terrain bonus","+10 HP when healing"],
+		"uniques": ["Penalty vs City 33%","Can move after attacking","No defensive terrain bonus","+10 HP when healing","Heals [25] damage if it kills an Unit"],
 		"promotions": ["Skirmish","March"],
 		"hurryCostModifier": 20
 	},	
@@ -510,7 +523,7 @@
 		"cost": 20,
 		"obsoleteTech": "Engineering",
 		"upgradesTo": "Infantry",
-		"uniques": ["Bonus vs City 50%","+10 HP when healing","Heals 25 damage if it kills an Unit"],
+		"uniques": ["Bonus vs City 50%","+10 HP when healing","Heals [25] damage if it kills an Unit"],
 		"attackSound": "nonmetalhit"
 	},
 	{
@@ -524,7 +537,7 @@
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Infantry",
-		"uniques": ["Bonus vs City 33%","+10 HP when healing","Heals 25 damage if it kills an Unit"],
+		"uniques": ["Bonus vs City 33%","+10 HP when healing","Heals [25] damage if it kills an Unit"],
 		"attackSound": "shot"
 	},	
 	{
@@ -540,7 +553,7 @@
 		"hurryCostModifier": 20,
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Rifleman",
-		"uniques": ["+10 HP when healing","Heals 25 damage if it kills an Unit"],
+		"uniques": ["+10 HP when healing","Heals [25] damage if it kills an Unit"],
 		"promotions": ["Skirmish"],
 		"attackSound": "arrow"
 	},		
@@ -558,7 +571,7 @@
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Sharpshooter",
 		"hurryCostModifier": 20,
-		"uniques": ["+10 HP when healing","Heals 25 damage if it kills an Unit"],
+		"uniques": ["+10 HP when healing","Heals [25] damage if it kills an Unit"],
 		"promotions": ["Skirmish"],
 		"attackSound": "shot"
 	},	
@@ -572,7 +585,7 @@
 		"cost": 225,
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 20,
-		"uniques": ["Bonus vs City 50%","+10 HP when healing","Heals 25 damage if it kills an Unit"],
+		"uniques": ["Bonus vs City 50%","+10 HP when healing","Heals [50] damage if it kills an Unit"],
 		"promotions": ["Skirmish","Drill I","Urban Tactics","Ambush I"],
 		"attackSound": "machinegun"
 	},
@@ -589,7 +602,7 @@
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 20,
 		"promotions": ["Skirmish","Extended Range","Urban Tactics","Precision"],
-		"uniques": ["+10 HP when healing","Heals 25 damage if it kills an Unit","Penalty vs Armor 20%"],
+		"uniques": ["+10 HP when healing","Heals [50] damage if it kills an Unit","Penalty vs Armor 20%"],
 		"attackSound": "shot"
 	},			
 	{
@@ -649,7 +662,7 @@
 
 	{
 		"name": "Howitzer",
-		"unitType": "Ranged",
+		"unitType": "Siege",
 		"uniqueTo": "Almaty",
 		"replaces": "Archer",
 		"movement": 2,
@@ -718,7 +731,7 @@
 		"movement": 5,
 		"strength": 18,
 		"cost": 55,
-		"requiredTech": "Machinery",
+		"requiredTech": "Iron Working",
 		"requiredResource": "Oil",
 		"upgradesTo": "Armored Car",
 		"obsoleteTech": "Combined Arms",
@@ -726,6 +739,7 @@
 		"hurryCostModifier": 20
 	},	
 	
+
 /* Tier 1 */
 	
 	{
@@ -751,7 +765,7 @@
 		"replaces": "Armored Car",
 		"movement": 4,
 		"strength": 25,
-		"cost": 185,
+		"cost": 150,
 		"requiredTech": "Steel",
 		"requiredResource": "Oil",
 		"upgradesTo": "Tank",
@@ -791,7 +805,7 @@
 	},
 	{
 		"name": "Artillery",
-		"unitType": "Ranged",
+		"unitType": "Siege",
 		"range": 3,
 		"movement": 2,
 		"strength": 10,
@@ -870,7 +884,7 @@
 	},
 	{
 		"name": "Rocket Artillery",
-		"unitType": "Ranged",
+		"unitType": "Siege",
 		"movement": 3,
 		"strength": 20,
 		"rangedStrength": 40,
@@ -1118,33 +1132,41 @@
 	
 	/* Great people */
 	{
-		"name": "Great Artist",
+		"name": "Great Administrator",
 		"unitType": "Civilian",
-		"uniques": ["Can start an 8-turn golden age","Can build improvement: Landmark", "Great Person - [Culture]", "Unbuildable"],
+		"uniques": ["Can start an [8-]turn golden age","Can construct [Settlement]", "Great Person - [Culture]", "Unbuildable"],
+		"movement": 2
+	},	
+	{
+		"name": "Great Prophet",
+		"uniqueTo": "Cult of Ignis",
+		"replaces": "Great Administrator",
+		"unitType": "Civilian",
+		"uniques": ["Can start an [8-]turn golden age","Can construct [Oracle]", "Great Person - [Culture]", "Unbuildable"],
 		"movement": 2
 	},
 	{
 		"name": "Great Scientist",
 		"unitType": "Civilian",
-		"uniques": ["Can hurry technology research","Can build improvement: Academy", "Great Person - [Science]", "Unbuildable"],
+		"uniques": ["Can hurry technology research","Can construct [Academy]", "Great Person - [Science]", "Unbuildable"],
 		"movement": 2
 	},
 	{
 		"name": "Great Merchant",
 		"unitType": "Civilian",
-		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence","Can start an 8-turn golden age", "Great Person - [Gold]", "Unbuildable"],
+		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence","Can start an [8]-turn golden age", "Great Person - [Gold]", "Unbuildable"],
 		"movement": 2
 	},
 	{
 		"name": "Great Engineer",
 		"unitType": "Civilian",
-		"uniques": ["Can speed up construction of a wonder","Can build improvement: Manufactory", "Great Person - [Production]", "Unbuildable"],
+		"uniques": ["Can speed up construction of a wonder","Can construct [Manufactory]", "Great Person - [Production]", "Unbuildable"],
 		"movement": 2
 	},
 	{
 		"name": "Great General",
 		"unitType": "Civilian",
-		"uniques": ["Can start an 8-turn golden age","Bonus for units in 2 tile radius 15%","Can build improvement: Citadel", "Great Person - [War]", "Unbuildable"],
+		"uniques": ["Can start an [8]-turn golden age","Bonus for units in 2 tile radius 15%","Can construct [Citadel]", "Great Person - [War]", "Unbuildable"],
 		"movement": 2
 	},	
 	{
@@ -1152,17 +1174,18 @@
 		"uniqueTo": "Crimson Legion",
 		"replaces": "Great General",
 		"unitType": "Civilian",
-		"uniques": ["Can start an 8-turn golden age", "Bonus for units in 2 tile radius 15%","This unit and all others in adjacent tiles heal 5 additional HP per turn",
-					"Can build improvement: Citadel","Great Person - [War]", "Unbuildable"],
-		"movement": 2
-	},
+		"uniques": ["Bonus for units in 2 tile radius 15%","This unit and all others in adjacent tiles heal 5 additional HP per turn",
+					"Can construct [Citadel]","Great Person - [War]", "Unbuildable"],
+		"movement": 2,
+		"strength": 18,
+	},	
 	{
 		"name": "Bugler",
 		"uniqueTo": "Cult of Ignis",
 		"replaces": "Great General",
 		"unitType": "Civilian",
-		"uniques": ["Can start an 8-turn golden age", "Bonus for units in 2 tile radius 15%", "Heal adjacent units for an additional 15 HP per turn",
-					"Great Person - [War]", "Unbuildable"],
-		"movement": 5
+		"uniques": ["Can start an [8]-turn golden age","Bonus for units in 2 tile radius 15%", "Heal adjacent units for an additional 15 HP per turn","Great Person - [War]", "Unbuildable"],
+		"movement": 5,
+		"strength": 18,
 	},
 ]
