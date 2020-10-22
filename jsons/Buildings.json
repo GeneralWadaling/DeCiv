@@ -22,7 +22,7 @@
 	},			
 	{
 		"name": "Ark One",
-		"isNationalWonder": true,
+		"isWonder": true,
 		"replaces": "Stockpile",
 		"uniqueTo": "Blackwarden",
 		"specialistSlots": {"Production": 1},
@@ -34,7 +34,7 @@
 	},
 	{
 		"name": "Atlas Refuge",
-		"isNationalWonder": true,
+		"isWonder": true,
 		"replaces": "Stockpile",
 		"uniqueTo": "Atlas",
 		"specialistSlots": {"Science": 1},
@@ -46,7 +46,7 @@
 	},
 	{
 		"name": "Eagle Rock Complex",
-		"isNationalWonder": true,
+		"isWonder": true,
 		"replaces": "Stockpile",
 		"uniqueTo": "The Patriots",
 		"specialistSlots": {"Production": 1},
@@ -69,7 +69,7 @@
 	},
 	{
 		"name": "Temple",
-		"isNationalWonder": true,
+		"isWonder": true,
 		"replaces": "Stockpile",
 		"uniqueTo": "Cult of Ignis",
 		"specialistSlots": {"Administrator": 1},
