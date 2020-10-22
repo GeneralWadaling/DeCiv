@@ -8,58 +8,62 @@
 		"science": 3,
 		"gold": 1,
 		"culture": 1,
+		"cityStrength": 5,
+		"cityHealth": 20,
 		"cost": 1,
 		"uniques": ["Indicates the capital city"]
 	},		
 	{
 		"name": "Stockpile",
 		"isNationalWonder": true,
-		"cityStrength": 5,
-		"cityHealth": 40,
+		"uniqueTo": "Enclavers",
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[20]% of food is carried over after population increases"]
-	},			
+		"uniques": ["[10]% of food is carried over after population increases","Provides [1] [Weapons]"]
+	},		
 	{
 		"name": "Ark One",
-		"isWonder": true,
-		"replaces": "Stockpile",
+		"isNationalWonder": true,
+	//	"replaces": "Stockpile",
 		"uniqueTo": "Blackwarden",
-		"specialistSlots": {"Production": 1},
-		"cityStrength": 15,
-		"cityHealth": 100,
+		"culture": 1,
+		"happiness": 1,
+		"gold": 1,
+		"cityStrength": 10,
+		"cityHealth": 60,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[20]% of food is carried over after population increases","Provides [1] [Power]"]
+		"uniques": ["Provides [1] [Power]"]
 	},
 	{
 		"name": "Atlas Refuge",
-		"isWonder": true,
-		"replaces": "Stockpile",
+		"isNationalWonder": true,
+	//	"replaces": "Stockpile",
 		"uniqueTo": "Atlas",
 		"specialistSlots": {"Science": 1},
-		"cityStrength": 5,
-		"cityHealth": 80,
+		"gold": 1,
+		"cityHealth": 40,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[20]% of food is carried over after population increases","Provides [1] [Power]"]
+		"uniques": ["Provides [1] [Power]"]
 	},
 	{
 		"name": "Eagle Rock Complex",
-		"isWonder": true,
-		"replaces": "Stockpile",
+		"isNationalWonder": true,
+	//	"replaces": "Stockpile",
 		"uniqueTo": "The Patriots",
 		"specialistSlots": {"Production": 1},
+		"gold": 1,
 		"cityStrength": 20,
-		"cityHealth": 120,
+		"cityHealth": 80,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[20]% of food is carried over after population increases","Provides [1] [Power]","Provides [1] [Weapons]","Free [Spec Ops] appears"]
+		"uniques": ["[10]% of food is carried over after population increases","Provides [1] [Power]","Provides [1] [Weapons]","Free [Spec Ops] appears"]
 	},	
 	{
 		"name": "Forum",
 		"isNationalWonder": true,
-		"replaces": "Stockpile",
+	//	"replaces": "Stockpile",
 		"uniqueTo": "Crimson Legion",
 		"happiness": 1,
 		"cityHealth": 40,
@@ -69,8 +73,8 @@
 	},
 	{
 		"name": "Temple",
-		"isWonder": true,
-		"replaces": "Stockpile",
+		"isNationalWonder": true,
+	//	"replaces": "Stockpile",
 		"uniqueTo": "Cult of Ignis",
 		"specialistSlots": {"Administrator": 1},
 		"happiness": 1,
@@ -711,7 +715,7 @@
 	{
 		"name": "Walls",
 	//	"cityStrength": 5,
-		"cityHealth": 50,
+		"cityHealth": 40,
 		"hurryCostModifier": 25,
 		"requiredTech": "Construction"
 	},		
