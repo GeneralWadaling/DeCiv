@@ -781,10 +781,10 @@
 		"replaces": "Prison Camp",
 		"uniqueTo": "Cult of Ignis",
 		"percentStatBonus": {"food": -66},
-		"cost": 20,		
+		"cost": 15,		
 		"uniques": ["Remove extra unhappiness from annexed cities","Can only be built in annexed cities","+[33]% growth in all cities","[+2 Food] in all cities","Provides [3] [Slaves]"],
 		"requiredTech": "Construction"
-		"hurryCostModifier": 25,	
+	//	"hurryCostModifier": 25,	
 		"cannotBeBuiltWith": "Arena",
 	},
 	{
@@ -792,12 +792,12 @@
 		"replaces": "Prison Camp",
 		"uniqueTo": "Crimson Legion",
 		"percentStatBonus": {"food": -33},
-		"cost": 20,		
+		"cost": 15,		
 		"cityStrength": 10,
 		"cityHealth": 10,
 		"uniques": ["+[15]% Production when constructing [melee units] in this city","Remove extra unhappiness from annexed cities","Can only be built in annexed cities","+[25]% growth in all cities","Free [Auxiliary] appears","Provides [2] [Slaves]"],
 		"requiredTech": "Construction"
-		"hurryCostModifier": 25,	
+	//	"hurryCostModifier": 25,	
 		"cannotBeBuiltWith": "Colosseum",
 	},
 	{
