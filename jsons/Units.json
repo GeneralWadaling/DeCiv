@@ -1177,7 +1177,6 @@
 		"uniques": ["Bonus for units in 2 tile radius 15%","This unit and all others in adjacent tiles heal 5 additional HP per turn",
 					"Can construct [Citadel]","Great Person - [War]", "Unbuildable"],
 		"movement": 2,
-		"strength": 18,
 	},	
 	{
 		"name": "Bugler",
@@ -1186,6 +1185,5 @@
 		"unitType": "Civilian",
 		"uniques": ["Can start an [8]-turn golden age","Bonus for units in 2 tile radius 15%", "Heal adjacent units for an additional 15 HP per turn","Great Person - [War]", "Unbuildable"],
 		"movement": 5,
-		"strength": 18,
 	},
 ]
