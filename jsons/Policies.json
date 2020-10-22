@@ -81,7 +81,7 @@
 			{
 				"name": "Representation",
 				"effect": "",
-				"uniques": ["Each city founded increases culture cost of policies 33% less than normal","[+5 Happiness] from every [Congress]"],
+				"uniques": ["Each city founded increases culture cost of policies [33]% less than normal","[+5 Happiness] from every [Congress]"],
 				"requires": ["Pioneers","Reclaimers"],
 				"row": 2,
 				"column": 3
