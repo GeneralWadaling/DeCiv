@@ -209,7 +209,7 @@
 		"movement": 2,
 		"strength": 15,
 		"cost": 40,
-	//	"requiredTech": "Iron Working",
+		"requiredTech": "The Wheel",
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Trooper",
 		"hurryCostModifier": 20,
