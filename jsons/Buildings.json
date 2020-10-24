@@ -40,7 +40,7 @@
 		"isNationalWonder": true,
 	//	"replaces": "Stockpile",
 		"uniqueTo": "Atlas",
-		"specialistSlots": {"Science": 1},
+		"specialistSlots": {"Scientist": 1},
 		"gold": 1,
 		"cityHealth": 40,
 		"cost": 1,
