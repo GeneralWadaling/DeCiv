@@ -116,13 +116,14 @@
 	{
 		"name": "Road",
 		"turnsToBuild": 4,
-		"techRequired": "Construction"
+		"techRequired": "Construction",
 		"uniques": ["Can be built outside your borders"]
 	},
 	{
 		"name": "Railroad",
-		"turnsToBuild": 4,
-		"techRequired": "Railroad"
+		"turnsToBuild": 10,
+		"techRequired": "Replaceable Parts",
+		"uniques": ["Can be built outside your borders"]
 	},
 	
 	// Removals
