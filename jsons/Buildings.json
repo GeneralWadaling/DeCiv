@@ -52,7 +52,7 @@
 		"isNationalWonder": true,
 	//	"replaces": "Stockpile",
 		"uniqueTo": "The Patriots",
-		"specialistSlots": {"Production": 1},
+		"specialistSlots": {"Engineer": 1},
 		"gold": 1,
 		"cityStrength": 20,
 		"cityHealth": 80,
