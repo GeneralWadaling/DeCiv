@@ -306,7 +306,7 @@
 		"name": "Faust Project",
 		"isWonder": true,
 		"cost": 50,
-		"uniques": ["Must have an owned [Missile Complex] within [5] tiles","+[10]% Production when constructing [missile units]","Free [Nuclear Bomb] appears"],
+		"uniques": ["Must have an owned [Missile Complex] within [5] tiles","+[10]% Production when constructing [missile units]","Free [Divine Spear] appears"],
 		"requiredTech": "Secrets of the Past",
 		"quote": "'Our legends tell of weapons, wielded by kings of old; crafted by evil wizards, unholy to behold...'"
 	},	
