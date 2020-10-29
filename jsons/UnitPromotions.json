@@ -490,9 +490,23 @@
 	{
 		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth- "Heals 25 damage if it kills an Unit" for ranged seems wrong
 		"effect": "All healing effects doubled"
-	},
+	},	
 	{
 		"name": "Gas Mask",
 		"effect": "+[25]% combat bonus in [Fallout]",
 	},
+	/*
+	//barbarians - to be tested
+	{
+		"name": "Pillage",
+		"effect": "Heals [25] damage if it kills an Unit",
+	},		
+	{
+		"name": "Guerilla",
+		"effect": "Heals [50] damage if it kills an Unit",
+	},	
+	{
+		"name": "Nomad",
+		"effect": "+10 HP when healing",
+	},*/
 ]

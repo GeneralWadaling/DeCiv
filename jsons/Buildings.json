@@ -65,11 +65,10 @@
 		"isNationalWonder": true,
 	//	"replaces": "Stockpile",
 		"uniqueTo": "Crimson Legion",
-		"happiness": 1,
 		"cityHealth": 40,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["Unhappiness from population decreased by [10]%","Provides [1] [Slaves]"]
+		"uniques": ["Unhappiness from population decreased by [10]%"]
 	},
 	{
 		"name": "Temple",
@@ -82,7 +81,7 @@
 		"cityHealth": 40,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[+1 Science, +2 Culture] once [Machinery] is discovered", "Provides [1] [Oil]","Provides [1] [Slaves]"]
+		"uniques": ["[+1 Science, +2 Culture] once [Machinery] is discovered", "Provides [1] [Oil]"]
 	},
 
 	
@@ -205,7 +204,7 @@
 		"uniques": ["[+1 Science] per [4] population in all cities","+[10]% Production when constructing [Science] buildings"]
 	},
 	
-	//END captial uniques
+	//END capital uniques
 	
 	{
 		"name": "Apollo Program",
@@ -245,16 +244,133 @@
 		"uniques": ["Spaceship part", "Cannot be purchased"]
 	}
 		
+	// projects
 	
+	{
+		"name": "Search for Survivors",
+        "cost": 30,
+		"isNationalWonder": true,
+		"uniques": ["+1 population in each city"],
+	},		
+	{
+		"name": "Slaver Guild",
+        "cost": 30,
+		"isNationalWonder": true,
+		"percentStatBonus": {"production": 10},
+		"replaces": "Search for Survivors",
+		"uniqueTo": "Crimson Legion",
+		"uniques": ["+1 happiness for every city connected to capital","Provides [3] [Slaves]"],
+	},		
+	{
+		"name": "Conscript Survivors",
+        "cost": 30,
+		"isNationalWonder": true,
+		"replaces": "Search for Survivors",
+		"uniqueTo": "Cult of Ignis",
+		"uniques": ["+1 population in each city","Provides [2] [Slaves]"],
+	},	
+	{
+		"name": "Search Shelters",
+		"isWonder": true,	
+		"requiredTech": "Secrets of the Past"
+		"uniques": ["+1 population in each city"],
+		"quote": "'When you hear the air attack warning, you and your family must take cover...'"
+	},		
+	{
+		"name": "Public Broadcast",
+		"isWonder": true,
+		"cost": 100,
+		"requiredBuilding": "Broadcast Tower",		
+		"requiredTech": "Radio",
+		"uniques": ["+1 population in each city"],
+		"quote": "'When the immediate danger has passed the sirens will sound a steady note. The all clear message will also be given on this wavelength.'"
+	},
 	
-	/*{
+	//Natural Wonder uniques
+	{
+		"name": "Ally with Isolationists",
+		"cannotBeBuiltWith": "Annex Isolationists",
+		"cost": 5,
+		"uniques": ["Must have an owned [Isolated Island] within [3] tiles","[+2 Science, +2 Gold] from [Isolated Island] tiles in this city"],
+	},	
+	{
+		"name": "Annex Isolationists",
+		"isWonder": true,
+		"requiredTech": "Sailing",
+		"cannotBeBuiltWith": "Ally with Isolationists",
+		"cost": 200,
+		"uniques": ["Must have an owned [Isolated Island] within [3] tiles","[+2 Food, +5 Gold, -1 Culture] from [Isolated Island] tiles in this city","Provides [1] [Weapons]","Provides [1] [Slaves]"],
+		"quote": "'Ephialtes the son of Eurydemos, a Malian, came to speech with him, supposing that he would win a very great reward from the king; and this man told him of the path which leads over the mountain to Thermopylae, and brought about the destruction of those Greeks who remained in that place.' - Herodotus"
+	},	
+	{
 		"name": "Faust Project",
 		"isWonder": true,
-		"cost": 1,
-		"requiredNearbyImprovedResources": ["Warheads"],
-		"uniques": ["Free [Warrior] appears","Free [Warrior] appears"],
-		"quote": "'The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable.'  - Sun Tzu"
-	},*/
+		"cost": 50,
+		"uniques": ["Must have an owned [Missile Complex] within [5] tiles","+[10]% Production when constructing [missile units]","Free [Nuclear Bomb] appears"],
+		"requiredTech": "Secrets of the Past",
+		"quote": "'Our legends tell of weapons, wielded by kings of old; crafted by evil wizards, unholy to behold...'"
+	},	
+	{
+		"name": "Excavate Nuclear Waste",
+		"isWonder": true,
+		"percentStatBonus": {"food": -20},
+		"requiredTech": "Mining",
+		"uniques": ["Must have an owned [Nuclear Waste Storage] within [4] tiles","[-2 Food, +3 Science] from [Nuclear Waste Storage] tiles in this city","Provides [1] [Uranium]"],
+		"quote": "'Sending this message was important to us. We considered ourselves to be a powerful culture. This place is not a place of honor... no highly esteemed deed is commemorated here... nothing valued is here. What is here was dangerous and repulsive to us. This message is a warning about danger. The danger is still present, in your time, as it was in ours.'"
+	},
+	{
+		"name": "Propagate Seeds", //could give seeds resource? so other nations benefit?
+		"isWonder": true,
+		"requiredTech": "Ecology",
+		"cost": 50,
+		"uniques": ["Must have an owned [Seed Vault] within [2] tiles","+[25]% growth in all cities"],
+		"quote": "'What about us? What about all the plans that ended in disaster?'  - Alecia Moor"
+	},		
+	{
+		"name": "Distribute Soft Drinks",
+		"isWonder": true,
+		"cannotBeBuiltWith": "Produce Soft Drinks",
+		"cost": 25,
+		"uniques": ["Must have an owned [Soft Drinks Factory] within [3] tiles","Empire enters golden age","[-1 Culture, -1 Happiness] from [Soft Drinks Factory] tiles in this city"],
+		"quote": "E-NERGY ULTRA BRIGHT ZERO EMISSION STEALTH (Per 500ml Energy 11kCal(1%**) Niacin 43mg(266%**) PANTHOTENIC ACID 21mg (350%**) Caffeine-B 150mg (600%**) **%RDA) ZERO SUGAR - JUST AS PUMPED! In collaboration with Gearheads, Musicians, Coders, CEOs, Anarchists, Bikers, Historical Reenactors, Hipsters, and YOU!"
+	},	
+	{
+		"name": "Produce Soft Drinks",
+		"cannotBeBuiltWith": "Distribute Soft Drinks",
+		"isNationalWonder": true,
+		"requiredTech": "Electricity",
+		"requiredResource": "Power",	//power
+		"uniques": ["Must have an owned [Soft Drinks Factory] within [3] tiles","Provides [3] [Soft Drinks]"],
+	},		
+	{
+		"name": "Salvage Army Depot",
+		"requiredTech": "Machinery",
+		"isWonder": true,
+		"cost": 50,
+		"uniques": ["Must have an owned [Army Depot] within [3] tiles","[+1 Science, +1 Production] from [Army Depot] tiles in this city","Provides [2] [Weapons]","Free [Ancient Armor] appears"],
+		"quote": "'Oh, see the fire is sweepin, our very street today; burns like a red coat carpet, mad bull lost your way.. War, children! It's just a shot away!' - Traditional Ignis nursery rhyme"
+	},
+	{
+		"name": "Salvage Graveyard",
+		"requiredTech": "Sailing",
+		"isWonder": true,
+		"cost": 50,
+		"uniques": ["Must have an owned [Ship Graveyard] within [3] tiles","[+1 Science, +1 Production] from [Ship Graveyard] tiles in this city","Free [Patrol Boat] appears"],
+	},
+	{
+		"name": "Turbine Hall",
+		"isWonder": true,
+		"requiredTech": "Steel",
+		"uniques": ["Must have an owned [Hydroelectric Dam] within [2] tiles","Provides [5] [Power]"],
+		"quote": "'In its heyday, these turbines were able to provide clean electricity for up to 350,000 homes and offset 400,000 tons of CO2 each year...' - Promotional material"
+	},	
+	{
+		"name": "Secret Laboratory",
+		"isNationalWonder": true,
+		"requiredTech": "Laboratory",
+		"greatPersonPoints": {"science": 2},
+		"uniques": ["Must have an owned [Research Facility] within [5] tiles","All newly-trained [relevant] units in this city receive the [March] promotion"],
+	},
 	
 	
 	//	CULTURE, HAPPPINESS
@@ -322,7 +438,7 @@
 		"culture": 1,
 		"happiness": 1,
 		"specialistSlots": {"Administrator": 1},
-		"percentStatBonus": {"culture": 33},
+		"percentStatBonus": {"culture": 25},
 		"requiredResource": "Power",	//power
 	//	"maintenance": 3,
 		"requiredTech": "Radio"
@@ -779,7 +895,17 @@
 		"requiredTech": "Construction"
 		"cannotBeBuiltWith": "Courthouse",
 	},
-
+	/*{
+		"name": "Black Site", 
+		"replaces": "Prison Camp",
+		"uniqueTo": "Commonwealth",
+		"food": -1,
+		"maintenance": 1,
+		"cost": 50,		
+		"uniques": ["Remove extra unhappiness from annexed cities","Can only be built in annexed cities"],
+		"requiredTech": "Construction"
+		"hurryCostModifier": -50,	
+	},*/
 	{
 		"name": "Processing Center", 
 		"replaces": "Prison Camp",
@@ -799,11 +925,12 @@
 		"cost": 15,		
 		"cityStrength": 10,
 		"cityHealth": 10,
-		"uniques": ["+[15]% Production when constructing [melee units] in this city","Remove extra unhappiness from annexed cities","Can only be built in annexed cities","+[25]% growth in all cities","Free [Auxiliary] appears","Provides [2] [Slaves]"],
+		"uniques": ["+[15]% Production when constructing [melee units] in this city","Remove extra unhappiness from annexed cities","Can only be built in annexed cities","+[25]% growth in all cities","Provides [2] [Slaves]"],
 		"requiredTech": "Construction"
 	//	"hurryCostModifier": 25,	
 		"cannotBeBuiltWith": "Colosseum",
-	},
+	},	
+	
 	{
 		"name": "Barracks",
 		"xpForNewUnits": 20,
@@ -1063,6 +1190,7 @@
 		"percentStatBonus": {"science": 50},
 		"requiredResource": "Power",	//power
 		"requiredTech": "Artificial Intelligence"
+		"quote": "'And God said, Let there be light: and there was light.' - Genesis 1:3, The Bible"
 	},	
 	/*{
 	//test
@@ -1209,45 +1337,7 @@
 		"uniques": ["Can only be built in coastal cities","[+1 Food] from [Water] tiles in this city"],
 		"requiredTech": "Ocean Remediation"
 	},
-
-	{
-		"name": "Search for Survivors",
-        "cost": 50,
-		"isNationalWonder": true,
-		"uniques": ["+1 population in each city"],
-	},		
-	{
-		"name": "Slaver Guild",
-        "cost": 50,
-		"isNationalWonder": true,
-		"replaces": "Search for Survivors",
-		"uniqueTo": "Crimson Legion",
-		"uniques": ["Provides [2] [Slaves]"],
-	},		
-	{
-		"name": "Conscript Survivors",
-        "cost": 50,
-		"isNationalWonder": true,
-		"replaces": "Search for Survivors",
-		"uniqueTo": "Cult of Ignis",
-		"uniques": ["+1 population in each city","Provides [1] [Slaves]"],
-	},	
-	{
-		"name": "Search Shelters",
-		"isWonder": true,	
-		"requiredTech": "Secrets of the Past"
-		"uniques": ["+1 population in each city"],
-		"quote": "'When you hear the air attack warning, you and your family must take cover...'"
-	},	
-	{
-		"name": "Public Broadcast",
-		"isWonder": true,
-		"cost": 100,
-		"requiredBuilding": "Broadcast Tower",		
-		"requiredTech": "Radio",
-		"uniques": ["+1 population in each city"],
-		"quote": "'When the immediate danger has passed the sirens will sound a steady note. The all clear message will also be given on this wavelength.'"
-	},	
+	
 //																																	unbuildable uniques																..
 
 
@@ -1273,6 +1363,14 @@
 		"greatPersonPoints": {"science": 2},
 	},
 	
-
+	{
+		"name": "Alma Army Depot",
+		"uniqueTo": "Almaty",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"cost": 1,
+        "science": 1,
+		"uniques": ["Provides [2] [Weapons]"],
+	},
 
 ]

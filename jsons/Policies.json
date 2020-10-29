@@ -246,7 +246,7 @@
 			{
 				"name": "Corporate Personhood",
 				"effect": "",
-				"uniques": ["[+1 Gold] from every [Strategic Resource]","[+1 Production, +1 Gold, -1 Food] from every [Factory]" ,"[+1 Production, +1 Gold, -1 Food] from every [Automated Factory]"],
+				"uniques": ["[+1 Gold] from every [Strategic Resource]","[+1 Production, +1 Gold, -1 Food] from every [Factory]","[+1 Production, +1 Gold, -1 Food] from every [Automated Factory]"],
 				"requires": ["Venture Capital"],
 				"row": 3,
 				"column": 3
@@ -254,7 +254,7 @@
 			{
 				"name": "Commerce Complete",
 				"effect": "",
-				"uniques": ["-50% cost when purchasing tiles","[+2 Production, -1 Happiness, -1 Food] from every [Factory]","[+2 Production, -1 Happiness, -1 Food] from every [Automated Factory]"],
+				"uniques": ["-50% cost when purchasing tiles","[+1 Production, +1 Gold, -1 Food] from every [Work Camp]","[+2 Production, -1 Happiness, -1 Food] from every [Factory]","[+2 Production, -1 Happiness, -1 Food] from every [Automated Factory]"],
 			}
 		]
 	},

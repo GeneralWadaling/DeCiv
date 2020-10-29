@@ -179,15 +179,6 @@
 		"improvement": "Mine",
 		"improvementStats": {"food": -1,"production": 2}
 	},	
-	/*{
-		"name": "Warheads",
-		"resourceType": "Strategic",
-		"revealedBy": "Engineering",
-		"terrainsCanBeFoundOn": ["Silo"],
-		"unique": "+[10]% Production when constructing [missile units]",
-		"improvement": "Salvage site",
-		"improvementStats": {"science": 1}
-	},	*/
 	{	
 		"name": "Weapons",
 		"resourceType": "Strategic",
@@ -227,7 +218,7 @@
 		"resourceType": "Strategic",
 		"revealedBy": "Electronics",
 	//	"terrainsCanBeFoundOn": ["Jungle","Forest","Hill","Desert"],
-		"terrainsCanBeFoundOn": ["Jungle","Forest","Silo"],
+		"terrainsCanBeFoundOn": ["Jungle","Forest"],
 		"improvement": "Hacking site",
 		"improvementStats": {"science": 4},
 		"unique": "+15% production towards Wonder construction",
@@ -236,7 +227,10 @@
 	
 //luxury	
 	
-
+	{
+		"name": "Soft Drinks",
+		"resourceType": "Luxury",
+	},
 	{
 		"name": "Artifacts",
 		"resourceType": "Luxury",

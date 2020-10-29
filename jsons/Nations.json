@@ -112,8 +112,8 @@
 		"uniqueName": "Mutual Assistance",
 		"uniques": ["City-State Influence degrades at half rate","Food and Culture from Friendly City-States are increased by 50%"],
 		"cities": ["Union City","Accord","Inheritance","Junction","Wellspring","Fall's End","Highpool","Constitution","Hope Commons",
-			"Mercywell","Sunrise","Dead Forest","Gallows Bend","Arefu","Rocket Falls","Monument","Concordia","Hangman Valley","Splendid",
-			"Iron Springs","Prudence","Hawkins","Stonefields","Harmony","Fitzroy Bluff","Portville","Hamelin","Broken Sword","High Gate"
+			"Mercywell","Sunrise","Dead Forest","Gallows Bend","Arefu","Rocket Falls","Monument","Broken Sword","Concordia","Splendid",
+			"Iron Springs","Prudence","Hawkins","Stonefields","Harmony","Fitzroy Bluff","Hangman Valley","Portville","Hamelin","High Gate"
 			]
 	},
 	{
@@ -130,8 +130,8 @@
 		"attacked": "Disperse immediately. Insurrection and rebellion will be met with lethal force.",
 		"defeated": "We today have concluded an agreement to end the war and bring peace with honor.",
 		"introduction": "This is General Cameron of the Army. A state of emergency is currently in effect across the nation. Military authorities are authorised to summarily enforce order, in accordance with martial law. Maintain your shelters and await further instructions.",
-		"neutralHello": "A water tax of 25% is in place for all municipalities to support disaster relief efforts and the restoration of government. You are required to arrange payment for your area.",
-		"hateHello": "A special water tax rate of 33% is in place for your municipality. You are additionally required to surrender all military weapons. Failure to comply may result in sanctions.",
+		"neutralHello": "A water tax of 25% is in place for all municipalities to support disaster relief efforts and the restoration of government.",
+		"hateHello": "A special water tax rate of 33% is in place for your municipality. You are additionally required to surrender all military weapons.",
 		"tradeRequest": "The Emergency Management Agency has prepared this aid package for your district.",
 		"outerColor": [ 40, 178, 0],
 		"innerColor": [100,50,30],
@@ -220,15 +220,15 @@
 		"defeated": "Though our worldly bodies fail, our spirits soar through the skies in oxides immortal... ",
 		"introduction": "The sybil has foreseen this meeting! I am Martina, Ignitor and High Priest. I serve the Divine Engine, and so too shall you.",
 		"neutralHello": "In the name of the trinity, I permit your words be heard.",
-		"hateHello": "Before the Fall, air, fuel and the Holy Ignition were worshipped in blessed trinity. But the ancients turned away from them, and were struck down; as shall be all who cannot see the truth.",
+		"hateHello": "Before the fall, Air, Fuel and the Holy Ignition were worshipped in blessed trinity. But the apostates turned away from them, and were struck down; as shall be all who cannot see the truth.",
 		"tradeRequest": "You may yet serve the Engine...",
 		"outerColor": [255,150,0],
 		"innerColor": [0,0,0],
 		"uniqueName": "Road Warriors",
-		"uniques": ["[+1 Gold] from each Trade Route", "Double quantity of [Oil] produced"],
-		"cities": ["The Sanctum","Blood Farm","Immortal Highway","Trial of Sand","Hell Patrol","Thousand Cuts","Court of Dreams",
+		"uniques": ["Double quantity of [Oil] produced"],
+		"cities": ["The Sanctum","Blood Farm","Immortal Highway","Trial of Sand","Hell Patrol","Thousand Cuts","The Harrowing",
 			"Tohuvabohu","Forbidden Palace","Traitors' Gate","Prophecy","Hanging Gardens","The Cauldron","Steel Throne","The Warren",
-			"Well of Souls","Hermitage","Perpetual Ascension","Ceremony","Death Race","God Box"
+			"Well of Souls","Hermitage","Perpetual Ascension","Ceremony","Court of Dreams","Death Race","God Box"
 			]
 	}
 

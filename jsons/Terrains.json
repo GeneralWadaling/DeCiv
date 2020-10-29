@@ -66,7 +66,61 @@
 		"type": "Land",
 		"impassable": true,
 		"RGB": [89, 45, 0]
-	},
+	},	
+	{
+		"name": "Ship Graveyard",
+		"type": "Water",
+		"impassable": true,
+		"RGB": [89, 45, 0]
+	}	
+	{
+		"name": "Isolated Island",
+		"type": "Land",
+		"impassable": true,
+		"RGB": [89, 45, 0]
+	}
+	{
+		"name": "Hydroelectric Dam",
+		"type": "Land",
+		"impassable": true,
+		"RGB": [89, 45, 0]
+	}		
+	{
+		"name": "Army Depot",
+		"type": "Land",
+		"impassable": true,
+		"RGB": [89, 45, 0]
+	}			
+	{
+		"name": "Soft Drinks Factory",
+		"type": "Land",
+		"impassable": true,
+		"RGB": [89, 45, 0]
+	}
+	{
+		"name": "Seed Vault",
+		"type": "Land",
+		"impassable": true,
+		"RGB": [89, 45, 0]
+	}	
+	{
+		"name": "Missile Complex",
+		"type": "Land",
+		"impassable": true,
+		"RGB": [89, 45, 0]
+	}
+	{
+		"name": "Nuclear Waste Storage",
+		"type": "Land",
+		"impassable": true,
+		"RGB": [89, 45, 0]
+	}
+	{
+		"name": "Research Facility",
+		"type": "Land",
+		"impassable": true,
+		"RGB": [89, 45, 0]
+	}
 	{
 		"name": "Snow",
 		"type": "Land",
@@ -130,14 +184,6 @@
 		"occursOn": ["Snow","Desert","Tundra","Plains","Grassland","Hill","Flood plains"],
 		"uniques": ["Rare feature"]
 	},
-	/*{
-		"name": "Silo",
-		"type": "TerrainFeature",
-		"movementCost": 1,
-		"unbuildable": true,
-		"uniques": ["Rare feature"],
-		"occursOn": ["Hill"]
-	},*/
 	{
 		"name": "Flood plains",
 		"type": "TerrainFeature",
@@ -167,48 +213,41 @@
 	{
 		"name": "Great Barrier Reef",//garbage patch
 		"type": "NaturalWonder",
-		"food": -1,
 		"production": 2,
-		"culture": 1,
-		"science": 2,
-		"occursOn": ["Coast"],
-		"turnsInto": "Coast",
-		"impassable": true,
-		"unbuildable": true,
-		"weight": 2
-	},
-	{
-		"name": "Old Faithful",
-		"type": "NaturalWonder",
 		"science": 1,
-		"culture": 3,
-		"occursOn": ["Hill"],
-		"turnsInto": "Hill",
+		"occursOn": ["Coast"],
+		"turnsInto": "Ship Graveyard",
 		"impassable": true,
 		"unbuildable": true,
 		"weight": 5
 	},
 	{
-		"name": "El Dorado",//Vault
+		"name": "Old Faithful",//mast
 		"type": "NaturalWonder",
-		"science": 2,
 		"culture": 1,
-		"gold": 5,
-		"occursOn": ["Plains"],
-		"turnsInto": "Plains",
+		"occursOn": ["Hill"],
+		"turnsInto": "Army Depot",
 		"impassable": true,
 		"unbuildable": true,
-		"uniques": ["Grants 500 Gold to the first civilization to discover it", "Fresh water"],
-		"weight": 3
+		"weight": 5
+	},
+	{
+		"name": "El Dorado",// silo
+		"type": "NaturalWonder",
+		"science": 1,
+		"occursOn": ["Plains"],
+		"turnsInto": "Missile Complex",
+		"impassable": true,
+		"unbuildable": true,
+		"weight": 10
 	},
 	{
 		"name": "Fountain of Youth",//research facility
 		"type": "NaturalWonder",
-		"science": 5,
-		"culture": 1,
+		"science": 4,
 		"gold": 1,
 		"occursOn": ["Hill","Mountain"],
-		"turnsInto": "Mountain",
+		"turnsInto": "Research Facility",
 		"impassable": true,
 		"unbuildable": true,
 		"uniques": ["Grants Rejuvenation (all healing effects doubled) to adjacent military land units for the rest of the game"],
@@ -230,23 +269,24 @@
 		"name": "Mount Fuji", //softdrinks factory
 		"type": "NaturalWonder",
 		"gold": 1,
-		"culture": 3,
-		"happiness": 2,
+		"culture": 1,
+		"happiness": 1,
 		"occursOn": ["Forest","Jungle"],
-		"turnsInto": "Hill",
+		"turnsInto": "Soft Drinks Factory",
 		"impassable": true,
 		"unbuildable": true,
-		"weight": 5
+		"weight": 4
 	},
 	{
 		"name": "Krakatoa", //observatory
 		"type": "NaturalWonder",
-		"science": 5,
-		"occursOn": ["Ocean"],
-		"turnsInto": "Mountain",
+		"occursOn": ["Coast"],
+		"culture": 1,
+		"turnsInto": "Isolated Island",
 		"impassable": true,
-		"unbuildable": true,
-		"weight": 2
+		"unbuildable": true,		
+		"uniques": ["Grants 500 Gold to the first civilization to discover it"],
+		"weight": 7
 	},
 	{
 		"name": "Rock of Gibraltar",//seed vault
@@ -255,7 +295,7 @@
 		"science": 3,
 		"culture": 1,
 		"occursOn": ["Tundra","Snow"],
-		"turnsInto": "Tundra",
+		"turnsInto": "Seed Vault",
 		"impassable": true,
 		"unbuildable": true,
 		"weight": 4
@@ -267,11 +307,11 @@
 		"science": 1,
 		"production": 4,
 		"occursOn": ["Hill"],
-		"turnsInto": "Plains",
+		"turnsInto": "Hydroelectric Dam",
 		"impassable": true,
 		"unbuildable": true,
 		"uniques": ["Fresh water"],
-		"weight": 5
+		"weight": 7
 	},
 	{
 		"name": "Barringer Crater",//nuke facility
@@ -280,7 +320,7 @@
 		"culture": 1,
 		"science": 5,
 		"occursOn": ["Desert"],
-		"turnsInto": "Desert",
+		"turnsInto": "Nuclear Waste Storage",
 		"impassable": true,
 		"unbuildable": true,
 		"weight": 5

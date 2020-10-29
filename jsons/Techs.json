@@ -265,7 +265,7 @@
 				"name": "Electronics",
 				"row": 5,
 				"prerequisites": ["Manufacturing"],
-				"quote": "'What is here was dangerous and repulsive to us. This message is a warning about danger. The danger is still present, in your time, as it was in ours.'"
+				"quote": "'beh?'"
 			},	
 			{
 				"name": "Replaceable Parts",
@@ -344,12 +344,12 @@
 				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
 			},				
 
-			/*{
+			{
 				"name": "Gyroscopes",
 				"row": 7,
 				"prerequisites": ["Flight","Ballistics"],
 				"quote": "'Vision is the art of seeing things invisible.' - Jonathan Swift"
-			},*/
+			},
 		
 			{
 			//ALLOYS - allows adv.inf,tank
@@ -383,7 +383,7 @@
 			{
 				"name": "Avionics",
 				"row": 6,
-				"prerequisites": ["Radar","Flight","Computers"],
+				"prerequisites": ["Radar","Gyroscopes","Computers"],
 				"quote": "'The nations of the West hope that by means of steam communication all the world will become as one family.' - Townsend Harris"//
 			},			
 			
@@ -456,7 +456,7 @@
 				"name": "Nuclear Fission",
 				"row": 4,
 				"prerequisites": ["Decryption"],
-				"quote": "'Our legends tell of weapons, wielded by kings of old; crafted by evil wizards, unholy to behold...'"
+				"quote": " new "
 			},
 			{
 				"name": "Lasers",
@@ -545,7 +545,7 @@
 	{
 		"columnNumber": 15,
 		"era": "Future era",
-		"techCost": 10600,
+		"techCost": 15600,
 		"buildingCost": 750,
 		"wonderCost": 1250,
 		"techs": [

@@ -109,20 +109,20 @@
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Snow"],
 		"turnsToBuild": 6,
 		"techRequired": "Engineering",
-		"uniques": ["Gives a defensive bonus of 50%","Can be built outside your borders"]
+		"uniques": ["Gives a defensive bonus of [50]%","Can be built outside your borders"]
 	},
 
 	// Transportation
 	{
 		"name": "Road",
 		"turnsToBuild": 4,
-		"techRequired": "Construction",
+		"techRequired": "Construction"
 		"uniques": ["Can be built outside your borders"]
 	},
 	{
 		"name": "Railroad",
 		"turnsToBuild": 10,
-		"techRequired": "Replaceable Parts",
+		"techRequired": "Replaceable Parts"
 		"uniques": ["Can be built outside your borders"]
 	},
 	
@@ -186,6 +186,7 @@
 	},
 	{
 		"name": "Oracle",
+		"uniqueTo": "Cult of Ignis",
 		"culture": 3,
 		"happiness": 1,
 		"uniques": ["Great Improvement","[+1 Gold] once [Civil Service] is discovered"]
@@ -240,10 +241,10 @@
 	{ "name": "Ancient ruins" },
 	{ "name": "City ruins" 
 	
-		"uniques": ["Gives a defensive bonus of 25%"]
+		"uniques": ["Gives a defensive bonus of [25]%"]
 	},
 	
 	{ "name": "Barbarian encampment" 
-		"uniques": ["Gives a defensive bonus of 50%"]
+		"uniques": ["Gives a defensive bonus of [50]%"]
 	}
 ]

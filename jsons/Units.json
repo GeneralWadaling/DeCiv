@@ -4,24 +4,37 @@
 
 	/*{
 		"name": "Debug Scout",
-		"unitType": "Civilian",
-		"movement": 5,
+		"unitType": "Scout",
+		"movement": 15,
+		"strength": 3,
 		"cost": 5,
 	//	"requiredTech": "Avionics",
 		"hurryCostModifier": 20,
-		"uniques": ["+2 Visibility Range","Ignores terrain cost","May withdraw before melee"],
-		"promotions": ["Sentry"],
+		"uniques": ["+2 Visibility Range","All tiles costs 1","Can pass through impassable tiles"],
+		"promotions": ["Sentry","Skirmish"],
 	},*/
-	{	//a nuke, lol
+	{
 		"name": "Warrior",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 10,
+		"cost": 35,
+		"upgradesTo": "Militia",
+		"hurryCostModifier": 20,
+		"obsoleteTech": "Rifling",
+		"uniques": ["Unbuildable"],
+		"attackSound": "nonmetalhit"
+	},	
+	{
+		"name": "Divine Spear",
 		"unitType": "Missile",
 		"movement": 1,
 		"strength": 300,
 		"rangedStrength": 300,
-		"range": 7,
+		"range": 8,
 		"cost": 600,
 	//	"requiredTech": "Avionics",
-	//	"requiredResource": "Uranium",
+		"requiredResource": "Uranium",
 		"uniques": ["Unbuildable"],
 		"hurryCostModifier": 20
 	},
@@ -101,7 +114,7 @@
 		"promotions": ["Mobility I"],
 		"attackSound": "nonmetalhit"
 	},		
-
+	
 	
 
 
@@ -233,7 +246,20 @@
 		"promotions": ["Drill I"],
 		"attackSound": "shot"
 	},	
-
+	
+	{
+		"name": "Grenadier",
+		"unitType": "Melee",
+		"movement": 2,
+		"strength": 14,
+		"cost": 55,
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Trooper",
+		"requiredResource": "Weapons",		
+		"uniques": ["Bonus vs City 100%","Bonus vs Armor 25%"]
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},	
 	
 	{
 		"name": "Archer",
@@ -263,7 +289,7 @@
 		"hurryCostModifier": 20,
 		"requiredTech": "The Wheel",
 		"requiredResource": "Weapons",
-		"uniques": ["Bonus vs Armor [100]%"],
+		"uniques": ["Bonus vs Armor 100%"],
 		"promotions": ["Mobility I","Sabotage","Gas Mask"],
 		"attackSound": "machinegun"
 	},
@@ -282,13 +308,12 @@
 		"hurryCostModifier": 20,
 		"promotions": ["Skirmish"],
 		"attackSound": "shot"
-	},		
-	
+	},	
 	{
 		"name": "Ranger",
 		"unitType": "Ranged",
 		"uniqueTo": "Commonwealth",
-		"replaces": "Great Administrator",
+		"replaces": "Great General",
 		"range": 1,
 		"movement": 2,
 		"strength": 15,
@@ -298,7 +323,7 @@
 	//	"obsoleteTech": "Mobile Tactics",
 	//	"hurryCostModifier": 20,
 		"requiredResource": "Weapons",
-		"uniques": ["+20% bonus outside friendly territory","Gas Mask","Great Person - [Culture]","Unbuildable"],
+		"uniques": ["+20% bonus outside friendly territory","Gas Mask","Can construct [Citadel]","Great Person - [War]","Unbuildable"],
 		"promotions": ["Mobility I"],
 		"attackSound": "shot"
 	},
@@ -317,7 +342,7 @@
 		"hurryCostModifier": 20,
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Combined Arms",
-		"uniques": ["Bonus vs City 25%"],
+		"uniques": ["Bonus vs City 50%"],
 		"attackSound": "machinegun"
 	},	
 	{
@@ -347,7 +372,7 @@
 		"requiredResource": "Weapons",
 		"requiredTech": "Electricity",
 	//	"obsoleteTech": "Mobile Tactics",
-		"uniques": ["Bonus vs City 25%","Can move immediately once bought"],
+		"uniques": ["Bonus vs City 33%","Can move immediately once bought"],
 		"promotions": ["Drones I"],
 		"hurryCostModifier": -25,
 		"attackSound": "machinegun"
@@ -363,7 +388,7 @@
 		"upgradesTo": "Modern Infantry",
 		"requiredResource": "Weapons",
 		"hurryCostModifier": 20,
-		"uniques": ["Bonus vs City 25%"],
+		"uniques": ["Bonus vs City 33%"],
 		"attackSound": "machinegun"
 	},	
 	{
@@ -412,7 +437,7 @@
 	//	"upgradesTo": "Linked Infantry",
 	//	"obsoleteTech": "Mobile Tactics",
 		"hurryCostModifier": 20,
-		"uniques": ["Bonus vs City 50%"],
+		"uniques": ["Bonus vs City 33%"],
 		"promotions": ["Gas Mask"],
 		"attackSound": "machinegun"
 	},
@@ -585,7 +610,7 @@
 		"cost": 225,
 		"requiredTech": "Replaceable Parts",
 		"hurryCostModifier": 20,
-		"uniques": ["Bonus vs City 50%","+10 HP when healing","Heals [50] damage if it kills an Unit"],
+		"uniques": ["Bonus vs City 100%","+10 HP when healing","Heals [50] damage if it kills an Unit"],
 		"promotions": ["Skirmish","Drill I","Urban Tactics","Ambush I"],
 		"attackSound": "machinegun"
 	},
@@ -676,7 +701,23 @@
 			"Must set up to ranged attack","Limited Visibility","Ranged attacks may be performed over obstacles"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
-	},	
+	},		
+	{
+		"name": "Ancient Armor",
+		"unitType": "Armor",
+		"uniqueTo": "Almaty",
+		"replaces": "Spearman",
+		"movement": 4,
+		"strength": 35,
+		"cost": 300,
+		"requiredTech": "The Wheel",
+		"requiredResource": "Oil",
+		"upgradesTo": "Modern Armor",
+	//	"obsoleteTech": "Advanced Materials",
+		"uniques": ["Can move after attacking","No defensive terrain bonus"],
+		"hurryCostModifier": 20,
+		"attackSound": "shot"
+	},
 	//cav
 	{
 		"name": "Horseman",
@@ -808,12 +849,12 @@
 		"unitType": "Siege",
 		"range": 3,
 		"movement": 2,
-		"strength": 10,
+		"strength": 15,
 		"rangedStrength": 30,
 		"cost": 185,
 		"requiredTech": "Munitions",
 		"upgradesTo": "Rocket Artillery",
-		"uniques": ["Bonus vs City 33%","No defensive terrain bonus",
+		"uniques": ["Bonus vs City 33%","No defensive terrain bonus","Penalty vs Helicopter 50%",
 			"Must set up to ranged attack","Limited Visibility","Ranged attacks may be performed over obstacles"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
@@ -841,7 +882,7 @@
 		"rangedStrength": 30,
 		"cost": 185,
 		"requiredTech": "Ballistics",
-		"uniques": ["[75]% chance to intercept air attacks","Bonus vs air units 50%","Penalty vs City 33%","Penalty vs Armor 33%","Must set up to ranged attack"],
+		"uniques": ["[75]% chance to intercept air attacks","Bonus vs air units 50%","Bonus vs Helicopter 100%","Penalty vs City 33%","Penalty vs Armor 33%","Must set up to ranged attack"],
 		//"Bonus vs Siege 200%",
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"
@@ -864,7 +905,8 @@
 		"uniques": ["Can move after attacking","No defensive terrain bonus"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
-	},
+	},	
+
 	
 	//T3
 	
@@ -892,7 +934,7 @@
 		"cost": 350,
 		"requiredTech": "Rocketry",
 		"requiredResource": "Oil",
-		"uniques": ["Bonus vs City 25%","No defensive terrain bonus",
+		"uniques": ["Bonus vs City 25%","No defensive terrain bonus","Penalty vs Helicopter 50%",
 			"Limited Visibility","Ranged attacks may be performed over obstacles"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
@@ -922,8 +964,7 @@
 		"cost": 375,
 		"requiredTech": "Lasers",
 		"requiredResource": "Oil",
-		"uniques": ["[100]% chance to intercept air attacks","Bonus vs air units 250%","No defensive terrain bonus"],
-		//"Bonus vs Siege 400%",
+		"uniques": ["[100]% chance to intercept air attacks","Bonus vs air units 250%","Bonus vs Helicopter 300%","No defensive terrain bonus"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -931,7 +972,7 @@
 		"name": "Advanced Armor",
 		"unitType": "Armor",
 		"movement": 5,
-		"strength": 60,
+		"strength": 50,
 		"cost": 425,
 		"requiredTech": "Energy Weapons",
 		"requiredResource": "Oil",
@@ -1009,43 +1050,39 @@
 			"6 tiles in every direction always visible"]
 		"attackSound": "shot"
 	},
-	/*{
+	{
 		"name": "Helicopter",
-		"unitType": "Siege",
+		"unitType": "Ranged",
 		"range": 1,
-		"movement": 6,
-		"strength": 20,
+		"movement": 7,
+		"strength": 15,
 		"rangedStrength": 30,
 		"cost": 225,
 		"requiredResource": "Oil",
 		"requiredTech": "Gyroscopes",
 		"upgradesTo": "Attack Helicopter",	
-		"uniques": ["[33]% chance to intercept air attacks","+1 Visibility Range",
-		"Penalty vs Armor 20%",
-		"Can move after attacking","Must set up to ranged attack","Amphibious","No defensive terrain bonus","Ignores terrain cost"],
-		"promotions": ["Skirmish"],
+		"uniques": ["+1 Visibility Range","Penalty vs Armor 20%","Can move after attacking",
+		"Amphibious","Helicopter","No defensive terrain bonus","All tiles costs 1","Can pass through impassable tiles","May withdraw before melee ([100]%"],
 		"requiredResource": "Oil",
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"
 	},
 	{
 		"name": "Attack Helicopter",
-		"unitType": "Siege",
+		"unitType": "Ranged",
 		"range": 2,
-		"movement": 6,
-		"strength": 25,
+		"movement": 7,
+		"strength": 20,
 		"rangedStrength": 40,
 		"cost": 375,
 		"requiredResource": "Oil",
 		"requiredTech": "Lasers",
-		"uniques": ["[33]% chance to intercept air attacks","+1 Visibility Range",
-		"Bonus vs Armor 100%","Ranged attacks may be performed over obstacles",
-		"Can move after attacking","Must set up to ranged attack","Amphibious","No defensive terrain bonus","Ignores terrain cost"],
-		"promotions": ["Skirmish"],
+		"uniques": ["[33]% chance to intercept air attacks","+1 Visibility Range","Bonus vs Armor 100%","Can move after attacking","Ranged attacks may be performed over obstacles",
+		"Amphibious","Helicopter","No defensive terrain bonus","All tiles costs 1","Can pass through impassable tiles","May withdraw before melee ([100]%"],
 		"requiredResource": "Oil",
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
-	},*/
+	},
 	
 	//naval
 	
@@ -1122,7 +1159,7 @@
 		"rangedStrength": 30,
 		"cost": 300,
 		"requiredResource": "Oil",
-		"requiredTech": "Plastics",
+		"requiredTech": "Gyroscopes",
 		"uniques": ["Bonus as Attacker [66]%", "Invisible to others", "Can only attack water", "Can attack submarines", "Can enter ice tiles"],
 		"hurryCostModifier": 20
 	},
@@ -1135,6 +1172,12 @@
 		"name": "Great Administrator",
 		"unitType": "Civilian",
 		"uniques": ["Can start an [8-]turn golden age","Can construct [Settlement]", "Great Person - [Culture]", "Unbuildable"],
+		"movement": 2
+	},		
+	{
+		"name": "Great Artist",
+		"unitType": "Civilian",
+		"uniques": ["Can start an [8-]turn golden age","Can construct [Settlement]", "Unbuildable"],
 		"movement": 2
 	},	
 	{
