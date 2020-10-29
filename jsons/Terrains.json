@@ -168,7 +168,6 @@
 	{
 		"name": "Spring",
 		"type": "TerrainFeature",
-		"food": 1,
 		"gold": 1,
 		"occursOn": ["Snow","Tundra","Plains","Grassland",
 		"Hill"],//
