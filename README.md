@@ -7,6 +7,8 @@ Featuring unit art by The Bucketeer @GeneralWadaling
 
 Please contact me through Github or Discord if you find bugs or have suggestions!
 
+This is a total conversion. Disable all other mods when playing for the smoothest experience.
+
 You are free to use any assets from this mod; please provide credit to me if you do. Thanks :)
 
 Troubleshooting: If you find a bug, try downloading the latest version of the mod as it may be fixed. If the problem remains please make a post on Discord/Github
