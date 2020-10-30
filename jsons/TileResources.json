@@ -57,6 +57,7 @@
 	//	"gold": 1,
 		"improvement": "Water pump",
 		"improvementStats": {"gold": 1},
+		"building": "Water Plant"
 	},		
 	{
 		"name": "Tubers",

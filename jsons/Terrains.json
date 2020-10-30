@@ -83,6 +83,7 @@
 		"name": "Hydroelectric Dam",
 		"type": "Land",
 		"impassable": true,
+		"uniques": ["Fresh water"],
 		"RGB": [89, 45, 0]
 	}		
 	{
@@ -313,7 +314,7 @@
 		"type": "NaturalWonder",
 		"gold": 2,
 		"science": 1,
-		"production": 4,
+		"production": 1,
 		"occursOn": ["Hill"],
 		"turnsInto": "Hydroelectric Dam",
 		"impassable": true,

@@ -323,7 +323,7 @@
 	//	"obsoleteTech": "Mobile Tactics",
 	//	"hurryCostModifier": 20,
 		"requiredResource": "Weapons",
-		"uniques": ["+[20]% combat bonus in [Foreign Land]","Gas Mask","Can construct [Citadel]","Great Person - [War]","Unbuildable"],
+		"uniques": ["+[20]% combat bonus in [Foreign Land]","Gas Mask","Great Person - [War]","Unbuildable"],
 		"promotions": ["Mobility I"],
 		"attackSound": "shot"
 	},

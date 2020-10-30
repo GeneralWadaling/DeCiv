@@ -507,6 +507,7 @@
 		"maintenance": 0,
 		"resourceBonusStats": {"gold": 1},
 		"hurryCostModifier": 25,
+		"requiredResource": "Power",	//power
 		"requiredTech": "Decontamination"
 	},
 
@@ -1039,22 +1040,22 @@
 	},		
 	{
 		"name": "Hydro Plant",
-		"cost": 320,
+	//	"cost": 320,
 		"hurryCostModifier": 25,
 		"uniques": ["Must be on [River]","Provides [2] [Power]"],
 		"requiredTech": "Electricity"
 	},		
 	{
 		"name": "Tidal Plant",
-		"cost": 320,
+	//	"cost": 320,
 		"hurryCostModifier": 25,
-		"uniques": ["Must be next to [Coast]","Provides [1] [Power]"],
+		"uniques": ["Must be next to [Coast]","Provides [2] [Power]"],
 		"requiredTech": "Electricity"
 	},	
 	{
 		"name": "Coal Plant",
 		"maintenance": 4,	
-		"cost": 320,
+		"cost": 250,
 		"hurryCostModifier": 25,
 		"percentStatBonus": {"food": -20},
 		"uniques": ["Provides [5] [Power]"],
@@ -1085,7 +1086,7 @@
 	},	
 	{
 		"name": "Desalination Plant",
-		"gold": 10,
+		"gold": 8,
 		"hurryCostModifier": 25,
 		"uniques": ["Can only be built in coastal cities"],
 		"requiredResource": "Power",	//power
