@@ -139,7 +139,7 @@
 		"movementCost": 2,
 		"overrideStats": true,
 		"unbuildable": true,
-		"defenceBonus": 0.10,
+		"defenceBonus": 0.25,
 		"occursOn": ["Desert","Tundra","Plains","Grassland","Hill"],
 		"rough": true,
 		"uniques": ["Provides a one-time Production bonus to the closest city when cut down"]
@@ -151,27 +151,27 @@
 		"movementCost": 2,
 		"overrideStats": true,
 		"unbuildable": true,
-		"defenceBonus": 0.25,
+		"defenceBonus": 0.3,
 		"occursOn": ["Desert","Tundra","Plains","Grassland","Hill"],
 		"rough": true,
 		"uniques": ["Provides a one-time Production bonus to the closest city when cut down"]
 	},
 	{
-		"name": "Marsh",
+		"name": "Toxic Waste",
 		"type": "TerrainFeature",
 		"food": -3,
 		"movementCost": 3,
 		"unbuildable": true,
 		"defenceBonus": -0.2,
 		"occursOn": ["Snow","Tundra","Plains","Grassland"],
-		"uniques": ["Rare feature"]
+		"uniques": ["Rare feature"],
+		"rough": true,
 	},	
 	{
 		"name": "Spring",
 		"type": "TerrainFeature",
 		"gold": 1,
-		"occursOn": ["Snow","Tundra","Plains","Grassland",
-		"Hill"],//
+		"occursOn": ["Tundra","Plains","Grassland"]
 		"uniques": ["Rare feature","Fresh water"]
 	},	
 	/*{
@@ -179,8 +179,21 @@
 		"type": "TerrainFeature",
 		"gold": 1,
 		"occursOn": ["Hill"],
+		"production": 1,
+		"movementCost": 2,
+		"defenceBonus": 0.25,
+		"overrideStats": true,
 		"uniques": ["Rare feature","Fresh water"]
 	},*/
+	/*{
+		"name": "Village",
+		"type": "TerrainFeature",
+		"food": 1,
+		"gold": 1,
+		"culture": 1,
+		"occursOn": ["Snow","Tundra","Plains","Grassland","Hill"],
+		"uniques": ["Rare feature"]
+	},	*/
 	{
 		"name": "Fallout",
 		"type": "TerrainFeature",
@@ -220,7 +233,7 @@
  
 	// Natural Wonders
 	{
-		"name": "Great Barrier Reef",//garbage patch
+		"name": "Great Barrier Reef",
 		"type": "NaturalWonder",
 		"production": 2,
 		"science": 1,
@@ -231,7 +244,7 @@
 		"weight": 5
 	},
 	{
-		"name": "Old Faithful",//mast
+		"name": "Old Faithful",
 		"type": "NaturalWonder",
 		"culture": 1,
 		"occursOn": ["Hill"],
@@ -241,7 +254,7 @@
 		"weight": 5
 	},
 	{
-		"name": "El Dorado",// silo
+		"name": "El Dorado",
 		"type": "NaturalWonder",
 		"science": 1,
 		"occursOn": ["Plains"],
@@ -251,7 +264,7 @@
 		"weight": 10
 	},
 	{
-		"name": "Fountain of Youth",//research facility
+		"name": "Fountain of Youth",
 		"type": "NaturalWonder",
 		"science": 4,
 		"gold": 1,
@@ -275,7 +288,7 @@
 		"weight": 7
 	},
 	{
-		"name": "Mount Fuji", //softdrinks factory
+		"name": "Mount Fuji", 
 		"type": "NaturalWonder",
 		"gold": 1,
 		"culture": 1,
@@ -287,7 +300,7 @@
 		"weight": 4
 	},
 	{
-		"name": "Krakatoa", //observatory
+		"name": "Krakatoa", 
 		"type": "NaturalWonder",
 		"occursOn": ["Coast"],
 		"culture": 1,
@@ -298,7 +311,7 @@
 		"weight": 7
 	},
 	{
-		"name": "Rock of Gibraltar",//seed vault
+		"name": "Rock of Gibraltar",
 		"type": "NaturalWonder",
 		"food": 1,
 		"science": 3,
@@ -310,7 +323,7 @@
 		"weight": 4
 	},
 	{
-		"name": "Cerro de Potosi",//dam
+		"name": "Cerro de Potosi",
 		"type": "NaturalWonder",
 		"gold": 2,
 		"science": 1,
@@ -323,11 +336,9 @@
 		"weight": 7
 	},
 	{
-		"name": "Barringer Crater",//nuke facility
+		"name": "Barringer Crater",
 		"type": "NaturalWonder",
-		"food": -4,
 		"culture": 1,
-		"science": 5,
 		"occursOn": ["Desert"],
 		"turnsInto": "Nuclear Waste Storage",
 		"impassable": true,

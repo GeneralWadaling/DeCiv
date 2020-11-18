@@ -150,8 +150,8 @@
 	{
 		"name": "Remove Marsh",
 		"turnsToBuild": 15,
-		"terrainsCanBeBuiltOn": ["Marsh"],
-		"techRequired": "Land Remediation"
+		"terrainsCanBeBuiltOn": ["Toxic Waste"],
+	//	"techRequired": "Land Remediation"
 		"uniques": ["Can be built outside your borders"]
 	},
 
@@ -226,22 +226,11 @@
 		"improvingTechStats": {"gold": 1}
 	},*/
 
-	/*{
-		"name": "Terrace farm",
-		"uniqueTo": "Enclavers",
-		"terrainsCanBeBuiltOn": ["Hill"],
-		"food": 2,
-		"gold": -1,
-		"turnsToBuild": 7,
-		"uniques": ["[+1 Food] for each adjacent [Mountain]", "Cannot be built on bonus resource","Can also be built on tiles adjacent to fresh water"],
-		"techRequired": "Construction",
-		"uniques": ["[+1 Gold] once [Economics] is discovered"]
-	},*/
 	
 	{ "name": "Ancient ruins" },
 	{ "name": "City ruins" 
 	
-		"uniques": ["Gives a defensive bonus of [25]%"]
+		"uniques": ["Gives a defensive bonus of [10]%"]
 	},
 	
 	{ "name": "Barbarian encampment" 

@@ -10,7 +10,7 @@
 		"leaderName": "Scarlett",
 		"adjective": ["Children"],
 		"startBias": ["Forest","Jungle"],
-		"preferredVictoryType": "Cultural",
+		"preferredVictoryType": "Scientific",
 		
 		"startIntroPart1": "Greetings, noble Hiawatha, leader of the mighty Iroquois nations! Long have your people lived near the great and holy lake Ontario in the land that has come to be known as the New York state in North America. In the mists of antiquity, the five peoples of Seneca, Onondaga, Mohawks, Cayugas and Oneida united into one nation, the Haudenosaunee, the Iroquois. With no written language, the wise men of your nation created the great law of peace, the model for many contitutions including that of the United States. For many years, your people battled great enemies, such as the Huron, and the French and English invaders. Tought outnumbered and facing weapons far more advanced than the ones your warriors wielded, the Iroquois survived and prospered, until they were finally overwhelmed by the mighty armies of the new United States.",
 		"startIntroPart2": "Oh noble Hiawatha, listen to the cries of your people! They call out to you to lead them in peace and war, to rebuild the great longhouse and unite the tribes once again. Will you accept this challenge, great leader? Will you build a civilization that will stand the test of time?",
@@ -24,7 +24,7 @@
 		"outerColor": [200,200,50],
 		"innerColor": [54,72,72],
 		"uniqueName": "Rubble Runners",
-		"uniques": ["All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."],
+		"uniques": ["[Melee] units gain the [Urban Warfare I] promotion","[Ranged] units gain the [Urban Warfare I] promotion","[Mounted] units gain the [Urban Warfare I] promotion","All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."],
 		"cities": ["Phoenix","Rust City","Ashtown","Condor Creek","The Boneyard","Old Forest","Dogtown","Soft Rains","Hazard",
 			"Rakeville","Osprey","Vulture Bend","Dark Skies","Pistolville","Headstone","Firesteel","Broken Hills","Deadwood",
 			"Hopeville","Buzzard Vista","Radium Springs","Dustbowl","Rock Falls","Kismet","Waterville"
@@ -82,8 +82,8 @@
 				
 		"outerColor": [0,255,255],
 		"innerColor": [45,60,120],
-		"uniqueName": "Ingenuity",
-		"uniques": ["Receive free [Great Scientist] when you discover [Writing]", "[Great Scientist] is earned [50]% faster"],
+		"uniqueName": "Creative Leadership",
+		"uniques": ["Receive free [Great Scientist] when you discover [Writing]","+[25]% great person generation in all cities"],
 		"cities": ["Atlas Canyon","Praxis","Opportunity","Pareto Estates","Enterprise Gardens","Hanlon College","The Reservation",
 			"Zakharov Campus","Curiousity","Progress Estates","New Horizon","Dunning Institute","Kruger Laboratories","Apogee",
 			"Hypothesis","Axiom","Euclid Center","Prometheus Laboratories","Zenith","Von Neumann Institute",
@@ -129,7 +129,7 @@
 		"declaringWar": "You're either with us, or you're with the terrorists.",
 		"attacked": "Disperse immediately. Insurrection and rebellion will be met with lethal force.",
 		"defeated": "We today have concluded an agreement to end the war and bring peace with honor.",
-		"introduction": "This is General Cameron of the Army. A state of emergency is currently in effect across the nation. Military authorities are authorised to summarily enforce order, in accordance with martial law. Maintain your shelters and await further instructions.",
+		"introduction": "This is General Cameron of the Army. A state of emergency is currently in effect across the nation. Military authorities are authorized to summarily enforce order, in accordance with martial law. Maintain your shelters and await further instructions.",
 		"neutralHello": "A water tax of 25% is in place for all municipalities to support disaster relief efforts and the restoration of government.",
 		"hateHello": "A special water tax rate of 33% is in place for your municipality. You are additionally required to surrender all military weapons.",
 		"tradeRequest": "The Emergency Management Agency has prepared this aid package for your district.",
@@ -173,7 +173,8 @@
 		"outerColor": [0,87,0],
 		"innerColor": [150,254,150],
 		"uniqueName": "Hills Have Eyes",
-		"uniques": ["Units ignore terrain costs when moving into any tile with Hills","No Maintenance costs for improvements in Hills"],
+		"uniques": ["Units ignore terrain costs when moving into any tile with Hills","No Maintenance costs for improvements in Hills",
+					"[Melee] units gain the [Guerilla Warfare I] promotion","[Ranged] units gain the [Guerilla Warfare I] promotion","[Mounted] units gain the [Guerilla Warfare I] promotion"],
 		"cities": ["The Enclave","Farnham's Freehold","Minuteman Ridge","Cooper's Corner","Rattlesnake Hill","Rawles' Retreat",
 			"Sagebrush Valley","Cobb's Ranch","Stephens' Shelter","The Alamo","Saxon Farm","Pugsley's Haven","Browne's Trail",
 			"Oathkeeper Watch","Jellison Ranch","Boyd's Retreat","Tappan Farm","Skousen Ranch","30-50 Feral Hogs"
@@ -226,8 +227,8 @@
 		"innerColor": [0,0,0],
 		"uniqueName": "Road Warriors",
 		"uniques": ["Double quantity of [Oil] produced"],
-		"cities": ["The Sanctum","Blood Farm","Immortal Highway","Trial of Sand","Hell Patrol","Thousand Cuts","The Harrowing",
-			"Tohuvabohu","Forbidden Palace","Traitors' Gate","Prophecy","Hanging Gardens","The Cauldron","Steel Throne","The Warren",
+		"cities": ["Gastown","Blood Farm","Trial of Sand","Prophecy","Thousand Cuts","The Harrowing","Immortal Highway",
+			"Tohuvabohu","Forbidden Palace","Traitors' Gate","Hell Patrol","Hanging Gardens","The Cauldron","Steel Throne","The Warren",
 			"Well of Souls","Hermitage","Perpetual Ascension","Ceremony","Court of Dreams","Death Race","God Box"
 			]
 	}
@@ -289,7 +290,7 @@
 		"startBias": ["Hill"],
 		"uniqueName": "Ghost Warriors",
 		"uniques": ["Units fight as though they were at full strength even when damaged", "Units ignore terrain costs when moving into any tile with Hills", "-25% land units maintenance"],
-		"declaringWar": "You have revealed your purposes a bit too early, my friend...",
+		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "The spirits will fight at our sides.",
 		"defeated": "We go to join the ancestors.",
 		"outerColor": [0, 0, 0],
@@ -318,7 +319,7 @@
 		"uniques": ["-25% land units maintenance"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
-		"defeated": "Congratulations, conquerer. This tribe serves you now.",
+		"defeated": "We never fully trusted you from the start.",
 		"outerColor": [0, 0, 0],
 		"innerColor": [224,224,224],
 		"cities": ["Jericho"]

@@ -53,7 +53,7 @@
 		"name": "Water",
 		"resourceType": "Bonus",
 		"revealedBy": "Radar",
-		"terrainsCanBeFoundOn": ["Desert","Plains","Grassland","Tundra","Marsh","Snow"],
+		"terrainsCanBeFoundOn": ["Desert","Plains","Grassland","Tundra","Toxic Waste","Snow"],
 	//	"gold": 1,
 		"improvement": "Water pump",
 		"improvementStats": {"gold": 1},
@@ -62,7 +62,7 @@
 	{
 		"name": "Tubers",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Marsh","Plains","Tundra","Grassland"],
+		"terrainsCanBeFoundOn": ["Toxic Waste","Plains","Tundra","Grassland"],
 		"food": 1,
 		"revealedBy": "Botany",
 		"improvement": "Farm",
@@ -73,7 +73,7 @@
 	{
 		"name": "Scrap",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Jungle","Forest","Desert","Snow","Marsh","Plains","Tundra","Grassland"],
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Desert","Snow","Toxic Waste","Plains","Tundra","Grassland"],
 		"production": 1,
 		"improvement": "Salvage site",
 		"improvementStats": {"production": 1},
@@ -88,11 +88,19 @@
 		"improvementStats": {"production": 1},
 		"building": "Blast Furnace"
 	},	
-
+	{
+		"name": "Horses",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains"],
+		"food": 1,
+		"improvement": "Pasture",
+		"improvementStats": {"production": 1},
+		"building": "Stable"
+	},
 	{
 		"name": "Plastics",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Jungle","Forest","Desert","Snow","Marsh","Plains","Tundra","Hill","Grassland"],
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Desert","Snow","Toxic Waste","Plains","Tundra","Hill","Grassland"],
 	//	"food": -1,
 		"production": 1,
 		"improvement": "Salvage site",
@@ -142,16 +150,9 @@
 		"name": "Slaves",
 		"resourceType": "Strategic",
 		"production": 1,
+	//	"terrainsCanBeFoundOn": ["Settlement"],
 	},
-	{
-		"name": "Horses",
-		"resourceType": "Strategic",
-		"terrainsCanBeFoundOn": ["Plains"],
-		"production": 1,
-		"improvement": "Pasture",
-		"improvementStats": {"production": 1},
-		"building": "Stable"
-	},
+
 	{
 		"name": "Coal",
 		"resourceType": "Strategic",
@@ -175,7 +176,7 @@
 		"name": "Uranium",
 		"resourceType": "Strategic",
 		"revealedBy": "Decryption",
-		"terrainsCanBeFoundOn": ["Plains","Desert","Tundra","Hill","Snow","Marsh","Grassland"],
+		"terrainsCanBeFoundOn": ["Plains","Desert","Tundra","Hill","Snow","Toxic Waste","Grassland"],
 		"production": 1,
 		"improvement": "Mine",
 		"improvementStats": {"food": -1,"production": 2}
@@ -184,10 +185,10 @@
 		"name": "Weapons",
 		"resourceType": "Strategic",
 		"terrainsCanBeFoundOn": ["Jungle","Plains","Hill","Forest","Grassland"],
-		"culture": 1,
+	//	"culture": 1,
 		"improvement": "Salvage site",
-		"improvementStats": {"science": 1}
 		"building": "Armory"
+		"improvementStats": {"culture": 1}
 	},	
 
 
@@ -286,7 +287,7 @@
 		"name": "Fungus",
 		"resourceType": "Luxury",
 		"revealedBy": "Botany",
-		"terrainsCanBeFoundOn": ["Hill","Marsh","Jungle"],
+		"terrainsCanBeFoundOn": ["Hill","Toxic Waste","Jungle"],
 		"food": 1,
 		"improvement": "Camp",
 		"improvementStats": {"culture": 1},
@@ -295,7 +296,7 @@
 	{
 		"name": "Hostile Fauna",
 		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Marsh", "Fallout"],
+		"terrainsCanBeFoundOn": ["Toxic Waste", "Fallout"],
 		"food": 1,
 		"revealedBy": "Redomestication",
 		"improvement": "Camp",

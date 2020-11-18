@@ -105,7 +105,7 @@
 		"name": "Sovereignty",
 		"era": "Ancient era",
 		"effect": "",
-		"uniques": ["+25% bonus vs Barbarians", "Gain Culture when you kill a barbarian unit", "Notified of new Barbarian encampments"],
+		"uniques": ["+25% bonus vs Barbarians", "Earn [75]% of [Barbarian] opponent's [Strength] as [Culture] for kills", "Notified of new Barbarian encampments"],
 		"policies": [
 
 			{
@@ -133,7 +133,7 @@
 			{
 				"name": "Spoils of War",
 				"effect": "",
-				"uniques": ["Gain gold for each unit killed","Receive triple Gold from Barbarian encampments and pillaging Cities"],// translate
+				"uniques": ["Earn [10]% of [military] opponent's [Cost] as [Gold] for kills","Receive triple Gold from Barbarian encampments and pillaging Cities"],// translate
 				"requires": ["Doctrine"],
 				"row": 2,
 				"column": 2
@@ -141,7 +141,7 @@
 			{
 				"name": "Triumph",
 				"effect": "",
-				"uniques": ["[+1 Happiness, +2 Culture] in all cities with a garrison","Gains culture from each enemy unit killed"],
+				"uniques": ["[+1 Happiness, +2 Culture] in all cities with a garrison","Earn [75]% of [military] opponent's [Strength] as [Culture] for kills"],
 				"requires": ["Spoils of War"],
 				"row": 3,
 				"column": 2
@@ -216,7 +216,8 @@
 				"name": "Entrepreneurship",
 				"effect": "",
 				"uniques": ["[Great Merchant] is earned [25]% faster", "[+1 Science] from every [Market]",
-					"[+1 Science] from every [Factory]", "[+1 Science] from every [Automated Factory]"],
+					"[+1 Science] from every [Factory]"], 
+					//"[+1 Science] from every [Automated Factory]"],
 				"row": 1,
 				"column": 1
 			},
@@ -238,7 +239,8 @@
 			{
 				"name": "Mass Consumption",
 				"effect": "",
-				"uniques": ["+1 happiness from each luxury resource","[+1 Gold, -1 Food] from every [Factory]","[+1 Gold, -1 Food] from every [Automated Factory]"],
+				"uniques": ["+1 happiness from each luxury resource","[+1 Gold, -1 Food] from every [Factory]"],
+				//"[+1 Gold, -1 Food] from every [Automated Factory]"],
 				"requires": ["Venture Capital"],
 				"row": 3,
 				"column": 1
@@ -246,7 +248,8 @@
 			{
 				"name": "Corporate Personhood",
 				"effect": "",
-				"uniques": ["[+1 Gold] from every [Strategic Resource]","[+1 Production, +1 Gold, -1 Food] from every [Factory]","[+1 Production, +1 Gold, -1 Food] from every [Automated Factory]"],
+				"uniques": ["[+1 Gold] from every [Strategic Resource]","[+1 Production, +1 Gold, -1 Food] from every [Factory]"],
+				//"[+1 Production, +1 Gold, -1 Food] from every [Automated Factory]"],
 				"requires": ["Venture Capital"],
 				"row": 3,
 				"column": 3
@@ -254,7 +257,8 @@
 			{
 				"name": "Commerce Complete",
 				"effect": "",
-				"uniques": ["-50% cost when purchasing tiles","[+1 Production, +1 Gold, -1 Food] from every [Work Camp]","[+2 Production, -1 Happiness, -1 Food] from every [Factory]","[+2 Production, -1 Happiness, -1 Food] from every [Automated Factory]"],
+				"uniques": ["-50% cost when purchasing tiles","[+1 Production, +1 Gold, -1 Food] from every [Work Camp]","[+2 Production, -1 Happiness, -1 Food] from every [Factory]"],
+				//"[+2 Production, -1 Happiness, -1 Food] from every [Automated Factory]"],
 			}
 		]
 	},
@@ -385,7 +389,7 @@
 			{
 				"name": "Scorched Earth",
 				"effect": "Gold cost of purchasing units -33%",
-				"uniques": ["Melee units pay no movement cost to pillage"],
+				"uniques": ["+15% Combat Strength for all units when attacking Cities","Melee units pay no movement cost to pillage"],
 				"row": 1,
 				"column": 3
 			},	

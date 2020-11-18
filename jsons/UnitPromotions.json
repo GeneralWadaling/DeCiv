@@ -5,131 +5,380 @@
 		"effect": "Heal this Unit by 50 HP; Doing so will consume this opportunity to choose a Promotion",
 		"unitTypes": ["Melee","Mounted","Scout","Siege","Ranged","Armor","WaterMelee","WaterRanged","WaterSubmarine"]
 	},
+	//type SCOUT, special				
+	{
+		"name": "Mobility I",
+		"prerequisites": ["Logistics","March","Blitz","Extended Range","Medic II","Guerilla Warfare II","Urban Warfare II"],
+		"uniques": ["Ignores terrain cost"],
+		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
+	},		
+	{
+		"name": "Mobility II",
+		"prerequisites": ["Mobility I"],
+		"uniques": ["+1 Movement","No movement cost to pillage"],
+		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
+	},		
+	{
+		"name": "Mobility III",
+		"prerequisites": ["Mobility II"],
+		"uniques": ["+1 Movement"],
+		"unitTypes": ["Scout"]
+	},	
 	
-	// Ranged+Siege
+	//type MELEE												
 	{
-		"name": "Accuracy I",
-		"effect": "Bonus vs units in open terrain 15%",
-		"unitTypes": ["Siege","Ranged"]
-	},
+		"name": "Entrench",
+		"uniques": ["+25% Defence against ranged attacks","+[5]% Strength when defending"],
+		"unitTypes": ["Melee","Ranged"]
+	},	
 	{
-		"name": "Accuracy II",
-		"prerequisites": ["Accuracy I"],
-		"effect": "Bonus vs units in open terrain 15%",
-		"unitTypes": ["Siege","Ranged"]
-	},
+		"name": "Forage",
+		"uniques": ["Heals [25] damage if it kills a unit","[20]% Bonus XP gain"],
+		"unitTypes": ["Melee"]
+	},	
 	{
-		"name": "Accuracy III",
-		"prerequisites": ["Accuracy II"],
-		"effect": "Bonus vs units in open terrain 15%",
-		"unitTypes": ["Siege","Ranged"]
+		"name": "Siege",
+		"prerequisites": ["Entrench","Forage"],
+		"uniques": ["Bonus vs City 50%","No movement cost to pillage"],
+		"unitTypes": ["Melee"]
 	},
+	//defense in depth]
 
-	{
-		"name": "Barrage I",
-		"effect": "Bonus vs units in rough terrain 15%",
-		"unitTypes": ["Siege","Ranged"]
-	},
-	{
-		"name": "Barrage II",
-		"prerequisites": ["Barrage I"],
-		"effect": "Bonus vs units in rough terrain 15%",
-		"unitTypes": ["Siege","Ranged"]
-	},
-	{
-		"name": "Barrage III",
-		"prerequisites": ["Barrage II"],
-		"effect": "Bonus vs units in rough terrain 15%",
-		"unitTypes": ["Siege","Ranged"]
-	},
+	//sentry
+	//medic
+	//formation	
+	//ambush 
 
-	{
-		"name": "Volley",
-		"prerequisites": ["Accuracy I","Barrage I"],
-		"effect": "Bonus vs City 50%",
-		"unitTypes": ["Ranged","Siege"]
-	},
-	{
-		"name": "Extended Range",
-		"prerequisites": ["Accuracy II","Barrage II","Targeting II","Bombardment II", "Wolfpack II"],
-		"effect": "+1 Range",
-		"unitTypes": ["Ranged","WaterRanged","WaterSubmarine"]
-	},
-	/*{
-		"name": "Indirect Fire",
-		"prerequisites": ["Accuracy III","Barrage III"],
-		"effect": "Ranged attacks may be performed over obstacles",
-		"unitTypes": ["Ranged"]
-	},*/
 	
-	// Melee, Mounted+Armor
-	{
-		"name": "Shock I",
-		"effect": "Bonus vs units in open terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
-	{
-		"name": "Shock II",
-		"prerequisites": ["Shock I"],
-		"effect": "Bonus vs units in open terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
-	{
-		"name": "Shock III",
-		"prerequisites": ["Shock II"],
-		"effect": "Bonus vs units in open terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
+	//BLITZ armor
+	
+	//MARCH ranged
+	
 
+	
+	//type Mounted												
 	{
-		"name": "Drill I",
-		"effect": "Bonus vs units in rough terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
+		"name": "Loose Formation",
+		"uniques": ["+25% Defence against ranged attacks"],
+		"unitTypes": ["Mounted"]
+	},		
 	{
-		"name": "Drill II",
-		"prerequisites": ["Drill I"],
-		"effect": "Bonus vs units in rough terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
-	{
-		"name": "Drill III",
-		"prerequisites": ["Drill II"],
-		"effect": "Bonus vs units in rough terrain 15%",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
-	{
-		"name": "Charge",
-		"prerequisites": ["Shock II","Drill II"],
-		"effect": "Bonus vs wounded units 33%",
+		"name": "Shock",
+		"uniques": ["Bonus vs units in open terrain 25%"],
 		"unitTypes": ["Mounted","Armor"]
 	},
 	{
-		"name": "Siege",
-		"prerequisites": ["Shock II","Drill II"],
-		"effect": "Bonus vs City 50%",
+		"name": "Defense in Depth",
+		"prerequisites": ["Entrench","Forage","Loose Formation","Shock"],
+		"uniques": ["+[15]% Strength when defending"],
 		"unitTypes": ["Melee","Mounted"]
+	},	
+	{
+		"name": "Pursuit",
+		"prerequisites": ["Loose Formation","Shock"],
+		"uniques": ["Bonus vs wounded units 33%","Heals [25] damage if it kills a unit"],
+		"unitTypes": ["Mounted"]
+	},
+
+	//ambush 
+	
+	//type Armor												
+	{
+		"name": "Hull Down",
+		"uniques": ["+[15]% Strength when defending"],
+		"unitTypes": ["Armor"]
+	},	
+	//shock [mtd]
+	{
+		"name": "Awe",
+		"prerequisites": ["Hull Down","Shock"],
+		"uniques": ["Bonus vs wounded units 33%","+[10]% Strength when attacking"],
+		"unitTypes": ["Mounted","Armor"]
 	},
 	{
-		"name": "Formation I",
-		"prerequisites": ["Shock II","Drill II"],
-		"effect": "Bonus vs Mounted 33%",
-		"unitTypes": ["Melee","Mounted"]
-	},
-	{
-		"name": "Formation II",
-		"prerequisites": ["Formation I"],
-		"effect": "Bonus vs Mounted 33%",
-		"unitTypes": ["Melee","Mounted"]
+		"name": "Maneuver",
+		"prerequisites": ["Hull Down","Shock"
+		,"Targeting I","Bombardment I","Boarding Party I", "Coastal Raider I", "Wolfpack I"],//
+		"uniques": ["+1 Movement"],
+		"unitTypes": ["Armor"
+		,"WaterMelee","WaterRanged","WaterSubmarine"]//
 	},
 	
+	{
+		"name": "Blitz",
+		"prerequisites": ["Siege","Defense in Depth","Pursuit","Maneuver","Awe"],
+		"uniques": ["1 additional attack per turn"],
+		"unitTypes": ["Melee","Mounted","Armor"]
+	},
+	//resupply [siege]
+	
+	//											type RANGED
+	
+	//type RANGED - infantry
+		
+	{
+		"name": "Skirmish",
+		"uniques": ["May withdraw before melee ([75]%)","[50]% Bonus XP gain"],
+		"unitTypes": ["Ranged"]
+	},	
+	{
+		"name": "Precision",
+		"prerequisites": ["Entrench","Skirmish"],
+		"uniques": ["Bonus vs wounded units 33%"],
+		"unitTypes": ["Ranged"]
+	},
+	{
+		"name": "Suppression",
+		"prerequisites": ["Entrench","Skirmish"],
+		"uniques": ["Bonus vs Melee 20%"],
+		"unitTypes": ["Ranged"]
+	},		
+	{
+		"name": "March",
+		"prerequisites": ["Siege","Concealment","Pursuit","Maneuver","Precision","Suppression"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes": ["Melee","Ranged","Mounted"]
+	},
+	//logistics
+	//extended range [siege]
+	
+	//SIEGE - 					vehicle/crew served ranged units
+		
+	{
+		"name": "Accuracy",
+		"uniques": ["Bonus vs units in open terrain 20%"],
+		"unitTypes": ["Siege"]
+	},	
+	{
+		"name": "Combat Drill",
+		"uniques": ["+[20]% Strength when defending"],
+		"unitTypes": ["Siege"]
+	},
+	{
+		"name": "Barrage",
+		"prerequisites": ["Accuracy","Combat Drill"],
+		"uniques": ["Bonus vs units in rough terrain 20%"],
+		"unitTypes": ["Siege"]
+	},		
+	{
+		"name": "Resupply",
+		"prerequisites": ["Accuracy","Combat Drill","Awe","Maneuver"],
+		"uniques": ["+10 HP when healing"],
+		"unitTypes": ["Armor","Siege"]
+	},
+	{
+		"name": "Logistics",
+		"prerequisites": ["Precision","Suppression","Barrage","Resupply",
+		"Targeting III", "Wolfpack III","Bombardment III", "Coastal Raider III","Boarding Party III","Siege III"],//
+		"uniques": ["1 additional attack per turn"],
+		"unitTypes": ["Ranged","Siege"
+		,"WaterMelee","WaterRanged","WaterSubmarine","Fighter","Bomber"]//
+	},
+	{
+		"name": "Extended Range",
+		"prerequisites": ["Precision","Suppression","Barrage","Resupply"
+		,"Targeting II","Bombardment II", "Wolfpack II"],//
+		"uniques": ["+1 Range"],
+		"unitTypes": ["Ranged","Siege"
+		,"WaterRanged","WaterSubmarine"]//
+	},
+	
+	// type TERRAIN SPECIFIC
+	
+	
+	{
+		"name": "Guerilla Warfare I",
+		"uniques": ["Bonus vs units in rough terrain 10%","Can move after attacking"],
+		"unitTypes": ["Melee","Ranged","Mounted"]
+	},
+	{
+		"name": "Guerilla Warfare II",
+		"prerequisites": ["Guerilla Warfare I"],
+		"uniques": ["+[30]% combat bonus in [Hill]","+[10]% Strength when attacking"],
+		"unitTypes": ["Melee","Ranged","Mounted"]
+	},	
+	{
+		"name": "Urban Warfare I",
+		"uniques": ["Double movement rate through Forest and Jungle","+[10]% combat bonus in [Jungle]","+[10]% combat bonus in [Forest]","Bonus vs City 10%"],
+		"unitTypes": ["Melee","Ranged","Mounted"]
+	},
+	{
+		"name": "Urban Warfare II",
+		"prerequisites": ["Urban Warfare I"],
+		"uniques": ["+[30]% combat bonus in [Jungle]","+[30]% combat bonus in [Forest]","Bonus vs City 30%"],
+		"unitTypes": ["Melee","Ranged","Mounted"]
+	},
+		//type MIXED
+	{
+		"name": "Medic",
+		"prerequisites": ["Skirmish","Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I"],
+		"effect": "This unit and all others in adjacent tiles heal 5 additional HP per turn",
+		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
+	},
+	{
+		"name": "Medic II",
+		"prerequisites": ["Medic"],
+		"effect": "This unit and all others in adjacent tiles heal 5 additional HP. This unit heals 5 additional HP outside of friendly territory.",
+		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
+	},
+
+	{
+		"name": "Sentry",
+		"prerequisites": ["Skirmish","Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I"
+		,"Bombardment I","Targeting I","Boarding Party I","Coastal Raider I"],//
+		"uniques": ["+1 Visibility Range"],
+		"unitTypes": ["Melee","Ranged","Mounted","Scout"
+		,"WaterRanged","WaterMelee"]//
+	},	
+	
+	{
+		"name": "Formation",
+		"prerequisites": ["Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I"],
+		"uniques": ["Bonus vs Mounted 33%"],
+		"unitTypes": ["Melee","Mounted"]
+	},	
+	
+	{
+		"name": "Ambush",
+		"prerequisites": ["Entrench","Forage","Loose Formation","Shock","Hull Down","Guerilla Warfare I","Urban Warfare I"],
+		"uniques": ["Bonus vs Armor 33%"],
+		"unitTypes": ["Melee","Mounted","Armor"]
+	},		
 
 	
+
+
+	//special weapons
 	
-	// Water melee
+	
+	{
+		"name": "Infantry Mortar",
+		"prerequisites": ["Infantry Weapons"],
+		"uniques": ["+[10]% Strength when attacking"],
+		"unitTypes": ["Melee","Ranged"]
+	},	
+	{
+		"name": "White Phosphorus Munitions",
+		"prerequisites": ["Infantry Mortar","Artillery"],
+		"uniques": ["Bonus vs Low Tech 50%","Bonus vs Personnel 25%","Bonus vs City 50%"],
+		"unitTypes": ["Melee","Ranged","Siege"]
+	},
+	{
+		"name": "Antipersonnel Mines",
+		"prerequisites": ["Infantry Weapons"],
+		"uniques": ["+[10]% Strength when defending"],
+		"unitTypes": ["Melee","Ranged"]
+	},
+	{
+		"name": "Antitank Missile",
+		"prerequisites": ["Advanced Weapons","Infantry Weapons"],
+		"uniques": ["Bonus vs Armor 66%"],
+		"unitTypes": ["Melee","Ranged","Mounted","Fighter","Bomber"]
+	},
+	{
+		"name": "Surface-to-Air Missile",
+		"prerequisites": ["Infantry Weapons"],
+		"uniques": ["[33]% chance to intercept air attacks","Bonus vs air units 50%","Bonus vs Helicopter 100%"],
+		"unitTypes": ["Melee","Ranged","Mounted"]
+	},
+	{
+		"name": "Cluster Munitions",
+		"prerequisites": ["Advanced Weapons"],
+		"uniques": ["Bonus vs Low Tech 50%","Bonus vs Personnel 50%","Bonus vs City 25%"],
+		"unitTypes": ["Fighter","Bomber"]
+	},		
+	{
+		"name": "Napalm",
+		"prerequisites": ["Advanced Weapons"],
+		"uniques": ["+[33]% combat bonus in [Jungle]","+[33]% combat bonus in [Forest]","Bonus vs City 25%"],
+		"unitTypes": ["Fighter","Bomber"]
+	},	
+	{
+		"name": "Antiship Missile",
+		"prerequisites": ["Advanced Weapons"],
+		"uniques": ["Bonus vs water units 33%"],
+		"unitTypes": ["Fighter","Bomber"]
+	},
+	{
+		"name": "Air-to-Air Missile",
+		"prerequisites": ["Advanced Weapons"],
+		"uniques": ["Bonus vs air units 33%"],
+		"unitTypes": ["Fighter","Bomber","Siege"]
+	},
+	{
+		"name": "Infantry Weapons",
+		"uniques": ["Bonus vs Melee 5%"]
+	},
+	{
+		"name": "Artillery",
+		"uniques": ["Ranged attacks may be performed over obstacles"]
+	},
+	{
+		"name": "Advanced Weapons",
+		"uniques": ["+[5]% Strength when attacking"]
+	},	
+	
+	//drone tree
+	
+	{
+		"name": "Drone Recon",
+		"uniques": ["+1 Visibility Range","[50]% Bonus XP gain"],
+	},	
+	{
+		"name": "Drone Support",
+		"prerequisites": ["Drone Recon"],
+		"uniques": ["-10% combat strength for adjacent enemy units"],
+		"unitTypes": ["Melee","Ranged","Mounted","Armor"]
+	},
+	{
+		"name": "Care Package",
+		"prerequisites": ["Drone Recon"],
+		"uniques": ["+10 HP when healing"],
+		"unitTypes": ["Melee","Ranged","Mounted"]
+	},
+	
+	// Uniques		
+	
+	{
+		"name": "Tear Gas",
+		"uniques": ["Bonus vs Low Tech 33%","Bonus vs City 10%"],
+	},
+	{
+		"name": "Chemical Weapons",
+		"uniques": ["Chemical Weapons","Bonus vs Low Tech 100%","Bonus vs Personnel 100%","Bonus vs City 50%"],
+	},
+	{
+		"name": "Point Defense Laser",
+		"effect": "+25% Defence against ranged attacks",
+	},
+	{
+		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth- "Heals 25 damage if it kills an Unit" for ranged seems wrong
+		"effect": "All healing effects doubled"
+	},		
+	{
+		"name": "Amphibious",
+		"uniques": ["Amphibious"],
+	},
+	{
+		"name": "Gas Mask",
+		"uniques": ["Bonus vs Chemical Weapons 100%","No defensive terrain penalty"],
+	},
+	{
+		"name": "Martyrdom",
+		"uniques": ["I live. I die. I live again","Earn [100]% of [military] opponent's [Strength] as [Culture] for kills"],
+	},
+	{
+		"name": "Hazard Pay",
+		"uniques": ["Earn [-5]% of [military] opponent's [Strength] as [Gold] for kills"],
+	},
+
+
+
+	
+	// Water melee																		old promotions - water, air
 	{
 		"name": "Boarding Party I",
-		"effect": "Bonus vs water units 15%",
+		"uniques": ["Bonus vs water units 15%"],
 		"unitTypes": ["WaterMelee"]
 	},
 	{
@@ -166,13 +415,13 @@
 	// Submarine
 	{
 		"name": "Wolfpack I",
-		"effect": "Bonus as Attacker [25]%",
+		"effect": "+[25]% Strength when attacking",
 		"unitTypes": ["WaterSubmarine"]
 	},
 	{
 		"name": "Wolfpack II",
 		"prerequisites": ["Wolfpack I"],
-		"effect": "Bonus as Attacker [25]%",
+		"effect": "+[25]% Strength when attacking",
 		"unitTypes": ["WaterSubmarine"]
 	},
 	{
@@ -185,19 +434,19 @@
 	// Aircraft Carrier
 	{
 		"name": "Armor Plating I",
-		"effect": "+25% Combat Bonus when defending",
+		"effect": "+[25]% Strength when defending",
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
 		"name": "Armor Plating II",
 		"prerequisites": ["Armor Plating I"],
-		"effect": "+25% Combat Bonus when defending",
+		"effect": "+[25]% Strength when defending",
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
 		"name": "Armor Plating III",
 		"prerequisites": ["Armor Plating II"],
-		"effect": "+25% Combat Bonus when defending",
+		"effect": "+[25]% Strength when defending",
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
@@ -299,7 +548,7 @@
 		"prerequisites": ["Interception II", /*"Dogfighting II",*/ "Siege II", "Bombardment II"],
 		"effect": "Unit will heal every turn, even if it performs an action",
 		"unitTypes": ["Fighter","Bomber"]
-	},
+	},	
 		// Water ranged and air units
 	{
 		"name": "Bombardment I",
@@ -343,170 +592,4 @@
 		"effect": "Bonus vs water units 15%",
 		"unitTypes": ["WaterRanged"]
 	},
-	// Mixed	
-	{
-		"name": "Blitz",
-		"prerequisites": ["Shock III","Drill III"],
-		"effect": "1 additional attack per turn",
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},
-	{
-		"name": "Urban Tactics",
-		"prerequisites": ["Shock I","Drill I","Skirmish"],
-		"effect": "Double movement rate through Forest and Jungle",
-		"unitTypes": ["Melee","Ranged"]
-	},	
-	{
-		"name": "Urban Warfare",
-		"prerequisites": ["Accuracy III","Barrage III","Shock III","Drill III"],
-		"effect": "+[33]% combat bonus in [Jungle]",
-		"unitTypes": ["Melee","Ranged"]
-	},
-	{
-		"name": "Sabotage",
-		"prerequisites": ["Mobility I","Precision","Shock II","Drill II"],
-		"effect": "No movement cost to pillage",
-		"unitTypes": ["Ranged"]
-	},
-	{
-		"name": "Precision",
-		"prerequisites": ["Mobility I","Shock III","Drill III"],
-		"effect": "Bonus vs wounded units 33%",
-		"unitTypes": ["Ranged"]
-	},	
-	{
-		"name": "Medic",
-		"prerequisites": ["Mobility I","Skirmish","Shock I","Drill I"],
-		"effect": "This unit and all others in adjacent tiles heal 5 additional HP per turn",
-		"unitTypes": ["Melee","Mounted","Ranged","Scout","Siege"]
-	},
-	{
-		"name": "Medic II",
-		"prerequisites": ["Medic"],
-		"effect": "This unit and all others in adjacent tiles heal 5 additional HP. This unit heals 5 additional HP outside of friendly territory.",
-		"unitTypes": ["Melee","Mounted","Ranged","Scout","Siege"]
-	},
-	{
-		"name": "Cover I",
-		"effect": "+25% Defence against ranged attacks",
-		"unitTypes": ["Melee","Ranged"]
-	},
-	{
-		"name": "Cover II",
-		"prerequisites": ["Cover I"],
-		"effect": "+25% Defence against ranged attacks",
-		"unitTypes": ["Melee","Ranged"]
-	},
-	{
-		"name": "Skirmish",
-		"prerequisites": ["Shock III","Drill III","Mobility I"],
-		"effect": "May withdraw before melee ([75]%)",
-		"unitTypes": ["Melee","Ranged","Mounted","Scout"]
-	},
-	{
-		"name": "March",
-		"prerequisites": ["Accuracy II","Barrage II","Shock III","Drill III"],
-		"effect": "Unit will heal every turn, even if it performs an action",
-		"unitTypes": ["Melee","Ranged","Mounted"]
-	},
-	{
-		"name": "Mobility",
-		"prerequisites": ["Shock II","Drill II","Targeting I",
-			"Bombardment I","Boarding Party I", "Coastal Raider I", "Wolfpack I"],
-		"effect": "+1 Movement",
-		"unitTypes": ["Mounted","Siege","WaterMelee","WaterRanged","Armor","WaterSubmarine"]
-	},
-	{
-		"name": "Sentry",
-		"prerequisites": ["Accuracy I","Barrage I","Shock II","Drill II","Mobility I","Bombardment I","Targeting I","Boarding Party I","Coastal Raider I"],
-		"effect": "+1 Visibility Range",
-		"unitTypes": ["Melee","Mounted","Siege","WaterRanged","Armor","Scout","WaterMelee"]
-	},
-	{
-		"name": "Logistics",
-		"prerequisites": ["Accuracy III","Barrage III","Targeting III", "Wolfpack III",
-			"Bombardment III", "Coastal Raider III","Boarding Party III","Siege III"],
-		"effect": "1 additional attack per turn",
-		"unitTypes": ["Ranged","Siege","WaterMelee","WaterRanged","WaterSubmarine","Fighter","Bomber"]
-	},
-	
-	{
-		"name": "Ambush I",
-		"effect": "Bonus vs Armor 33%",
-		"unitTypes": ["Melee","Mounted","Fighter","Bomber"]
-	},
-	{
-		"name": "Ambush II",
-		"prerequisites": ["Ambush I"],
-		"effect": "Bonus vs Armor 66%",
-		"unitTypes": ["Melee","Mounted","Fighter","Bomber"]
-	},
-	
-	
-
-	
-	//drone tree
-	
-	{
-		"name": "Drones I",
-		"effect": "+1 Visibility Range",
-	},	
-	{
-		"name": "Combat Analytics",
-		"prerequisites": ["Drones I"],
-		"effect": "50% Bonus XP gain",
-		"unitTypes": ["Melee","Ranged","Armor"]
-	},
-	{
-		"name": "Care Package",
-		"prerequisites": ["Drones II"],
-		"effect": "+10 HP when healing",
-		"unitTypes": ["Melee","Ranged","Armor"]
-	},	
-	{
-		"name": "Drones II",
-		"prerequisites": ["Drones I"],
-		"effect": "-10% combat strength for adjacent enemy units",
-		"unitTypes": ["Melee","Ranged","Armor"]
-	},
-		//scout, special units
-	{
-		"name": "Mobility I",
-		"effect": "Ignores terrain cost",
-	},		
-	{
-		"name": "Mobility II",
-		"prerequisites": ["Mobility I"],
-		"effect": "+1 Movement",
-		"unitTypes": ["Melee","Ranged","Scout"]
-	},
-
-	// Uniques	
-
-	{
-		"name": "Point Defense Laser",
-		"effect": "+25% Defence against ranged attacks",
-	},
-	{
-		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth- "Heals 25 damage if it kills an Unit" for ranged seems wrong
-		"effect": "All healing effects doubled"
-	},	
-	{
-		"name": "Gas Mask",
-		"effect": "+[25]% combat bonus in [Fallout]",
-	},
-	/*
-	//barbarians - to be tested
-	{
-		"name": "Pillage",
-		"effect": "Heals [25] damage if it kills an Unit",
-	},		
-	{
-		"name": "Guerilla",
-		"effect": "Heals [50] damage if it kills an Unit",
-	},	
-	{
-		"name": "Nomad",
-		"effect": "+10 HP when healing",
-	},*/
-]
+]	
