@@ -1598,7 +1598,7 @@
 		"cost": 1,
         "science": 1,
         "production": 3,
-		"uniques": ["Will not be displayed in Civilopedia","Provides [2] [Weapons]","Must not be on [Hill]"],
+		"uniques": ["Will not be displayed in Civilopedia","Provides [2] [Weapons]","Provides [2] [Weapons]","Must not be on [Hill]"],
 	},
 	{
 		"name": "Alma Tank Depot",
@@ -1619,6 +1619,18 @@
 		"cityHealth": 100,
 		"culture": 5,
 		"uniques": ["Will not be displayed in Civilopedia","Reveals the entire map","Free [Howitzer] appears"]
+	},	
+	{
+		"name": "Alma Oil Depot",
+		"culture": 1,
+		"happiness": 5,
+		"specialistSlots": {"Engineer": 2},
+		"maintenance": 1,	
+		"uniques": ["Will not be displayed in Civilopedia","Provides 1 [Oil]"],
+		"cost": 40,		
+		"replaces": "Town Hall",
+		"uniqueTo": "Almaty",
+		"requiredTech": "Manufacturing",
 	},	
 	{
 		"name": "Salvage Tank Depot",
@@ -1654,5 +1666,17 @@
         "production": -3,
 		"uniques": ["Free [Salvaged Helicopter] appears","Not displayed as an available construction unless [Alma Air Base] is built"],
 		"quote": ""//
-	},
+	},	
+	{
+		"name": "Alma Oil Depot", //should give bonus from slaves
+		"culture": 1,
+		"happiness": 1,
+		"specialistSlots": {"Administrator": 1},
+		"maintenance": 1,	
+		"uniques": ["Provides 1 [Oil]"],
+		"cost": 40,		
+		"replaces": "Town Hall",
+		"uniqueTo": "Almaty",
+		"requiredTech": "Manufacturing",
+	},		
 ]
