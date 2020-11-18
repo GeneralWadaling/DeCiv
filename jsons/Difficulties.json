@@ -94,7 +94,7 @@
 		"aiFreeTechs": [],
 		"aiMajorCivStartingUnits": ["Settler", "Scout"],
 		"aiCityStateStartingUnits": ["Settler", "Warrior", "Warrior"],
-		"aiUnhappinessModifier": 1,
+		"aiUnhappinessModifier": 0.75,
 		"aisExchangeTechs": true,
 		"turnBarbariansCanEnterPlayerTiles": 0,
 		"clearBarbarianCampReward": 25
@@ -119,7 +119,7 @@
 		"aiFreeTechs": [],
 		"aiMajorCivStartingUnits": ["Settler", "Scout", "Warrior"],
 		"aiCityStateStartingUnits": ["Settler", "Warrior", "Warrior", "Warrior"],
-		"aiUnhappinessModifier": 1,
+		"aiUnhappinessModifier": 0.7,
 		"aisExchangeTechs": true,
 		"turnBarbariansCanEnterPlayerTiles": 0,
 		"clearBarbarianCampReward": 25
@@ -144,7 +144,7 @@
 		"aiFreeTechs": ["Secrets of the Past","Construction"],
 		"aiMajorCivStartingUnits": ["Settler", "Scout", "Warrior"],
 		"aiCityStateStartingUnits": ["Settler", "Warrior", "Warrior", "Warrior", "Warrior"],
-		"aiUnhappinessModifier": 1,
+		"aiUnhappinessModifier": 0.6,
 		"aisExchangeTechs": true,
 		"turnBarbariansCanEnterPlayerTiles": 0,
 		"clearBarbarianCampReward": 25
@@ -169,7 +169,7 @@
 		"aiFreeTechs": ["Secrets of the Past","Construction","Redomestication"],
 		"aiMajorCivStartingUnits": ["Settler", "Scout", "Warrior", "Warrior"],
 		"aiCityStateStartingUnits": ["Settler", "Warrior", "Warrior", "Warrior", "Warrior"],
-		"aiUnhappinessModifier": 1,
+		"aiUnhappinessModifier": 0.55,
 		"aisExchangeTechs": true,
 		"turnBarbariansCanEnterPlayerTiles": 0,
 		"clearBarbarianCampReward": 25
@@ -194,7 +194,7 @@
 		"aiFreeTechs": ["Secrets of the Past","Construction","Redomestication"],
 		"aiMajorCivStartingUnits": ["Settler", "Settler", "Scout", "Warrior", "Warrior"],
 		"aiCityStateStartingUnits": ["Settler", "Warrior", "Warrior", "Warrior", "Warrior"],
-		"aiUnhappinessModifier": 1,
+		"aiUnhappinessModifier": 0.5,
 		"aisExchangeTechs": true,
 		"turnBarbariansCanEnterPlayerTiles": 0,
 		"clearBarbarianCampReward": 25
