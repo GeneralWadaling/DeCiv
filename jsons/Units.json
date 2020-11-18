@@ -1307,7 +1307,7 @@
 	{
 		"name": "Great Merchant",
 		"unitType": "Civilian",
-		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence","Can start an [8]-turn golden age", "Great Person - [Gold]", "Unbuildable"],
+		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence","Can start an [8]-turn golden age","Can construct [Settlement]", "Great Person - [Gold]", "Unbuildable"],
 		"movement": 2
 	},
 	{
