@@ -68,7 +68,7 @@
 				"name": "Writing",
 				"row": 5,
 				"prerequisites": ["Secrets of the Past"],
-				"quote": "'This place is not a place of honor... no highly esteemed deed is commemorated here... nothing valued is here.'"
+				"quote": "With over 250,000 employees across 40 nations, Blackwarden Associates is the first choice for any situation requiring a professional and discreet security solution. Our friendly, highly trained personnel are always ready to help  - from your local bank or supermarket, to immigration processing centers and border defense at home, to fallout remediation and nuclear site security in the Indus Exclusion Zone. Blackwarden. Securing Your Future."
 			},
 			{
 				"name": "Machinery",
@@ -265,7 +265,7 @@
 				"name": "Electronics",
 				"row": 5,
 				"prerequisites": ["Manufacturing"],
-				"quote": "'beh?'"
+				"quote": "ACCESS LIST: Continuity. Contacting nodes: ARCHANGEL... OFFLINE; MAYFLOWER... OFFLINE; ELYSIUM... OFFLINE; OLYMPUS... OFFLINE; EAGLE ROCK... ONLINE... CONNECTING... Download system update? [y/n]"
 			},	
 			{
 				"name": "Replaceable Parts",
@@ -341,7 +341,7 @@
 				"row": 4,
 				"prerequisites": ["Plastics","Laboratory"],
 				"uniques": ["+10% science and production in all cities"],
-				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"
+				"quote": "2040 has been a challenging quarter with falls in demand from states and agencies. Blackwarden Associates has recalibrated its operations across geographies, moving away from security and relief operations in Asia and divesting enitrely from the radiological remediation sector. By focusing on core domestic operations for private sector clients, we have successfully generated free cashflows despite adverse market conditions."
 			},				
 
 			{
@@ -378,7 +378,7 @@
 				"name": "Networking",
 				"row": 4,
 				"prerequisites": ["Computers"],
-				"quote": "'Computers are like Old Testament gods: lots of rules and no mercy.' - Joseph Campbell"//
+				"quote": "'In a real sense, the empires of old collapsed under their own weight; vast hierarchies of bureacrats, functionaries with no function, leaders without legitimacy. They could not adapt, not even to save themselves. From their ashes, we are building a new State; lean, strong, and vital. We do not shrink from doing what is necessary, whatever the cost.' - The Hand of Caesar"//
 			},	
 			/*{
 				"name": "Avionics",
@@ -405,7 +405,6 @@
 				"quote": "'Only within the moment of time represented by the present century has one species, man, acquired significant power to alter the nature of his world.' - Rachel Carson"
 			},
 			{
-			//add decryption center wonder
 				"name": "Decryption",
 				"row": 4,
 				"prerequisites": ["Networking"],
@@ -454,7 +453,7 @@
 				"name": "Nuclear Fission",
 				"row": 4,
 				"prerequisites": ["Decryption"],
-				"quote": " new "
+				"quote": "'I am become Death, the destroyer of worlds.' - J. Robert Oppenheimer"
 			},
 			{
 				"name": "Lasers",
