@@ -712,6 +712,7 @@
 		"hurryCostModifier": 15,
 		"percentStatBonus": {"science": 25},
 		"specialistSlots": {"Scientist": 1},
+		"requiredBuilding": "Sanctum",
 		"uniques": ["Will not be displayed in Civilopedia"],
 		"requiredTech": "Education"
 	},	
