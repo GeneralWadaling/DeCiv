@@ -3,6 +3,8 @@ The nations of the past are no more. Rebuild one that can survive in the new wor
 
 Thanks for trying DeCiv. The game has been rebalanced; food and resources are scarce. Barbarians are more dangerous than you might expect.
 
+"I'm always disheartened when my 3 upgrade Ranger or Guerilla gets ganked by some BDSM gimps on Harleys" - Tsimshian Tshitposter
+
 Featuring unit art by The Bucketeer @GeneralWadaling
 
 Please contact me through Github or Discord if you find bugs or have suggestions!
