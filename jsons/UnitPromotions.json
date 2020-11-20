@@ -135,7 +135,7 @@
 	},		
 	{
 		"name": "March",
-		"prerequisites": ["Siege","Concealment","Pursuit","Maneuver","Precision","Suppression"],
+		"prerequisites": ["Siege","Defense in Depth","Pursuit","Maneuver","Precision","Suppression"],
 		"uniques": ["Unit will heal every turn, even if it performs an action"],
 		"unitTypes": ["Melee","Ranged","Mounted"]
 	},
