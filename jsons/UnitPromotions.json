@@ -24,6 +24,12 @@
 		"uniques": ["+1 Movement"],
 		"unitTypes": ["Scout"]
 	},	
+	{
+		"name": "Mobility III",
+		"prerequisites": ["Mobility II"],
+		"uniques": ["+1 Movement"],
+		"unitTypes": ["Scout"]
+	},	
 	
 	//type MELEE												
 	{

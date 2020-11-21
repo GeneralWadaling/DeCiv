@@ -24,10 +24,10 @@
 		"outerColor": [200,200,50],
 		"innerColor": [54,72,72],
 		"uniqueName": "Rubble Runners",
-		"uniques": ["[Melee] units gain the [Urban Warfare I] promotion","[Ranged] units gain the [Urban Warfare I] promotion","[Mounted] units gain the [Urban Warfare I] promotion","All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."],
-		"cities": ["Phoenix","Rust City","Ashtown","Condor Creek","The Boneyard","Old Forest","Dogtown","Soft Rains","Hazard",
-			"Rakeville","Osprey","Vulture Bend","Dark Skies","Pistolville","Headstone","Firesteel","Broken Hills","Deadwood",
-			"Hopeville","Buzzard Vista","Radium Springs","Dustbowl","Rock Falls","Kismet","Waterville"
+		"uniques": ["[Low Tech] units gain the [Urban Warfare I] promotion","[Personnel] units gain the [Urban Warfare I] promotion","All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."],
+		"cities": ["Phoenix","Rust City","The Boneyard","Old Forest","Dogtown","Soft Rains","Ashville","Condor Creek","Hazard",
+			"Radium Springs","Osprey","Vulture Bend","Dark Skies","Pistolville","Headstone","Firesteel","Broken Hills","Deadwood",
+			"Hopeville","Buzzard Vista","Dustbowl","Rakeville","Rock Falls","Kismet","Waterville"
 			]
 	},
 	{
@@ -174,7 +174,7 @@
 		"innerColor": [150,254,150],
 		"uniqueName": "Hills Have Eyes",
 		"uniques": ["Units ignore terrain costs when moving into any tile with Hills","No Maintenance costs for improvements in Hills",
-					"[Melee] units gain the [Guerilla Warfare I] promotion","[Ranged] units gain the [Guerilla Warfare I] promotion","[Mounted] units gain the [Guerilla Warfare I] promotion"],
+					"[Low Tech] units gain the [Guerilla Warfare I] promotion","[Personnel] units gain the [Guerilla Warfare I] promotion"],
 		"cities": ["The Enclave","Farnham's Freehold","Minuteman Ridge","Cooper's Corner","Rattlesnake Hill","Rawles' Retreat",
 			"Sagebrush Valley","Cobb's Ranch","Stephens' Shelter","The Alamo","Saxon Farm","Pugsley's Haven","Browne's Trail",
 			"Oathkeeper Watch","Jellison Ranch","Boyd's Retreat","Tappan Farm","Skousen Ranch","30-50 Feral Hogs"
@@ -221,7 +221,7 @@
 		"defeated": "Though our worldly bodies fail, our spirits soar through the skies in oxides immortal... ",
 		"introduction": "The sybil has foreseen this meeting! I am Martina, Ignitor and High Priest. I serve the Divine Engine, and so too shall you.",
 		"neutralHello": "In the name of the trinity, I permit your words be heard.",
-		"hateHello": "Before the fall, Air, Fuel and the Holy Ignition were worshipped in blessed trinity. But the apostates turned away from them, and were struck down; as shall be all who cannot see the truth.",
+		"hateHello": "You risk the wrath of the Flame.",
 		"tradeRequest": "You may yet serve the Engine...",
 		"outerColor": [255,150,0],
 		"innerColor": [0,0,0],

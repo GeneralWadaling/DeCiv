@@ -46,7 +46,7 @@
 		"cost": 1,
 		"requiredBuilding": "Palace",	
 		"uniques": ["Provides [1] [Power]","Free [Surveyor] appears","Will not be displayed in Civilopedia"],
-		"quote":"At the Refuge, John Kruger is creating more than a town, more even than a polity; he is creating a new world, where individuals are free to act without the burden of taxation and the specter of injustice. Here, I have created a truly voluntary society, where the citizens associate in rational self interest; from love, not from fear of punishment. I have sent you this invitation because you have greatness within you; think of all you have achieved in your life, and how much more you could do, if you were not held back. Choose something different. Choose Atlas."
+		"quote":"At the Refuge, I am creating more than a town, more even than a polity; it is creating a new world, where individuals will be free to act without the burden of taxation or the specter of injustice. Here, I have created a truly voluntary society, where the citizens associate in rational self interest; from love, not from fear of punishment. I have sent you this invitation because you have greatness within you; think of all you have achieved in your life, and how much more you could do, if you were not held back. Choose something different. Choose Atlas."
 	},
 	{
 		"name": "Eagle Rock Complex",
@@ -320,7 +320,7 @@
 		"isWonder": true,
 		"percentStatBonus": {"food": -20},
 		"requiredTech": "Mining",
-		"uniques": ["Must have an owned [Nuclear Waste Storage] within [4] tiles","[-3 Food, +4 Science] from [Nuclear Waste Storage] tiles in this city","Provides [1] [Uranium]"],
+		"uniques": ["DO NOT DO THIS.","Must have an owned [Nuclear Waste Storage] within [4] tiles","[-3 Food, +4 Science] from [Nuclear Waste Storage] tiles in this city","Provides [1] [Uranium]"],
 		"quote": "'Sending this message was important to us. We considered ourselves to be a powerful culture. This place is not a place of honor... no highly esteemed deed is commemorated here... nothing valued is here. What is here was dangerous and repulsive to us. This message is a warning about danger. The danger is still present, in your time, as it was in ours.'"
 	},
 	{
@@ -675,7 +675,7 @@
 		"uniqueTo": "Cult of Ignis",
 		"culture": 1,
 		"science": 3,
-		"requiredNearbyImprovedResources": ["Books"],
+		"requiredNearbyImprovedResources": ["Books","Data","Encrypted Data"],
 		"uniques": ["Will not be displayed in Civilopedia"],
 		"hurryCostModifier": 25,
 		"requiredTech": "Writing"
