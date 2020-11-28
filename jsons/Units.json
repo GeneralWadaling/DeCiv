@@ -1301,15 +1301,9 @@
 	
 	/* Great people */
 	{
-		"name": "Great Administrator",
-		"unitType": "Civilian",
-		"uniques": ["Can start an [8-]turn golden age","Can construct [Settlement]", "Great Person - [Culture]", "Unbuildable"],
-		"movement": 2
-	},		
-	{
 		"name": "Great Artist",
 		"unitType": "Civilian",
-		"uniques": ["Can start an [8-]turn golden age","Can construct [Settlement]", "Unbuildable","Will not be displayed in Civilopedia"],
+		"uniques": ["Can start an [8-]turn golden age","Can construct [Settlement]", "Great Person - [Culture]", "Unbuildable"],
 		"movement": 2
 	},	
 	{
