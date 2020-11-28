@@ -59,7 +59,7 @@
 		"cityHealth": 80,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[10]% of food is carried over after population increases","Provides [1] [Power]","Provides [3] [Weapons]","Free [Spec Ops] appears","Will not be displayed in Civilopedia"]
+		"uniques": ["[10]% of food is carried over after population increases","Provides [1] [Power]","Provides [4] [Weapons]","Free [Spec Ops] appears","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Forum",

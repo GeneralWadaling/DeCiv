@@ -195,6 +195,26 @@
 		"cost": 1,
 		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
 		"attackSound": "metalhit"
+	},		
+	{
+		"name": "Patriotscantbuildskirmisher",
+		"unitType": "Melee",
+		"uniqueTo": "The Patriots",
+		"replaces": "Skirmisher",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},	
+	{
+		"name": "Patriotscantbuildhorseman",
+		"unitType": "Melee",
+		"uniqueTo": "The Patriots",
+		"replaces": "Horseman",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
 	},	
 	{
 		"name": "Surveyor",
