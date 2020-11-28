@@ -163,7 +163,7 @@
 		"movementCost": 3,
 		"unbuildable": true,
 		"defenceBonus": -0.2,
-		"occursOn": ["Snow","Tundra","Plains","Grassland"],
+		"occursOn": ["Snow","Tundra","Plains","Grassland","Desert"],
 		"uniques": ["Rare feature"],
 		"rough": true,
 	},	

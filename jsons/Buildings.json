@@ -46,7 +46,7 @@
 		"cost": 1,
 		"requiredBuilding": "Palace",	
 		"uniques": ["Provides [1] [Power]","Free [Surveyor] appears","Will not be displayed in Civilopedia"],
-		"quote":"At the Refuge, I am creating more than a town, more even than a polity; it is creating a new world, where individuals will be free to act without the burden of taxation or the specter of injustice. Here, I have created a truly voluntary society, where the citizens associate in rational self interest; from love, not from fear of punishment. I have sent you this invitation because you have greatness within you; think of all you have achieved in your life, and how much more you could do, if you were not held back. Choose something different. Choose Atlas."
+		"quote":"At the Refuge, I am creating more than a town, more even than a polity; it is a new world, where individuals will be free to act without the burden of taxation or the specter of injustice. Here, I have created a truly voluntary society, where the citizens associate in rational self interest; from love, not from fear of punishment. I have sent you this invitation because you have greatness within you; think of all you have achieved in your life, and how much more you could do, if you were not held back. Choose something different. Choose Atlas."
 	},
 	{
 		"name": "Eagle Rock Complex",
@@ -296,7 +296,7 @@
 		"name": "Ally with Isolationists",
 		"cannotBeBuiltWith": "Annex Isolationists",
 		"cost": 5,
-		"uniques": ["Must have an owned [Isolated Island] within [3] tiles","[+2 Science, +2 Gold] from [Isolated Island] tiles in this city"],
+		"uniques": ["Must have an owned [Isolated Island] within [3] tiles","[+2 Science, +2 Gold] from [Isolated Island] tiles in this city","Will not be displayed in Civilopedia"],
 	},	
 	{
 		"name": "Annex Isolationists",
@@ -304,23 +304,30 @@
 		"requiredTech": "Sailing",
 		"cannotBeBuiltWith": "Ally with Isolationists",
 		"cost": 200,
-		"uniques": ["Must have an owned [Isolated Island] within [3] tiles","[+2 Food, +5 Gold, -1 Culture] from [Isolated Island] tiles in this city","Provides [1] [Weapons]","Provides [1] [Slaves]"],
+		"uniques": ["Must have an owned [Isolated Island] within [3] tiles","[+2 Food, +5 Gold, -1 Culture] from [Isolated Island] tiles in this city","Provides [1] [Weapons]","Provides [1] [Slaves]","Will not be displayed in Civilopedia"],
 		"quote": "'Ephialtes the son of Eurydemos, a Malian, came to speech with him, supposing that he would win a very great reward from the king; and this man told him of the path which leads over the mountain to Thermopylae, and brought about the destruction of those Greeks who remained in that place.' - Herodotus"
 	},	
 	{
 		"name": "Faust Project",
 		"isWonder": true,
 		"cost": 50,
-		"uniques": ["Must have an owned [Missile Complex] within [5] tiles","+[25]% Production when constructing [Manhattan Project]","Free [Divine Spear] appears"],
+		"uniques": ["Must have an owned [Missile Complex] within [5] tiles","+[25]% Production when constructing [Manhattan Project]","Free [Divine Spear] appears","Will not be displayed in Civilopedia"],
 	//	"requiredTech": "Secrets of the Past",
 		"quote": "'Our legends tell of weapons, wielded by kings of old; crafted by evil wizards, unholy to behold...'"
 	},	
 	{
+		"name": "Nuclear Waste Museum",
+		"cannotBeBuiltWith": "Excavate Nuclear Waste",
+		"requiredTech": "Writing",
+		"uniques": ["Must have an owned [Nuclear Waste Storage] within [4] tiles","[+1 Culture, +1 Science] from [Nuclear Waste Storage] tiles in this city","Will not be displayed in Civilopedia"],
+	},
+	{
 		"name": "Excavate Nuclear Waste",
+		"cannotBeBuiltWith": "Nuclear Waste Museum",
 		"isWonder": true,
 		"percentStatBonus": {"food": -20},
 		"requiredTech": "Mining",
-		"uniques": ["DO NOT DO THIS.","Must have an owned [Nuclear Waste Storage] within [4] tiles","[-3 Food, +4 Science] from [Nuclear Waste Storage] tiles in this city","Provides [1] [Uranium]"],
+		"uniques": ["DO NOT DO THIS.","Must have an owned [Nuclear Waste Storage] within [4] tiles","[-3 Food, +4 Science] from [Nuclear Waste Storage] tiles in this city","Provides [1] [Uranium]","Will not be displayed in Civilopedia"],
 		"quote": "'Sending this message was important to us. We considered ourselves to be a powerful culture. This place is not a place of honor... no highly esteemed deed is commemorated here... nothing valued is here. What is here was dangerous and repulsive to us. This message is a warning about danger. The danger is still present, in your time, as it was in ours.'"
 	},
 	{
@@ -328,7 +335,7 @@
 		"isWonder": true,
 		"requiredTech": "Ecology",
 		"cost": 50,
-		"uniques": ["Must have an owned [Seed Vault] within [2] tiles","+[25]% growth in all cities"],
+		"uniques": ["Must have an owned [Seed Vault] within [2] tiles","+[25]% growth in all cities","Will not be displayed in Civilopedia"],
 		"quote": "'What about us? What about all the plans that ended in disaster?'  - Alecia Moor"
 	},		
 	{
@@ -336,7 +343,7 @@
 		"isWonder": true,
 		"cannotBeBuiltWith": "Produce Soft Drinks",
 		"cost": 25,
-		"uniques": ["Must have an owned [Soft Drinks Factory] within [3] tiles","Empire enters golden age","[-1 Culture, -1 Happiness] from [Soft Drinks Factory] tiles in this city"],
+		"uniques": ["Must have an owned [Soft Drinks Factory] within [3] tiles","Empire enters golden age","[-1 Culture, -1 Happiness] from [Soft Drinks Factory] tiles in this city","Will not be displayed in Civilopedia"],
 		"quote": "E-NERGY ULTRA BRIGHT ZERO EMISSION STEALTH (Per 500ml Energy 11kCal(1%**) Niacin 43mg(266%**) PANTHOTENIC ACID 21mg (350%**) Caffeine-B 150mg (600%**) **%RDA) ZERO SUGAR - JUST AS PUMPED! In collaboration with Gearheads, Musicians, Coders, CEOs, Anarchists, Bikers, Historical Reenactors, Hipsters, and YOU!"
 	},	
 	{
@@ -345,14 +352,14 @@
 		"isNationalWonder": true,
 		"requiredTech": "Electricity",
 		"requiredResource": "Power",	//power
-		"uniques": ["Must have an owned [Soft Drinks Factory] within [3] tiles","Provides [3] [Soft Drinks]"],
+		"uniques": ["Must have an owned [Soft Drinks Factory] within [3] tiles","Provides [3] [Soft Drinks]","Will not be displayed in Civilopedia"],
 	},		
 	{
 		"name": "Salvage Army Depot",
 		"requiredTech": "Engineering",
 		"isWonder": true,
 		"cost": 50,
-		"uniques": ["Must have an owned [Army Depot] within [3] tiles","[+1 Science, +1 Production] from [Army Depot] tiles in this city","Provides [2] [Weapons]","Free [Ancient Armor] appears"],
+		"uniques": ["Must have an owned [Army Depot] within [3] tiles","[+1 Science, +1 Production] from [Army Depot] tiles in this city","Provides [2] [Weapons]","Free [Ancient Armor] appears","Will not be displayed in Civilopedia"],
 		"quote": "'Oh, see the fire is sweepin, our very street today; burns like a red coat carpet, mad bull lost your way.. War, children! It's just a shot away!' - Traditional Ignis nursery rhyme"
 	},
 	{
@@ -360,13 +367,13 @@
 		"requiredTech": "Sailing",
 		"isWonder": true,
 		"cost": 50,
-		"uniques": ["Must have an owned [Ship Graveyard] within [3] tiles","[+1 Science, +1 Production] from [Ship Graveyard] tiles in this city","Free [Patrol Boat] appears"],
+		"uniques": ["Must have an owned [Ship Graveyard] within [3] tiles","[+1 Science, +1 Production] from [Ship Graveyard] tiles in this city","Free [Patrol Boat] appears","Will not be displayed in Civilopedia"],
 	},
 	{
 		"name": "Turbine Hall",
 		"isWonder": true,
 		"requiredTech": "Steel",
-		"uniques": ["Must have an owned [Hydroelectric Dam] within [3] tiles","Provides [5] [Power]"],
+		"uniques": ["Must have an owned [Hydroelectric Dam] within [3] tiles","Provides [5] [Power]","Will not be displayed in Civilopedia"],
 		"quote": "'In its heyday, these turbines were able to provide clean electricity for up to 350,000 homes and offset 400,000 tons of CO2 each year...' - Promotional material"
 	},	
 	{
@@ -374,7 +381,7 @@
 		"isNationalWonder": true,
 		"requiredTech": "Laboratory",
 		"greatPersonPoints": {"science": 2},
-		"uniques": ["Must have an owned [Research Facility] within [5] tiles","All newly-trained [relevant] units in this city receive the [March] promotion"],
+		"uniques": ["Must have an owned [Research Facility] within [5] tiles","All newly-trained [relevant] units in this city receive the [March] promotion","Will not be displayed in Civilopedia"],
 	},
 		
 		
@@ -385,7 +392,7 @@
 		"requiredResource": "Power",	//power
 		"maintenance": 2,	
 		"greatPersonPoints": {"science": 1},
-		"uniques": ["Must have an owned [Toxic Waste] within [15] tiles","[Artillery] units gain the [Chemical Weapons] promotion","[air units] units gain the [Chemical Weapons] promotion","[Helicopter] units gain the [Chemical Weapons] promotion"],
+		"uniques": ["Must have an owned [Toxic Waste] within [15] tiles","[Artillery] units gain the [Chemical Weapons] promotion","[air units] units gain the [Chemical Weapons] promotion","[Helicopter] units gain the [Chemical Weapons] promotion","Will not be displayed in Civilopedia"],
 	},
 	
 	//	CULTURE, HAPPPINESS
@@ -412,12 +419,13 @@
 		"name": "Personnel Office", //should give bonus from slaves
 		"culture": 1,
 		"happiness": 1,
-		"specialistSlots": {"Administrator": 1},
+		//"specialistSlots": {"Merchant": 1},
 		"maintenance": 1,	
 		"uniques": ["+[33]% Production when constructing [Worker]"],
 		"cost": 40,		
 		"replaces": "Town Hall",
 		"uniqueTo": "Blackwarden",
+		"hurryCostModifier": -25,
 	//	"requiredTech": "Civil Service"
 	},		
 	{
@@ -450,7 +458,7 @@
 	//	"maintenance": 0,
 		"requiredNearbyImprovedResources": ["Artifacts"],
 		"hurryCostModifier": 25,
-		"requiredTech": "Secrets of the Past"
+		"requiredTech": "Writing"
 	},
 	{
 		"name": "Broadcast Tower",
@@ -514,10 +522,12 @@
 		"name": "Caravan Office", 
 		"replaces": "Market",
 		"uniqueTo": "Commonwealth",
+		"gold": 1,
 		"specialistSlots": {"Merchant": 2},
 		"hurryCostModifier": 25,
-		"greatPersonPoints": {"gold": 1},
-		"uniques": ["+5% Production for every Trade Route with a City-State in the empire"],
+		"greatPersonPoints": {"gold": 2},
+		"uniques": ["5% Production for every Trade Route with a City-State in the empire",
+			"Provides 1 extra copy of each improved luxury resource near this City"]
 		"requiredTech": "Trade",
 	},
 	{
@@ -700,7 +710,7 @@
 		"percentStatBonus": {"science": 33},
 		"specialistSlots": {"Scientist": 1},
 		"requiredBuilding": "Library",
-		"uniques": ["[+1 Science] from [Jungle] tiles in this city","Not displayed as an available construction unless [Library] is built"],
+		"uniques": ["[+1 Science] from [Jungle] tiles in this city","[+1 Science] from [Rubble] tiles in this city","Not displayed as an available construction unless [Library] is built"],
 		"requiredTech": "Education"
 	},	
 	{
@@ -710,7 +720,7 @@
 		"culture": 1,
 		"maintenance": 1,
 		"hurryCostModifier": 15,
-		"percentStatBonus": {"science": 25},
+	//	"percentStatBonus": {"science": 25},
 		"specialistSlots": {"Scientist": 1},
 		"requiredBuilding": "Sanctum",
 		"uniques": ["Will not be displayed in Civilopedia"],
@@ -721,18 +731,9 @@
 		"maintenance": 1,
 		"hurryCostModifier": 0,
 		"requiredBuilding": "Library",
+		"cannotBeBuiltWith": "Private School",
 		"uniques": ["[+1 Science] Per [2] Population in this city"],
 		"requiredTech": "Civil Service"
-	},
-	{
-		"name": "Private School",
-		"replaces": "Public School",
-		"uniqueTo": "Blackwarden",
-		"uniques": ["[+1 Science] Per [4] Population in this city","Will not be displayed in Civilopedia"],
-		"greatPersonPoints": {"science": 1},
-		"maintenance": 1,
-		"hurryCostModifier": -25,
-		"requiredTech": "Civil Service",
 	},
 	{
 		"name": "Military School",
@@ -757,7 +758,7 @@
 		"xpForNewUnits": 15,
 		"hurryCostModifier": 0,
 		"requiredBuilding": "Sanctum",
-		"uniques": ["[+1 Science] from [Jungle] tiles in this city","Will not be displayed in Civilopedia","Not displayed as an available construction unless [Sanctum] is built"],
+		"uniques": ["[+1 Science] from [Jungle] tiles in this city","[+1 Science] from [Rubble] tiles in this city","Will not be displayed in Civilopedia","Not displayed as an available construction unless [Sanctum] is built"],
 		"requiredTech": "Civil Service"
 	},
 	
@@ -900,6 +901,7 @@
 	{
 		"name": "Battery",
 		"cityStrength": 10,
+		"maintenance": 1,
 		"hurryCostModifier": 0,
 		"requiredBuilding": "Walls",
 		"uniques": ["Not displayed as an available construction unless [Walls] is built"],
@@ -908,6 +910,7 @@
 	{
 		"name": "Bunker",
 		"cityHealth": 200,
+		"maintenance": 1,
 		"hurryCostModifier": 50,
 		"requiredTech": "Munitions"
 	},		
@@ -949,7 +952,7 @@
 		"xpForNewUnits": 15,
 		"maintenance": 1,
 		"hurryCostModifier": 25,
-		"requiredResource": "Slaves",
+	//	"requiredResource": "Slaves",
 		"uniques": ["Remove extra unhappiness from annexed cities","Will not be displayed in Civilopedia"],
 		"requiredTech": "Engineering"
 		"cannotBeBuiltWith": "Legion Camp",
@@ -1641,7 +1644,7 @@
 		"cost": 75,
         "science": 1,
         "production": -3,
-		"uniques": ["Free [Ancient Armor] appears","Not displayed as an available construction unless [Alma Tank Depot] is built"],
+		"uniques": ["Free [Ancient Armor] appears","Not displayed as an available construction unless [Alma Tank Depot] is built","Will not be displayed in Civilopedia"],
 		"quote": "'To a man with a hammer, everything looks like a nail.' - Abraham Maslow"
 	},
 	{
@@ -1653,7 +1656,7 @@
 		"cost": 60,
         "science": 1,
         "production": -3,
-		"uniques": ["Free [Salvaged Bomber] appears","Not displayed as an available construction unless [Alma Air Base] is built"],
+		"uniques": ["Free [Salvaged Bomber] appears","Not displayed as an available construction unless [Alma Air Base] is built","Will not be displayed in Civilopedia"],
 		"quote": "'For once you have tasted flight, you will forever walk the earth with your eyes turned skyward. For there you have been, and there you will always long to return.' - Global Air Tours advertising copy"
 	},
 	{
@@ -1665,7 +1668,7 @@
 		"cost": 75,
         "science": 1,
         "production": -3,
-		"uniques": ["Free [Salvaged Helicopter] appears","Not displayed as an available construction unless [Alma Air Base] is built"],
+		"uniques": ["Free [Salvaged Helicopter] appears","Not displayed as an available construction unless [Alma Air Base] is built","Will not be displayed in Civilopedia"],
 		"quote": ""//
 	},	
 	{

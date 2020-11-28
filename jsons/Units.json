@@ -106,13 +106,13 @@
 		"name": "Scout",
 		"unitType": "Scout",
 		"movement": 2,
-		"strength": 10,
+		"strength": 12,
 		"cost": 25,		
 		"upgradesTo": "Gunman",
 		"hurryCostModifier": 20,
 		"obsoleteTech": "Rifling",
 		"uniques": ["Low Tech"]
-		"promotions": ["Mobility I","Skirmish"],
+		"promotions": ["Reconnaissance I","Skirmish"],
 		"attackSound": "nonmetalhit"
 	},		
 
@@ -166,7 +166,7 @@
 		"name": "Auxiliary",
 		"unitType": "Melee",
 		"uniqueTo": "Crimson Legion",
-		"replaces": "Spearman",
+	//	"replaces": "Spearman",
 		"movement": 2,
 		"strength": 20,
 		"cost": 20,
@@ -174,6 +174,26 @@
 		"requiredResource": "Slaves",
 		"upgradesTo": "Swordsman",
 		"uniques": ["Low Tech","Can construct roads","Bonus vs Mounted 50%","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},	
+	{
+		"name": "Patriotscantbuildspearman",
+		"unitType": "Melee",
+		"uniqueTo": "The Patriots",
+		"replaces": "Spearman",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},	
+	{
+		"name": "Patriotscantbuildarcher",
+		"unitType": "Melee",
+		"uniqueTo": "The Patriots",
+		"replaces": "Archer",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
 		"attackSound": "metalhit"
 	},	
 	{
@@ -195,12 +215,12 @@
 		"name": "Swordsman",
 		"unitType": "Melee",
 		"uniqueTo": "Crimson Legion",
-		"replaces": "Militia",
+		"replaces": "Spearman",
 		"movement": 2,
 		"strength": 20,
-		"cost": 50,
+		"cost": 45,
 		"requiredTech": "The Wheel",
-		"obsoleteTech": "Steel",
+		"obsoleteTech": "Rifling",
 		"upgradesTo": "Legion",
 		"hurryCostModifier": 20,
 		"uniques": ["Low Tech","Bonus vs City 25%","Bonus vs Low Tech 25%"],
@@ -210,14 +230,14 @@
 		"name": "Legion",
 		"unitType": "Melee",
 		"uniqueTo": "Crimson Legion",
-		"replaces": "Soldier",
+		"replaces": "Militia",
 		"movement": 2,
 		"strength": 24,
-		"cost": 60,
-		"requiredTech": "Engineering",
+		"cost": 50,
+		"requiredTech": "Iron Working",
 		"obsoleteTech": "Combined Arms",
-		"upgradesTo": "Infantry",
-		"uniques": ["Low Tech","Bonus vs City 50%","Bonus vs Low Tech 50%"],
+		"upgradesTo": "Soldier",
+		"uniques": ["Low Tech","Bonus vs City 50%","Bonus vs Low Tech 50%","Requires [Forge]"],
 		"attackSound": "metalhit"
 	},	
 	{
@@ -423,23 +443,6 @@
 		"promotions": ["Forage"],
 		"attackSound": "shot"
 	},	
-	{
-		"name": "Marine",
-		"unitType": "Melee",
-		"uniqueTo": "The Patriots",
-		"replaces": "Spearman",
-		"interceptRange": 1,
-		"movement": 2,
-		"strength": 40,
-		"cost": 150,
-	//	"requiredTech": "The Wheel",
-		"upgradesTo": "Infantry",
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel"],
-		"promotions": ["Amphibious","Gas Mask"],
-		"attackSound": "shot"
-	},	
 
 
 
@@ -508,6 +511,24 @@
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel"],
 		"promotions": ["Infantry Weapons"],
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "Marine",
+		"unitType": "Melee",
+		"uniqueTo": "The Patriots",
+		"replaces": "Infantry",
+		"unitType": "Melee",
+		"interceptRange": 1,
+		"movement": 2,
+		"strength": 45,
+		"cost": 150,
+		"requiredTech": "The Wheel",
+		"upgradesTo": "Modern Infantry",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,		
+		"uniques": ["Personnel","Requires [Armory]"],
+		"promotions": ["Amphibious","Gas Mask","Infantry Weapons"],
 		"attackSound": "machinegun"
 	},	
 	{
@@ -685,7 +706,8 @@
 		"upgradesTo": "Sharpshooter",
 		"requiredResource": "Weapons",
 		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Infantry Weapons"],
+		"uniques": ["Personnel"],
+		"promotions": ["Reconnaissance I","Infantry Weapons"],
 		"attackSound": "shot"
 	},			
 	{
@@ -702,7 +724,8 @@
 		"upgradesTo": "Sharpshooter",
 		"requiredResource": "Weapons",
 		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Infantry Weapons","Will not be displayed in Civilopedia"],
+		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
+		"promotions": ["Reconnaissance I","Infantry Weapons"],
 		"attackSound": "shot"
 	},			
 	{
@@ -718,8 +741,8 @@
 		"hurryCostModifier": 20,
 		"requiredTech": "The Wheel",
 		"requiredResource": "Weapons",		
-		"uniques": ["Personnel"],
-		"promotions": ["Mobility I","Amphibious","Infantry Weapons","Ambush","Drone Recon","Gas Mask"],
+		"uniques": ["Personnel","Requires [Armory]"],
+		"promotions": ["Reconnaissance I","Amphibious","Infantry Weapons","Ambush","Drone Recon","Gas Mask"],
 		"attackSound": "machinegun"
 	},	
 	{
@@ -733,8 +756,8 @@
 		"rangedStrength": 35,
 		"cost": 300,
 		"requiredResource": "Weapons",		
-		"uniques": ["Personnel","+[20]% combat bonus in [Friendly Land]","[100]% Bonus XP gain","Can construct [Citadel]","Great Person - [War]","Unbuildable"],
-		"promotions": ["Mobility I","Infantry Weapons","Gas Mask"],
+		"uniques": ["Personnel","+[20]% combat bonus in [Friendly Land]","[50]% Bonus XP gain","Can construct [Citadel]","Great Person - [War]","Unbuildable"],
+		"promotions": ["Reconnaissance I","Infantry Weapons","Gas Mask"],
 		"attackSound": "shot"
 	},
 	{
@@ -748,7 +771,7 @@
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Requires [Factory]"],
-		"promotions": ["Gas Mask","Infantry Weapons","Precision"],
+		"promotions": ["Reconnaissance I","Gas Mask","Infantry Weapons"],
 		"attackSound": "shot"
 	},		
 	{
@@ -764,7 +787,7 @@
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Requires [Factory]","Will not be displayed in Civilopedia"],
-		"promotions": ["Gas Mask","Infantry Weapons","Precision"],
+		"promotions": ["Reconnaissance I","Gas Mask","Infantry Weapons"],
 		"attackSound": "shot"
 	},		
 	{
@@ -780,7 +803,7 @@
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Requires [Factory]"],
-		"promotions": ["Gas Mask","Infantry Weapons","Extended Range","Precision"],
+		"promotions": ["Reconnaissance I","Gas Mask","Infantry Weapons","Extended Range"],
 		"attackSound": "shot"
 	},
 	{
@@ -1715,6 +1738,7 @@
 		"uniqueTo": "Arroyo",
 		"replaces": "Cavalry",
 		"requiredTech": "The Wheel",
+		"strength": 1,
 		"cost": 1,
 		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
 	},	
@@ -1724,6 +1748,7 @@
 		"uniqueTo": "Arroyo",
 		"replaces": "Attack Vehicle",
 		"requiredTech": "The Wheel",
+		"strength": 1,
 		"cost": 1,
 		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
 	},	
@@ -1769,6 +1794,7 @@
 		"uniqueTo": "Arroyo",
 		"replaces": "Light Cavalry",
 		"requiredTech": "The Wheel",
+		"strength": 1,
 		"cost": 1,
 		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
 	},
@@ -1935,6 +1961,7 @@
 		"uniqueTo": "Ghost Mountain",
 		"replaces": "Cavalry",
 		"requiredTech": "The Wheel",
+		"strength": 1,
 		"cost": 1,
 		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
 	},	
@@ -1981,6 +2008,7 @@
 		"uniqueTo": "Ghost Mountain",
 		"replaces": "Light Cavalry",
 		"requiredTech": "The Wheel",
+		"strength": 1,
 		"cost": 1,
 		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
 	},		
@@ -1990,6 +2018,7 @@
 		"uniqueTo": "Ghost Mountain",
 		"replaces": "Attack Vehicle",
 		"requiredTech": "The Wheel",
+		"strength": 1,
 		"cost": 1,
 		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
 	},	

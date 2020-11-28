@@ -7,28 +7,22 @@
 	},
 	//type SCOUT, special				
 	{
-		"name": "Mobility I",
-		"prerequisites": ["Logistics","March","Blitz","Extended Range","Medic II","Guerilla Warfare II","Urban Warfare II"],
-		"uniques": ["Ignores terrain cost"],
+		"name": "Reconnaissance I",
+		"prerequisites": ["March","Blitz","Extended Range","Medic II","Guerilla Warfare II","Urban Warfare II"],
+		"uniques": ["High speed, low drag","Ignores terrain cost","[50]% Bonus XP gain","Penalty vs City 50%","Penalty vs units in open terrain 20%"],
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},		
 	{
-		"name": "Mobility II",
-		"prerequisites": ["Mobility I"],
-		"uniques": ["+1 Movement","No movement cost to pillage"],
+		"name": "Reconnaissance II",
+		"prerequisites": ["Reconnaissance I"],
+		"uniques": ["+1 Movement","No movement cost to pillage","[50]% Bonus XP gain"],
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},		
 	{
-		"name": "Mobility III",
-		"prerequisites": ["Mobility II"],
-		"uniques": ["+1 Movement"],
-		"unitTypes": ["Scout"]
-	},	
-	{
-		"name": "Mobility III",
-		"prerequisites": ["Mobility II"],
-		"uniques": ["+1 Movement"],
-		"unitTypes": ["Scout"]
+		"name": "Reconnaissance III",
+		"prerequisites": ["Reconnaissance II"],
+		"uniques": ["+1 Movement"],		
+		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},	
 	
 	//type MELEE												
@@ -43,9 +37,9 @@
 		"unitTypes": ["Melee"]
 	},	
 	{
-		"name": "Siege",
+		"name": "Smokescreen",
 		"prerequisites": ["Entrench","Forage"],
-		"uniques": ["Bonus vs City 50%","No movement cost to pillage"],
+		"uniques": ["Bonus vs Ranged 25%"],
 		"unitTypes": ["Melee"]
 	},
 	//defense in depth]
@@ -99,7 +93,7 @@
 		"name": "Awe",
 		"prerequisites": ["Hull Down","Shock"],
 		"uniques": ["Bonus vs wounded units 33%","+[10]% Strength when attacking"],
-		"unitTypes": ["Mounted","Armor"]
+		"unitTypes": ["Armor"]
 	},
 	{
 		"name": "Maneuver",
@@ -122,6 +116,7 @@
 	
 	//type RANGED - infantry
 		
+		//entrench - melee
 	{
 		"name": "Skirmish",
 		"uniques": ["May withdraw before melee ([75]%)","[50]% Bonus XP gain"],
@@ -173,20 +168,26 @@
 		"unitTypes": ["Armor","Siege"]
 	},
 	{
-		"name": "Logistics",
-		"prerequisites": ["Precision","Suppression","Barrage","Resupply",
-		"Targeting III", "Wolfpack III","Bombardment III", "Coastal Raider III","Boarding Party III","Siege III"],//
-		"uniques": ["1 additional attack per turn"],
-		"unitTypes": ["Ranged","Siege"
-		,"WaterMelee","WaterRanged","WaterSubmarine","Fighter","Bomber"]//
-	},
-	{
 		"name": "Extended Range",
 		"prerequisites": ["Precision","Suppression","Barrage","Resupply"
 		,"Targeting II","Bombardment II", "Wolfpack II"],//
 		"uniques": ["+1 Range"],
 		"unitTypes": ["Ranged","Siege"
 		,"WaterRanged","WaterSubmarine"]//
+	},	
+	{
+		"name": "Mobility",
+		"prerequisites": ["Barrage","Resupply"],
+		"uniques": ["+2 Movement"],
+		"unitTypes": ["Siege"]
+	},
+	{
+		"name": "Logistics",
+		"prerequisites": ["Mobility","Extended Range","March",
+		"Targeting III", "Wolfpack III","Bombardment III", "Coastal Raider III","Boarding Party III","Siege III"],//
+		"uniques": ["1 additional attack per turn"],
+		"unitTypes": ["Ranged","Siege"
+		,"WaterMelee","WaterRanged","WaterSubmarine","Fighter","Bomber"]//
 	},
 	
 	// type TERRAIN SPECIFIC

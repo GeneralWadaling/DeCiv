@@ -4,7 +4,7 @@
 		"terrainsCanBeBuiltOn": ["Plains","Desert","Flood plains"],
 		"food": 1,
 		"turnsToBuild": 7,
-		"uniques": ["[+1 Food, -1 Gold] on [fresh water] tiles once [The Wheel] is discovered","Can also be built on tiles adjacent to fresh water","[+1 Food] once [Ecology] is discovered"]
+		"uniques": ["[+1 Food, -1 Gold] on [fresh water] tiles once [The Wheel] is discovered","Can also be built on tiles adjacent to fresh water","[+1 Food] once [Land Remediation] is discovered"]
 	},
 
 	{
@@ -14,7 +14,7 @@
 	//	"gold": -1,
 		"turnsToBuild": 8,
 		"techRequired": "Ecology",
-		"uniques": ["[+1 Food, -1 Gold] on [fresh water] tiles once [Ecology] is discovered","[+1 Food] once [Land Remediation] is discovered"]
+		"uniques": ["Gives a defensive bonus of [10]%","[+1 Food, -1 Gold] on [fresh water] tiles once [Ecology] is discovered","[+1 Food] once [Land Remediation] is discovered"]
 	},
 	{
 		"name": "Mine",
@@ -175,7 +175,7 @@
 {
 		"name": "Academy",
 		"science": 4,
-		"uniques": ["Great Improvement", "[+2 Science] once [Scientific Theory] is discovered", "[+2 Science] once [Decryption] is discovered"]
+		"uniques": ["Great Improvement","Gives a defensive bonus of [10]%", "[+2 Science] once [Scientific Theory] is discovered", "[+2 Science] once [Decryption] is discovered"]
 		// in Gods & Kings academy will also have "[+2 Science] once [Atomic Theory] is discovered"
 	},
 	{
@@ -194,7 +194,7 @@
 	{
 		"name": "Manufactory",
 		"production": 3,
-		"uniques": ["Great Improvement", "[+1 Production] once [Chemistry] is discovered","[+1 Production] once [Electricity] is discovered"]
+		"uniques": ["Great Improvement","Gives a defensive bonus of [10]%", "[+1 Production] once [Chemistry] is discovered","[+1 Production] once [Electricity] is discovered"]
 	},
 
 	{
