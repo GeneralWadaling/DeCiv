@@ -92,7 +92,7 @@
 		"name": "Congress",
 		"cost": 100,
 		"isNationalWonder": true,
-		"requiredBuilding": "Palace",		
+		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Council",
 		"uniques": ["[+1 Culture] per [4] population in all cities","Unhappiness from population decreased by [10]%","Not displayed as an available construction unless [Palace] is built"]
@@ -101,7 +101,7 @@
 		"name": "Council",
 		"cost": 50,
 		"isNationalWonder": true,
-		"requiredBuilding": "Palace",		
+		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Congress",
 		"uniques": ["+[10]% growth in all cities","+[5]% Production when constructing [Buildings]","Not displayed as an available construction unless [Palace] is built"]
@@ -111,7 +111,7 @@
 		"replaces": "Congress",
 		"uniqueTo": "Children of Rust",
 		"cost": 50,
-		"requiredBuilding": "Palace",		
+		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Defense Committee",
 		"uniques": ["[+1 Science, +1 Culture] per [4] population in all cities","Not displayed as an available construction unless [Palace] is built","Will not be displayed in Civilopedia"]
@@ -121,7 +121,7 @@
 		"replaces": "Council",
 		"uniqueTo": "Children of Rust",
 		"cost": 50,
-		"requiredBuilding": "Palace",		
+		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Citizens' Assembly",
 		"uniques": ["+15% combat strength for units fighting in friendly territory","+[10]% Production when constructing [military units]","Not displayed as an available construction unless [Palace] is built","Will not be displayed in Civilopedia"]
@@ -131,7 +131,7 @@
 		"replaces": "Congress",
 		"uniqueTo": "Blackwarden",
 		"cost": 100,
-		"requiredBuilding": "Palace",		
+		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Board of Directors",
 		"uniques": ["[+1 Gold] per [4] population in all cities","Unhappiness from population decreased by [10]%","Not displayed as an available construction unless [Palace] is built","Will not be displayed in Civilopedia"]
@@ -141,7 +141,7 @@
 		"replaces": "Council",
 		"uniqueTo": "Blackwarden",
 		"cost": 50,
-		"requiredBuilding": "Palace",		
+		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Shareholders' Fund",
 		"uniques": ["[+1 Gold] from every [Town Hall]","Cost of purchasing items in cities reduced by [20]%","Not displayed as an available construction unless [Palace] is built","Will not be displayed in Civilopedia"]
@@ -151,7 +151,7 @@
 		"replaces": "Congress",
 		"uniqueTo": "Atlas",
 		"cost": 100,
-		"requiredBuilding": "Palace",		
+		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Think Tank",
 		"uniques": ["[+1 Science, +1 Gold] per [4] population in all cities","Not displayed as an available construction unless [Palace] is built","Will not be displayed in Civilopedia"]
@@ -161,7 +161,7 @@
 		"replaces": "Council",
 		"uniqueTo": "Atlas",
 		"cost": 50,
-		"requiredBuilding": "Palace",		
+		"requiredBuilding": "Search for Survivors",			
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Freedom Foundation",
 		"uniques": ["Production to science conversion in cities increased by 33%","+[10]% Production when constructing [Science] buildings","Not displayed as an available construction unless [Palace] is built","Will not be displayed in Civilopedia"]
@@ -204,7 +204,7 @@
 		"requiredBuilding": "Palace",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "War Council",
-		"uniques": ["[+1 Science] per [4] population in all cities","+[10]% Production when constructing [Science] buildings","Not displayed as an available construction unless [Palace] is built","Will not be displayed in Civilopedia"]
+		"uniques": ["+[25% Science] from every [College of Mystics]","+[10]% Production when constructing [Science] buildings","Not displayed as an available construction unless [Palace] is built","Will not be displayed in Civilopedia"]
 	},
 	
 	//END capital uniques
@@ -522,12 +522,11 @@
 		"name": "Caravan Office", 
 		"replaces": "Market",
 		"uniqueTo": "Commonwealth",
-		"gold": 1,
+		"gold": 2,
 		"specialistSlots": {"Merchant": 2},
 		"hurryCostModifier": 25,
-		"greatPersonPoints": {"gold": 2},
-		"uniques": ["5% Production for every Trade Route with a City-State in the empire",
-			"Provides 1 extra copy of each improved luxury resource near this City"]
+		"greatPersonPoints": {"gold": 1},
+		"uniques": ["5% Production for every Trade Route with a City-State in the empire"]
 		"requiredTech": "Trade",
 	},
 	{
