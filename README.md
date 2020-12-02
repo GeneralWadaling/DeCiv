@@ -1,5 +1,11 @@
 # DeCiv
-DeCiv 1.42
+DeCiv 1.43
+2.12.20
+added city images for late game eras by @THE BUCKETEER 
+-redomestication tech can now be researched from game sart
+-slight rebalance for some buildings
+-policy tree changes; "Spoils of War" now provides double slaves; exchanged Fascism and Police State in Militarism tree
+
 Changelog for 28.11.20
 Resolved some issues preventing mod loading in latest version of Unciv (3.11.15)
 
