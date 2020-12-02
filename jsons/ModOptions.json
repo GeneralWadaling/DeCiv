@@ -1,5 +1,6 @@
 {
 	"isBaseRuleset":true
+	"maxXPfromBarbarians":60
 	"buildingsToRemove":[
 	//"Monument",
 	"Stonehenge","Monastery",

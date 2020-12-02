@@ -9,7 +9,7 @@
 	{
 		"name": "Reconnaissance I",
 		"prerequisites": ["March","Blitz","Extended Range","Medic II","Guerilla Warfare II","Urban Warfare II"],
-		"uniques": ["High speed, low drag","Ignores terrain cost","[50]% Bonus XP gain","Penalty vs City 75%","Penalty vs units in open terrain 20%"],
+		"uniques": ["High speed, low drag","Ignores terrain cost","[50]% Bonus XP gain","Penalty vs City 50%","Penalty vs units in open terrain 20%"],
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},		
 	{

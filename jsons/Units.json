@@ -63,30 +63,19 @@
 		"uniques": ["Can build improvements on tiles"],
 		"cost": 70
 	},	
-	{
-		"name": "Legion Worker",
-		"uniqueTo": "Crimson Legion",
-		"replaces": "Worker",
+	/*{
+		"name": "Fast Worker",
 		"unitType": "Civilian",
 		"movement": 2,
 		"hurryCostModifier": 20,
-		"uniques": ["Can build improvements on tiles","Will not be displayed in Civilopedia"],
+		"requiredTech": "The Wheel",
+		"uniques": ["Can build improvements on tiles"],
 		"cost": 70
-	},		
-	{
-		"name": "Ignis Worker",
-		"uniqueTo": "Cult of Ignis",
-		"replaces": "Worker",
-		"unitType": "Civilian",
-		"movement": 2,
-		"hurryCostModifier": 20,
-		"uniques": ["Can build improvements on tiles","Will not be displayed in Civilopedia"],
-		"cost": 70
-	},	
+	},	*/
 	{
 		"name": "Settler",
 		"unitType": "Civilian",
-		"movement": 2,
+		"movement": 4,
 		"cost": 106,
 		"uniques": ["Founds a new city"],
 		"hurryCostModifier": 20
@@ -275,40 +264,6 @@
 		"uniques": ["Low Tech","Bonus vs Low Tech 33%"],
 		"attackSound": "arrow"
 	},		
-	{
-		"name": "Legion Archer",
-		"unitType": "Ranged",
-		"uniqueTo": "Crimson Legion",
-		"replaces": "Archer",
-		"range": 1,
-		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 15,
-		"cost": 55,
-		"hurryCostModifier": 20,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Gunman",
-		"uniques": ["Low Tech","Bonus vs Low Tech 33%","Will not be displayed in Civilopedia"],
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Crossbowman",
-		"unitType": "Ranged",
-		"uniqueTo": "Cult of Ignis",
-		"replaces": "Archer",
-		"range": 1,
-		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 15,
-		"cost": 55,
-		"hurryCostModifier": 20,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Gunman",
-		"uniques": ["Low Tech","Bonus vs Low Tech 33%","Will not be displayed in Civilopedia"],
-		"attackSound": "arrow"
-	},
 
 	//cavalry
 	{
@@ -321,7 +276,7 @@
 		"obsoleteTech": "Rifling",
 	//	"requiredResource": "Horses",
 		"upgradesTo": "Hussar",
-		"uniques": ["Low Tech","Bonus vs Low Tech 50%","No defensive terrain bonus","Can move after attacking","Penalty vs City 25%","Requires [Stable]","Not displayed as an available construction unless [Stable] is built"],
+		"uniques": ["Low Tech","Bonus vs Low Tech 50%","No defensive terrain bonus","Can move after attacking","Penalty vs City 25%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},	
@@ -336,7 +291,7 @@
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Cavalry",
 		"requiredResource": "Weapons",
-		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","Penalty vs City 50%","Requires [Stable]","Not displayed as an available construction unless [Stable] is built"],
+		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","Penalty vs City 50%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},	
@@ -349,7 +304,7 @@
 		"cost": 120,
 		"requiredTech": "Rifling",
 		"upgradesTo": "Tank",
-		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","Penalty vs City 50%","Requires [Stable]","Not displayed as an available construction unless [Stable] is built"],
+		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","Penalty vs City 50%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -365,7 +320,7 @@
 		"obsoleteTech": "Rifling",
 	//	"requiredResource": "Horses",
 		"upgradesTo": "Dragoon",
-		"uniques": ["Low Tech","Can move after attacking","Bonus vs Low Tech 33%","Penalty vs City 33%","Requires [Stable]","Not displayed as an available construction unless [Stable] is built"],
+		"uniques": ["Low Tech","Can move after attacking","Bonus vs Low Tech 33%","Penalty vs City 33%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},	
@@ -381,7 +336,7 @@
 		"obsoleteTech": "Replaceable Parts",
 		"requiredResource": "Weapons",
 		"upgradesTo": "Light Cavalry",
-		"uniques": ["Personnel","Can move after attacking","Penalty vs City 33%","Requires [Stable]","Not displayed as an available construction unless [Stable] is built"],
+		"uniques": ["Personnel","Can move after attacking","Penalty vs City 33%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -395,7 +350,7 @@
 		"cost": 115,
 		"requiredTech": "Rifling",
 		"upgradesTo": "Helicopter",
-		"uniques": ["Personnel","Can move after attacking","Penalty vs City 33%","Requires [Stable]","Not displayed as an available construction unless [Stable] is built"],
+		"uniques": ["Personnel","Can move after attacking","Penalty vs City 33%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},	
@@ -428,23 +383,6 @@
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"
 	},	
-	{
-		"name": "Ignis Militia",
-		"unitType": "Melee",
-		"uniqueTo": "Cult of Ignis",
-		"replaces": "Militia",
-		"interceptRange": 1,
-		"movement": 2,
-		"strength": 36,
-		"cost": 55,
-		"requiredTech": "The Wheel",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Soldier",		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"]
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,
-		"attackSound": "machinegun"
-	},
 	{
 		"name": "Guerilla",
 		"unitType": "Melee",
@@ -483,23 +421,6 @@
 		"uniques": ["Personnel"],
 		"attackSound": "machinegun"
 	},		
-	{
-		"name": "Ignis Soldier",
-		"unitType": "Melee",
-		"uniqueTo": "Cult of Ignis",
-		"replaces": "Soldier",
-		"interceptRange": 1,
-		"movement": 2,
-		"strength": 40,
-		"cost": 120,
-		"upgradesTo": "Infantry",
-		"hurryCostModifier": 20,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Combined Arms",		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"attackSound": "machinegun"
-	},	
-
 	{
 		"name": "Contractor",
 		"unitType": "Melee",
@@ -552,40 +473,6 @@
 		"attackSound": "machinegun"
 	},	
 	{
-		"name": "Legion Infantry",
-		"unitType": "Melee",
-		"uniqueTo": "Crimson Legion",
-		"replaces": "Infantry",
-		"interceptRange": 1,
-		"movement": 2,
-		"strength": 45,
-		"cost": 125,
-		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "Modern Infantry",
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"promotions": ["Infantry Weapons"],
-		"attackSound": "machinegun"
-	},	
-	{
-		"name": "Ignis Infantry",
-		"unitType": "Melee",
-		"uniqueTo": "Cult of Ignis",
-		"replaces": "Infantry",
-		"interceptRange": 1,
-		"movement": 2,
-		"strength": 45,
-		"cost": 125,
-		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "Modern Infantry",
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"promotions": ["Infantry Weapons"],
-		"attackSound": "machinegun"
-	},	
-	{
 		"name": "Modern Infantry",
 		"unitType": "Melee",
 		"interceptRange": 1,
@@ -595,21 +482,6 @@
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,
 		"uniques": ["Personnel","Requires [Factory]"],
-		"promotions": ["Infantry Weapons","Gas Mask"],
-		"attackSound": "machinegun"
-	},
-	{
-		"name": "Legion Modern Infantry",
-		"unitType": "Melee",
-		"uniqueTo": "Crimson Legion",
-		"replaces": "Modern Infantry",
-		"interceptRange": 1,
-		"movement": 2,
-		"strength": 45,
-		"cost": 230,
-		"requiredTech": "Combined Arms",
-		"hurryCostModifier": 20,
-		"uniques": ["Personnel","Requires [Factory]","Will not be displayed in Civilopedia"],
 		"promotions": ["Infantry Weapons","Gas Mask"],
 		"attackSound": "machinegun"
 	},
@@ -628,42 +500,6 @@
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel"],
 		"attackSound": "shot"
-	},	
-	{
-		"name": "Legion Gunman",
-		"unitType": "Ranged",
-		"uniqueTo": "Crimson Legion",
-		"replaces": "Gunman",
-		"range": 1,
-		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 24,
-		"cost": 60,
-		"requiredTech": "The Wheel",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Rifleman",
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"attackSound": "shot"
-	},		
-	{
-		"name": "Ignis Gunman",
-		"unitType": "Ranged",
-		"uniqueTo": "Cult of Ignis",
-		"replaces": "Gunman",
-		"range": 1,
-		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 24,
-		"cost": 60,
-		"requiredTech": "The Wheel",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Rifleman",
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"attackSound": "shot"
 	},		
 	{
 		"name": "Rifleman",
@@ -681,40 +517,6 @@
 		"attackSound": "shot"
 	},	
 	{
-		"name": "Legion Rifleman",
-		"unitType": "Ranged",
-		"uniqueTo": "Crimson Legion",
-		"replaces": "Rifleman",
-		"range": 1,
-		"movement": 2,
-		"strength": 40,
-		"rangedStrength": 30,
-		"cost": 120,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Combined Arms",
-		"upgradesTo": "Marksman",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"attackSound": "shot"
-	},
-	{
-		"name": "Ignis Rifleman",
-		"unitType": "Ranged",
-		"uniqueTo": "Cult of Ignis",
-		"replaces": "Rifleman",
-		"range": 1,
-		"movement": 2,
-		"strength": 40,
-		"rangedStrength": 30,
-		"cost": 120,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Combined Arms",
-		"upgradesTo": "Marksman",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"attackSound": "shot"
-	},
-	{
 		"name": "Marksman",
 		"unitType": "Ranged",
 		"range": 1,
@@ -729,25 +531,7 @@
 		"uniques": ["Personnel"],
 		"promotions": ["Reconnaissance I","Infantry Weapons"],
 		"attackSound": "shot"
-	},			
-	{
-		"name": "Legion Marksman",
-		"unitType": "Ranged",
-		"uniqueTo": "Crimson Legion",
-		"replaces": "Marksman",
-		"range": 1,
-		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 35,
-		"cost": 125,
-		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "Sharpshooter",
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"promotions": ["Reconnaissance I","Infantry Weapons"],
-		"attackSound": "shot"
-	},			
+	},				
 	{
 		"name": "Spec Ops",
 		"unitType": "Ranged",
@@ -793,23 +577,7 @@
 		"uniques": ["Personnel","Requires [Factory]"],
 		"promotions": ["Reconnaissance I","Gas Mask","Infantry Weapons"],
 		"attackSound": "shot"
-	},		
-	{
-		"name": "Legion Sharpshooter",
-		"unitType": "Ranged",
-		"uniqueTo": "Crimson Legion",
-		"replaces": "Sharpshooter",
-		"range": 1,
-		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 35,
-		"cost": 225,
-		"requiredTech": "Combined Arms",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Requires [Factory]","Will not be displayed in Civilopedia"],
-		"promotions": ["Reconnaissance I","Gas Mask","Infantry Weapons"],
-		"attackSound": "shot"
-	},		
+	},			
 	{
 		"name": "Sniper",
 		"unitType": "Ranged",
@@ -1142,7 +910,7 @@
 		"requiredTech": "Lasers",
 		"uniques": ["[33]% chance to intercept air attacks","+1 Visibility Range","Can move after attacking","Ranged attacks may be performed over obstacles",
 		"Amphibious","Helicopter","No defensive terrain bonus","All tiles costs 1","Can pass through impassable tiles","May withdraw before melee ([100]%",
-		"Requires [Aerospace Facility]","Not displayed as an available construction unless [Aerospace Facility] is built","Penalty vs City 25%"],
+		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]","Penalty vs City 25%"],
 		"requiredResource": "Oil",
 		"promotions": ["Advanced Weapons","Antitank Missile"],
 		"hurryCostModifier": 20,
@@ -1197,7 +965,7 @@
 		"requiredResource": "Aluminum",
 		"hurryCostModifier": 20,
 		"uniques": ["6 tiles in every direction always visible",
-		"Requires [Aerospace Facility]","Not displayed as an available construction unless [Aerospace Facility] is built"],
+		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]"],
 		"attackSound": "shot"
 	},	
 	{
@@ -1214,7 +982,7 @@
 		"uniques": ["[100]% chance to intercept air attacks",
 			"Bonus vs Bomber 100%",
 			"6 tiles in every direction always visible",
-		"Requires [Aerospace Facility]","Not displayed as an available construction unless [Aerospace Facility] is built"],	
+		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]"],	
 		"attackSound": "shot"
 	},
 	{
@@ -1231,7 +999,7 @@
 		"uniques": ["[100]% chance to intercept air attacks",
 		"Bonus vs Bomber 100%",
 		"6 tiles in every direction always visible",
-		"Requires [Aerospace Facility]","Not displayed as an available construction unless [Aerospace Facility] is built"],
+		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]"],
 		"attackSound": "shot"
 	},	
 
@@ -1364,7 +1132,7 @@
 		"replaces": "Great General",
 		"unitType": "Civilian",
 		"uniques": ["Bonus for units in 2 tile radius 15%","This unit and all others in adjacent tiles heal 5 additional HP per turn",
-					"Can construct [Citadel]","Great Person - [War]", "Unbuildable"],
+					"Can construct [Citadel]","Great Person - [War]","Uncapturable", "Unbuildable"],
 		"movement": 2,
 	},	
 	{
@@ -1373,7 +1141,7 @@
 		"replaces": "Great General",
 		"unitType": "Civilian",
 		"uniques": ["Can start an [8]-turn golden age","Bonus for units in 2 tile radius 15%", "Heal adjacent units for an additional 15 HP per turn",
-					"Rough terrain penalty","Can construct [Citadel]","Great Person - [War]", "Unbuildable"],
+					"Rough terrain penalty","Can construct [Citadel]","Great Person - [War]","Uncapturable", "Unbuildable"],
 		"movement": 5,
 	},	
 	
