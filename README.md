@@ -1,10 +1,11 @@
 # DeCiv
-DeCiv 1.43
+DeCiv 1.44
 2.12.20
 added city images for late game eras by @THE BUCKETEER 
--redomestication tech can now be researched from game sart
+-redomestication tech can now be researched from game start
 -slight rebalance for some buildings
--policy tree changes; "Spoils of War" now provides double slaves; exchanged Fascism and Police State in Militarism tree
+-policy tree changes to accomodate new resource uniques
+-test of new unit images code for legion and ignis military units, atlas worker
 
 Changelog for 28.11.20
 Resolved some issues preventing mod loading in latest version of Unciv (3.11.15)
