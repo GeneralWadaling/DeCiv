@@ -29,6 +29,12 @@
 				"uniques": ["Enables embarkation for land units"],
 				"quote": "'He who commands the sea has command of everything.' - Themistocles"
 			},
+			{
+				"name": "Redomestication",
+				"row": 3,
+				"prerequisites": ["The Wheel"],
+				"quote": "'And God blessed them, and God said unto them, Be fruitful, and multiply, and replenish the earth, and subdue it: and have dominion over the fish of the sea, and over the fowl of the air, and over every living thing that moveth upon the earth.' - Bible Genesis 1:28"
+			},
 
 			{
 				"name": "Secrets of the Past",
@@ -58,12 +64,6 @@
 		"buildingCost": 75,
 		"wonderCost": 185,
 		"techs": [
-			{
-				"name": "Redomestication",
-				"row": 3,
-				"prerequisites": ["The Wheel"],
-				"quote": "'And God blessed them, and God said unto them, Be fruitful, and multiply, and replenish the earth, and subdue it: and have dominion over the fish of the sea, and over the fowl of the air, and over every living thing that moveth upon the earth.' - Bible Genesis 1:28"
-			},
 			{
 				"name": "Writing",
 				"row": 5,
@@ -156,7 +156,7 @@
 				"name": "Currency",
 				"row": 10,
 				"prerequisites": ["Chemistry","Trade","Engineering"],
-				"quote": "'Do not, my friends, become addicted to water. It will take hold of you, and you will resent its absence!'",
+				"quote": "'It's true, I'm telling you... the water was so clean, it was everywhere! You could drink the rain, you could drink right out of the river! There was so much clean water that people would wash with it; hot! You could stand under hot running water as long as you liked, and drink it, too! Listen, this one will make you laugh, let me tell you about the toilets...'",
 				"uniques": ["Enables conversion of city production to gold"],
 			},
 		]	

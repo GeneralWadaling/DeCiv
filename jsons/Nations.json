@@ -32,7 +32,7 @@
 	},
 	{
 		"name": "Blackwarden",
-		"leaderName": "Ennis Zuckberger",
+		"leaderName": "Eric Price",
 		"adjective": ["Mercenary"],
 	//	"startBias": ["Avoid Tundra","Avoid Desert"],
 		"preferredVictoryType": "Domination",
@@ -43,7 +43,7 @@
 		"declaringWar": "It's time for you to join the Blackwarden family.",
 		"attacked": "Competitiveness? It's one of our core values.",
 		"defeated": "I'm sure we can come to an agreement. Let me send you my resume.",
-		"introduction": "You've reached the office of Ennis Zuckberger, VP of mergers and acquisitions, Blackwarden, incorporated. Here at Blackwarden, the comfort and security of our shareholders is our number one priority.",
+		"introduction": "You've reached the office of Eric Price, VP of mergers and acquisitions, Blackwarden, incorporated. Here at Blackwarden, the comfort and security of our shareholders is our number one priority.",
 		
 		"neutralHello": "Greetings!",
 		"hateHello": "What?",
@@ -111,7 +111,7 @@
 		"innerColor": [200,0,70],
 		"uniqueName": "Mutual Assistance",
 		"uniques": ["City-State Influence degrades at half rate","Food and Culture from Friendly City-States are increased by 50%"],
-		"cities": ["Union City","Accord","Inheritance","Junction","Wellspring","Fall's End","Highpool","Constitution","Hope Commons",
+		"cities": ["Union City","Accord","Inheritance","Junction","Wellspring","Fall's End","Highpool","Constitution","Hope Commons","Clearwater",
 			"Mercywell","Sunrise","Dead Forest","Gallows Bend","Arefu","Rocket Falls","Monument","Broken Sword","Concordia","Splendid",
 			"Iron Springs","Prudence","Hawkins","Stonefields","Harmony","Fitzroy Bluff","Hangman Valley","Portville","Hamelin","High Gate"
 			]
@@ -201,7 +201,7 @@
 		"innerColor": [244,232,54],
 		"uniqueName": "One Banner",
 		"uniques": ["67% chance to earn 25 Gold and recruit a Barbarian unit from a conquered encampment", "-25% land units maintenance"],
-		"cities": ["Postumus","Rubicon","Dies Irae","Igni Ferroque","Tartarus","Aqua Vitae","Vae Victis","Extrema Ratio","Tycho",
+		"cities": ["Postumus","Rubicon","Dies Irae","Tartarus","Aqua Vitae","Vae Victis","Extrema Ratio","Igni Ferroque","Tycho",
 			"Mors Omnibus","Carthage","Lex Talionis","Kronos","Memento Mori","Orcus","Ex Nihilo","Golgotha","Para Bellum","Styx",
 			"Manu Forte","Elysium","Alea Iacta Est","Damocles","De Facto","Corpus Vile","Canis Canem Edit","Ad Astra"
 		]
@@ -227,9 +227,9 @@
 		"innerColor": [0,0,0],
 		"uniqueName": "Road Warriors",
 		"uniques": ["Double quantity of [Oil] produced"],
-		"cities": ["Gastown","Blood Farm","Trial of Sand","Prophecy","Thousand Cuts","The Harrowing","Immortal Highway",
-			"Tohuvabohu","Forbidden Palace","Traitors' Gate","Hell Patrol","Hanging Gardens","The Cauldron","Steel Throne","The Warren",
-			"Well of Souls","Hermitage","Perpetual Ascension","Ceremony","Court of Dreams","Death Race","God Box"
+		"cities": ["Gastown","Blood Farm","Trial of Sand","Prophecy","Thousand Cuts","The Harrowing","Temple of Rage","Immortal Highway",
+			"Tohuvabohu","Forbidden Palace","Hanging Gardens","The Cauldron","Traitors' Gate","Hell Patrol","Steel Throne","The Warren",
+			"Well of Souls","Hermitage","Ceremony","Court of Dreams","Perpetual Ascension","Death Race","God Box"
 			]
 	}
 

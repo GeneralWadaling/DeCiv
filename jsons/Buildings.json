@@ -59,7 +59,7 @@
 		"cityHealth": 80,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["[10]% of food is carried over after population increases","Provides [1] [Power]","Provides [4] [Weapons]","Free [Spec Ops] appears","Will not be displayed in Civilopedia"]
+		"uniques": ["[10]% of food is carried over after population increases","Provides [1] [Power]","Provides [2] [Weapons]","Free [Spec Ops] appears","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Forum",
@@ -80,7 +80,7 @@
 		"happiness": 1,
 		"cost": 1,
 		"requiredBuilding": "Palace",	
-		"uniques": ["+2 Culture] once [Machinery] is discovered", "Provides [3] [Oil]","Free [War Buggy] appears","Will not be displayed in Civilopedia"]
+		"uniques": ["+2 Culture] once [Machinery] is discovered", "Provides [2] [Oil]","Free [War Buggy] appears","Will not be displayed in Civilopedia"]
 		"quote":"Be thy hands, anointed, with holy oil. Be thy breast, anointed, with holy oil. Be thy head, anointed, with holy oil. As kings, priests, and prophets were anointed. And as Solomon was anointed king by Zadok the priest and Nathan the prophet, so be you anointed.' - Rite of Ignition"
 			
 	},
@@ -421,7 +421,7 @@
 		"happiness": 1,
 		//"specialistSlots": {"Merchant": 1},
 		"maintenance": 1,	
-		"uniques": ["+[33]% Production when constructing [Worker]"],
+		"uniques": ["[10]% of food is carried over after population increases","+[33]% Production when constructing [Worker]"],
 		"cost": 40,		
 		"replaces": "Town Hall",
 		"uniqueTo": "Blackwarden",
@@ -588,10 +588,10 @@
 		
 	{
 		"name": "Ranch", 
-		"food": 2,
 		"requiredNearbyImprovedResources": ["Cattle","Goats","Furs"],
 		"maintenance": 1,
 		"hurryCostModifier": 25,
+		"uniques": ["+1 Food] from [Cattle] tiles in this city","+1 Food] from [Goats] tiles in this city","+1 Food] from [Furs] tiles in this city"]
 		"requiredTech": "Redomestication"
 	},		
 	{

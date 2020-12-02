@@ -133,7 +133,7 @@
 			{
 				"name": "Spoils of War",
 				"effect": "",
-				"uniques": ["Earn [10]% of [military] opponent's [Cost] as [Gold] for kills","Receive triple Gold from Barbarian encampments and pillaging Cities"],// translate
+				"uniques": ["Earn [10]% of [military] opponent's [Cost] as [Gold] for kills","Double quantity of [Slaves] produced"],
 				"requires": ["Doctrine"],
 				"row": 2,
 				"column": 2
@@ -142,9 +142,9 @@
 				"name": "Triumph",
 				"effect": "",
 				"uniques": ["[+1 Happiness, +2 Culture] in all cities with a garrison","Earn [75]% of [military] opponent's [Strength] as [Culture] for kills"],
-				"requires": ["Spoils of War"],
-				"row": 3,
-				"column": 2
+				"requires": ["Doctrine"],
+				"row": 2,
+				"column": 3
 			},
 
 			{
@@ -381,37 +381,32 @@
 
 			{
 				"name": "Militarism",
-				"effect": "Gold cost of purchasing units -33%",
 				"uniques": ["Gold cost of purchasing units -33%"],
 				"row": 1,
 				"column": 2
 			},		
 			{
 				"name": "Scorched Earth",
-				"effect": "Gold cost of purchasing units -33%",
 				"uniques": ["+15% Combat Strength for all units when attacking Cities","Melee units pay no movement cost to pillage"],
 				"row": 1,
 				"column": 3
 			},	
 			{
 				"name": "Populism",
-				"effect": "",
 				"uniques": ["Wounded military units deal +25% damage","+10% Strength for all units during Golden Age"],
 				"requires": ["Militarism"],
 				"row": 2,
 				"column": 1
-			},					
+			},			
 			{
-				"name": "Fascism",
-				"effect": "",
-				"uniques": ["Quantity of strategic resources produced by the empire increased by 100%","[-2 Food] from every [Courthouse]","[-6 Food, +4 Production] from every [Prison Camp]"],
+				"name": "Police State",
+				"uniques": ["[+1 Happiness] from every [Town Hall]","[+3 Happiness] from every [Courthouse]","[+5 Happiness] from every [Prison Camp]"],
 				"requires": ["Scorched Earth","Militarism"],
 				"row": 2,
 				"column": 3
 			},		
 			{
 				"name": "Total War",
-				"effect": "",
 				"uniques": ["+[15]% Production when constructing [military units]", "New military units start with [15] Experience"],
 				"requires": ["Populism"],
 				"row": 3,
@@ -419,16 +414,14 @@
 			},
 		
 			{
-				"name": "Police State",
-				"effect": "",
-				"uniques": ["[+1 Happiness] from every [Town Hall]","[+3 Happiness] from every [Courthouse]","[+5 Happiness] from every [Prison Camp]"],
-				"requires": ["Fascism"],
+				"name": "Fascism",
+				"uniques": ["Quantity of strategic resources produced by the empire increased by 100%","[-2 Food] from every [Courthouse]","[-6 Food, +4 Production] from every [Prison Camp]"],
+				"requires": ["Police State"],
 				"row": 3,
 				"column": 3
-			},
+			},		
 			{
 				"name": "Supremacy Complete",
-				"effect": "",
 				"uniques": ["+20% attack bonus to all Military Units for 30 turns"]
 			}
 		]
