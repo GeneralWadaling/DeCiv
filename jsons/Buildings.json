@@ -124,7 +124,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Citizens' Assembly",
-		"uniques": ["+15% combat strength for units fighting in friendly territory","+[10]% Production when constructing [military units]","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"uniques": ["+15% combat strength for units fighting in friendly territory","+[10]% Production when constructing [military units]","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Shareholders' Fund",
@@ -134,7 +134,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Board of Directors",
-		"uniques": ["[+1 Gold] per [4] population in all cities","Unhappiness from population decreased by [10]%","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"uniques": ["[+1 Gold] per [4] population in all cities","Unhappiness from population decreased by [10]%","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Board of Directors",
@@ -144,7 +144,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Shareholders' Fund",
-		"uniques": ["[+1 Gold] from every [Town Hall]","Cost of purchasing items in cities reduced by [20]%","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"uniques": ["[+1 Gold] from every [Town Hall]","Cost of purchasing items in cities reduced by [20]%","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Freedom Foundation",
@@ -154,7 +154,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Think Tank",
-		"uniques": ["[+1 Science, +1 Gold] per [4] population in all cities","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"uniques": ["[+1 Science, +1 Gold] per [4] population in all cities","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Think Tank",
@@ -164,7 +164,7 @@
 		"requiredBuilding": "Search for Survivors",			
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Freedom Foundation",
-		"uniques": ["Production to science conversion in cities increased by 33%","+[10]% Production when constructing [Science] buildings","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"uniques": ["Production to science conversion in cities increased by 33%","+[10]% Production when constructing [Science] buildings","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Senate",
@@ -174,7 +174,7 @@
 		"requiredBuilding": "Palace",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Consulate",
-		"uniques": ["[+1 Culture, +1 Gold] per [4] population in all cities","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"uniques": ["[+1 Culture, +1 Gold] per [4] population in all cities","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Consulate",
@@ -184,7 +184,7 @@
 		"requiredBuilding": "Palace",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Senate",
-		"uniques": ["Great General provides double combat bonus","+[10]% Production when constructing [military units]","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"uniques": ["Great General provides double combat bonus","+[10]% Production when constructing [military units]","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},
 	{
 		"name": "War Council",
@@ -194,7 +194,7 @@
 		"requiredBuilding": "Palace",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Seer Council",
-		"uniques": ["[+1 Production] per [4] population in all cities","+[10]% Production when constructing [military units]","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"uniques": ["[+1 Production] per [4] population in all cities","+[10]% Production when constructing [military units]","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Seer Council",
@@ -204,7 +204,7 @@
 		"requiredBuilding": "Palace",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "War Council",
-		"uniques": ["+[25% Science] from every [College of Mystics]","+[10]% Production when constructing [Science] buildings","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"uniques": ["+[25% Science] from every [College of Mystics]","+[10]% Production when constructing [Science] buildings","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},
 	
 	//END capital uniques
@@ -263,7 +263,7 @@
 		"replaces": "Search for Survivors",
 		"uniqueTo": "Crimson Legion",
 		"uniques": ["+1 happiness for every city connected to capital","Provides [3] [Slaves]","+[50]% Production when constructing [Worker]",
-		"Free [Auxiliary] appears","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"Free [Auxiliary] appears","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},		
 	{
 		"name": "Conscript Survivors",
@@ -271,7 +271,7 @@
 		"requiredBuilding": "Palace",		
 		"replaces": "Search for Survivors",
 		"uniqueTo": "Cult of Ignis",
-		"uniques": ["Provides [3] [Slaves]","Free [Warrior] appears","Not displayed as an available construction without Palace","Will not be displayed in Civilopedia"]
+		"uniques": ["Provides [3] [Slaves]","Free [Warrior] appears","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Search Shelters",
