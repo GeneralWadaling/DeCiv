@@ -1,27 +1,11 @@
 # DeCiv
-DeCiv 1.44
-2.12.20
-added city images for late game eras by @THE BUCKETEER 
--redomestication tech can now be researched from game start
--slight rebalance for some buildings
--policy tree changes to accomodate new resource uniques
--test of new unit images code for legion and ignis military units, atlas worker
-
-Changelog for 28.11.20
-Resolved some issues preventing mod loading in latest version of Unciv (3.11.15)
-
-"Mobility" promotion is now "Reconnaissance", provides Ignore Terrain Cost and XP boost, but has combat penalties in open terrain and vs city. Marksman/Sharpshooter now starts with Reconnaissance promotion
-
-Patriot Marine and Spec Ops now require Armory to build; Slight buff to Marine strength; Patriots cannot build low tech combat units
-
-Legion now can be trained from Iron Working, cost decreased slightly, requires Forge to build. Crimon Legion can train Soldiers from Rifling on par with other nations
-
-Slightly buffed Scout strength
-
-Increased Water income from Monopoly policy tree
-
-Some changes to building tree balance
-
+DeCiv 1.45
+5.12.20
+-corrected some bugs with policies and promotion progression
+-faction images added for Patriots units
+-removed obsolete national units
+-all nations can now build Auxiliary and Conscript units
+-Drone Facility split from Aerospace Facility; gives Drone Recon to all infantry units
 
 
 
