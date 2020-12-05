@@ -645,7 +645,7 @@
 		"hurryCostModifier": 0,
 		"requiredTech": "Biology",
 		"requiredResource": "Slaves",
-		"uniques": ["[10]% of food is carried over after population increases","All newly-trained [relevant] units in this city receive the [Resupply] promotion"]
+		"uniques": ["[10]% of food is carried over after population increases","[relevant] units gain the [Resupply] promotion"]
 	},	
 
 	{
@@ -858,6 +858,7 @@
 		"science": 1,	
 		"greatPersonPoints": {"production": 2},
 		"isWonder": true,
+		"requiredBuilding": "Aerospace Facility",
 		"uniques": ["Gold from all trade routes +25%","All military naval units receive +1 movement and +1 sight"],
 		"requiredTech": "Satellites"
 		"quote": ""//
@@ -1173,9 +1174,9 @@
 	{
 		"name": "Armor Production Line",
 		"percentStatBonus": {"production": -10},
-		"production": -2,
+		"production": -3,
 		"requiredResource": "Power",	//power
-		"uniques": ["[2] free [Tank] units appear","+[100]% Production when constructing [Tank]","+[50]% Production when constructing [Modern Armor]","Not displayed as an available construction without [Factory]"],
+		"uniques": ["[2] free [Tank] units appear","+[100]% Production when constructing [Tank]","+[50]% Production when constructing [Modern Armor]","+[25]% Production when constructing [Advanced Armor]","Not displayed as an available construction without [Factory]"],
 		"requiredBuilding": "Factory",
 		"requiredTech": "Combined Arms"
 	},
@@ -1183,22 +1184,32 @@
 		"name": "Armaments Production Line",
 		"percentStatBonus": {"production": -10},
 		"cityStrength": 5,
-		"production": -2,
+		"production": -3,
 		"requiredResource": "Power",	//power
 		"uniques": ["Provides [1] [Weapons]","[Personnel] units gain the [Infantry Weapons] promotion","+[10]% Production when constructing [military units]","Not displayed as an available construction without [Factory]"],
 		"requiredBuilding": "Factory",
 		"requiredTech": "Munitions"
 	},
 	{
-		"name": "Aerospace Facility",
-		"cityStrength": 10,
+		"name": "Drone Facility",
+		"cityStrength": 5,
 		"production": -2,
 		"requiredResource": "Power",	//power
-		"uniques": ["Allows production of advanced aircraft and space craft","[Personnel] units gain the [Drone Recon] promotion",
+		"uniques": ["[Personnel] units gain the [Drone Recon] promotion","+[25]% Production when constructing [Strike Drone] in this city",
+		"+[25]% Production when constructing [Fighter Drone] in this city","Not displayed as an available construction without [Factory]"],
+		"requiredBuilding": "Factory",
+		"requiredTech": "Mobile Tactics"
+	},
+	{
+		"name": "Aerospace Facility",
+		"cityStrength": 10,
+		"production": -3,
+		"requiredResource": "Power",	//power
+		"uniques": ["Allows production of advanced aircraft and space craft",
 		"[air units] units gain the [Advanced Weapons] promotion","+[15]% Production when constructing [air units] in this city",
 		"Not displayed as an available construction without [Factory]"],
 		"requiredBuilding": "Factory",
-		"requiredTech": "Mobile Tactics"
+		"requiredTech": "Rocketry"
 	},
 	{
 		"name": "Automated Factory",

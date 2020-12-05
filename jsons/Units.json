@@ -2,17 +2,6 @@
 
 // Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/
 
-	/*{
-		"name": "Debug Scout",
-		"unitType": "Scout",
-		"movement": 15,
-		"strength": 3,
-		"cost": 5,
-	//	"requiredTech": "Avionics",
-		"hurryCostModifier": 20,
-		"uniques": ["+2 Visibility Range","All tiles costs 1","Can pass through impassable tiles"],
-		"promotions": ["Sentry","Skirmish"],
-	},*/
 
 	{
 		"name": "Divine Spear",
@@ -66,21 +55,20 @@
 	/*{
 		"name": "Fast Worker",
 		"unitType": "Civilian",
-		"movement": 2,
+		"movement": 4,
 		"hurryCostModifier": 20,
 		"requiredTech": "The Wheel",
-		"uniques": ["Can build improvements on tiles"],
-		"cost": 70
-	},	*/
+		"uniques": ["Can build improvements on tiles","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"cost": 130
+	},*/
 	{
 		"name": "Settler",
 		"unitType": "Civilian",
-		"movement": 4,
+		"movement": 3,
 		"cost": 106,
-		"uniques": ["Founds a new city"],
+		"uniques": ["Founds a new city","Heal adjacent units for an additional 15 HP per turn"],
 		"hurryCostModifier": 20
 	},	
-	
 	{
 		"name": "Work Boats",
 		"unitType": "WaterCivilian",
@@ -111,7 +99,7 @@
 		"name": "Warrior",
 		"unitType": "Melee",
 		"uniqueTo": "Cult of Ignis",
-		"replaces": "Spearman",
+		"replaces": "Auxiliary",
 		"movement": 2,
 		"strength": 20,
 		"cost": 20,
@@ -119,7 +107,7 @@
 		"hurryCostModifier": 20,
 		"obsoleteTech": "Rifling",
 		"requiredResource": "Slaves",
-		"uniques": ["Low Tech","Bonus vs Mounted 50%","Will not be displayed in Civilopedia"],
+		"uniques": ["Low Tech","+[50]% Strength vs [Mounted]","Will not be displayed in Civilopedia"],
 		"promotions": ["Martyrdom"],
 		"attackSound": "nonmetalhit"
 	},		
@@ -134,7 +122,7 @@
 		"upgradesTo": "Militia",
 		"hurryCostModifier": 20,
 		"obsoleteTech": "Rifling",
-		"uniques": ["Low Tech","Bonus vs Mounted 50%"],
+		"uniques": ["Low Tech","+[50]% Strength vs [Mounted]"],
 		"attackSound": "nonmetalhit"
 	},	
 	{
@@ -154,57 +142,16 @@
 	{
 		"name": "Auxiliary",
 		"unitType": "Melee",
-		"uniqueTo": "Crimson Legion",
-	//	"replaces": "Spearman",
 		"movement": 2,
-		"strength": 20,
+		"strength": 18,
 		"cost": 20,
-	//	"obsoleteTech": "Rifling",
 		"requiredResource": "Slaves",
-		"upgradesTo": "Swordsman",
-		"uniques": ["Low Tech","Can construct roads","Bonus vs Mounted 50%","Will not be displayed in Civilopedia"],
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Militia",
+		"uniques": ["Low Tech","Can construct roads","+[50]% Strength vs [Mounted]","Not displayed as an available construction without [Slaves]"],
 		"attackSound": "metalhit"
 	},	
-	{
-		"name": "Patriotscantbuildspearman",
-		"unitType": "Melee",
-		"uniqueTo": "The Patriots",
-		"replaces": "Spearman",
-		"strength": 1,
-		"cost": 1,
-		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
-		"attackSound": "metalhit"
-	},	
-	{
-		"name": "Patriotscantbuildarcher",
-		"unitType": "Melee",
-		"uniqueTo": "The Patriots",
-		"replaces": "Archer",
-		"strength": 1,
-		"cost": 1,
-		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
-		"attackSound": "metalhit"
-	},		
-	{
-		"name": "Patriotscantbuildskirmisher",
-		"unitType": "Melee",
-		"uniqueTo": "The Patriots",
-		"replaces": "Skirmisher",
-		"strength": 1,
-		"cost": 1,
-		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
-		"attackSound": "metalhit"
-	},	
-	{
-		"name": "Patriotscantbuildhorseman",
-		"unitType": "Melee",
-		"uniqueTo": "The Patriots",
-		"replaces": "Horseman",
-		"strength": 1,
-		"cost": 1,
-		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
-		"attackSound": "metalhit"
-	},	
+
 	{
 		"name": "Surveyor",
 		"unitType": "Melee",
@@ -232,7 +179,7 @@
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Legion",
 		"hurryCostModifier": 20,
-		"uniques": ["Low Tech","Bonus vs City 25%","Bonus vs Low Tech 25%"],
+		"uniques": ["Low Tech","+[25]% Strength vs [City]","+[25]% Strength vs [Low Tech]"],
 		"attackSound": "metalhit"
 	},		
 	{
@@ -246,7 +193,7 @@
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Combined Arms",
 		"upgradesTo": "Soldier",
-		"uniques": ["Low Tech","Bonus vs City 50%","Bonus vs Low Tech 50%","Requires [Forge]"],
+		"uniques": ["Low Tech","+[50]% Strength vs [City]","+[50]% Strength vs [Low Tech]","Requires [Forge]"],
 		"attackSound": "metalhit"
 	},	
 	{
@@ -261,7 +208,7 @@
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Gunman",
-		"uniques": ["Low Tech","Bonus vs Low Tech 33%"],
+		"uniques": ["Low Tech","+[33]% Strength vs [Low Tech]"],
 		"attackSound": "arrow"
 	},		
 
@@ -276,7 +223,7 @@
 		"obsoleteTech": "Rifling",
 	//	"requiredResource": "Horses",
 		"upgradesTo": "Hussar",
-		"uniques": ["Low Tech","Bonus vs Low Tech 50%","No defensive terrain bonus","Can move after attacking","Penalty vs City 25%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Low Tech","+[50]% Strength vs [Low Tech]","No defensive terrain bonus","Can move after attacking","-[25]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},	
@@ -291,7 +238,7 @@
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Cavalry",
 		"requiredResource": "Weapons",
-		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","Penalty vs City 50%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","-[50]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},	
@@ -304,7 +251,7 @@
 		"cost": 120,
 		"requiredTech": "Rifling",
 		"upgradesTo": "Tank",
-		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","Penalty vs City 50%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","-[50]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -320,7 +267,7 @@
 		"obsoleteTech": "Rifling",
 	//	"requiredResource": "Horses",
 		"upgradesTo": "Dragoon",
-		"uniques": ["Low Tech","Can move after attacking","Bonus vs Low Tech 33%","Penalty vs City 33%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Low Tech","Can move after attacking","+[33]% Strength vs [Low Tech]","-[33]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},	
@@ -336,7 +283,7 @@
 		"obsoleteTech": "Replaceable Parts",
 		"requiredResource": "Weapons",
 		"upgradesTo": "Light Cavalry",
-		"uniques": ["Personnel","Can move after attacking","Penalty vs City 33%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Personnel","Can move after attacking","-[33]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -350,7 +297,7 @@
 		"cost": 115,
 		"requiredTech": "Rifling",
 		"upgradesTo": "Helicopter",
-		"uniques": ["Personnel","Can move after attacking","Penalty vs City 33%","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Personnel","Can move after attacking","-[33]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},	
@@ -422,6 +369,20 @@
 		"attackSound": "machinegun"
 	},		
 	{
+		"name": "Conscript",
+		"unitType": "Melee",
+		"interceptRange": 1,
+		"movement": 2,
+		"strength": 36,
+		"cost": 60,
+		"upgradesTo": "Infantry",
+		"hurryCostModifier": 20,
+		"requiredResource": "Slaves",
+		"requiredTech": "Rifling",	
+		"uniques": ["Personnel","Can construct roads","Not displayed as an available construction without [Slaves]"],
+		"attackSound": "machinegun"
+	},	
+	{
 		"name": "Contractor",
 		"unitType": "Melee",
 		"uniqueTo": "Blackwarden",
@@ -463,7 +424,7 @@
 		"interceptRange": 1,
 		"movement": 2,
 		"strength": 45,
-		"cost": 150,
+		"cost": 175,
 		"requiredTech": "The Wheel",
 		"upgradesTo": "Modern Infantry",
 		"requiredResource": "Weapons",
@@ -604,7 +565,7 @@
 		"requiredTech": "Steel",
 		"upgradesTo": "Artillery",
 		"obsoleteTech": "Munitions",
-		"uniques": ["Bonus vs Low Tech 20%","Bonus vs City 100%","No defensive terrain bonus","Must set up to ranged attack","Limited Visibility","Requires [Blast Furnace]"]
+		"uniques": ["+[20]% Strength vs [Low Tech]","+[100]% Strength vs [City]","No defensive terrain bonus","Must set up to ranged attack","Limited Visibility","Requires [Blast Furnace]"]
 	},
 	{
 		"name": "Ballista",
@@ -618,7 +579,7 @@
 		"requiredTech": "Machinery",
 		"upgradesTo": "Artillery",
 		"obsoleteTech": "Munitions",
-		"uniques": ["Bonus vs Low Tech 33%","Bonus vs City 100%","No defensive terrain bonus","Must set up to ranged attack","Limited Visibility"]
+		"uniques": ["+[33]% Strength vs [Low Tech]","+[100]% Strength vs [City]","No defensive terrain bonus","Must set up to ranged attack","Limited Visibility"]
 	},
 	{
 		"name": "Anti-Tank Gun",
@@ -630,7 +591,7 @@
 		"cost": 150,
 		"requiredTech": "Munitions",
 		"upgradesTo": "Missile Vehicle",
-		"uniques": ["Bonus vs Armor 200%","Requires [Factory]"],
+		"uniques": ["+[200]% Strength vs [Armor]","Requires [Factory]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -644,7 +605,7 @@
 		"cost": 185,
 		"requiredTech": "Munitions",
 		"upgradesTo": "Rocket Artillery",
-		"uniques": ["Bonus vs City 100%","No defensive terrain bonus","Penalty vs Helicopter 50%",
+		"uniques": ["+[100]% Strength vs [City]","No defensive terrain bonus","-[50]% Strength vs [Helicopter]",
 			"Must set up to ranged attack","Limited Visibility","Requires [Factory]"],
 		"promotions": ["Artillery"],
 		"hurryCostModifier": 20,
@@ -659,7 +620,7 @@
 		"rangedStrength": 50,
 		"cost": 150,
 		"requiredTech": "Replaceable Parts",
-		"uniques": ["Must set up to ranged attack","Penalty vs Armor 33%","Penalty vs City 50%","Requires [Factory]"],
+		"uniques": ["Must set up to ranged attack","-[33]% Strength vs [Armor]","-[50]% Strength vs [City]","Requires [Factory]"],
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"
 	},
@@ -673,9 +634,8 @@
 		"rangedStrength": 50,
 		"cost": 185,
 		"requiredTech": "Ballistics",
-		"uniques": ["[75]% chance to intercept air attacks","Bonus vs air units 50%","Bonus vs Helicopter 100%","Penalty vs City 50%","Penalty vs Armor 33%",
+		"uniques": ["[75]% chance to intercept air attacks","+[50]% Strength vs [Air]","+[100]% Strength vs [Helicopter]","-[33]% Strength vs [Armor]","-[50]% Strength vs [City]",
 		"Must set up to ranged attack","Requires [Factory]"],
-		//"Bonus vs Siege 200%",
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"
 	},
@@ -692,7 +652,7 @@
 		"requiredResource": "Oil",
 		"upgradesTo": "Armored Car",
 		"obsoleteTech": "Replaceable Parts",
-		"uniques": ["Bonus vs Low Tech 20%","Penalty vs City 66%","Can move after attacking","No defensive terrain bonus","Rough terrain penalty"],
+		"uniques": ["+[20]% Strength vs [Low Tech]","-[66]% Strength vs [City]","Can move after attacking","No defensive terrain bonus","Rough terrain penalty"],
 		"hurryCostModifier": 20
 	},		
 	{
@@ -703,11 +663,10 @@
 		"movement": 5,
 		"strength": 30,
 		"cost": 60,
-	//	"requiredTech": "Iron Working",
 		"requiredResource": "Oil",
 		"upgradesTo": "Armored Car",
 		"obsoleteTech": "Combined Arms",
-		"uniques": ["Bonus vs Low Tech 20%","Penalty vs City 66%","Can move after attacking","No defensive terrain bonus","Rough terrain penalty","Will not be displayed in Civilopedia"],
+		"uniques": ["+[20]% Strength vs [Low Tech]","-[66]% Strength vs [City]","Can move after attacking","No defensive terrain bonus","Rough terrain penalty","Will not be displayed in Civilopedia"],
 		"promotions": ["Martyrdom"],
 		"hurryCostModifier": 20
 	},	
@@ -726,7 +685,7 @@
 		"requiredResource": "Oil",
 		"upgradesTo": "Tank",
 		"obsoleteTech": "Combined Arms",
-		"uniques": ["Penalty vs City 33%","Penalty vs Armor 33%","Can move after attacking","No defensive terrain bonus","Rough terrain penalty","Requires [Factory]"],
+		"uniques": ["-[33]% Strength vs [Armor]","-[33]% Strength vs [City]","Can move after attacking","No defensive terrain bonus","Rough terrain penalty","Requires [Factory]"],
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"
 	},		
@@ -743,7 +702,7 @@
 		"requiredResource": "Oil",
 		"upgradesTo": "Tank",
 		"obsoleteTech": "Combined Arms",
-		"uniques": ["Bonus vs City 50%","+25% Defence against ranged attacks","Can move after attacking","No defensive terrain bonus","Rough terrain penalty"],
+		"uniques": ["+[50]% Strength vs [City]","+25% Defence against ranged attacks","Can move after attacking","No defensive terrain bonus","Rough terrain penalty"],
 		"hurryCostModifier": 20
 	},	
 	{
@@ -774,7 +733,7 @@
 		"requiredResource": "Oil",
 		"upgradesTo": "Missile Vehicle",
 		"obsoleteTech": "Lasers",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","Penalty vs City 50%","Penalty vs Armor 33%","May withdraw before melee ([75]%)"],
+		"uniques": ["Can move after attacking","No defensive terrain bonus","-[33]% Strength vs [Armor]","-[50]% Strength vs [City]","May withdraw before melee ([75]%)"],
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"
 	},		
@@ -794,7 +753,7 @@
 		"requiredResource": "Oil",
 		"upgradesTo": "Modern Armor",
 		"obsoleteTech": "Advanced Materials",
-		"uniques": ["Can move after attacking","Penalty vs City 25%","No defensive terrain bonus","Rough terrain penalty","Requires [Factory]"],
+		"uniques": ["Can move after attacking","-[25]% Strength vs [City]","No defensive terrain bonus","Rough terrain penalty","Requires [Factory]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},	
@@ -812,7 +771,7 @@
 		"requiredResource": "Oil",
 		"upgradesTo": "Advanced Armor",
 		"obsoleteTech": "Energy Weapons",
-		"uniques": ["Can move after attacking","Penalty vs City 25%","No defensive terrain bonus","Rough terrain penalty","Requires [Factory]"],
+		"uniques": ["Can move after attacking","-[25]% Strength vs [City]","No defensive terrain bonus","Rough terrain penalty","Requires [Factory]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -826,7 +785,7 @@
 		"cost": 350,
 		"requiredTech": "Rocketry",
 		"requiredResource": "Oil",
-		"uniques": ["Bonus vs City 100%","No defensive terrain bonus","Rough terrain penalty","Penalty vs Helicopter 50%",
+		"uniques": ["+[100]% Strength vs [City]","No defensive terrain bonus","Rough terrain penalty","-[50]% Strength vs [Helicopter]",
 			"Limited Visibility","May withdraw before melee ([50]%)","Requires [Factory]"],
 		"promotions": ["Artillery"],
 		"hurryCostModifier": 20,
@@ -842,7 +801,7 @@
 		"cost": 325,
 		"requiredTech": "Lasers",
 		"requiredResource": "Oil",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","Bonus vs Armor 150%","May withdraw before melee ([75]%)","Requires [Factory]"],
+		"uniques": ["Can move after attacking","No defensive terrain bonus","+[150]% Strength vs [Armor]","May withdraw before melee ([75]%)","Requires [Factory]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -857,7 +816,7 @@
 		"cost": 375,
 		"requiredTech": "Lasers",
 		"requiredResource": "Oil",
-		"uniques": ["[100]% chance to intercept air attacks","Bonus vs air units 300%","Bonus vs Helicopter 300%",
+		"uniques": ["[100]% chance to intercept air attacks","+[300]% Strength vs [Air]","+[300]% Strength vs [Helicopter]",
 		"No defensive terrain bonus","Rough terrain penalty","May withdraw before melee ([50]%)","Requires [Factory]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
@@ -874,7 +833,7 @@
 		"upgradesTo": "Giant Death Robot",
 		"obsoleteTech": "Nuclear Fusion",
 		*/
-		"uniques": ["Can move after attacking","Penalty vs City 20%","No defensive terrain bonus","Rough terrain penalty","Requires [Factory]"],		
+		"uniques": ["Can move after attacking","-[25]% Strength vs [City]","No defensive terrain bonus","Rough terrain penalty","Requires [Factory]"],		
 		"promotions": ["Point Defense Laser","Drone Recon"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
@@ -892,7 +851,7 @@
 		"requiredTech": "Gyroscopes",
 		"obsoleteTech": "Lasers",
 		"upgradesTo": "Attack Helicopter",	
-		"uniques": ["Penalty vs Armor 20%","Can move after attacking","Penalty vs City 25%",
+		"uniques": ["-[25]% Strength vs [Armor]","Can move after attacking","-[25]% Strength vs [City]",
 		"Amphibious","Helicopter","No defensive terrain bonus","All tiles costs 1","Can pass through impassable tiles","May withdraw before melee ([100]%","Requires [Factory]"],
 		"requiredResource": "Oil",
 		"hurryCostModifier": 20,
@@ -910,7 +869,7 @@
 		"requiredTech": "Lasers",
 		"uniques": ["[33]% chance to intercept air attacks","+1 Visibility Range","Can move after attacking","Ranged attacks may be performed over obstacles",
 		"Amphibious","Helicopter","No defensive terrain bonus","All tiles costs 1","Can pass through impassable tiles","May withdraw before melee ([100]%",
-		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]","Penalty vs City 25%"],
+		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]","-[25]% Strength vs [City]"],
 		"requiredResource": "Oil",
 		"promotions": ["Advanced Weapons","Antitank Missile"],
 		"hurryCostModifier": 20,
@@ -932,7 +891,7 @@
 		"upgradesTo": "Jet Fighter",
 		"obsoleteTech": "Robotics",
 		"hurryCostModifier": 20,
-		"uniques": ["[100]% chance to intercept air attacks","Bonus vs Bomber 100%",
+		"uniques": ["[100]% chance to intercept air attacks","+[100]% Strength vs [Bomber]",
 			"6 tiles in every direction always visible","Requires [Factory]"],
 		"attackSound": "machinegun"
 	},
@@ -980,7 +939,7 @@
 		"requiredResource": "Oil",
 		"hurryCostModifier": 20,
 		"uniques": ["[100]% chance to intercept air attacks",
-			"Bonus vs Bomber 100%",
+			"+[100]% Strength vs [Bomber]",
 			"6 tiles in every direction always visible",
 		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]"],	
 		"attackSound": "shot"
@@ -997,7 +956,7 @@
 		"requiredResource": "Aluminum",
 		"hurryCostModifier": 20,
 		"uniques": ["[100]% chance to intercept air attacks",
-		"Bonus vs Bomber 100%",
+		"+[100]% Strength vs [Bomber]",
 		"6 tiles in every direction always visible",
 		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]"],
 		"attackSound": "shot"
@@ -1068,7 +1027,7 @@
 		"cost": 400,
 		"requiredResource": "Oil",
 		"requiredTech": "Ballistics",
-		"uniques": ["Ranged attacks may be performed over obstacles", "Bonus vs City 20%","Requires [Factory]"],
+		"uniques": ["Ranged attacks may be performed over obstacles", "+[25]% Strength vs [City]","Requires [Factory]"],
 		"hurryCostModifier": 20
 	},
 	{
@@ -1099,7 +1058,7 @@
 		"uniqueTo": "Cult of Ignis",
 		"replaces": "Great Artist",
 		"unitType": "Civilian",
-		"uniques": ["Can start an [8-]turn golden age","Can construct [Oracle]", "Great Person - [Culture]", "Unbuildable"],
+		"uniques": ["Can start an [8-]turn golden age","Can construct [Oracle]", "Great Person - [Culture]","Uncapturable","Unbuildable"],
 		"movement": 2
 	},
 	{
@@ -1158,7 +1117,7 @@
 		"requiredTech": "Iron Working",
 		"upgradesTo": "Armored Car",
 		"obsoleteTech": "Replaceable Parts",		
-		"uniques": ["Personnel","Bonus vs Low Tech 50%","No defensive terrain bonus","Can move after attacking","Penalty vs City 25%","Will not be displayed in Civilopedia","Can move after attacking","+10 HP when healing"],
+		"uniques": ["Personnel","+[50]% Strength vs [Low Tech]","-[25]% Strength vs [City]","No defensive terrain bonus","Can move after attacking","Will not be displayed in Civilopedia","Can move after attacking","+10 HP when healing"],
 		"promotions": ["Forage","Skirmish","March"],
 		"hurryCostModifier": 20
 	},	
@@ -1189,7 +1148,7 @@
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Soldier",		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia","Penalty vs City 50%","+10 HP when healing"],
+		"uniques": ["Personnel","Will not be displayed in Civilopedia","-[40]% Strength vs [City]","+10 HP when healing"],
 		"promotions": ["Forage"],
 		"attackSound": "shot"
 	},	
@@ -1206,7 +1165,7 @@
 		"hurryCostModifier": 20,
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Rifleman",	
-		"uniques": ["Low Tech","Bonus vs Low Tech 33%","Will not be displayed in Civilopedia","+10 HP when healing"],
+		"uniques": ["Low Tech","+[33]% Strength vs [Low Tech]","Will not be displayed in Civilopedia","+10 HP when healing"],
 		"promotions": ["Skirmish"],
 		"attackSound": "arrow"
 	},		
@@ -1224,7 +1183,7 @@
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Rifleman",
 		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia","Penalty vs City 33%","+10 HP when healing"],
+		"uniques": ["Personnel","Will not be displayed in Civilopedia","-[33]% Strength vs [City]","+10 HP when healing"],
 		"attackSound": "shot"
 	},		
 	{
@@ -1239,7 +1198,7 @@
 		"requiredTech":  "Rifling",
 		"obsoleteTech": "Combined Arms",
 		"upgradesTo": "Infantry",		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia","Bonus vs City 100%","+10 HP when healing"],
+		"uniques": ["Personnel","Will not be displayed in Civilopedia","+[100]% Strength vs [City]","+10 HP when healing"],
 		"promotions": ["Forage","Entrench","Guerilla Warfare I","Urban Warfare I","Ambush"],
 		"attackSound": "shot"
 	},	
@@ -1257,7 +1216,7 @@
 		"obsoleteTech": "Combined Arms",
 		"upgradesTo": "Sharpshooter",
 		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia","Bonus vs City 100%","+10 HP when healing"],
+		"uniques": ["Personnel","Will not be displayed in Civilopedia","+[100]% Strength vs [City]","+10 HP when healing"],
 		"promotions": ["Skirmish","Entrench","Guerilla Warfare I","Urban Warfare I"],
 		"attackSound": "shot"
 	},	
@@ -1272,7 +1231,7 @@
 		"cost": 225,
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia","Bonus vs City 100%","+10 HP when healing"],
+		"uniques": ["Personnel","Will not be displayed in Civilopedia","+[100]% Strength vs [City]","+10 HP when healing"],
 		"promotions": ["Skirmish","Entrench","Forage","Guerilla Warfare I","Guerilla Warfare II","Urban Warfare I","Urban Warfare II","Antitank Missile","Surface-to-Air Missile","March"],
 		"attackSound": "machinegun"
 	},
@@ -1288,7 +1247,7 @@
 		"cost": 225,
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,
-		"uniques": ["Personnel","Will not be displayed in Civilopedia","Bonus vs City 100%","+10 HP when healing","Penalty vs Armor 20%"],
+		"uniques": ["Personnel","Will not be displayed in Civilopedia","+[100]% Strength vs [City]","+10 HP when healing","-[20]% Strength vs [Armor]"],
 		"promotions": ["Skirmish","Entrench","Extended Range","Guerilla Warfare I","Guerilla Warfare II","Urban Warfare I","Urban Warfare II","Precision","March"],		
 		"attackSound": "shot"
 	},			
@@ -1306,7 +1265,7 @@
 		"cost": 55,
 		"requiredTech": "The Wheel",
 		"upgradesTo": "Rocket Artillery",
-		"uniques": ["Bonus vs City 100%","No defensive terrain bonus","Penalty vs Helicopter 50%",
+		"uniques": ["+[100]% Strength vs [City]","No defensive terrain bonus","-[50]% Strength vs [Helicopter]",
 			"Must set up to ranged attack","Limited Visibility","Requires [Factory]"],
 		"promotions": ["Artillery"],
 		"hurryCostModifier": 20,
@@ -1323,7 +1282,6 @@
 		"requiredTech": "The Wheel",
 		"requiredResource": "Oil",
 		"upgradesTo": "Modern Armor",
-	//	"obsoleteTech": "Advanced Materials",
 		"uniques": ["Will not be displayed in Civilopedia","Can move after attacking","No defensive terrain bonus","Requires [Alma Tank Depot]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
@@ -1341,7 +1299,7 @@
 		"requiredResource": "Oil",
 		"requiredTech": "Steel",
 		"upgradesTo": "Helicopter",	
-		"uniques": ["Will not be displayed in Civilopedia","Penalty vs Armor 20%","Can move after attacking",
+		"uniques": ["Will not be displayed in Civilopedia","-[25]% Strength vs [Armor]","Can move after attacking",
 		"Amphibious","Helicopter","No defensive terrain bonus","All tiles costs 1","Can pass through impassable tiles","May withdraw before melee ([100]%)","Requires [Alma Air Base]"],
 		"requiredResource": "Oil",
 		"hurryCostModifier": 20,
@@ -1367,46 +1325,6 @@
 	},
 	
 	{
-		"name": "Arroyo Worker",
-		"unitType": "Civilian",
-		"uniqueTo": "Arroyo",
-		"replaces": "Worker",
-		"movement": 2,
-		"hurryCostModifier": 20,
-		"uniques": ["Can build improvements on tiles","Will not be displayed in Civilopedia"],
-		"cost": 50
-	},
-	{
-		"name": "Arroyo Warrior",
-		"unitType": "Melee",
-		"uniqueTo": "Arroyo",
-		"replaces": "Spearman",
-		"movement": 2,
-		"strength": 20,
-		"cost": 50,
-		"obsoleteTech": "Steel",
-		"upgradesTo": "Militia",			
-		"uniques": ["Low Tech","Bonus vs Low Tech 25%","Will not be displayed in Civilopedia","Bonus vs Mounted 50%"],
-		"attackSound": "nonmetalhit"
-	},	
-	{
-		"name": "Arroyo Archer",
-		"unitType": "Ranged",
-		"uniqueTo": "Arroyo",
-		"replaces": "Archer",
-		"range": 1,
-		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 15,
-		"cost": 60,
-		"hurryCostModifier": 20,
-		"obsoleteTech": "Steel",
-		"upgradesTo": "Rifleman",   			
-		"uniques": ["Low Tech","Bonus vs Low Tech 33%","Will not be displayed in Civilopedia"],
-		"promotions": ["Skirmish"],
-		"attackSound": "arrow"	
-	},		
-	{
 		"name": "Arroyo Defender",
 		"unitType": "Melee",
 		"uniqueTo": "Arroyo",
@@ -1415,8 +1333,8 @@
 		"strength": 24,
 		"cost": 50,
 		"requiredTech": "Steel",
-		"upgradesTo": "Militia"	,		
-		"uniques": ["Low Tech","Bonus vs Low Tech 33%","Will not be displayed in Civilopedia","Bonus vs Mounted 50%"],		
+		"upgradesTo": "Militia",		
+		"uniques": ["Low Tech","+[50]% Strength vs [Low Tech]","+[50]% Strength vs [Mounted]","Will not be displayed in Civilopedia"],		
 		"promotions": ["Ambush"],
 		"attackSound": "nonmetalhit"
 	},	
@@ -1433,40 +1351,10 @@
 		"hurryCostModifier": 20,
 		"requiredTech": "Steel",
 		"upgradesTo": "Gunman", 		
-		"uniques": ["Low Tech","Bonus vs Low Tech 33%","Will not be displayed in Civilopedia"],
+		"uniques": ["Low Tech","+[33]% Strength vs [Low Tech]","Will not be displayed in Civilopedia"],
 		"promotions": ["Skirmish"],
 		"attackSound": "arrow"
 	},		
-	{
-		"name": "Arroyo Militia",
-		"unitType": "Melee",
-		"uniqueTo": "Arroyo",
-		"replaces": "Militia",
-		"movement": 2,
-		"strength": 40,
-		"cost": 55,
-		"requiredTech": "The Wheel",
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,
-		"attackSound": "machinegun"
-	},	
-	{
-		"name": "Arroyo Gunman",
-		"unitType": "Ranged",
-		"uniqueTo": "Arroyo",
-		"replaces": "Gunman",
-		"range": 1,
-		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 24,
-		"cost": 60,
-		"requiredTech": "The Wheel",
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"attackSound": "shot"
-	},	
 	{
 		"name": "Arroyo Machine Gun",
 		"unitType": "Siege",
@@ -1481,149 +1369,14 @@
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"	
 		"requiredResource": "Weapons",
-		"uniques": ["Must set up to ranged attack","Penalty vs Armor 33%","Penalty vs City 33%",
+		"uniques": ["Must set up to ranged attack","-[33]% Strength vs [Armor]","-[33]% Strength vs [City]",
 		"Personnel","Will not be displayed in Civilopedia"],
 		"attackSound": "machinegun"
 	},	
-	{
-		"name": "Arroyo Horseman",
-		"unitType": "Mounted",
-		"uniqueTo": "Arroyo",
-		"replaces": "Horseman",
-		"movement": 4,
-		"strength": 20,
-		"cost": 70,
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Hussar",
-		"uniques": ["Low Tech","Bonus vs Low Tech 50%","No defensive terrain bonus","Can move after attacking","Penalty vs City 25%","Requires [Stable]","Will not be displayed in Civilopedia"],		
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},	
-	{
-		"name": "Arroyo Hussar",
-		"unitType": "Mounted",
-		"uniqueTo": "Arroyo",
-		"replaces": "Hussar",
-		"movement": 4,
-		"strength": 36,
-		"cost": 75,
-		"requiredTech": "Redomestication",
-		"obsoleteTech": "Replaceable Parts",
-		"requiredResource": "Weapons",
-		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","Penalty vs City 50%","Requires [Stable]","Will not be displayed in Civilopedia"],
-		"hurryCostModifier": 20,
-		"attackSound": "shot"
-	},	
-	{
-		"name": "Arroyo Cavalry",
-		"unitType": "Melee",
-		"uniqueTo": "Arroyo",
-		"replaces": "Cavalry",
-		"requiredTech": "The Wheel",
-		"strength": 1,
-		"cost": 1,
-		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
-	},	
-	{
-		"name": "Arroyo Car",
-		"unitType": "Melee",
-		"uniqueTo": "Arroyo",
-		"replaces": "Attack Vehicle",
-		"requiredTech": "The Wheel",
-		"strength": 1,
-		"cost": 1,
-		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
-	},	
-	{
-		"name": "Arroyo Skirmisher",
-		"unitType": "Ranged",
-		"uniqueTo": "Arroyo",
-		"replaces": "Skirmisher",
-		"range": 1,
-		"movement": 4,
-		"strength": 15,
-		"rangedStrength": 15,
-		"cost": 75,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Rifling",
-	//	"requiredResource": "Horses",
-		"upgradesTo": "Dragoon",
-		"uniques": ["Low Tech","Can move after attacking","Bonus vs Low Tech 33%","Penalty vs City 33%","Requires [Stable]","Will not be displayed in Civilopedia"],
-		"promotions": ["Skirmish"],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},	
-	{
-		"name": "Arroyo Dragoon",
-		"unitType": "Ranged",
-		"uniqueTo": "Arroyo",
-		"replaces": "Dragoon",
-		"range": 1,
-		"movement": 4,
-		"strength": 30,
-		"rangedStrength": 24,
-		"cost": 80,
-		"requiredTech": "Redomestication",
-		"obsoleteTech": "Replaceable Parts",
-		"requiredResource": "Weapons",
-		"uniques": ["Personnel","Can move after attacking","Penalty vs City 33%","Requires [Stable]","Will not be displayed in Civilopedia"],
-		"hurryCostModifier": 20,
-		"attackSound": "shot"
-	},
-	{
-		"name": "Arroyo Light Cavalry",
-		"unitType": "Melee",
-		"uniqueTo": "Arroyo",
-		"replaces": "Light Cavalry",
-		"requiredTech": "The Wheel",
-		"strength": 1,
-		"cost": 1,
-		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
-	},
 	
 	
 	
-	{
-		"name": "Ghost Worker",
-		"unitType": "Civilian",
-		"uniqueTo": "Ghost Mountain",
-		"replaces": "Worker",
-		"movement": 2,
-		"hurryCostModifier": 20,
-		"uniques": ["Can build improvements on tiles","Will not be displayed in Civilopedia"],
-		"cost": 50
-	},	
-	{
-		"name": "Ghost Warrior",
-		"unitType": "Melee",
-		"uniqueTo": "Ghost Mountain",
-		"replaces": "Spearman",
-		"movement": 2,
-		"strength": 20,
-		"cost": 40,
-		"obsoleteTech": "Steel",
-		"upgradesTo": "Soldier",		
-		"uniques": ["Low Tech","Bonus vs Low Tech 25%","Will not be displayed in Civilopedia"],
-		"promotions": ["Guerilla Warfare I"],
-		"attackSound": "nonmetalhit"
-	},		
-	{
-		"name": "Ghost Archer",
-		"unitType": "Ranged",
-		"uniqueTo": "Ghost Mountain",
-		"replaces": "Archer",
-		"range": 1,
-		"movement": 2,
-		"strength": 15,
-		"rangedStrength": 15,
-		"cost": 50,
-		"hurryCostModifier": 20,
-		"obsoleteTech": "Steel",
-		"upgradesTo": "Rifleman",   		
-		"uniques": ["Low Tech","Bonus vs Low Tech 33%","Will not be displayed in Civilopedia"],
-		"promotions": ["Guerilla Warfare I","Skirmish"],
-		"attackSound": "arrow"
-	},		
+	
 	{
 		"name": "Ghost Defender",
 		"unitType": "Melee",
@@ -1634,8 +1387,8 @@
 		"cost": 50,
 		"requiredTech": "Steel",
 		"upgradesTo": "Militia",			
-		"uniques": ["Low Tech","Bonus vs Low Tech 33%","Will not be displayed in Civilopedia","Bonus vs Mounted 50%"],		
-		"promotions": ["Guerilla Warfare I","Guerilla Warfare II","Ambush"],
+		"uniques": ["Low Tech","+[50]% Strength vs [Low Tech]","+[50]% Strength vs [Mounted]","Will not be displayed in Civilopedia"],		
+		"promotions": ["Ambush"],
 		"attackSound": "nonmetalhit"
 	},	
 	{
@@ -1651,42 +1404,11 @@
 		"hurryCostModifier": 20,
 		"requiredTech": "Steel",
 		"upgradesTo": "Gunman", 			
-		"uniques": ["Low Tech","Bonus vs Low Tech 33%","Will not be displayed in Civilopedia"],
-		"promotions": ["Guerilla Warfare I","Guerilla Warfare II","Skirmish"],
+		"uniques": ["Low Tech","+[33]% Strength vs [Low Tech]","Will not be displayed in Civilopedia"],
+		"promotions": ["Skirmish"],
 		"attackSound": "arrow"
 	},		
-	{
-		"name": "Ghost Militia",
-		"unitType": "Melee",
-		"uniqueTo": "Ghost Mountain",
-		"replaces": "Militia",
-		"movement": 2,
-		"strength": 40,
-		"cost": 55,
-		"requiredTech": "The Wheel",
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],		
-		"promotions": ["Guerilla Warfare I","Guerilla Warfare II"],
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,
-		"attackSound": "machinegun"
-	},	
-	{
-		"name": "Ghost Gunman",
-		"unitType": "Ranged",
-		"uniqueTo": "Ghost Mountain",
-		"replaces": "Gunman",
-		"range": 1,
-		"movement": 2,
-		"strength": 30,
-		"rangedStrength": 24,
-		"cost": 60,
-		"requiredTech": "The Wheel",
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,		
-		"uniques": ["Personnel","Will not be displayed in Civilopedia"],
-		"promotions": ["Guerilla Warfare I","Guerilla Warfare II","Skirmish"],
-		"attackSound": "shot"
-	},	
+	
 	{
 		"name": "Ghost Machine Gun",
 		"unitType": "Siege",
@@ -1701,42 +1423,96 @@
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"	
 		"requiredResource": "Weapons",
-		"uniques": ["Must set up to ranged attack","Penalty vs Armor 33%","Penalty vs City 33%",
+		"uniques": ["Must set up to ranged attack","-[33]% Strength vs [Armor]","-[33]% Strength vs [City]",
 		"Personnel","Will not be displayed in Civilopedia"],
-		"promotions": ["Guerilla Warfare I","Guerilla Warfare II"],
 		"attackSound": "machinegun"
 	},	
+	
+	//fake restriction units
+	
 	{
-		"name": "Ghost Horseman",
-		"unitType": "Mounted",
-		"uniqueTo": "Ghost Mountain",
+		"name": "Igniscantbuildspearman",
+		"unitType": "Melee",
+		"uniqueTo": "Cult of Ignis",
+		"replaces": "Spearman",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},	
+	{
+		"name": "Patriotscantbuildspearman",
+		"unitType": "Melee",
+		"uniqueTo": "The Patriots",
+		"replaces": "Spearman",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},	
+	{
+		"name": "Patriotscantbuildarcher",
+		"unitType": "Melee",
+		"uniqueTo": "The Patriots",
+		"replaces": "Archer",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},		
+	{
+		"name": "Patriotscantbuildskirmisher",
+		"unitType": "Melee",
+		"uniqueTo": "The Patriots",
+		"replaces": "Skirmisher",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},	
+	{
+		"name": "Patriotscantbuildhorseman",
+		"unitType": "Melee",
+		"uniqueTo": "The Patriots",
 		"replaces": "Horseman",
-		"movement": 4,
-		"strength": 20,
-		"cost": 70,
-		"obsoleteTech": "Rifling",
-		"upgradesTo": "Hussar",
-		"uniques": ["Low Tech","Bonus vs Low Tech 50%","No defensive terrain bonus","Can move after attacking","Penalty vs City 25%","Requires [Stable]","Will not be displayed in Civilopedia"],		
-		"promotions": ["Guerilla Warfare I"],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},	
+
+
+	{
+		"name": "Arroyo Cavalry",
+		"unitType": "Melee",
+		"uniqueTo": "Arroyo",
+		"replaces": "Cavalry",
+		"requiredTech": "The Wheel",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
 	},	
 	{
-		"name": "Ghost Hussar",
-		"unitType": "Mounted",
-		"uniqueTo": "Ghost Mountain",
-		"replaces": "Hussar",
-		"movement": 4,
-		"strength": 36,
-		"cost": 75,
-		"requiredTech": "Redomestication",
-		"obsoleteTech": "Replaceable Parts",
-		"requiredResource": "Weapons",
-		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","Penalty vs City 50%","Requires [Stable]","Will not be displayed in Civilopedia"],
-		"promotions": ["Guerilla Warfare I","Guerilla Warfare II"],
-		"hurryCostModifier": 20,
-		"attackSound": "shot"
+		"name": "Arroyo Car",
+		"unitType": "Melee",
+		"uniqueTo": "Arroyo",
+		"replaces": "Attack Vehicle",
+		"requiredTech": "The Wheel",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
 	},	
+	{
+		"name": "Arroyo Light Cavalry",
+		"unitType": "Melee",
+		"uniqueTo": "Arroyo",
+		"replaces": "Light Cavalry",
+		"requiredTech": "The Wheel",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+	},
+
 	{
 		"name": "Ghost Cavalry",
 		"unitType": "Melee",
@@ -1745,45 +1521,9 @@
 		"requiredTech": "The Wheel",
 		"strength": 1,
 		"cost": 1,
-		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
 	},	
-	{
-		"name": "Ghost Skirmisher",
-		"unitType": "Ranged",
-		"uniqueTo": "Ghost Mountain",
-		"replaces": "Skirmisher",
-		"range": 1,
-		"movement": 4,
-		"strength": 15,
-		"rangedStrength": 15,
-		"cost": 75,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Rifling",
-	//	"requiredResource": "Horses",
-		"upgradesTo": "Dragoon",
-		"uniques": ["Low Tech","Can move after attacking","Bonus vs Low Tech 33%","Penalty vs City 33%","Requires [Stable]","Will not be displayed in Civilopedia"],
-		"promotions": ["Guerilla Warfare I","Skirmish"],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},	
-	{
-		"name": "Ghost Dragoon",
-		"unitType": "Ranged",
-		"uniqueTo": "Ghost Mountain",
-		"replaces": "Dragoon",
-		"range": 1,
-		"movement": 4,
-		"strength": 30,
-		"rangedStrength": 24,
-		"cost": 80,
-		"requiredTech": "Redomestication",
-		"obsoleteTech": "Replaceable Parts",
-		"requiredResource": "Weapons",
-		"uniques": ["Personnel","Can move after attacking","Penalty vs City 33%","Requires [Stable]","Will not be displayed in Civilopedia"],
-		"promotions": ["Guerilla Warfare I","Guerilla Warfare II"],
-		"hurryCostModifier": 20,
-		"attackSound": "shot"
-	},
+	
 	{
 		"name": "Ghost Light Cavalry",
 		"unitType": "Melee",
@@ -1792,7 +1532,7 @@
 		"requiredTech": "The Wheel",
 		"strength": 1,
 		"cost": 1,
-		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
 	},		
 	{
 		"name": "Ghost Car",
@@ -1802,6 +1542,6 @@
 		"requiredTech": "The Wheel",
 		"strength": 1,
 		"cost": 1,
-		"uniques": ["Not a real unit","Unbuildable","Will not be displayed in Civilopedia"],
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
 	},	
 ]

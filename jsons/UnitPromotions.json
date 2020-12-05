@@ -9,7 +9,7 @@
 	{
 		"name": "Reconnaissance I",
 		"prerequisites": ["March","Blitz","Extended Range","Medic II","Guerilla Warfare II","Urban Warfare II"],
-		"uniques": ["High speed, low drag","Ignores terrain cost","[50]% Bonus XP gain","Penalty vs City 50%","Penalty vs units in open terrain 20%"],
+		"uniques": ["High speed, low drag","Ignores terrain cost","[50]% Bonus XP gain","+[50]% Strength vs [Siege]","-[50]% Strength vs [City]","Penalty vs units in open terrain 20%"],
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},		
 	{
@@ -39,7 +39,7 @@
 	{
 		"name": "Smokescreen",
 		"prerequisites": ["Entrench","Forage"],
-		"uniques": ["Bonus vs Ranged 25%"],
+		"uniques": ["+[20]% Strength vs [Ranged]"],
 		"unitTypes": ["Melee"]
 	},
 	//defense in depth]
@@ -106,7 +106,7 @@
 	
 	{
 		"name": "Blitz",
-		"prerequisites": ["Siege","Defense in Depth","Pursuit","Maneuver","Awe"],
+		"prerequisites": ["Smokescreen","Defense in Depth","Pursuit","Maneuver","Awe"],
 		"uniques": ["1 additional attack per turn"],
 		"unitTypes": ["Melee","Mounted","Armor"]
 	},
@@ -131,7 +131,7 @@
 	{
 		"name": "Suppression",
 		"prerequisites": ["Entrench","Skirmish"],
-		"uniques": ["Bonus vs Melee 20%"],
+		"uniques": ["+[20]% Strength vs [Melee]"],
 		"unitTypes": ["Ranged"]
 	},		
 	{
@@ -206,13 +206,13 @@
 	},	
 	{
 		"name": "Urban Warfare I",
-		"uniques": ["Double movement rate through Forest and Jungle","+[10]% combat bonus in [Jungle]","+[10]% combat bonus in [Forest]","Bonus vs City 10%"],
+		"uniques": ["Double movement rate through Forest and Jungle","+[10]% combat bonus in [Jungle]","+[10]% combat bonus in [Forest]","+[10]% Strength vs [City]"],
 		"unitTypes": ["Melee","Ranged","Mounted"]
 	},
 	{
 		"name": "Urban Warfare II",
 		"prerequisites": ["Urban Warfare I"],
-		"uniques": ["+[30]% combat bonus in [Jungle]","+[30]% combat bonus in [Forest]","Bonus vs City 30%"],
+		"uniques": ["+[30]% combat bonus in [Jungle]","+[30]% combat bonus in [Forest]","+[30]% Strength vs [City]"],
 		"unitTypes": ["Melee","Ranged","Mounted"]
 	},
 		//type MIXED
@@ -241,14 +241,14 @@
 	{
 		"name": "Formation",
 		"prerequisites": ["Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I"],
-		"uniques": ["Bonus vs Mounted 33%"],
+		"uniques": ["+[33]% Strength vs [Mounted]"],
 		"unitTypes": ["Melee","Mounted"]
 	},	
 	
 	{
 		"name": "Ambush",
 		"prerequisites": ["Entrench","Forage","Loose Formation","Shock","Hull Down","Guerilla Warfare I","Urban Warfare I"],
-		"uniques": ["Bonus vs Armor 33%"],
+		"uniques": ["+[33]% Strength vs [Armor]"],
 		"unitTypes": ["Melee","Mounted","Armor"]
 	},		
 
@@ -267,7 +267,7 @@
 	{
 		"name": "White Phosphorus Munitions",
 		"prerequisites": ["Infantry Mortar","Artillery"],
-		"uniques": ["Bonus vs Low Tech 50%","Bonus vs Personnel 25%","Bonus vs City 50%"],
+		"uniques": ["+[50]% Strength vs [Low Tech]","+[25]% Strength vs [Personnel]","+[50]% Strength vs [City]"],
 		"unitTypes": ["Melee","Ranged","Siege"]
 	},
 	{
@@ -279,42 +279,42 @@
 	{
 		"name": "Antitank Missile",
 		"prerequisites": ["Advanced Weapons","Infantry Weapons"],
-		"uniques": ["Bonus vs Armor 66%"],
+		"uniques": ["+[66]% Strength vs [Armor]"],
 		"unitTypes": ["Melee","Ranged","Mounted","Fighter","Bomber"]
 	},
 	{
 		"name": "Surface-to-Air Missile",
 		"prerequisites": ["Infantry Weapons"],
-		"uniques": ["[33]% chance to intercept air attacks","Bonus vs air units 50%","Bonus vs Helicopter 100%"],
+		"uniques": ["[33]% chance to intercept air attacks","+[50]% Strength vs [Air]","+[100]% Strength vs [Helicopter]"],
 		"unitTypes": ["Melee","Ranged","Mounted"]
 	},
 	{
 		"name": "Cluster Munitions",
 		"prerequisites": ["Advanced Weapons"],
-		"uniques": ["Bonus vs Low Tech 50%","Bonus vs Personnel 50%","Bonus vs City 25%"],
+		"uniques": ["+[50]% Strength vs [Low Tech]","+[50]% Strength vs [Personnel]","+[50]% Strength vs [City]"],
 		"unitTypes": ["Fighter","Bomber"]
 	},		
 	{
 		"name": "Napalm",
 		"prerequisites": ["Advanced Weapons"],
-		"uniques": ["+[33]% combat bonus in [Jungle]","+[33]% combat bonus in [Forest]","Bonus vs City 25%"],
+		"uniques": ["+[33]% combat bonus in [Jungle]","+[33]% combat bonus in [Forest]","+[50]% Strength vs [City]"],
 		"unitTypes": ["Fighter","Bomber"]
 	},	
 	{
 		"name": "Antiship Missile",
 		"prerequisites": ["Advanced Weapons"],
-		"uniques": ["Bonus vs water units 33%"],
+		"uniques": ["+[33]% Strength vs [Water]"],
 		"unitTypes": ["Fighter","Bomber"]
 	},
 	{
 		"name": "Air-to-Air Missile",
 		"prerequisites": ["Advanced Weapons"],
-		"uniques": ["Bonus vs air units 33%"],
+		"uniques": ["+[33]% Strength vs [Air]"],
 		"unitTypes": ["Fighter","Bomber","Siege"]
 	},
 	{
 		"name": "Infantry Weapons",
-		"uniques": ["Bonus vs Melee 5%"]
+		"uniques": ["+[5]% Strength vs [Melee]"]
 	},
 	{
 		"name": "Artillery",
@@ -348,11 +348,11 @@
 	
 	{
 		"name": "Tear Gas",
-		"uniques": ["Bonus vs Low Tech 33%","Bonus vs City 10%"],
+		"uniques": ["+[33]% Strength vs [Low Tech]","+[10]% Strength vs [City]"],
 	},
 	{
 		"name": "Chemical Weapons",
-		"uniques": ["Chemical Weapons","Bonus vs Low Tech 100%","Bonus vs Personnel 100%","Bonus vs City 50%"],
+		"uniques": ["Chemical Weapons","+[100]% Strength vs [Low Tech]","+[100]% Strength vs [Personnel]","-[100]% Strength vs [Gas Mask]","+[50]% Strength vs [City]"],
 	},
 	{
 		"name": "Point Defense Laser",
@@ -368,7 +368,7 @@
 	},
 	{
 		"name": "Gas Mask",
-		"uniques": ["Bonus vs Chemical Weapons 100%","No defensive terrain penalty"],
+		"uniques": ["Gas Mask","No defensive terrain penalty"],
 	},
 	{
 		"name": "Martyrdom",
