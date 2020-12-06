@@ -109,31 +109,30 @@
 				"uniques":["+15% combat strength for melee units which have another military unit in an adjacent tile"],
 				"row": 1,
 				"column": 1
-			},
+			},	
 			{
 				"name": "Doctrine",
 				"uniques":["+[20]% Production when constructing [melee units]"],
+				"row": 1,
+				"column": 2
+			},
+			{
+				"name": "Autocracy",
+				"uniques": ["[+3 Happiness, +2 Culture] in all cities with a garrison","Double quantity of [Slaves] produced"],
 				"row": 1,
 				"column": 3
 			},
 			{
 				"name": "Military Tradition",
 				"uniques":["Military units gain 50% more Experience from combat"],
-				"requires": ["Discipline"],
+				"requires": ["Doctrine","Discipline"],
 				"row": 2,
 				"column": 1
-			},			
-			{
-				"name": "Autocracy",
-				"uniques": ["[+3 Happiness, +2 Culture] in all cities with a garrison","Double quantity of [Slaves] produced"],
-				"requires": ["Doctrine"],
-				"row": 2,
-				"column": 2
-			},
+			},		
 			{
 				"name": "Triumph",
 				"uniques": ["Earn [10]% of [military] opponent's [Cost] as [Gold] for kills","Earn [75]% of [military] opponent's [Strength] as [Culture] for kills"],
-				"requires": ["Doctrine"],
+				"requires": ["Doctrine", "Autocracy"],
 				"row": 2,
 				"column": 3
 			},
@@ -154,7 +153,7 @@
 			{
 				"name": "Secularism",
 				"effect": "",
-				"uniques": ["[+2 Science] from every specialist"],
+				"uniques": ["[+1 Science] from every specialist"],
 				"row": 1,
 				"column": 1
 			},
