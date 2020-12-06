@@ -1,6 +1,10 @@
 # DeCiv
-DeCiv 1.45
-5.12.20
+DeCiv 1.46
+
+6.12.20
+
+-corrected some more bugs: melee units can take March at level 3; national bonus promotions for scavengers and survivalists should be applied correctly
+
 -corrected some bugs with policies and promotion progression
 -faction images added for Patriots units
 -removed obsolete national units
