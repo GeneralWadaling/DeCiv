@@ -5,8 +5,9 @@ DeCiv 1.47
 POWER UP
 
 - Build wind turbines and solar panels anywhere
+- Chop Shop replace Forge for Cult; build armored units from broken cars you find lyin' around
 - Naval and air promotion trees have been remade in line with land units
-- Balance changes: reduced XP bonuses from promotions and added Great General generation penalties for these promotions (since they depend on XP). Commonwealth Rangers will be generated at a reduced rate. Base units will no longer start with "Infantry Weapons" promotion. Settlement great improvement now gains bonii based on adjacent tiles
+- Balance changes: More Power generated from coal and nuclear plants. Administrator specialists provide Happiness and Culture. Reduced XP bonuses from promotions and added Great General generation penalties for these promotions (since they depend on XP). Commonwealth Rangers will be generated at a reduced rate. Base units will no longer start with "Infantry Weapons" promotion. Settlement great improvement now gains bonii based on adjacent tiles
 
 The nations of the past are no more. Rebuild one that can survive in the new world, if you can.
 
