@@ -40,6 +40,7 @@
 				"name": "Secrets of the Past",
 				"row": 5,
 				"prerequisites": ["The Wheel"],
+			//	"uniques": ["Enables conversion of city production to culture","Reveals the entire map"],
 				"quote": "'And the apostates cried, abandon your works, your engines, your sacrifice to the Flame, lest all the world be swallowed by the deluge. And many indeed came to follow them. Fools they were to defy the Spark! For did He not promise to never again drown the land? And, in punishment for their hubris, He sent the great flood of fire; and the unbelievers were turned to dust.' - Chronicle of the Seers"
 			},
 			{
@@ -68,7 +69,7 @@
 				"name": "Writing",
 				"row": 5,
 				"prerequisites": ["Secrets of the Past"],
-				"quote": "With over 250,000 employees across 40 nations, Blackwarden Associates is the first choice for any situation requiring a professional and discreet security solution. Our friendly, highly trained personnel are always ready to help  - from your local bank or supermarket, to immigration processing centers and border defense at home, to fallout remediation and nuclear site security in the Indus Exclusion Zone. Blackwarden. Securing Your Future."
+				"quote": "With over 250,000 employees across 40 nations, Blackwarden Associates is the first choice for any situation requiring a professional and discreet security solution. Our friendly, highly trained personnel are always ready to help  - from your local bank or supermarket, to immigration processing centers and border defense at home, to fallout remediation and nuclear site security in the Indus Exclusion Zone.\n \nBlackwarden. \nSecuring Your Future."
 			},
 			{
 				"name": "Machinery",
@@ -173,6 +174,7 @@
 				"name": "Ecology",
 				"row": 3,
 				"prerequisites": ["Education","Botany"],
+				"uniques": ["[+1 Food] from every [Deer]"],
 				"quote": "'Modern industrial farming is largely a strategy for turning fossil fuels into food.' - Jeff Rubin"
 			},		
 			{
@@ -402,6 +404,7 @@
 				"name": "Ocean Remediation",
 				"row": 1,
 				"prerequisites": ["Desalination","Land Remediation"],
+				"uniques": ["[+1 Food] from every [Algae]"],
 				"quote": "'Only within the moment of time represented by the present century has one species, man, acquired significant power to alter the nature of his world.' - Rachel Carson"
 			},
 			{
@@ -419,7 +422,7 @@
 			{
 				"name": "Rocketry",
 				"row": 7,
-				"prerequisites": ["Flight"],
+				"prerequisites": ["Gyroscopes"],
 				"quote": "'A good rule for rocket experimenters to follow is this: always assume that it will explode.' - Astronautics Magazine, 1937"
 			},	
 			{

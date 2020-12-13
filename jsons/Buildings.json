@@ -95,7 +95,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Council",
-		"uniques": ["[+1 Culture] per [4] population in all cities","Unhappiness from population decreased by [10]%","Not displayed as an available construction without [Palace]"]
+		"uniques": ["[+1 Culture] per [4] population in all cities","Unhappiness from population decreased by [10]%","Not displayed as an available construction without [Search for Survivors]"]
 	},		
 	{
 		"name": "Council",
@@ -104,7 +104,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Congress",
-		"uniques": ["+[10]% growth in all cities","+[5]% Production when constructing [Buildings]","Not displayed as an available construction without [Palace]"]
+		"uniques": ["+[10]% growth in all cities","+[5]% Production when constructing [Buildings]","Not displayed as an available construction without [Search for Survivors]"]
 	},	
 	{
 		"name": "Citizens' Assembly",
@@ -114,7 +114,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Defense Committee",
-		"uniques": ["[+1 Science, +1 Culture] per [4] population in all cities","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
+		"uniques": ["[+1 Science, +1 Culture] per [4] population in all cities","Not displayed as an available construction without [Search for Survivors]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Defense Committee",
@@ -124,7 +124,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Citizens' Assembly",
-		"uniques": ["+15% combat strength for units fighting in friendly territory","+[10]% Production when constructing [military units]","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
+		"uniques": ["+15% combat strength for units fighting in friendly territory","+[10]% Production when constructing [military units]","Not displayed as an available construction without [Search for Survivors]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Shareholders' Fund",
@@ -134,7 +134,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Board of Directors",
-		"uniques": ["[+1 Gold] per [4] population in all cities","Unhappiness from population decreased by [10]%","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
+		"uniques": ["[+1 Gold] per [4] population in all cities","Unhappiness from population decreased by [10]%","Not displayed as an available construction without [Search for Survivors]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Board of Directors",
@@ -144,7 +144,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Shareholders' Fund",
-		"uniques": ["[+1 Gold] from every [Town Hall]","Cost of purchasing items in cities reduced by [20]%","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
+		"uniques": ["[+1 Gold] from every [Town Hall]","Cost of purchasing items in cities reduced by [20]%","Not displayed as an available construction without [Search for Survivors]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Freedom Foundation",
@@ -154,7 +154,7 @@
 		"requiredBuilding": "Search for Survivors",		
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Think Tank",
-		"uniques": ["[+1 Science, +1 Gold] per [4] population in all cities","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
+		"uniques": ["[+1 Science, +1 Gold] per [4] population in all cities","Not displayed as an available construction without [Search for Survivors]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Think Tank",
@@ -164,7 +164,7 @@
 		"requiredBuilding": "Search for Survivors",			
 		"requiredTech": "Civil Service",
 		"cannotBeBuiltWith": "Freedom Foundation",
-		"uniques": ["Production to science conversion in cities increased by 33%","+[10]% Production when constructing [Science] buildings","Not displayed as an available construction without [Palace]","Will not be displayed in Civilopedia"]
+		"uniques": ["Production to science conversion in cities increased by 33%","+[10]% Production when constructing [Science] buildings","Not displayed as an available construction without [Search for Survivors]","Will not be displayed in Civilopedia"]
 	},	
 	{
 		"name": "Senate",
@@ -319,7 +319,7 @@
 		"name": "Nuclear Waste Museum",
 		"cannotBeBuiltWith": "Excavate Nuclear Waste",
 		"requiredTech": "Writing",
-		"uniques": ["Must have an owned [Nuclear Waste Storage] within [4] tiles","[+1 Culture, +1 Science] from [Nuclear Waste Storage] tiles in this city","Will not be displayed in Civilopedia"],
+		"uniques": ["Must have an owned [Nuclear Waste Storage] within [3] tiles","[+1 Culture, +1 Science] from [Nuclear Waste Storage] tiles in this city","Will not be displayed in Civilopedia"],
 	},
 	{
 		"name": "Excavate Nuclear Waste",
@@ -327,7 +327,7 @@
 		"isWonder": true,
 		"percentStatBonus": {"food": -20},
 		"requiredTech": "Mining",
-		"uniques": ["DO NOT DO THIS.","Must have an owned [Nuclear Waste Storage] within [4] tiles","[-3 Food, +4 Science] from [Nuclear Waste Storage] tiles in this city","Provides [1] [Uranium]","Will not be displayed in Civilopedia"],
+		"uniques": ["DO NOT DO THIS.","Must have an owned [Nuclear Waste Storage] within [3] tiles","[-3 Food, +4 Science] from [Nuclear Waste Storage] tiles in this city","Provides [1] [Uranium]","Will not be displayed in Civilopedia"],
 		"quote": "'Sending this message was important to us. We considered ourselves to be a powerful culture. This place is not a place of honor... no highly esteemed deed is commemorated here... nothing valued is here. What is here was dangerous and repulsive to us. This message is a warning about danger. The danger is still present, in your time, as it was in ours.'"
 	},
 	{
@@ -335,7 +335,7 @@
 		"isWonder": true,
 		"requiredTech": "Ecology",
 		"cost": 50,
-		"uniques": ["Must have an owned [Seed Vault] within [2] tiles","+[25]% growth in all cities","Will not be displayed in Civilopedia"],
+		"uniques": ["Must have an owned [Seed Vault] within [3] tiles","+[25]% growth in all cities","Will not be displayed in Civilopedia"],
 		"quote": "'What about us? What about all the plans that ended in disaster?'  - Alecia Moor"
 	},		
 	{
@@ -401,7 +401,7 @@
 		"name": "Monument",
 		"culture": 2,
 		"cost": 40,
-		"hurryCostModifier": 40,
+		"hurryCostModifier": 40,		
 	//	"maintenance": 1
 	},	
 
@@ -435,7 +435,7 @@
 		"replaces": "Town Hall",
 		"uniqueTo": "Cult of Ignis",
 		"requiredResource": "Slaves",
-		"uniques": ["+[75]% Production when constructing [Worker]","Will not be displayed in Civilopedia"],
+		"uniques": ["+[75]% Production when constructing [Worker]","Will not be displayed in Civilopedia","Not displayed as an available construction without [Slaves]"],
 		"cost": 40,		
 		"hurryCostModifier": 25,
 	},	
@@ -448,7 +448,7 @@
 		"replaces": "Town Hall",
 		"uniqueTo": "Crimson Legion",
 		"requiredResource": "Slaves",
-		"uniques": ["+[50]% Production when constructing [Worker]","Will not be displayed in Civilopedia"],
+		"uniques": ["+[50]% Production when constructing [Worker]","Will not be displayed in Civilopedia","Not displayed as an available construction without [Slaves]"],
 		"requiredTech": "Trade"
 	},	
 	{	
@@ -591,7 +591,7 @@
 		"requiredNearbyImprovedResources": ["Cattle","Goats","Furs"],
 		"maintenance": 1,
 		"hurryCostModifier": 25,
-		"uniques": ["+1 Food] from [Cattle] tiles in this city","+1 Food] from [Goats] tiles in this city","+1 Food] from [Furs] tiles in this city"]
+		"uniques": ["[+1 Food] from [Cattle] tiles in this city","[+1 Food] from [Goats] tiles in this city","[+1 Food] from [Furs] tiles in this city"]
 		"requiredTech": "Redomestication"
 	},		
 	{
@@ -645,7 +645,7 @@
 		"hurryCostModifier": 0,
 		"requiredTech": "Biology",
 		"requiredResource": "Slaves",
-		"uniques": ["[10]% of food is carried over after population increases","[relevant] units gain the [Resupply] promotion"]
+		"uniques": ["[10]% of food is carried over after population increases","[Armor] units gain the [Resupply] promotion"]
 	},	
 
 	{
@@ -709,7 +709,7 @@
 		"percentStatBonus": {"science": 33},
 		"specialistSlots": {"Scientist": 1},
 		"requiredBuilding": "Library",
-		"uniques": ["[+1 Science] from [Jungle] tiles in this city","[+1 Science] from [Rubble] tiles in this city","Not displayed as an available construction without [Library]"],
+		"uniques": ["[+1 Science] from [Jungle] tiles in this city","[+1 Science] from [Forest] tiles in this city","[+1 Science] from [Atoll] tiles in this city","Not displayed as an available construction without [Library]"],
 		"requiredTech": "Education"
 	},	
 	{
@@ -730,10 +730,19 @@
 		"maintenance": 1,
 		"hurryCostModifier": 0,
 		"requiredBuilding": "Library",
-		"cannotBeBuiltWith": "Private School",
-		"uniques": ["[+1 Science] Per [2] Population in this city"],
+		//"cannotBeBuiltWith": "Private School",
+		"uniques": ["[+1 Science, +1 Culture] Per [3] Population in this city"],
 		"requiredTech": "Civil Service"
 	},
+	/*{
+		"name": "Private School",
+		"maintenance": 1,
+		"hurryCostModifier": -50,
+		"requiredBuilding": "Library",
+		"cannotBeBuiltWith": "Public School",
+		"uniques": ["[+1 Science, +1 Gold] Per [3] Population in this city", "Requires [Privatization]"],
+		"requiredTech": "Currency"
+	},*/
 	{
 		"name": "Military School",
 		"replaces": "Public School",
@@ -757,7 +766,7 @@
 		"xpForNewUnits": 15,
 		"hurryCostModifier": 0,
 		"requiredBuilding": "Sanctum",
-		"uniques": ["[+1 Science] from [Jungle] tiles in this city","[+1 Science] from [Rubble] tiles in this city","Will not be displayed in Civilopedia","Not displayed as an available construction without [Sanctum]"],
+		"uniques": ["[+1 Science] from [Jungle] tiles in this city","[+1 Science] from [Forest] tiles in this city","[+1 Science] from [Atoll] tiles in this city","Will not be displayed in Civilopedia","Not displayed as an available construction without [Sanctum]"],
 		"requiredTech": "Civil Service"
 	},
 	
@@ -1039,7 +1048,7 @@
 		"uniqueTo": "Enclavers",
 		"cityStrength": 10,
 		"xpForNewUnits": 15,
-		"uniques": ["All newly-trained [relevant] units in this city receive the [Guerilla Warfare I] promotion","Not displayed as an available construction without [Barracks]"],
+		"uniques": ["All newly-trained [relevant] units in this city receive the [Guerilla Warfare II] promotion","Not displayed as an available construction without [Barracks]"],
 		"requiredBuilding": "Barracks",
 		"requiredTech": "Combined Arms"
 	},
@@ -1051,7 +1060,7 @@
 	{
 		"name": "Stable", 
 		"requiredNearbyImprovedResources": ["Horses"],
-		"resourceBonusStats": {"production": 1},
+		"resourceBonusStats": {"production": 2, "food": -1},
 		"cost": 50,
 		"hurryCostModifier": -25,
 		"uniques": ["Allows production of Mounted troops"],
@@ -1060,8 +1069,7 @@
 
 
 	{
-		"name": "Forge", //Scrap Forge
-	//	"maintenance": 1,
+		"name": "Forge",
 		"production": 1,
 		"hurryCostModifier": 25,
 		"requiredNearbyImprovedResources": ["Scrap","Metal"],
@@ -1072,14 +1080,21 @@
 		"name": "Salvage Yard", 
 		"replaces": "Forge",
 		"uniqueTo": "Children of Rust",
-	//	"maintenance": 1,
-		"production": 1,
 		"hurryCostModifier": 25,
 	//	"requiredNearbyImprovedResources": ["Scrap","Metal"],
 		"requiredTech": "Iron Working",
-		"uniques": ["[+1 Production] from [Forest] tiles in this city","[+1 Production] from [Jungle] tiles in this city","+[10]% production when building [land units] in this city"]
+		"uniques": ["[+1 Production] from [Scrap] tiles in this city","[+1 Production] from [Forest] tiles in this city","[+1 Production] from [Jungle] tiles in this city","[+1 Production] from [Atoll] tiles in this city"]
 	},
-		
+	{
+		"name": "Chop Shop", 
+		"replaces": "Forge",
+		"uniqueTo": "Cult of Ignis",
+		"production": 1,
+		"hurryCostModifier": 25,
+		"requiredNearbyImprovedResources": ["Scrap"],
+		"requiredTech": "Iron Working",
+		"uniques": ["[+3 Production] from [Scrap] tiles in this city","+[25]% production when building [melee units] in this city"]
+	},
 	{
 		"name": "Blast Furnace", 
 	//	"food": -1, can be turned on or off by moving workers
@@ -1124,7 +1139,7 @@
 		"cost": 250,
 		"hurryCostModifier": 25,
 		"percentStatBonus": {"food": -20},
-		"uniques": ["Provides [5] [Power]"],
+		"uniques": ["Provides [8] [Power]"],
 		"cannotBeBuiltWith": "Nuclear Plant",
 		"requiredResource": "Coal",
 		"requiredTech": "Electricity"
@@ -1134,7 +1149,7 @@
 		"maintenance": 4,
 		"cost": 750,
 		"hurryCostModifier": 33,
-		"uniques": ["Provides [5] [Power]"],
+		"uniques": ["Provides [8] [Power]"],
 		"cannotBeBuiltWith": "Coal Plant",
 		"requiredResource": "Uranium",
 		"requiredTech": "Nuclear Fission"
@@ -1206,7 +1221,7 @@
 		"production": -3,
 		"requiredResource": "Power",	//power
 		"uniques": ["Allows production of advanced aircraft and space craft",
-		"[air units] units gain the [Advanced Weapons] promotion","+[15]% Production when constructing [air units] in this city",
+		"[air units] units gain the [Advanced Weapons] promotion","+[15]% Production when constructing [Air] units",
 		"Not displayed as an available construction without [Factory]"],
 		"requiredBuilding": "Factory",
 		"requiredTech": "Rocketry"
@@ -1228,6 +1243,7 @@
 		"specialistSlots": {"Engineer": 1},																																			
 		"maintenance": 1,
 		"hurryCostModifier": 0,
+		"uniques": ["Not displayed as an available construction without [Slaves]"]
 		"requiredResource": "Slaves",
 		"requiredTech": "Construction",
 	},				
@@ -1456,7 +1472,7 @@
         "science": 1,
 		"happiness": 1,
 		"greatPersonPoints": {"culture": 2},
-		"uniques": ["Golden Age length increases +50%","Provides 2 [Power]"]
+		"uniques": ["Golden Age length increases +50%","Provides [1] [Power]"]
 	},	
 	{
 		"name": "Encylopedia",
@@ -1472,16 +1488,25 @@
 		"replaces": "Monument"
 		"cost": 1,
 		"culture": 5,
-		"uniques": ["Will not be displayed in Civilopedia","Reveals the entire map","Provides 1 [Oil]","Provides 1 [Power]","Provides 1 [Weapons]"]
+		"uniques": ["Will not be displayed in Civilopedia","Reveals the entire map","Provides [1] [Oil]","Provides [1] [Power]","Provides [1] [Weapons]"]
 	},
 
+	{
+		"name": "Nuclear Storage",
+		"uniqueTo": "Devil's Canyon",
+		"replaces": "Monument"
+		"providesFreeBuilding":  "Nuclear Plant",
+		"gold": 5,
+		"cost": 1,
+		"uniques": ["Will not be displayed in Civilopedia","Reveals the entire map","Provides [1] [Uranium]","Provides [10] [Power]"]
+	},
 	{
 		"name": "Silk Road",
 		"uniqueTo": "Bartertown",
 		"replaces": "Monument"
 		"cost": 1,
 		"culture": 1,
-		"uniques": ["Will not be displayed in Civilopedia","Reveals the entire map","Provides 1 [Oil]","Provides 1 [Weapons]"]
+		"uniques": ["Will not be displayed in Civilopedia","Reveals the entire map","Provides [1] [Oil]","Provides [1] [Weapons]","Provides [1] [Soft Drinks]"]
 	},
 	{
 		"name": "The Abbey",
@@ -1500,7 +1525,7 @@
 		"cost": 1,
 		"cityHealth": 25,
 		"culture": 3,
-		"uniques": ["Will not be displayed in Civilopedia","Reveals the entire map","Provides 1 [Power]"]
+		"uniques": ["Will not be displayed in Civilopedia","Reveals the entire map","Provides [1] [Power]"]
 	},
 	/*{
 		"name": "Traditional Farming Methods",//tradition
@@ -1640,7 +1665,7 @@
 		"happiness": 5,
 		"specialistSlots": {"Engineer": 2},
 		"maintenance": 1,	
-		"uniques": ["Will not be displayed in Civilopedia","Provides 1 [Oil]","Provides 1 [Power]"],
+		"uniques": ["Will not be displayed in Civilopedia","Provides [1] [Oil]","Provides [1] [Power]"],
 		"cost": 40,		
 		"replaces": "Town Hall",
 		"uniqueTo": "Almaty",
@@ -1680,17 +1705,5 @@
         "production": -3,
 		"uniques": ["Free [Salvaged Helicopter] appears","Not displayed as an available construction without [Alma Air Base]","Will not be displayed in Civilopedia"],
 		"quote": ""//
-	},	
-	{
-		"name": "Alma Oil Depot", //should give bonus from slaves
-		"culture": 1,
-		"happiness": 1,
-		"specialistSlots": {"Administrator": 1},
-		"maintenance": 1,	
-		"uniques": ["Provides 1 [Oil]"],
-		"cost": 40,		
-		"replaces": "Town Hall",
-		"uniqueTo": "Almaty",
-		"requiredTech": "Manufacturing",
-	},		
+	},			
 ]

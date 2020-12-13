@@ -25,7 +25,7 @@
 		"innerColor": [54,72,72],
 		"style": "",
 		"uniqueName": "Rubble Runners",
-		"uniques": ["[relevant] units gain the [Urban Warfare I] promotion","All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."],
+		"uniques": ["[Low Tech] units gain the [Urban Warfare I] promotion","[Personnel] units gain the [Urban Warfare I] promotion","All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."],
 		"cities": ["Phoenix","Rust City","The Boneyard","Old Forest","Dogtown","Soft Rains","Ashville","Condor Creek","Hazard",
 			"Radium Springs","Osprey","Vulture Bend","Dark Skies","Pistolville","Headstone","Firesteel","Broken Hills","Deadwood",
 			"Hopeville","Buzzard Vista","Dustbowl","Rakeville","Rock Falls","Kismet","Waterville"
@@ -86,7 +86,7 @@
 		"innerColor": [45,60,120],
 		"style": "Atlas",
 		"uniqueName": "Creative Leadership",
-		"uniques": ["Receive free [Great Scientist] when you discover [Writing]","+[25]% great person generation in all cities"],
+		"uniques": ["Receive free [Great Scientist] when you discover [Writing]","+[33]% great person generation in all cities"],
 		"cities": ["Atlas Canyon","Praxis","Opportunity","Pareto Estates","Enterprise Gardens","Hanlon College","The Reservation",
 			"Zakharov Campus","Curiousity","Progress Estates","New Horizon","Dunning Institute","Kruger Laboratories","Apogee",
 			"Hypothesis","Axiom","Euclid Center","Prometheus Laboratories","Zenith","Von Neumann Institute",
@@ -114,7 +114,7 @@
 		"innerColor": [200,0,70],
 		"style": "",
 		"uniqueName": "Mutual Assistance",
-		"uniques": ["City-State Influence degrades at half rate","Food and Culture from Friendly City-States are increased by 50%"],
+		"uniques": ["City-State Influence degrades at half rate","Food and Culture from Friendly City-States are increased by 50%","[Great General] is earned [-33]% faster"],
 		"cities": ["Union City","Accord","Inheritance","Junction","Wellspring","Fall's End","Highpool","Constitution","Hope Commons","Clearwater",
 			"Mercywell","Sunrise","Dead Forest","Gallows Bend","Arefu","Rocket Falls","Monument","Broken Sword","Concordia","Splendid",
 			"Iron Springs","Prudence","Hawkins","Stonefields","Harmony","Fitzroy Bluff","Hangman Valley","Portville","Hamelin","High Gate"
@@ -180,7 +180,7 @@
 		"style": "",
 		"uniqueName": "Hills Have Eyes",
 		"uniques": ["Units ignore terrain costs when moving into any tile with Hills","No Maintenance costs for improvements in Hills",
-					"[relevant] units gain the [Guerilla Warfare I] promotion"],
+					"[Low Tech] units gain the [Guerilla Warfare I] promotion","[Personnel] units gain the [Guerilla Warfare I] promotion"],
 		"cities": ["The Enclave","Farnham's Freehold","Minuteman Ridge","Cooper's Corner","Rattlesnake Hill","Rawles' Retreat",
 			"Sagebrush Valley","Cobb's Ranch","Stephens' Shelter","The Alamo","Saxon Farm","Pugsley's Haven","Browne's Trail",
 			"Oathkeeper Watch","Jellison Ranch","Boyd's Retreat","Tappan Farm","Skousen Ranch","30-50 Feral Hogs"
@@ -234,6 +234,7 @@
 		"innerColor": [0,0,0],
 		"style": "Ignis",
 		"uniqueName": "Road Warriors",
+		//"uniqueText": "I am the very model",
 		"uniques": ["Double quantity of [Oil] produced"],
 		"cities": ["Gastown","Blood Farm","Trial of Sand","Prophecy","Thousand Cuts","The Harrowing","Temple of Rage","Immortal Highway",
 			"Tohuvabohu","Forbidden Palace","Hanging Gardens","The Cauldron","Traitors' Gate","Hell Patrol","Steel Throne","The Warren",
@@ -279,6 +280,20 @@
 		"innerColor": [194,97,255],
 		"cities": ["Bartertown"]
 	},
+	/*{
+		"name": "Devil's Canyon",
+		"adjective": ["Devil's Canyon"],
+		"cityStateType": "Mercantile",
+		"style": "Atlas",		
+		"uniques": ["Starts with [Writing]","Starts with [Rifling]"],
+		"declaringWar": "You leave us no choice. War it must be.",
+		"attacked": "Very well, this shall not be forgotten.",
+		"defeated": "We never fully trusted you from the start.",
+		"outerColor": [0, 0, 0],
+		"innerColor": [224,224,50],
+		"cities": ["Devil's Canyon NPP"]
+//At Devil's Canyon, the lights of the old world still shine
+	},*/
 	{
 		"name": "Arroyo",
 		"adjective": ["Arroyoan"],
@@ -299,7 +314,7 @@
 		"cityStateType": "Maritime",
 		"startBias": ["Hill"],
 		"style": "Ghost",
-		"uniques": ["Units fight as though they were at full strength even when damaged", "[relevant] units gain the [Guerilla Warfare I] promotion","[relevant] units gain the [Guerilla Warfare II] promotion","Units ignore terrain costs when moving into any tile with Hills", "-25% land units maintenance"],
+		"uniques": ["Units fight as though they were at full strength even when damaged", "[Personnel] units gain the [Guerilla Warfare I] promotion","[Personnel] units gain the [Guerilla Warfare II] promotion","[Low Tech] units gain the [Guerilla Warfare I] promotion","[Low Tech] units gain the [Guerilla Warfare II] promotion","Units ignore terrain costs when moving into any tile with Hills", "-25% land units maintenance"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "The spirits will fight at our side.",
 		"defeated": "We go to join the ancestors.",
@@ -312,7 +327,7 @@
 		"adjective": ["Almaty"],
 		"cityStateType": "Militaristic",
 		"startBias": ["Hills"],
-		"style": "",
+		"style": "Patriots",
 		"uniques": ["Double quantity of [Weapons] produced","-25% land units maintenance"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
@@ -323,7 +338,7 @@
 	},
 	{
 		"name": "Jericho",
-		"adjective": ["Jerichoan"],
+		"adjective": ["Jericho"],
 		"cityStateType": "Maritime",
 		"style": "",
 		"uniques": ["-25% land units maintenance"],

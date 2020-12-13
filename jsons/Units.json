@@ -151,7 +151,6 @@
 		"uniques": ["Low Tech","Can construct roads","+[50]% Strength vs [Mounted]","Not displayed as an available construction without [Slaves]"],
 		"attackSound": "metalhit"
 	},	
-
 	{
 		"name": "Surveyor",
 		"unitType": "Melee",
@@ -164,7 +163,7 @@
 		"hurryCostModifier": 20,
 		"obsoleteTech": "Rifling",
 		"uniques": ["Low Tech","Can construct roads","+[50]% Strength when defending"],
-		"promotions": ["Medic"],
+		"promotions": ["Medic","Drone Recon"],
 		"attackSound": "nonmetalhit"
 	},
 	{
@@ -364,7 +363,7 @@
 		"upgradesTo": "Infantry",
 		"hurryCostModifier": 20,
 		"requiredTech": "Rifling",
-		"obsoleteTech": "Combined Arms",		
+		//"obsoleteTech": "Combined Arms",		
 		"uniques": ["Personnel"],
 		"attackSound": "machinegun"
 	},		
@@ -396,7 +395,7 @@
 		"requiredTech": "Electricity",
 	//	"obsoleteTech": "Mobile Tactics",		
 		"uniques": ["Personnel","Can move immediately once bought"],
-		"promotions": ["Hazard Pay","Infantry Weapons","Drone Recon"],
+		"promotions": ["Hazard Pay","Drone Recon"],
 		"hurryCostModifier": -33,
 		"attackSound": "machinegun"
 	},	
@@ -412,7 +411,6 @@
 		"requiredResource": "Weapons",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel"],
-		"promotions": ["Infantry Weapons"],
 		"attackSound": "machinegun"
 	},	
 	{
@@ -430,7 +428,7 @@
 		"requiredResource": "Weapons",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Requires [Armory]"],
-		"promotions": ["Amphibious","Gas Mask","Infantry Weapons"],
+		"promotions": ["Amphibious","Gas Mask"],
 		"attackSound": "machinegun"
 	},	
 	{
@@ -443,7 +441,7 @@
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,
 		"uniques": ["Personnel","Requires [Factory]"],
-		"promotions": ["Infantry Weapons","Gas Mask"],
+		"promotions": ["Gas Mask"],
 		"attackSound": "machinegun"
 	},
 	{
@@ -490,7 +488,7 @@
 		"requiredResource": "Weapons",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel"],
-		"promotions": ["Reconnaissance I","Infantry Weapons"],
+		"promotions": ["Reconnaissance I"],
 		"attackSound": "shot"
 	},				
 	{
@@ -507,7 +505,7 @@
 		"requiredTech": "The Wheel",
 		"requiredResource": "Weapons",		
 		"uniques": ["Personnel","Requires [Armory]"],
-		"promotions": ["Reconnaissance I","Amphibious","Infantry Weapons","Ambush","Drone Recon","Gas Mask"],
+		"promotions": ["Reconnaissance I","Amphibious","Ambush","Drone Recon","Gas Mask"],
 		"attackSound": "machinegun"
 	},	
 	{
@@ -521,8 +519,8 @@
 		"rangedStrength": 35,
 		"cost": 300,
 		"requiredResource": "Weapons",		
-		"uniques": ["Personnel","+[20]% combat bonus in [Friendly Land]","[50]% Bonus XP gain","Can construct [Citadel]","Great Person - [War]","Unbuildable"],
-		"promotions": ["Reconnaissance I","Infantry Weapons","Gas Mask"],
+		"uniques": ["Personnel","+[20]% combat bonus in [Friendly Land]","[50]% Bonus XP gain","Can construct [Citadel]","Great Person - [War]","Unbuildable","[Great General] is earned [-33]% faster"],
+		"promotions": ["Reconnaissance I","Gas Mask"],
 		"attackSound": "shot"
 	},
 	{
@@ -536,7 +534,7 @@
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Requires [Factory]"],
-		"promotions": ["Reconnaissance I","Gas Mask","Infantry Weapons"],
+		"promotions": ["Reconnaissance I","Gas Mask"],
 		"attackSound": "shot"
 	},			
 	{
@@ -552,7 +550,7 @@
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Requires [Factory]"],
-		"promotions": ["Reconnaissance I","Gas Mask","Infantry Weapons","Extended Range"],
+		"promotions": ["Reconnaissance I","Gas Mask","Extended Range"],
 		"attackSound": "shot"
 	},
 	{
@@ -852,7 +850,7 @@
 		"obsoleteTech": "Lasers",
 		"upgradesTo": "Attack Helicopter",	
 		"uniques": ["-[25]% Strength vs [Armor]","Can move after attacking","-[25]% Strength vs [City]",
-		"Amphibious","Helicopter","No defensive terrain bonus","All tiles costs 1","Can pass through impassable tiles","May withdraw before melee ([100]%","Requires [Factory]"],
+		"Amphibious","Helicopter","No defensive terrain bonus","All tiles cost 1 movement","Can pass through impassable tiles","May withdraw before melee ([100]%","Requires [Factory]"],
 		"requiredResource": "Oil",
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"
@@ -868,7 +866,7 @@
 		"requiredResource": "Oil",
 		"requiredTech": "Lasers",
 		"uniques": ["[33]% chance to intercept air attacks","+1 Visibility Range","Can move after attacking","Ranged attacks may be performed over obstacles",
-		"Amphibious","Helicopter","No defensive terrain bonus","All tiles costs 1","Can pass through impassable tiles","May withdraw before melee ([100]%",
+		"Amphibious","Helicopter","No defensive terrain bonus","All tiles cost 1 movement","Can pass through impassable tiles","May withdraw before melee ([100]%",
 		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]","-[25]% Strength vs [City]"],
 		"requiredResource": "Oil",
 		"promotions": ["Advanced Weapons","Antitank Missile"],
@@ -968,34 +966,34 @@
 	{
 		"name": "Patrol Boat",
 		"unitType": "WaterMelee",
-		"movement": 3,
+		"movement": 4,
 		"strength": 30,
 		"cost": 90,
 		"requiredTech": "Astronomy",
 		"requiredResource": "Oil",
 		"upgradesTo": "Attack Boat",
 		"obsoleteTech": "Electricity",
-		"uniques": ["Double movement in coast"],
+		"uniques": ["Double movement in coast","May withdraw before melee ([75]%)","Can move after attacking"],
 		"hurryCostModifier": 20
 	},		
 	{
 		"name": "Attack Boat",
 		"unitType": "WaterMelee",
-		"movement": 3,
+		"movement": 4,
 		"strength": 30,
 		"cost": 100,
 		"requiredTech": "Electricity",
 	//	"requiredResource": "Oil",
 	//	"upgradesTo": "Destroyer",
 	//	"obsoleteTech": "Astronomy",
-		"uniques": ["Double movement in coast"],
+		"uniques": ["Double movement in coast","May withdraw before melee ([75]%)","Can move after attacking"],
 		"hurryCostModifier": 20
 	},		
 	{
 		"name": "Destroyer",
 		"unitType": "WaterRanged",
 		"movement": 6,
-		"strength": 40,
+		"strength": 30,
 		"rangedStrength": 50,
 		"range": 2,
 		"interceptRange": 2,
@@ -1009,7 +1007,7 @@
 		"name": "Carrier",
 		"unitType": "WaterAircraftCarrier",
 		"movement": 5,
-		"strength": 40,
+		"strength": 35,
 		"rangedStrength": 50,
 		"cost": 400,
 		"requiredResource": "Oil",
@@ -1027,7 +1025,8 @@
 		"cost": 400,
 		"requiredResource": "Oil",
 		"requiredTech": "Ballistics",
-		"uniques": ["Ranged attacks may be performed over obstacles", "+[25]% Strength vs [City]","Requires [Factory]"],
+		"uniques": ["+[25]% Strength vs [City]","Requires [Factory]"],
+		"promotions": ["Artillery"],
 		"hurryCostModifier": 20
 	},
 	{
@@ -1300,7 +1299,7 @@
 		"requiredTech": "Steel",
 		"upgradesTo": "Helicopter",	
 		"uniques": ["Will not be displayed in Civilopedia","-[25]% Strength vs [Armor]","Can move after attacking",
-		"Amphibious","Helicopter","No defensive terrain bonus","All tiles costs 1","Can pass through impassable tiles","May withdraw before melee ([100]%)","Requires [Alma Air Base]"],
+		"Amphibious","Helicopter","No defensive terrain bonus","All tiles cost 1 movement","Can pass through impassable tiles","May withdraw before melee ([100]%)","Requires [Alma Air Base]"],
 		"requiredResource": "Oil",
 		"hurryCostModifier": 20,
 		"attackSound": "machinegun"
@@ -1333,7 +1332,7 @@
 		"strength": 24,
 		"cost": 50,
 		"requiredTech": "Steel",
-		"upgradesTo": "Militia",		
+		"upgradesTo": "Infantry",				
 		"uniques": ["Low Tech","+[50]% Strength vs [Low Tech]","+[50]% Strength vs [Mounted]","Will not be displayed in Civilopedia"],		
 		"promotions": ["Ambush"],
 		"attackSound": "nonmetalhit"
@@ -1350,7 +1349,7 @@
 		"cost": 60,
 		"hurryCostModifier": 20,
 		"requiredTech": "Steel",
-		"upgradesTo": "Gunman", 		
+		"upgradesTo": "Marksman", 		
 		"uniques": ["Low Tech","+[33]% Strength vs [Low Tech]","Will not be displayed in Civilopedia"],
 		"promotions": ["Skirmish"],
 		"attackSound": "arrow"
@@ -1386,7 +1385,7 @@
 		"strength": 24,
 		"cost": 50,
 		"requiredTech": "Steel",
-		"upgradesTo": "Militia",			
+		"upgradesTo": "Infantry",				
 		"uniques": ["Low Tech","+[50]% Strength vs [Low Tech]","+[50]% Strength vs [Mounted]","Will not be displayed in Civilopedia"],		
 		"promotions": ["Ambush"],
 		"attackSound": "nonmetalhit"
@@ -1403,7 +1402,7 @@
 		"cost": 60,
 		"hurryCostModifier": 20,
 		"requiredTech": "Steel",
-		"upgradesTo": "Gunman", 			
+		"upgradesTo": "Marksman", 			
 		"uniques": ["Low Tech","+[33]% Strength vs [Low Tech]","Will not be displayed in Civilopedia"],
 		"promotions": ["Skirmish"],
 		"attackSound": "arrow"

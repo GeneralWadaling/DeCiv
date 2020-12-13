@@ -24,7 +24,7 @@
 		"terrainsCanBeFoundOn": ["Tundra"],
 		"food": 1,
 		"improvement": "Camp",
-		"improvementStats": {"production": 1},
+		"improvementStats": {"food": 1},
 		"building": "Cold Store"
 	},
 	{
@@ -82,7 +82,7 @@
 	{
 		"name": "Metal",		//it comes from HELL
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Jungle","Forest","Hill"],
+		"terrainsCanBeFoundOn": ["Desert","Snow","Plains","Tundra","Grassland","Hill"],
 		"production": 1,
 		"improvement": "Mine",
 		"improvementStats": {"production": 1},
@@ -94,7 +94,7 @@
 		"terrainsCanBeFoundOn": ["Plains"],
 		"food": 1,
 		"improvement": "Pasture",
-		"improvementStats": {"production": 1},
+		"improvementStats": {"production": 2},
 		"building": "Stable"
 	},
 	{
@@ -118,24 +118,18 @@
 		"building": "Plastics Reprocessor"
 	},
 
-	//pollution
-
-	/*{
-		"name": "Smog",
-		"resourceType": "Bonus",
-		"unique": "[+1 Gold] from every [Monument]",
-	},	*/
 	// Strategic resources
 	
 	{
 		"name": "Power",
 		"resourceType": "Strategic",
 		"revealedBy": "Writing",
-		"improvement": "Generator",
+		"improvement": "Wind farm",
 		"improvementStats": {"production": 1},
-		"terrainsCanBeFoundOn": ["Desert","Plains","Hill"],//																..
+		"terrainsCanBeFoundOn": ["Hill"],															
 	//	"unique": "+[10]% Production when constructing [buildings]",
 	},
+	
 	{
 		"name": "Oil",
 		"resourceType": "Strategic",

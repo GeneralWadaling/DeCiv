@@ -70,7 +70,7 @@
 			},
 			{
 				"name": "Citizen Militia",
-				"uniques": ["Units in cities cost no Maintenance","[+2 Production] in all cities with a garrison", "Free [Worker] appears"],
+				"uniques": ["Units in cities cost no Maintenance","[+2 Production] in all cities with a garrison", "[+1] movement for all [Worker] units"],
 				"requires": ["Restorers"],
 				"row": 2,
 				"column": 1
@@ -176,7 +176,7 @@
 			{
 				"name": "Sample Analysis",
 				"effect": "",
-				"uniques": ["[+1 Science] from every [Trading post]", "+[17]% [Science] from every [University]"],
+				"uniques": ["[+1 Science] from every [Moisture trap]", "+[17]% [Science] from every [University]"],
 				"requires": ["Secularism"],
 				"row": 2,
 				"column": 1
@@ -256,7 +256,7 @@
 		"name": "Constitution",
 		"era": "Medieval era",
 		"effect": "",
-		"uniques": ["+25% great people rate"],
+		"uniques": ["+[25]% great person generation in all cities"],
 		"policies": [
 			{
 				"name": "Civil Society",

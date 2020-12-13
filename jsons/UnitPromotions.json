@@ -9,19 +9,19 @@
 	{
 		"name": "Reconnaissance I",
 		"prerequisites": ["March","Blitz","Extended Range","Medic II","Guerilla Warfare II","Urban Warfare II"],
-		"uniques": ["High speed, low drag","Ignores terrain cost","[50]% Bonus XP gain","+[50]% Strength vs [Siege]","-[50]% Strength vs [City]","Penalty vs units in open terrain 20%"],
+		"uniques": ["High speed, low drag","Ignores terrain cost","[25]% Bonus XP gain","[Great General] is earned [-20]% faster","-[50]% Strength vs [City]","Penalty vs units in open terrain 25%"],
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},		
 	{
 		"name": "Reconnaissance II",
 		"prerequisites": ["Reconnaissance I"],
-		"uniques": ["+1 Movement","No movement cost to pillage","[50]% Bonus XP gain"],
+		"uniques": ["+1 Movement","No movement cost to pillage","[25]% Bonus XP gain","[Great General] is earned [-20]% faster"],
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},		
 	{
 		"name": "Reconnaissance III",
 		"prerequisites": ["Reconnaissance II"],
-		"uniques": ["+1 Movement"],		
+		"uniques": ["+1 Movement","+[50]% Strength vs [Siege]"],		
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},	
 	
@@ -33,7 +33,9 @@
 	},	
 	{
 		"name": "Forage",
-		"uniques": ["Heals [25] damage if it kills a unit","[20]% Bonus XP gain"],
+		"uniques": ["Heals [25] damage if it kills a unit","[25]% Bonus XP gain","[Great General] is earned [-20]% faster"
+		/*,"Earn [100]% of [military] opponent's [Strength] as [Science] for kills"*/
+		],
 		"unitTypes": ["Melee"]
 	},	
 	{
@@ -76,7 +78,7 @@
 	{
 		"name": "Pursuit",
 		"prerequisites": ["Loose Formation","Shock"],
-		"uniques": ["Bonus vs wounded units 33%","Heals [25] damage if it kills a unit"],
+		"uniques": ["+[33]% Strength vs [wounded units]","Heals [25] damage if it kills a unit"],
 		"unitTypes": ["Mounted"]
 	},
 
@@ -97,11 +99,9 @@
 	},
 	{
 		"name": "Maneuver",
-		"prerequisites": ["Hull Down","Shock"
-		,"Targeting I","Bombardment I","Boarding Party I", "Coastal Raider I", "Wolfpack I"],//
+		"prerequisites": ["Hull Down","Shock"],
 		"uniques": ["+1 Movement"],
-		"unitTypes": ["Armor"
-		,"WaterMelee","WaterRanged","WaterSubmarine"]//
+		"unitTypes": ["Armor"]
 	},
 	
 	{
@@ -119,13 +119,13 @@
 		//entrench - melee
 	{
 		"name": "Skirmish",
-		"uniques": ["May withdraw before melee ([75]%)","[50]% Bonus XP gain"],
+		"uniques": ["May withdraw before melee ([75]%)","[25]% Bonus XP gain","[Great General] is earned [-20]% faster"],
 		"unitTypes": ["Ranged"]
 	},	
 	{
 		"name": "Precision",
 		"prerequisites": ["Entrench","Skirmish"],
-		"uniques": ["Bonus vs wounded units 33%"],
+		"uniques": ["+[33]% Strength vs [wounded units]"],
 		"unitTypes": ["Ranged"]
 	},
 	{
@@ -167,29 +167,130 @@
 		"uniques": ["+10 HP when healing"],
 		"unitTypes": ["Armor","Siege"]
 	},
-	{
-		"name": "Extended Range",
-		"prerequisites": ["Precision","Suppression","Barrage","Resupply"
-		,"Targeting II","Bombardment II", "Wolfpack II"],//
-		"uniques": ["+1 Range"],
-		"unitTypes": ["Ranged","Siege"
-		,"WaterRanged","WaterSubmarine"]//
-	},	
+	//extended range
 	{
 		"name": "Mobility",
 		"prerequisites": ["Barrage","Resupply"],
-		"uniques": ["+2 Movement"],
+		"uniques": ["+1 Movement","+1 Movement"],
 		"unitTypes": ["Siege"]
+	},	
+	//logistics
+		
+	// Water melee																		old promotions - water, air
+	{
+		"name": "Evasion",
+		"uniques": ["+25% Defence against ranged attacks"],
+		"unitTypes": ["WaterMelee"]
 	},
 	{
-		"name": "Logistics",
-		"prerequisites": ["Mobility","Extended Range","March",
-		"Targeting III", "Wolfpack III","Bombardment III", "Coastal Raider III","Boarding Party III","Siege III"],//
-		"uniques": ["1 additional attack per turn"],
-		"unitTypes": ["Ranged","Siege"
-		,"WaterMelee","WaterRanged","WaterSubmarine","Fighter","Bomber"]//
+		"name": "Strike",
+		"uniques": ["+[33]% Strength when attacking"],
+		"unitTypes": ["WaterMelee"]
+	},
+	{
+		"name": "Littoral Warfare",
+		"uniques": ["+[25]% combat bonus in [Coast]","+[25]% combat bonus in [Land]","+[25]% Strength vs [City]"],
+		"prerequisites": ["Evasion","Strike"],
+		"unitTypes": ["WaterMelee"]
+	},
+	{
+		"name": "Exploit Weakness",
+		"uniques": ["+[33]% Strength vs [wounded units]"],
+		"prerequisites": ["Evasion","Strike"],
+		"unitTypes": ["WaterMelee"]
+	},
+	//water ranged
+	{
+		"name": "Bombardment",
+		"uniques": ["+[33]% Strength vs [land units]"],
+		"unitTypes": ["WaterRanged","Fighter","Bomber"]
+	},
+	{
+		"name": "Targeting",
+		"uniques": ["+[25]% Strength vs [water units]"],
+		"unitTypes": ["WaterRanged","Fighter","Bomber"]
+	},
+	// Aircraft Carrier
+	{
+		"name": "Armor Plating",
+		"uniques": ["+[20]% Strength when defending"],
+		"unitTypes": ["WaterAircraftCarrier"]
+	},
+	{
+		"name": "Flight Deck I",
+		"effect": "Can carry 1 extra air unit",
+		"unitTypes": ["WaterAircraftCarrier"]
+	},
+	{
+		"name": "Flight Deck II",
+		"prerequisites": ["Flight Deck I"],
+		"effect": "Can carry 1 extra air unit",
+		"unitTypes": ["WaterAircraftCarrier"]
+	},
+	{
+		"name": "Flight Deck III",
+		"prerequisites": ["Flight Deck II"],
+		"effect": "Can carry 1 extra air unit",
+		"unitTypes": ["WaterAircraftCarrier"]
+	},
+	{
+		"name": "Damage Control",
+		"prerequisites": ["Bombardment","Targeting","Armor Plating","Flight Deck I"],
+		"uniques": ["This unit and all others in adjacent tiles heal 5 additional HP. This unit heals 5 additional HP outside of friendly territory."],
+		"unitTypes": ["WaterRanged","WaterAircraftCarrier"]
+	},
+	{
+		"name": "Close-In Weapons System",
+		"prerequisites": ["Bombardment","Targeting","Armor Plating","Flight Deck I"],
+		"uniques": ["+[10]% Strength when defending","+[25]% Strength vs [air units]"],
+		"unitTypes": ["WaterRanged","WaterAircraftCarrier"]
 	},
 	
+	// Submarine
+	{
+		"name": "Wolfpack I",
+		"effect": "+[25]% Strength when attacking",
+		"unitTypes": ["WaterSubmarine"]
+	},
+	{
+		"name": "Wolfpack II",
+		"prerequisites": ["Wolfpack I"],
+		"effect": "+[25]% Strength when attacking",
+		"unitTypes": ["WaterSubmarine"]
+	},
+	{
+		"name": "Wolfpack III",
+		"prerequisites": ["Wolfpack II"],
+		"effect": "Bonus as Attacker [25]%",
+		"unitTypes": ["WaterSubmarine"]
+	},
+
+	{
+		"name": "Flank Speed",
+		"prerequisites": ["Littoral Warfare","Exploit Weakness","Damage Control","Close-In Weapons System","Flight Deck II","Wolfpack I"],
+		"uniques": ["+1 Movement"],
+		"unitTypes": ["WaterMelee","WaterRanged","WaterAircraftCarrier","WaterSubmarine"]
+	},
+	{
+		"name": "Convoy",
+		"prerequisites": ["Littoral Warfare","Exploit Weakness","Damage Control","Close-In Weapons System","Flight Deck II"],
+		"uniques": ["+10 HP when healing"],
+		"unitTypes": ["WaterMelee","WaterRanged","WaterAircraftCarrier","WaterSubmarine","Wolfpack II"]
+	},	
+	{
+		"name": "Extended Range",
+		"prerequisites": ["Precision","Suppression","Barrage","Resupply","Flank Speed","Convoy"],
+		"uniques": ["+1 Range"],
+		"unitTypes": ["Ranged","Siege","WaterRanged"]
+	},	
+	{
+		"name": "Logistics",
+		"prerequisites": ["Mobility","Extended Range","March","Flank Speed","Convoy","Wolfpack III"
+		,"Siege III"],//
+		"uniques": ["1 additional attack per turn"],
+		"unitTypes": ["Ranged","Siege","WaterMelee","WaterRanged","WaterSubmarine"
+		,"Fighter","Bomber"]//
+	},
 	// type TERRAIN SPECIFIC
 	
 	
@@ -202,7 +303,7 @@
 		"name": "Guerilla Warfare II",
 		"prerequisites": ["Guerilla Warfare I"],
 		"uniques": ["+[30]% combat bonus in [Hill]","+[10]% Strength when attacking"],
-		"unitTypes": ["Melee","Ranged","Mounted"]
+		"unitTypes": ["Melee","Ranged","Mounted","Scout"]
 	},	
 	{
 		"name": "Urban Warfare I",
@@ -213,29 +314,27 @@
 		"name": "Urban Warfare II",
 		"prerequisites": ["Urban Warfare I"],
 		"uniques": ["+[30]% combat bonus in [Jungle]","+[30]% combat bonus in [Forest]","+[30]% Strength vs [City]"],
-		"unitTypes": ["Melee","Ranged","Mounted"]
+		"unitTypes": ["Melee","Ranged","Mounted","Scout"]
 	},
 		//type MIXED
 	{
 		"name": "Medic",
 		"prerequisites": ["Skirmish","Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I"],
-		"effect": "This unit and all others in adjacent tiles heal 5 additional HP per turn",
+		"uniques": ["This unit and all others in adjacent tiles heal 5 additional HP per turn"],
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},
 	{
 		"name": "Medic II",
 		"prerequisites": ["Medic"],
-		"effect": "This unit and all others in adjacent tiles heal 5 additional HP. This unit heals 5 additional HP outside of friendly territory.",
+		"uniques": ["This unit and all others in adjacent tiles heal 5 additional HP. This unit heals 5 additional HP outside of friendly territory."],
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},
 
 	{
 		"name": "Sentry",
-		"prerequisites": ["Skirmish","Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I"
-		,"Bombardment I","Targeting I","Boarding Party I","Coastal Raider I"],//
+		"prerequisites": ["Skirmish","Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I","Bombardment","Targeting","Evasion","Strike"],
 		"uniques": ["+1 Visibility Range"],
-		"unitTypes": ["Melee","Ranged","Mounted","Scout"
-		,"WaterRanged","WaterMelee"]//
+		"unitTypes": ["Melee","Ranged","Mounted","Scout","WaterRanged","WaterMelee"]
 	},	
 	
 	{
@@ -268,7 +367,7 @@
 		"name": "White Phosphorus Munitions",
 		"prerequisites": ["Infantry Mortar","Artillery"],
 		"uniques": ["+[50]% Strength vs [Low Tech]","+[25]% Strength vs [Personnel]","+[50]% Strength vs [City]"],
-		"unitTypes": ["Melee","Ranged","Siege"]
+		"unitTypes": ["Melee","Ranged","Siege","WaterRanged"]
 	},
 	{
 		"name": "Antipersonnel Mines",
@@ -329,7 +428,7 @@
 	
 	{
 		"name": "Drone Recon",
-		"uniques": ["+1 Visibility Range","[50]% Bonus XP gain"],
+		"uniques": ["+1 Visibility Range","[25]% Bonus XP gain","[Great General] is earned [-20]% faster"],
 	},	
 	{
 		"name": "Drone Support",
@@ -381,99 +480,9 @@
 
 
 
-	
-	// Water melee																		old promotions - water, air
-	{
-		"name": "Boarding Party I",
-		"uniques": ["Bonus vs water units 15%"],
-		"unitTypes": ["WaterMelee"]
-	},
-	{
-		"name": "Boarding Party II",
-		"prerequisites": ["Boarding Party I"],
-		"effect": "Bonus vs water units 15%",
-		"unitTypes": ["WaterMelee"]
-	},
-	{
-		"name": "Boarding Party III",
-		"prerequisites": ["Boarding Party II"],
-		"effect": "Bonus vs water units 15%",
-		"unitTypes": ["WaterMelee"]
-	},
-	
-	{
-		"name": "Coastal Raider I",
-		"effect": "Bonus vs City 15%",
-		"unitTypes": ["WaterMelee"]
-	},
-	{
-		"name": "Coastal Raider II",
-		"prerequisites": ["Coastal Raider I"],
-		"effect": "Bonus vs City 15%",
-		"unitTypes": ["WaterMelee"]
-	},
-	{
-		"name": "Coastal Raider III",
-		"prerequisites": ["Coastal Raider II"],
-		"effect": "Bonus vs City 15%",
-		"unitTypes": ["WaterMelee"]
-	},
-	
-	// Submarine
-	{
-		"name": "Wolfpack I",
-		"effect": "+[25]% Strength when attacking",
-		"unitTypes": ["WaterSubmarine"]
-	},
-	{
-		"name": "Wolfpack II",
-		"prerequisites": ["Wolfpack I"],
-		"effect": "+[25]% Strength when attacking",
-		"unitTypes": ["WaterSubmarine"]
-	},
-	{
-		"name": "Wolfpack III",
-		"prerequisites": ["Wolfpack II"],
-		"effect": "Bonus as Attacker [25]%",
-		"unitTypes": ["WaterSubmarine"]
-	},
-	
-	// Aircraft Carrier
-	{
-		"name": "Armor Plating I",
-		"effect": "+[25]% Strength when defending",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-	{
-		"name": "Armor Plating II",
-		"prerequisites": ["Armor Plating I"],
-		"effect": "+[25]% Strength when defending",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-	{
-		"name": "Armor Plating III",
-		"prerequisites": ["Armor Plating II"],
-		"effect": "+[25]% Strength when defending",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-	{
-		"name": "Flight Deck I",
-		"effect": "Can carry 1 extra air unit",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-	{
-		"name": "Flight Deck II",
-		"prerequisites": ["Flight Deck I"],
-		"effect": "Can carry 1 extra air unit",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
-	{
-		"name": "Flight Deck III",
-		"prerequisites": ["Flight Deck II"],
-		"effect": "Can carry 1 extra air unit",
-		"unitTypes": ["WaterAircraftCarrier"]
-	},
 
+	
+	
 	// Bomber
 	{
 		"name": "Siege I",
@@ -493,10 +502,10 @@
 		"unitTypes": ["Bomber"]
 	},
 	{
-		"name": "Evasion",
-		"prerequisites": ["Siege II", "Bombardment II"],
+		"name": "Evasive Maneuvers",
+		"prerequisites": ["Siege II","Bombardment","Targeting"],
 		"effect": "Reduces damage taken from interception by 50%",
-		"unitTypes": ["Bomber"]
+		"unitTypes": ["Fighter","Bomber"]
 	},
 	
 	// Fighter
@@ -517,86 +526,25 @@
 		"effect": "Bonus when intercepting [34]%",
 		"unitTypes": ["Fighter"]
 	},
-	/*
-	{
-		"name": "Dogfighting I",
-		"effect": "Bonus when performing air sweep [33]%", // todo
-		"unitTypes": ["Fighter"]
-	},
-	{
-		"name": "Dogfighting II",
-		"prerequisites": ["Dogfighting I"],
-		"effect": "Bonus when performing air sweep [33]%",
-		"unitTypes": ["Fighter"]
-	},
-	{
-		"name": "Dogfighting III",
-		"prerequisites": ["Dogfighting II"],
-		"effect": "Bonus when performing air sweep [34]%",
-		"unitTypes": ["Fighter"]
-	}
-	*/
 	
 	{
 		"name": "Sortie",
-		"prerequisites": ["Interception II", "Dogfighting II"]
+		"prerequisites": ["Interception II"]
 		"effect": "1 extra Interception may be made per turn",
 		"unitTypes": ["Fighter"]
 	},
 	
 	{
 		"name": "Operational Range",
-		"prerequisites": ["Interception I", /*"Dogfighting I",*/ "Siege I", "Bombardment I"],
+		"prerequisites": ["Interception I", "Siege I", "Bombardment", "Targeting"],
 		"effect": "+2 Range",
 		"unitTypes": ["Fighter","Bomber"]
 	},
 	{
 		"name": "Air Repair",
-		"prerequisites": ["Interception II", /*"Dogfighting II",*/ "Siege II", "Bombardment II"],
+		"prerequisites": ["Interception II", "Siege II", "Operational Range","Evasive Maneuvers"],
 		"effect": "Unit will heal every turn, even if it performs an action",
 		"unitTypes": ["Fighter","Bomber"]
 	},	
-		// Water ranged and air units
-	{
-		"name": "Bombardment I",
-		"effect": "Bonus vs land units 33%",
-		"unitTypes": ["WaterRanged","Fighter","Bomber"]
-	},
-	{
-		"name": "Bombardment II",
-		"prerequisites": ["Bombardment I"],
-		"effect": "Bonus vs land units 33%",
-		"unitTypes": ["WaterRanged","Fighter","Bomber"]
-	},
-	{
-		"name": "Bombardment III",
-		"prerequisites": ["Bombardment II"],
-		"effect": "Bonus vs land units 34%",
-		"unitTypes": ["WaterRanged","Fighter","Bomber"]
-	},
-	
-	// Targeting I has different requirements for air and waterranged units, this was the cleanest way to do so
-	{
-		"name": "Targeting I",
-		"effect": "Bonus vs water units 15%",
-		"unitTypes": ["WaterRanged"]
-	},
-	{
-		"name": "Targeting I (air)",
-		"prerequisites": ["Interception I","Dogfighting I", "Siege I","Bombardment I"]
-		"effect": "Bonus vs water units 15%",
-		"unitTypes": ["Fighter","Bomber"]
-	},
-	{
-		"name": "Targeting II",
-		"prerequisites": ["Targeting I","Targeting I (air)"],
-		"effect": "Bonus vs water units 15%",
-		"unitTypes": ["WaterRanged","Fighter","Bomber"]
-	},
-	{
-		"name": "Targeting III",
-		"prerequisites": ["Targeting II"],
-		"effect": "Bonus vs water units 15%",
-		"unitTypes": ["WaterRanged"]
-	},
+
 ]	
