@@ -3014,6 +3014,13 @@ TileSets/FantasyHex/Tiles/Snow+Barbarian encampment
   orig: 32, 30
   offset: 0, 0
   index: -1
+TileSets/FantasyHex/Tiles/Snow+Citadel
+  rotate: false
+  xy: 1604, 1391
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
 TileSets/FantasyHex/Tiles/Snow+Fallout
   rotate: false
   xy: 614, 371
@@ -3282,49 +3289,49 @@ TileSets/FantasyHex/Tiles/Tundra+Jungle+Scrap
   index: -1
 TileSets/FantasyHex/Tiles/Tundra+Jungle+Weapons
   rotate: false
-  xy: 1604, 1387
+  xy: 786, 594
   size: 32, 36
   orig: 32, 36
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Tundra+Spring
   rotate: false
-  xy: 1024, 793
+  xy: 820, 602
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Tundra+Toxic Waste
   rotate: false
-  xy: 1026, 762
+  xy: 788, 563
   size: 32, 29
   orig: 32, 29
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Tundra+Tree plantation
   rotate: false
-  xy: 1026, 730
+  xy: 788, 531
   size: 32, 30
   orig: 32, 30
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Water pump
   rotate: false
-  xy: 1026, 640
+  xy: 822, 572
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Weapons
   rotate: false
-  xy: 1026, 610
+  xy: 822, 542
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Tiles/Wind farm
   rotate: false
-  xy: 1022, 571
+  xy: 822, 503
   size: 32, 37
   orig: 32, 37
   offset: 0, 0
@@ -4276,56 +4283,56 @@ TileSets/FantasyHex/Units/Technical
   index: -1
 TileSets/FantasyHex/Units/War Buggy
   rotate: false
-  xy: 1026, 700
+  xy: 788, 501
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Warrior
   rotate: false
-  xy: 1026, 670
+  xy: 788, 471
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Work Boats
   rotate: false
-  xy: 1634, 1311
+  xy: 822, 473
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker
   rotate: false
-  xy: 1668, 1369
+  xy: 784, 441
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Atlas
   rotate: false
-  xy: 1702, 1343
+  xy: 784, 411
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Ghost
   rotate: false
-  xy: 1736, 1343
+  xy: 784, 381
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Legion
   rotate: false
-  xy: 1770, 1335
+  xy: 784, 351
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/FantasyHex/Units/Worker-Tribal
   rotate: false
-  xy: 1668, 1339
+  xy: 784, 321
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
