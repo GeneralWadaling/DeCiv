@@ -6,7 +6,7 @@ POWER UP
 
 - Build wind turbines and solar panels anywhere
 - Naval and air promotion trees have been remade in line with land units
-- Balance changes: reduced XP bonuses from promotions and added Great General generation penalties for these promotions (since they depend on XP). Commonwealth Rangers will be generated at a reduced rate. Base units will no longer start with "Infantry Weapons" promotion.
+- Balance changes: reduced XP bonuses from promotions and added Great General generation penalties for these promotions (since they depend on XP). Commonwealth Rangers will be generated at a reduced rate. Base units will no longer start with "Infantry Weapons" promotion. Settlement great improvement now gains bonii based on adjacent tiles
 
 The nations of the past are no more. Rebuild one that can survive in the new world, if you can.
 
