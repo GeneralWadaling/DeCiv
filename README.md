@@ -1,17 +1,12 @@
 # DeCiv
-DeCiv 1.46
+DeCiv 1.47
+13.12.20
 
-6.12.20
+POWER UP
 
--corrected some more bugs: melee units can take March at level 3; national bonus promotions for scavengers and survivalists should be applied correctly
-
--corrected some bugs with policies and promotion progression
--faction images added for Patriots units
--removed obsolete national units
--all nations can now build Auxiliary and Conscript units
--Drone Facility split from Aerospace Facility; gives Drone Recon to all infantry units
-
-
+- Build wind turbines and solar panels anywhere
+- Naval and air promotion trees have been remade in line with land units
+- Balance changes: reduced XP bonuses from promotions and added Great General generation penalties for these promotions (since they depend on XP). Commonwealth Rangers will be generated at a reduced rate. Base units will no longer start with "Infantry Weapons" promotion.
 
 The nations of the past are no more. Rebuild one that can survive in the new world, if you can.
 
