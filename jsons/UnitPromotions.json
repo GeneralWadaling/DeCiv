@@ -352,7 +352,24 @@
 	},		
 
 	
-
+	//drone tree
+	
+	{
+		"name": "Drone Recon",
+		"uniques": ["+1 Visibility Range","[25]% Bonus XP gain","[Great General] is earned [-20]% faster"],
+	},	
+	{
+		"name": "Drone Support",
+		"prerequisites": ["Drone Recon"],
+		"uniques": ["-10% combat strength for adjacent enemy units"],
+		"unitTypes": ["Melee","Ranged","Mounted","Armor"]
+	},
+	{
+		"name": "Care Package",
+		"prerequisites": ["Drone Recon"],
+		"uniques": ["+10 HP when healing"],
+		"unitTypes": ["Melee","Ranged","Mounted"]
+	},
 
 	//special weapons
 	
@@ -424,24 +441,7 @@
 		"uniques": ["+[5]% Strength when attacking"]
 	},	
 	
-	//drone tree
-	
-	{
-		"name": "Drone Recon",
-		"uniques": ["+1 Visibility Range","[25]% Bonus XP gain","[Great General] is earned [-20]% faster"],
-	},	
-	{
-		"name": "Drone Support",
-		"prerequisites": ["Drone Recon"],
-		"uniques": ["-10% combat strength for adjacent enemy units"],
-		"unitTypes": ["Melee","Ranged","Mounted","Armor"]
-	},
-	{
-		"name": "Care Package",
-		"prerequisites": ["Drone Recon"],
-		"uniques": ["+10 HP when healing"],
-		"unitTypes": ["Melee","Ranged","Mounted"]
-	},
+
 	
 	// Uniques		
 	
@@ -451,7 +451,7 @@
 	},
 	{
 		"name": "Chemical Weapons",
-		"uniques": ["Chemical Weapons","+[100]% Strength vs [Low Tech]","+[100]% Strength vs [Personnel]","-[100]% Strength vs [Gas Mask]","+[50]% Strength vs [City]"],
+		"uniques": ["Chemical Weapons","+[100]% Strength vs [Low Tech]","+[100]% Strength vs [Personnel]","-[50]% Strength vs [Gas Mask]","+[50]% Strength vs [City]"],
 	},
 	{
 		"name": "Point Defense Laser",

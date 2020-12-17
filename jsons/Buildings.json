@@ -1498,7 +1498,7 @@
 		"providesFreeBuilding":  "Nuclear Plant",
 		"gold": 5,
 		"cost": 1,
-		"uniques": ["Will not be displayed in Civilopedia","Reveals the entire map","Provides [1] [Uranium]","Provides [10] [Power]"]
+		"uniques": ["Will not be displayed in Civilopedia","Reveals the entire map","Provides [1] [Uranium]"]
 	},
 	{
 		"name": "Silk Road",
