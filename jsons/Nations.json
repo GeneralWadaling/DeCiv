@@ -237,7 +237,7 @@
 		//"uniqueText": "I am the very model",
 		"uniques": ["Double quantity of [Oil] produced"],
 		"cities": ["Gastown","Blood Farm","Trial of Sand","Prophecy","Thousand Cuts","The Harrowing","Temple of Rage","Immortal Highway",
-			"Tohuvabohu","Forbidden Palace","Hanging Gardens","The Cauldron","Traitors' Gate","Hell Patrol","Steel Throne","The Warren",
+			"Tohuvabohu","Forbidden Palace","Hanging Gardens","Megiddo","The Cauldron","Traitors' Gate","Hell Patrol","Steel Throne","The Warren",
 			"Well of Souls","Hermitage","Ceremony","Court of Dreams","Perpetual Ascension","Death Race","God Box"
 			]
 	}
@@ -280,7 +280,7 @@
 		"innerColor": [194,97,255],
 		"cities": ["Bartertown"]
 	},
-	/*{
+	{
 		"name": "Devil's Canyon",
 		"adjective": ["Devil's Canyon"],
 		"cityStateType": "Mercantile",
@@ -292,8 +292,7 @@
 		"outerColor": [0, 0, 0],
 		"innerColor": [224,224,50],
 		"cities": ["Devil's Canyon NPP"]
-//At Devil's Canyon, the lights of the old world still shine
-	},*/
+	},
 	{
 		"name": "Arroyo",
 		"adjective": ["Arroyoan"],
