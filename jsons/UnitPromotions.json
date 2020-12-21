@@ -2,7 +2,7 @@
 
 	{
 		"name": "Heal Instantly",
-		"effect": "Heal this Unit by 50 HP; Doing so will consume this opportunity to choose a Promotion",
+		"uniques": ["Heal this Unit by 50 HP; Doing so will consume this opportunity to choose a Promotion"],
 		"unitTypes": ["Melee","Mounted","Scout","Siege","Ranged","Armor","WaterMelee","WaterRanged","WaterSubmarine"]
 	},
 	//type SCOUT, special				
@@ -218,25 +218,25 @@
 	},
 	{
 		"name": "Flight Deck I",
-		"effect": "Can carry 1 extra air unit",
+		"uniques": [ "Can carry 1 extra air unit"],
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
 		"name": "Flight Deck II",
 		"prerequisites": ["Flight Deck I"],
-		"effect": "Can carry 1 extra air unit",
+		"uniques": [ "Can carry 1 extra air unit"],
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
 		"name": "Flight Deck III",
 		"prerequisites": ["Flight Deck II"],
-		"effect": "Can carry 1 extra air unit",
+		"uniques": [ "Can carry 1 extra air unit"],
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
 		"name": "Damage Control",
 		"prerequisites": ["Bombardment","Targeting","Armor Plating","Flight Deck I"],
-		"uniques": ["This unit and all others in adjacent tiles heal 5 additional HP. This unit heals 5 additional HP outside of friendly territory."],
+		"uniques": ["This unit and all others in adjacent tiles heal 5 additional HP.","Unit will heal every turn, even if it performs an action"],
 		"unitTypes": ["WaterRanged","WaterAircraftCarrier"]
 	},
 	{
@@ -249,19 +249,19 @@
 	// Submarine
 	{
 		"name": "Wolfpack I",
-		"effect": "+[25]% Strength when attacking",
+		"uniques": ["+[25]% Strength when attacking"],
 		"unitTypes": ["WaterSubmarine"]
 	},
 	{
 		"name": "Wolfpack II",
 		"prerequisites": ["Wolfpack I"],
-		"effect": "+[25]% Strength when attacking",
+		"uniques": ["+[25]% Strength when attacking"],
 		"unitTypes": ["WaterSubmarine"]
 	},
 	{
 		"name": "Wolfpack III",
 		"prerequisites": ["Wolfpack II"],
-		"effect": "Bonus as Attacker [25]%",
+		"uniques": ["+[25]% Strength when attacking"],
 		"unitTypes": ["WaterSubmarine"]
 	},
 
@@ -283,13 +283,77 @@
 		"uniques": ["+1 Range"],
 		"unitTypes": ["Ranged","Siege","WaterRanged"]
 	},	
+	
+	// Bomber
+	{
+		"name": "Siege I",
+		"uniques": ["+[33]% Strength vs [City]"],
+		"unitTypes": ["Bomber"]
+	},
+	{
+		"name": "Siege II",
+		"prerequisites": ["Siege I"],
+		"uniques": ["+[33]% Strength vs [City]"],
+		"unitTypes": ["Bomber"]
+	},
+	{
+		"name": "Siege III",
+		"prerequisites": ["Siege II"],
+		"uniques": ["+[33]% Strength vs [City]"],
+		"unitTypes": ["Bomber"]
+	},
+	
+	// Fighter
+	{
+		"name": "Interception I",
+		"uniques": ["Bonus when intercepting [33]%"],
+		"unitTypes": ["Fighter"]
+	},
+	{
+		"name": "Interception II",
+		"prerequisites": ["Interception I"],
+		"uniques": ["Bonus when intercepting [33]%"],
+		"unitTypes": ["Fighter"]
+	},
+	{
+		"name": "Interception III",
+		"prerequisites": ["Interception II"],
+		"uniques": ["Bonus when intercepting [34]%"],
+		"unitTypes": ["Fighter"]
+	},
+	
+	{
+		"name": "Operational Range",
+		"prerequisites": ["Interception I", "Siege I", "Bombardment", "Targeting"],
+		"uniques": ["+2 Range"],
+		"unitTypes": ["Fighter","Bomber"]
+	},
+	
+	{
+		"name": "Sortie",
+		"prerequisites": ["Interception II","Operational Range"]
+		"uniques": ["1 extra Interception may be made per turn"],
+		"unitTypes": ["Fighter"]
+	},
+	
+	{
+		"name": "Evasive Maneuvers",
+		"prerequisites": ["Interception II","Siege II","Operational Range"],
+		"uniques": ["Reduces damage taken from interception by 50%"],
+		"unitTypes": ["Fighter","Bomber"]
+	},
+	{
+		"name": "Air Repair",
+		"prerequisites": ["Interception III", "Siege III","Sortie","Operational Range","Evasive Maneuvers"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes": ["Fighter","Bomber"]
+	},	
+	
 	{
 		"name": "Logistics",
-		"prerequisites": ["Mobility","Extended Range","March","Flank Speed","Convoy","Wolfpack III"
-		,"Siege III"],//
+		"prerequisites": ["Mobility","Extended Range","March","Flank Speed","Convoy","Wolfpack III","Interception III", "Siege III","Sortie","Operational Range","Evasive Maneuvers"],
 		"uniques": ["1 additional attack per turn"],
-		"unitTypes": ["Ranged","Siege","WaterMelee","WaterRanged","WaterSubmarine"
-		,"Fighter","Bomber"]//
+		"unitTypes": ["Ranged","Siege","WaterMelee","WaterRanged","WaterSubmarine","Fighter","Bomber"]
 	},
 	// type TERRAIN SPECIFIC
 	
@@ -455,11 +519,11 @@
 	},
 	{
 		"name": "Point Defense Laser",
-		"effect": "+25% Defence against ranged attacks",
+		"uniques": ["+25% Defence against ranged attacks"],
 	},
 	{
 		"name": "Rejuvenation", // only for Units that have been close to Natural Wonder Fountain of Youth- "Heals 25 damage if it kills an Unit" for ranged seems wrong
-		"effect": "All healing effects doubled"
+		"uniques": ["All healing effects doubled"]
 	},		
 	{
 		"name": "Amphibious",
@@ -471,11 +535,11 @@
 	},
 	{
 		"name": "Martyrdom",
-		"uniques": ["I live. I die. I live again","Earn [100]% of [military] opponent's [Strength] as [Culture] for kills"],
+		"uniques": ["I live. I die. I live again","Earn [100]% of [military] opponent's [Strength] as [Culture] for kills","+[20]% Strength when attacking"],//
 	},
 	{
 		"name": "Hazard Pay",
-		"uniques": ["Earn [-5]% of [military] opponent's [Strength] as [Gold] for kills"],
+		"uniques": ["Earn [-10]% of [military] opponent's [Strength] as [Gold] for kills"],
 	},
 
 
@@ -483,68 +547,6 @@
 
 	
 	
-	// Bomber
-	{
-		"name": "Siege I",
-		"effect": "Bonus vs City 33%",
-		"unitTypes": ["Bomber"]
-	},
-	{
-		"name": "Siege II",
-		"prerequisites": ["Siege I"],
-		"effect": "Bonus vs City 33%",
-		"unitTypes": ["Bomber"]
-	},
-	{
-		"name": "Siege III",
-		"prerequisites": ["Siege II"],
-		"effect": "Bonus vs City 34%",
-		"unitTypes": ["Bomber"]
-	},
-	{
-		"name": "Evasive Maneuvers",
-		"prerequisites": ["Siege II","Bombardment","Targeting"],
-		"effect": "Reduces damage taken from interception by 50%",
-		"unitTypes": ["Fighter","Bomber"]
-	},
 	
-	// Fighter
-	{
-		"name": "Interception I",
-		"effect": "Bonus when intercepting [33]%",
-		"unitTypes": ["Fighter"]
-	},
-	{
-		"name": "Interception II",
-		"prerequisites": ["Interception I"],
-		"effect": "Bonus when intercepting [33]%",
-		"unitTypes": ["Fighter"]
-	},
-	{
-		"name": "Interception III",
-		"prerequisites": ["Interception II"],
-		"effect": "Bonus when intercepting [34]%",
-		"unitTypes": ["Fighter"]
-	},
-	
-	{
-		"name": "Sortie",
-		"prerequisites": ["Interception II"]
-		"effect": "1 extra Interception may be made per turn",
-		"unitTypes": ["Fighter"]
-	},
-	
-	{
-		"name": "Operational Range",
-		"prerequisites": ["Interception I", "Siege I", "Bombardment", "Targeting"],
-		"effect": "+2 Range",
-		"unitTypes": ["Fighter","Bomber"]
-	},
-	{
-		"name": "Air Repair",
-		"prerequisites": ["Interception II", "Siege II", "Operational Range","Evasive Maneuvers"],
-		"effect": "Unit will heal every turn, even if it performs an action",
-		"unitTypes": ["Fighter","Bomber"]
-	},	
 
 ]	
