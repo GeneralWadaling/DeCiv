@@ -14,7 +14,7 @@
 	//	"gold": -1,
 		"turnsToBuild": 8,
 		"techRequired": "Ecology",
-		"uniques": ["Gives a defensive bonus of [10]%","[+1 Food, -1 Gold] on [fresh water] tiles once [Ecology] is discovered","[+1 Food] once [Land Remediation] is discovered"]
+		"uniques": ["Gives a defensive bonus of [10]%","[+1 Food, -1 Gold] on [fresh water] tiles once [Ecology] is discovered","[+1 Food, +1 Production] once [Land Remediation] is discovered"]
 	},
 	{
 		"name": "Mine",
@@ -22,7 +22,13 @@
 		"production": 1,
 		"turnsToBuild": 9,
 		"techRequired": "Mining",
-		"uniques": ["[+1 Production] once [Electricity] is discovered"]
+		"uniques": ["[+1 Production] once [Steam Power] is discovered","[+1 Production] once [Railroad] is discovered"]
+	},
+	{
+		"name": "Pasture",
+		"turnsToBuild": 7,
+		"techRequired": "Redomestication",
+		"uniques": ["[+1 Food] once [Genetics] is discovered"]
 	},
 
 	{
@@ -43,13 +49,13 @@
 		"name": "Wind farm",
 		"terrainsCanBeBuiltOn": ["Hill"],
 		"turnsToBuild": 10,
-		"techRequired": "Electricity",
+		"techRequired": "Steel",
 		"uniques": ["Provides [1] [Power]","Can only be built on Coastal tiles"]
 	},
 	/*{
 		"name": "Tidal generator",
 		"turnsToBuild": 10,
-		"techRequired": "Electricity",
+		"techRequired": "Steam Power",
 		"uniques": ["Provides [1] [Power]","Can only be built on Coastal tiles"]// should be  a water improvment
 	},*/
 	// Resource-specific
@@ -91,12 +97,14 @@
 		"name": "Oil well",
 		"turnsToBuild": 9,
 		"techRequired": "Machinery",
+		"uniques": ["Provides [1] [Oil]"]
 	},
 	{
-		"name": "Pasture",
+		"name": "Energy farm",
+		"gold": -1,
 		"turnsToBuild": 7,
-		"techRequired": "Redomestication",
-		"uniques": ["[+1 Food] once [Genetics] is discovered"]
+		"techRequired": "Biology",
+		"uniques": ["Can also be built on tiles adjacent to fresh water","Provides [1] [Oil]"]
 	},
 	{
 		"name": "Fishing Boats",
@@ -118,13 +126,13 @@
 		"name": "Road",
 		"turnsToBuild": 4,
 		"techRequired": "Construction"
-		"uniques": ["Can be built outside your borders"]
+		"uniques": ["Can be built outside your borders","Costs [1] gold per turn when in your territory"]
 	},
 	{
 		"name": "Railroad",
 		"turnsToBuild": 10,
-		"techRequired": "Replaceable Parts"
-		"uniques": ["Can be built outside your borders"]
+		"techRequired": "Railroad"
+		"uniques": ["Can be built outside your borders","Costs [2] gold per turn when in your territory"]
 	},
 	
 	// Removals
@@ -176,56 +184,44 @@
 {
 		"name": "Academy",
 		"science": 4,
-		"uniques": ["Great Improvement","Gives a defensive bonus of [10]%", "[+2 Science] once [Scientific Theory] is discovered", "[+2 Science] once [Decryption] is discovered"]
-		// in Gods & Kings academy will also have "[+2 Science] once [Atomic Theory] is discovered"
+		"uniques": ["Great Improvement","Gives a defensive bonus of [10]%", "[+2 Science] once [Electronics] is discovered", "[+2 Science] once [Decryption] is discovered"]
 	},
 	{
 		"name": "Settlement",
 		"gold": 1,
-		"uniques": ["Great Improvement", "Gives a defensive bonus of [10]%", "[+1 Science] for each adjacent [Jungle]","[+1 Food] for each adjacent [Farm]", "[+1 Gold] once [Currency] is discovered", "[+1 Culture] once [Civil Service] is discovered"]
+		"uniques": ["Great Improvement","Gives a defensive bonus of [10]%", "[+1 Science] for each adjacent [Jungle]","[+1 Food] for each adjacent [Farm]", "[+1 Gold] once [Currency] is discovered", "[+1 Culture] once [Civil Service] is discovered"]
+	},	
+	{
+		"name": "Outpost", 
+		"uniqueTo": "Cult of Ignis",
+		"production": 2,
+		"uniques": ["Great Improvement","Gives a defensive bonus of [50]%","Deal 30 damage to adjacent enemy units","Provides [1] [Slaves]"]
+	},
+	{
+		"name": "Narcotics farm",
+		"uniques": ["Great Improvement","Provides [1] [Narcotics]"]
+	},
+	{
+		"name": "Prison farm",
+		"uniques": ["Great Improvement","Provides [1] [Slaves]","[+1 Food, -1 Gold] on [fresh water] tiles once [The Wheel] is discovered","[+1 Food] once [Land Remediation] is discovered","Cannot be built on bonus resource"]
 	},
 	{
 		"name": "Oracle",
 		"uniqueTo": "Cult of Ignis",
-		"culture": 3,
+		"culture": 4,
 		"happiness": 1,
-		"uniques": ["Great Improvement","[+1 Gold] once [Civil Service] is discovered","[+1 Culture] once [Radio] is discovered"]
+		"uniques": ["Great Improvement","Gives a defensive bonus of [10]%","Provides [1] [Oil]"],
 	},
 	{
 		"name": "Manufactory",
 		"production": 3,
-		"uniques": ["Great Improvement","Gives a defensive bonus of [10]%","[+1 Production] once [Electricity] is discovered","[+1 Production] once [Robotics] is discovered","[+1 Production] once [Electronics] is discovered",]
+		"uniques": ["Great Improvement","Gives a defensive bonus of [10]%","[+1 Production] once [Steam Power] is discovered","[+1 Production] once [Railroad] is discovered","[+1 Production] once [Electronics] is discovered","[+1 Production] once [Robotics] is discovered"]
 	},
 
 	{
 		"name": "Citadel",
 		"uniques": ["Gives a defensive bonus of [100]%", "Deal 30 damage to adjacent enemy units", "Great Improvement"]
-	},
-	{
-	//removed
-		"name": "Lumber mill",
-	//	"terrainsCanBeBuiltOn": ["Grassland","Tundra"],
-		"production": 1,
-	//	"gold": -1,
-		"turnsToBuild": 9,
-	//	"techRequired": "Ecology",
-	//	"improvingTech": "Land Remediation",
-	//	"improvingTechStats": {"food":1,"production": 1}
-	},		
-	
-
-	//Civilization unique improvements
-	/*{
-		"name": "Moai",
-		"uniqueTo": "Polynesia",
-		"culture": 1,
-		"turnsToBuild": 4,
-		"uniques": ["+1 additional Culture for each adjacent Moai","Can only be built on Coastal tiles"],
-	//	"techRequired": "Construction",
-		"improvingTech": "Flight",
-		"improvingTechStats": {"gold": 1}
-	},*/
-
+	},	
 	
 	{ "name": "Ancient ruins" },
 	{ "name": "City ruins" 

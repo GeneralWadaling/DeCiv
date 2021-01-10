@@ -8,7 +8,7 @@
 	{				
 		"name": "Children of Rust",
 		"leaderName": "Scarlett",
-		"adjective": ["Children"],
+		"adjective": ["Scavenger"],
 		"startBias": ["Forest","Jungle"],
 		"preferredVictoryType": "Cultural",
 		
@@ -21,11 +21,13 @@
 		"neutralHello": "I speak for the Children.",
 		"hateHello": "What will it take? When the last tree has burned and the last child has starved, will you then be satisfied, great leader?",
 		"tradeRequest": "This is the property now of the Children. What price will you pay?",
-		"outerColor": [200,200,50],
-		"innerColor": [54,72,72],
+		"outerColor": [116,67,5],
+		"innerColor": [219,219,126],
 		"style": "",
 		"uniqueName": "Rubble Runners",
-		"uniques": ["[Low Tech] units gain the [Urban Warfare I] promotion","[Personnel] units gain the [Urban Warfare I] promotion","All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel."],
+		"uniques": ["[Low Tech] units gain the [Urban Warfare I] promotion","[Personnel] units gain the [Urban Warfare I] promotion",
+			"All units move through Forest and Jungle Tiles in friendly territory as if they have roads. These tiles can be used to establish City Connections upon researching the Wheel.",
+			"Starts with [Redomestication]"],
 		"cities": ["Phoenix","Rust City","The Boneyard","Old Forest","Dogtown","Soft Rains","Ashville","Condor Creek","Hazard",
 			"Radium Springs","Osprey","Vulture Bend","Dark Skies","Pistolville","Headstone","Firesteel","Broken Hills","Deadwood",
 			"Hopeville","Buzzard Vista","Dustbowl","Rakeville","Rock Falls","Kismet","Waterville"
@@ -35,7 +37,6 @@
 		"name": "Blackwarden",
 		"leaderName": "Eric Price",
 		"adjective": ["Mercenary"],
-	//	"startBias": ["Avoid Tundra","Avoid Desert"],
 		"preferredVictoryType": "Domination",
 		
 		"startIntroPart1": "May the blessings of the gods be upon you, oh great King Alexander! You are the ruler of the mighty Greek nation. Your people lived for so many years in isolated city-states - legendary cities such as Athens, Sparta, Thebes - where they gave the world many great things, such as democracy, philosophy, ragedy, art and architecture, the very foundation of Western Civilization. Although few in number and often hostile to each other, in the 5th century BC they were able to defeat their much larger neighbor, Persia, on land and sea.",
@@ -52,13 +53,14 @@
 		"tradeRequest": "This is a great opportunity for you. It would be unwise to refuse.",
 				
 		"outerColor": [100,170,210],
-		"innerColor": [72, 72, 120],
-		"style": "",
-		"uniqueName": "Protection Racket",
-		"uniques": ["+30% Strength when fighting City-State units and cities","City-State Influence degrades at half rate","City-State Influence recovers at twice the normal rate"],
-		"cities": ["Ark One","Vanguard","New Haven","Competitor View","Prosperity Plaza","Ransom","Chance Springs","The Den",
-			"Profit Margin","Searchlight","Carte Blanche","Jackalsville","Horwich Green","Break Even","Spearhead","Laissez's Fair",
-			"Paradise","Hard Cash","Innovation","Conflict of Interest","Sunk Cost","Forbes","Cornucopia",
+		"innerColor": [42, 42, 70],
+		"style": "Corporate",
+		"uniqueName": "Limited Liability",
+		"uniques": ["+[20]% combat bonus for units fighting in [Foreign Land]","City-State Influence recovers at twice the normal rate",
+			"Starts with [Writing]","Starts with [Construction]","Starts with [Machinery]","Starts with [Electronics]","[-2 Science] per turn from cities before [Education]"],
+		"cities": ["Ark One","Vanguard","New Haven","Competitor View","Prosperity Plaza","Break Even","Spearhead",
+			"Profit Margin","Searchlight","Carte Blanche","Jackalsville","Horwich Green","Laissez's Fair",
+			"Hard Cash","Innovation","Conflict of Interest","Sunk Cost","Forbes","Cornucopia",
 			]
 	},
 
@@ -66,7 +68,7 @@
 		"name": "Atlas",
 		"leaderName": "John Kruger",
 		"adjective": ["Corporate"],
-		"startBias": ["Avoid Desert"],
+	//	"startBias": ["Avoid Desert"],
 		"preferredVictoryType": "Scientific",
 		
 		"startIntroPart1": "May the blessings of heaven be upon you, O great Nebuchadnezzar, father of mighty and ancient Babylon! Young was the world when Sargon built Babylon some five thousand years ago, long did it grow and prosper, gaining its first empire the eighteenth century BC, under godlike Hammurabi, the giver of law. Although conquered by the Kassites and then by the Assyrians, Babylon endured, emerging phoenix-like from its ashes of destruction and regaining its independence despite its many enemies. Truly was Babylon the center of arts and learning in the ancient world. O Nebuchadnezzar, your empire endured but a short time after your death, falling to the mighty Persians, and then to the Greeks, until the great city was destroyed by 141 BC.",
@@ -84,11 +86,12 @@
 				
 		"outerColor": [0,255,255],
 		"innerColor": [45,60,120],
-		"style": "Atlas",
+		"style": "Corporate",
 		"uniqueName": "Creative Leadership",
-		"uniques": ["Receive free [Great Scientist] when you discover [Writing]","+[33]% great person generation in all cities"],
-		"cities": ["Atlas Canyon","Praxis","Opportunity","Pareto Estates","Enterprise Gardens","Hanlon College","The Reservation",
-			"Zakharov Campus","Curiousity","Progress Estates","New Horizon","Dunning Institute","Kruger Laboratories","Apogee",
+		"uniques": ["Receive free [Great Scientist] when you discover [Secrets of the Past]","+[33]% great person generation in all cities",
+			"Starts with [Writing]","Starts with [Construction]","Starts with [Machinery]","Starts with [Electronics]","[-2 Science] per turn from cities before [Education]"],
+		"cities": ["Atlas Canyon","Praxis","Opportunity","Enterprise Gardens","Pareto Estates","Hanlon College","The Reservation",
+			"Zakharov Campus","Curiosity","Progress Estates","New Horizon","Dunning Institute","Kruger Laboratories","Apogee",
 			"Hypothesis","Axiom","Euclid Center","Prometheus Laboratories","Zenith","Von Neumann Institute",
 			]
 	},
@@ -97,7 +100,7 @@
 		"name": "Commonwealth",
 		"leaderName": "President Hawkins",
 		"adjective": ["Commonwealth"],
-	//	"startBias": ["Avoid Tundra","Avoid Desert"],
+		"startBias": ["Avoid Desert"],
 		"preferredVictoryType":"Cultural",
 		
 		"startIntroPart1": "Greetings to you, Great King Ramkhamhaeng, leader of the glorious Siamese people! O mighty King, your people bow down before you in awe and fear! You are the ruler of Siam, an ancient country in the heart of Southeast Asia, a beautiful and mysterious land. Surrounded by foes, beset by bloody war and grinding poverty, the clever and loyal Siamese people have endured and trumphed. King Ramkhamhaeng, your empire was once part of the Khmer Empire, until the 13th century AD, when your ancestors revolted, forming the small Sukhothai kingdom. Through successful battle and cunning diplomacy, the tiny kingdom grew into a mighty empire, an empire which would dominate South East Asia for more than a century!",
@@ -114,7 +117,8 @@
 		"innerColor": [200,0,70],
 		"style": "",
 		"uniqueName": "Mutual Assistance",
-		"uniques": ["City-State Influence degrades at half rate","Food and Culture from Friendly City-States are increased by 50%","[Great General] is earned [-33]% faster"],
+		"uniques": ["Food and Culture from Friendly City-States are increased by 50%","[Great General] is earned [-33]% faster"
+			"Starts with [Redomestication]"],
 		"cities": ["Union City","Accord","Inheritance","Junction","Wellspring","Fall's End","Highpool","Constitution","Hope Commons","Clearwater",
 			"Mercywell","Sunrise","Dead Forest","Gallows Bend","Arefu","Rocket Falls","Monument","Broken Sword","Concordia","Splendid",
 			"Iron Springs","Prudence","Hawkins","Stonefields","Harmony","Fitzroy Bluff","Hangman Valley","Portville","Hamelin","High Gate"
@@ -124,7 +128,7 @@
 		"name": "The Patriots",
 		"leaderName": "General Cameron",
 		"adjective": ["Patriot"],
-	//	"startBias": ["Tundra"],
+		"startBias": ["Avoid Desert"],
 		"preferredVictoryType": "Domination",
 	
 		"startIntroPart1": "Greetings upon thee, Your Imperial Majesty Catherine, wondrous Empress of all the Russias. At your command lies the largest country in the world. Mighty Russia stretches from the Pacific Ocean in the east to the Baltic Sea in the west. Despite wars, droughts, and every manner of disaster the heroic Russian people survive and prosper, their artists and scientists among the best in the world. The Empire today remains one of the strongest ever seen in human history - a true superpower, with the greatest destructive force ever devised at her command.",
@@ -139,9 +143,10 @@
 		"tradeRequest": "The Emergency Management Agency has prepared this aid package for your district.",
 		"outerColor": [ 40, 178, 0],
 		"innerColor": [100,50,30],
-		"style": "Patriots",
+		"style": "Military",
 		"uniqueName": "Military Secrets",
-		"uniques": ["Double quantity of [Encrypted Data] produced","Double quantity of [Weapons] produced"],
+		"uniques": ["Double quantity of [Encrypted Data] produced","Double quantity of [Weapons] produced","+[300]% Production when constructing [Ground Control Center]",
+			"Starts with [Writing]","Starts with [Construction]","Starts with [Machinery]","Starts with [Electronics]","Starts with [Avionics]","[-2 Science] per turn from cities before [Education]"],
 		"cities": ["Eagle Rock","Fort Patriot","Valiant Base","Camp Fidelis","Fort Endurance","Camp Freedom","Sentinel Field",
 			"Camp Hammer","Camp Justice","Fort Victory","Fort Crockett","Sparta Base","Arclight Station","Overwatch Base",
 			"Fort Challenger","Fort Cameron","Thunder Outpost","Cobalt Base","Camp Shield","Fort Granite","Liberator Station","Camp Dawn"
@@ -150,9 +155,9 @@
 	{
 		"name": "Enclavers",
 		"leaderName": "Timothy D. West",
-		"adjective": ["Enclaver"],
+		"adjective": ["Survivalist"],
 		"startBias": ["Hill"],
-		"preferredVictoryType": "Cultural",
+		"preferredVictoryType": "Scientific",
 		
 		"startIntroPart1": "Oh ye who remakes the world, your loyal subjects greet you, King Pachacuti Sapa Inca, ruler of Tawantinsuyu and the Inca people! From the beginnings in the small state of Cusco, the Incans displayed their potential for greatness, marching to war against their many enemies, crushing their armies into dust and carving for themselves a mighty empire stretching from Ecuador to Chile. Indeed, they build the greatest empire ever seen in all pre-Columbian Americas. More than mere soldiers, your people were great builders and artists as well, and the remnants of their works still awe and inspire the world today.",
 		"startIntroPart2": "Oh King Pachacuti, truly are you called 'Earth Shaker'! Will you once again call upon the ground itself to a fight at your side? Your armies await your signal. Will you restore the glory of your empire? Can you build a civilization that will stand the test of time?",
@@ -175,18 +180,42 @@
 		"afterPeace": "Viracocha has frowned upon our war, and has agreed to our peace agreements.",
 		"tradeRequest": "Let's make a fair trade, as equals.",
 				
-		"outerColor": [0,87,0],
-		"innerColor": [150,254,150],
-		"style": "",
+		"outerColor": [252,227,0],
+		"innerColor": [54,72,72],
+		/*"outerColor": [0,87,0],
+		"innerColor": [150,254,150],*/
+		"style": "Military",
 		"uniqueName": "Hills Have Eyes",
 		"uniques": ["Units ignore terrain costs when moving into any tile with Hills","No Maintenance costs for improvements in Hills",
-					"[Low Tech] units gain the [Guerilla Warfare I] promotion","[Personnel] units gain the [Guerilla Warfare I] promotion"],
+					"[Low Tech] units gain the [Guerilla Warfare I] promotion","[Personnel] units gain the [Guerilla Warfare I] promotion",
+					"Starts with [Redomestication]"],
 		"cities": ["The Enclave","Farnham's Freehold","Minuteman Ridge","Cooper's Corner","Rattlesnake Hill","Rawles' Retreat",
 			"Sagebrush Valley","Cobb's Ranch","Stephens' Shelter","The Alamo","Saxon Farm","Pugsley's Haven","Browne's Trail",
 			"Oathkeeper Watch","Jellison Ranch","Boyd's Retreat","Tappan Farm","Skousen Ranch","30-50 Feral Hogs"
 			]
 	},
-
+	{
+		"name": "Deadrock Clan",
+		"leaderName": "Boss Karl",
+		"adjective": ["Regulator"],
+		"startBias": ["Jungle"],
+		"preferredVictoryType": "Domination",
+		"declaringWar": "You are mine!",
+		"attacked": "As you were warned, if you dare mess with any one of us, you're messing with me, and my entire Clan!",
+		"defeated": "You think this is over? You had better watch your back...",
+		"introduction": "Greetings from the Deadrock Clan, and its Great Father Karl. Just a friendly reminder: Never touch our secrets, never mess with us, or you'll be dead in no time.",
+		"neutralHello": "This is the encrypted channel of Deadrock Clan.",
+		"hateHello": "You're on our blacklist now. Think twice before you want to do anything with my Clan.",
+		"tradeRequest": "Let's talk about some business affairs.",
+		"outerColor": [92,32,92],
+		"innerColor": [255,210,110],
+		"style": "Gang",
+		"uniqueName": "Regulators",
+		"uniques": ["67% chance to earn 25 Gold and recruit a Barbarian unit from a conquered encampment","+1 Sight for all land military units","City-State Influence recovers at twice the normal rate",
+			"[Personnel] units gain the [Clansman] promotion"],
+		"cities": ["Xanadu","Gomorrah","Diamond City","Chance Springs","The Den","Ransom","Joker","Fortune","Golden Toad","Beaksville",
+			"Lucky 76","Horseshoe","Diablo Peak","Malachite","Wildcard","Paradise","Genting","House Rules","Loki","Straight Flush","Five Aces"]
+	},
 	{
 		"name": "Crimson Legion",
 		"leaderName": "Caesar",
@@ -207,10 +236,11 @@
 		"innerColor": [244,232,54],
 		"style": "Legion",
 		"uniqueName": "One Banner",
-		"uniques": ["67% chance to earn 25 Gold and recruit a Barbarian unit from a conquered encampment", "-25% land units maintenance"],
-		"cities": ["Postumus","Rubicon","Dies Irae","Tartarus","Aqua Vitae","Vae Victis","Extrema Ratio","Igni Ferroque","Tycho",
-			"Mors Omnibus","Carthage","Lex Talionis","Kronos","Memento Mori","Orcus","Ex Nihilo","Golgotha","Para Bellum","Styx",
-			"Manu Forte","Elysium","Alea Iacta Est","Damocles","De Facto","Corpus Vile","Canis Canem Edit","Ad Astra"
+		"uniques": ["67% chance to earn 25 Gold and recruit a Barbarian unit from a conquered encampment", "-[33]% [Land] unit maintenance costs",
+			"Starts with [Redomestication]","[-1 Science] per turn from cities before [Writing]"],
+		"cities": ["Postumus","Rubicon","Dies Irae","Tartarus","Aqua Vitae","Damocles","De Facto","Vae Victis","Golgotha",
+			"Mors Omnibus","Carthage","Lex Talionis","Kronos","Extrema Ratio","Igni Ferroque","Tycho","Memento Mori","Orcus",
+			"Ex Nihilo","Para Bellum","Styx","Manu Forte","Elysium","Alea Iacta Est","Corpus Vile","Canis Canem Edit","Ad Astra"
 		]
 	},	
 	{
@@ -234,8 +264,7 @@
 		"innerColor": [0,0,0],
 		"style": "Ignis",
 		"uniqueName": "Road Warriors",
-		//"uniqueText": "I am the very model",
-		"uniques": ["Double quantity of [Oil] produced"],
+		"uniques": ["-[33]% [Armor] unit maintenance costs","Starts with [Machinery]","[+2 Culture] from every [Strategic Resource]","+[10]% [Culture] from every [Coal Plant]","[-1 Science] per turn from cities before [Writing]"],
 		"cities": ["Gastown","Blood Farm","Trial of Sand","Prophecy","Thousand Cuts","The Harrowing","Temple of Rage","Immortal Highway",
 			"Tohuvabohu","Forbidden Palace","Hanging Gardens","Megiddo","The Cauldron","Traitors' Gate","Hell Patrol","Steel Throne","The Warren",
 			"Well of Souls","Hermitage","Ceremony","Court of Dreams","Perpetual Ascension","Death Race","God Box"
@@ -248,12 +277,13 @@
 		"name": "The Archive",
 		"adjective": ["Archive"],
 		"cityStateType": "Cultured",
-		"style": "",
+		"style": "Corporate",
+		"uniques": ["Starts with [Writing]","Starts with [Electronics]"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "We shall not go gentle into that good night!",
 		"defeated": "After us, the deluge...",
 		"outerColor": [0, 0, 0],
-		"innerColor": [250,130,250],
+		"innerColor": [250,180,250],
 		"cities": ["The Archive"]
 	},	
 	{
@@ -261,6 +291,7 @@
 		"adjective": ["Order"],
 		"cityStateType": "Cultured",
 		"style": "",
+		"uniques": ["Starts with [Writing]","Starts with [Electronics]"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "May you be forgiven.",
 		"defeated": "There is still time... Brother",
@@ -272,19 +303,19 @@
 		"name": "Bartertown",
 		"adjective": ["Bartertown"],
 		"cityStateType": "Mercantile",
-		"style": "",
+		"style": "Gang",
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Two men enter, one man leaves!",
 		"defeated": "You run Bartertown.",
 		"outerColor": [0, 0, 0],
-		"innerColor": [194,97,255],
+		"innerColor": [194,07,255],
 		"cities": ["Bartertown"]
 	},
 	{
 		"name": "Devil's Canyon",
 		"adjective": ["Devil's Canyon"],
 		"cityStateType": "Mercantile",
-		"style": "Atlas",		
+		"style": "Corporate",
 		"uniques": ["Starts with [Writing]","Starts with [Rifling]"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
@@ -299,7 +330,7 @@
 		"cityStateType": "Maritime",
 		"startBias": ["Hill"],
 		"style": "Tribal",
-		"uniques": ["Units fight as though they were at full strength even when damaged", "-25% land units maintenance"],
+		"uniques": ["Units fight as though they were at full strength even when damaged"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "The spirits were willing, but the flesh was weak...",
@@ -313,7 +344,7 @@
 		"cityStateType": "Maritime",
 		"startBias": ["Hill"],
 		"style": "Ghost",
-		"uniques": ["Units fight as though they were at full strength even when damaged", "[Personnel] units gain the [Guerilla Warfare I] promotion","[Personnel] units gain the [Guerilla Warfare II] promotion","[Low Tech] units gain the [Guerilla Warfare I] promotion","[Low Tech] units gain the [Guerilla Warfare II] promotion","Units ignore terrain costs when moving into any tile with Hills", "-25% land units maintenance"],
+		"uniques": ["Units fight as though they were at full strength even when damaged","[Personnel] units gain the [Guerilla Warfare I] promotion","[Personnel] units gain the [Guerilla Warfare II] promotion","[Low Tech] units gain the [Guerilla Warfare I] promotion","[Low Tech] units gain the [Guerilla Warfare II] promotion","Units ignore terrain costs when moving into any tile with Hills"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "The spirits will fight at our side.",
 		"defeated": "We go to join the ancestors.",
@@ -326,8 +357,8 @@
 		"adjective": ["Almaty"],
 		"cityStateType": "Militaristic",
 		"startBias": ["Hills"],
-		"style": "Patriots",
-		"uniques": ["Double quantity of [Weapons] produced","-25% land units maintenance"],
+		"style": "Military",
+		"uniques": ["Double quantity of [Weapons] produced"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "How could we fall to the likes of you?!",
@@ -340,7 +371,6 @@
 		"adjective": ["Jericho"],
 		"cityStateType": "Maritime",
 		"style": "",
-		"uniques": ["-25% land units maintenance"],
 		"declaringWar": "You leave us no choice. War it must be.",
 		"attacked": "Very well, this shall not be forgotten.",
 		"defeated": "We never fully trusted you from the start.",
@@ -348,18 +378,7 @@
 		"innerColor": [224,224,224],
 		"cities": ["Jericho"]
 	},
-	/*{
-		"name": "Rangers",
-		"adjective": ["Ranger"],
-		"cityStateType": "Militaristic",
-
-		"declaringWar": "You leave us no choice. War it must be.",
-		"attacked": "Very well, this shall not be forgotten.",
-		"defeated": "What a fine battle! Sidon is willing to serve you!",
-		"outerColor": [0, 0, 0],
-		"innerColor": [250,220,100],
-		"cities": ["Ranger Center"]
-	},
+	/*
 	{
 		"name": "The Hub",
 		"adjective": ["Hub"],

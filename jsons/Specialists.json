@@ -29,5 +29,6 @@
 		"food":2,
 		"gold":-1,
 		"color": [0,215,0]
+		"greatPersonPoints": {"culture":1}
 	}
 ]

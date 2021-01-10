@@ -29,7 +29,7 @@
 			{
 				"name": "Planned Economy",
 				"effect": "",
-				"uniques": ["+[10]% growth in all cities","+[25]% [Production] from every [Council]"],
+				"uniques": ["+[25]% growth in all cities","+[33]% [Production] from every [Council]"],
 				"requires": ["Castle Doctrine","Centralization"],
 				"row": 2,
 				"column": 2
@@ -58,40 +58,38 @@
 		"policies": [
 			{
 				"name": "Restorers",
-				"uniques": ["Tile improvement speed +25%","Training of settlers increased +50% in capital", "Free [Settler] appears"],
+				"uniques": ["Training of settlers increased +50% in capital", "Free [Settler] appears","+[1] Movement for all [Civilian] units"],
 				"row": 1,
-				"column": 2
+				"column": 1
 			},
 			{
 				"name": "Representation",
 				"uniques": ["Each city founded increases culture cost of policies [33]% less than normal","[+5 Happiness] from every [Congress]"],
 				"row": 1,
-				"column": 4
-			},
-			{
-				"name": "Citizen Militia",
-				"uniques": ["Units in cities cost no Maintenance","[+2 Production] in all cities with a garrison", "[+1] movement for all [Worker] units"],
-				"requires": ["Restorers"],
-				"row": 2,
-				"column": 1
-			},
-			{
-				"name": "Reclaimers",
-				"uniques": ["Double quantity of [Coal] produced","Double quantity of [Aluminum] produced","Double quantity of [Uranium] produced"],
-				"requires": ["Restorers"],
-				"row": 2,
-				"column": 3
-			},			
+				"column": 2
+			},	
 			{
 				"name": "Courier Service",
-				"uniques": ["+1 happiness for every city connected to capital","Unhappiness from population decreased by [10]%"],
-				"requires": ["Representation"],
-				"row": 2,
+				"uniques": ["+1 happiness for every city connected to capital","Unhappiness from population decreased by [10]%","City-State Influence degrades at half rate"],
+				"row": 1,
 				"column": 5
 			},
 			{
+				"name": "Reclaimers",
+				"uniques": ["Double quantity of [Coal] produced","Double quantity of [Oil] produced","Double quantity of [Aluminum] produced"],
+				"requires": ["Restorers"],
+				"row": 2,
+				"column": 1
+			},		
+			{
+				"name": "Citizen Militia",
+				"uniques": ["Units in cities cost no Maintenance","[+2 Production] in all cities with a garrison","-[33]% [Worker] unit maintenance costs"],
+				"requires": ["Representation","Courier Service"],
+				"row": 2,
+				"column": 3
+			},
+			{
 				"name": "Expansionism Complete",
-				"effect": "Free Great Person of choice near capital",
 				"uniques": ["Free Great Person"]
 			}
 		]
@@ -112,13 +110,13 @@
 			},	
 			{
 				"name": "Doctrine",
-				"uniques":["+[20]% Production when constructing [melee units]"],
+				"uniques":["+[15]% Production when constructing [Land units]","Earn [25]% of [military] opponent's [Strength] as [Culture] for kills"],
 				"row": 1,
 				"column": 2
 			},
 			{
 				"name": "Autocracy",
-				"uniques": ["[+3 Happiness, +2 Culture] in all cities with a garrison","Double quantity of [Slaves] produced"],
+				"uniques": ["[+2 Happiness, +1 Culture] in all cities with a garrison","Double quantity of [Slaves] produced"],
 				"row": 1,
 				"column": 3
 			},
@@ -131,8 +129,8 @@
 			},		
 			{
 				"name": "Triumph",
-				"uniques": ["Earn [10]% of [military] opponent's [Cost] as [Gold] for kills","Earn [75]% of [military] opponent's [Strength] as [Culture] for kills"],
-				"requires": ["Doctrine", "Autocracy"],
+				"uniques": ["Earn [10]% of [military] opponent's [Cost] as [Gold] for kills","Earn [50]% of [military] opponent's [Strength] as [Culture] for kills"],
+				"requires": ["Doctrine"],
 				"row": 2,
 				"column": 3
 			},
@@ -140,13 +138,224 @@
 			{
 				"name": "Sovereignty Complete",
 				"effect": "",
-				"uniques": ["Gold cost of upgrading military units reduced by 33%"],
+				"uniques": ["Gold cost of upgrading military units reduced by 33%","-[25]% [All] unit maintenance costs",],
+			}
+		]
+	},	
+	{
+		"name": "Legacy",
+		"era": "Modern era",
+		"effect": "",
+		"uniques": ["Immediately creates a cheapest available cultural building in each of your first 4 cities for free"],
+		"policies": [
+			{
+				"name": "Special Projects",
+				"effect": "",
+				"uniques": ["+[20]% Production when constructing [Wonders]"],
+				"row": 1,
+				"column": 1
+			},
+			{
+				"name": "Nationalization",
+				"effect": "",
+				"uniques": ["[Great Engineer] is earned [33]% faster","+[33]% [Production] from every [Council]"],
+				"row": 1,
+				"column": 2
+			},			
+			{
+				"name": "Inheritance",
+				"effect": "",
+				"uniques": ["[+1 Science, +3 Culture] from every Wonder"],
+				"row": 1,
+				"column": 3
+			},
+			{
+				"name": "Endurance Programme",
+				"effect": "",
+				"uniques": ["Cost of purchasing [Culture] buildings reduced by [50]%","+[15]% Production when constructing [Culture] buildings"],
+				"requires": ["Special Projects"],
+				"row": 2,
+				"column": 1
+			},
+			{
+				"name": "Unity",
+				"effect": "",
+				"uniques": ["[+1 Production, +1 Culture] per [5] population in all cities"],
+				"requires": ["Nationalization"],
+				"row": 2,
+				"column": 2
+			},
+			{
+				"name": "Vision",
+				"effect": "",
+				"uniques": ["+33% culture in all cities with a world wonder", "Empire enters golden age"],
+				"requires": ["Inheritance"],
+				"row": 2,
+				"column": 3
+			},			
+
+			{
+				"name": "Legacy Complete",
+				"effect": "Reduce culture cost of future policies by 10%",
+				"uniques": ["Culture cost of adopting new Policies reduced by 10%"]
 			}
 		]
 	},
 	{
+		"name": "Commerce",
+		"effect": "",
+		"uniques": ["[Great Merchant] is earned [20]% faster","+[33]% [Gold] from every [Council]"],
+		"era": "Medieval era",
+		"policies": [
+
+			{
+				"name": "Mass Consumption",
+				"uniques": ["[Great Merchant] is earned [20]% faster","+1 happiness from each luxury resource","[+3 Gold, -1 Production, -1 Food] from every [Factory]"],
+				"row": 1,
+				"column": 1
+			},		
+			{
+				"name": "Venture Capital",
+				"uniques": ["[Great Merchant] is earned [20]% faster","Cost of purchasing items in cities reduced by [20]%", "Double gold from Great Merchant trade missions"],
+				"row": 1,
+				"column": 3
+			},
+			{
+				"name": "Privatization",
+				"uniques": ["50% Maintenance costs reduction","[Personnel] units gain the [Hazard Pay] promotion","[+2 Gold] from every [Hospital]","[+2 Gold, -2 Production] from every [Factory]","[+2 Gold, -2 Science] from every [Public School]"],
+				"requires": ["Venture Capital"],
+				"row": 2,
+				"column": 2
+			},			
+			{
+				"name": "Entrepreneurship",
+				"uniques": ["[Great Merchant] is earned [20]% faster","[+1 Science] from every [Market]","[+1 Science] from every [Factory]"], 
+				"requires": ["Venture Capital"],
+				"row": 2,
+				"column": 3
+			},	
+			{
+				"name": "Corporate Personhood",
+				"effect": "",
+				"uniques": ["-33% unit upkeep costs","[+1 Gold] from every [Strategic Resource]","[+2 Gold, -1 Food] from every [Factory]"],
+				"requires": ["Venture Capital","Privatization"],
+				"row": 3,
+				"column": 3
+			},
+			{
+				"name": "Commerce Complete",
+				"effect": "",
+				"uniques": ["[Great Merchant] is earned [20]% faster","-50% cost when purchasing tiles","Cost of purchasing items in cities reduced by [20]%","[+2 Gold, -1 Production, -1 Food] from every [Work Camp]","[-1 Happiness, -1 Food] from every [Factory]"],
+			}
+		]
+	},
+	{
+		"name": "Constitution",
+		"era": "Medieval era",
+		"effect": "",
+		"uniques": ["+[25]% great person generation in all cities"],
+		"policies": [
+			{
+				"name": "Civil Society",
+				"effect": "",
+				"uniques": ["Specialists produce half normal unhappiness","[+1 Happiness] from every [Town Hall]","+[10]% growth in all cities"],
+				"row": 1,
+				"column": 1
+			},			
+			{
+				"name": "Protected Speech",
+				"effect": "",
+				"uniques": ["[+1 Culture] per [3] population in all cities","[+1 Culture] from every [Town Hall]","+[10]% growth in all cities"],
+				"row": 1,
+				"column": 3
+			},
+			{
+				"name": "Public Good",
+				"effect": "",
+				"uniques": ["[+2 Gold] from every [Hospital]","Maintenance on roads & railroads reduced by 33%","+[20]% growth in all cities"],
+				"requires": ["Civil Society"],
+				"row": 2,
+				"column": 1
+			},
+			{
+				"name": "Legislative Process",
+				"effect": "",
+				"uniques": ["+[25]% [Culture] from every [Congress]","[+1 Happiness] per [5] population in all cities","[Great Artist] is earned [25]% faster"],
+				"requires": ["Civil Society","Protected Speech"],
+				"row": 2,
+				"column": 2
+			},			
+			{
+				"name": "Voting Rights",
+				"effect": "",
+				"uniques": ["50% of excess happiness added to culture towards policies","[-1 Happiness] from every [Work Camp]"],
+				"requires": ["Protected Speech"],
+				"row": 2,
+				"column": 3
+			},
+			{
+				"name": "Constitution Complete",
+				"effect": "",
+				"uniques": ["Tile yield from Great Improvements +100%", "Free Social Policy"]
+			}
+		],
+	},
+	{
+		"name": "Supremacy",
+		"era": "Medieval era",
+		"uniques": ["-[25]% [All] unit maintenance costs","+[33]% Production when constructing [Barracks]","+[33]% Production when constructing [Military Academy]"],
+		"policies": [
+
+			{
+				"name": "Militarism",
+				"uniques": ["Gold cost of purchasing units -33%","Gold cost of upgrading military units reduced by 33%"],
+				"row": 1,
+				"column": 2
+			},		
+			{
+				"name": "Scorched Earth",
+				"uniques": ["+15% Combat Strength for all units when attacking Cities","Melee units pay no movement cost to pillage","+[2] Movement for all [Great General] units"],
+				"row": 1,
+				"column": 3
+			},	
+			{
+				"name": "Populism",
+				"uniques": ["[Wounded] units deal +[25]% damage","+10% Strength for all units during Golden Age"],
+				"requires": ["Militarism"],
+				"row": 2,
+				"column": 1
+			},			
+			{
+				"name": "Police State",
+				"uniques": ["[+1 Happiness] from every [Town Hall]","[+3 Happiness] from every [Courthouse]","[+5 Happiness] from every [Prison Camp]"],
+				"requires": ["Scorched Earth","Militarism"],
+				"row": 2,
+				"column": 3
+			},		
+			{
+				"name": "Total War",
+				"uniques": ["+[15]% Production when constructing [military units]", "New military units start with [15] Experience"],
+				"requires": ["Populism"],
+				"row": 3,
+				"column": 1
+			},
+		
+			{
+				"name": "Fascism",
+				"uniques": ["Quantity of strategic resources produced by the empire increased by 100%","[-2 Food] from every [Courthouse]","[-6 Food, +3 Production] from every [Prison Camp]"],
+				"requires": ["Police State"],
+				"row": 3,
+				"column": 3
+			},		
+			{
+				"name": "Supremacy Complete",
+				"uniques": ["+20% attack bonus to all Military Units for 30 turns"]
+			}
+		]
+	},
+{
 		"name": "Rationalism",
-		"era": "Classical era",
+		"era": "Modern era",
 		"effect": "",
 		"uniques": ["Science gained from research agreements +50%"],
 		"policies": [
@@ -196,224 +405,5 @@
 			}
 		]
 	},
-	{
-		"name": "Commerce",
-		"effect": "",
-		"uniques": ["+[25]% [Gold] from every [Council]"],
-		"era": "Medieval era",
-		"policies": [
-			{
-				"name": "Entrepreneurship",
-				"effect": "",
-				"uniques": ["[Great Merchant] is earned [25]% faster", "[+1 Science] from every [Market]",
-					"[+1 Science] from every [Factory]"], 
-					//"[+1 Science] from every [Automated Factory]"],
-				"row": 1,
-				"column": 1
-			},
-			{
-				"name": "Privatization",
-				"effect": "",
-				"uniques": ["50% Maintenance costs reduction","[+2 Gold] from every [Hospital]","[+2 Gold, -2 Production] from every [Factory]","[+2 Gold, -2 Science] from every [Public School]"],
-				"row": 1,
-				"column": 3
-			},
-			{
-				"name": "Venture Capital",
-				"effect": "",
-				"uniques": ["Cost of purchasing items in cities reduced by [25]%", "Double gold from Great Merchant trade missions"],
-				"requires": ["Entrepreneurship","Privatization"],
-				"row": 2,
-				"column": 2
-			},
-			{
-				"name": "Mass Consumption",
-				"effect": "",
-				"uniques": ["+1 happiness from each luxury resource","[+3 Gold, -1 Production, -1 Food] from every [Factory]"],
-				//"[+1 Gold, -1 Food] from every [Automated Factory]"],
-				"requires": ["Venture Capital"],
-				"row": 3,
-				"column": 1
-			},			
-			{
-				"name": "Corporate Personhood",
-				"effect": "",
-				"uniques": ["[+1 Gold] from every [Strategic Resource]","[+1 Gold, -1 Food] from every [Factory]"],
-				//"[+1 Production, +1 Gold, -1 Food] from every [Automated Factory]"],
-				"requires": ["Venture Capital"],
-				"row": 3,
-				"column": 3
-			},
-			{
-				"name": "Commerce Complete",
-				"effect": "",
-				"uniques": ["-50% cost when purchasing tiles","[+2 Gold, -1 Production,  -1 Food] from every [Work Camp]","[-1 Happiness, -1 Food] from every [Factory]"],
-				//"[+2 Production, -1 Happiness, -1 Food] from every [Automated Factory]"],
-			}
-		]
-	},
-	{
-		"name": "Constitution",
-		"era": "Medieval era",
-		"effect": "",
-		"uniques": ["+[25]% great person generation in all cities"],
-		"policies": [
-			{
-				"name": "Civil Society",
-				"effect": "",
-				"uniques": ["Specialists produce half normal unhappiness","[+1 Happiness] from every [Town Hall]"],
-				"row": 1,
-				"column": 1
-			},			
-			{
-				"name": "Protected Speech",
-				"effect": "",
-				"uniques": ["[+1 Culture] per [2] population in all cities","[+1 Culture] from every [Town Hall]"],
-				"row": 1,
-				"column": 3
-			},
-			{
-				"name": "Public Good",
-				"effect": "",
-				"uniques": ["[+2 Gold] from every [Hospital]","Maintenance on roads & railroads reduced by 33%"],
-				"requires": ["Civil Society"],
-				"row": 2,
-				"column": 1
-			},
-			{
-				"name": "Legislative Process",
-				"effect": "",
-				"uniques": ["+[25]% [Culture] from every [Congress]","[+1 Happiness] per [10] population in all cities",],//
-				"requires": ["Civil Society","Protected Speech"],
-				"row": 2,
-				"column": 2
-			},			
-			{
-				"name": "Voting Rights",
-				"effect": "",
-				"uniques": ["50% of excess happiness added to culture towards policies","[-1 Happiness] from every [Work Camp]"],
-				"requires": ["Protected Speech"],
-				"row": 2,
-				"column": 3
-			},
-			{
-				"name": "Constitution Complete",
-				"effect": "",
-				"uniques": ["Tile yield from Great Improvements +100%", "Free Social Policy"]
-			}
-		],
-	}
-	{
-		"name": "Legacy",
-		"era": "Modern era",
-		"effect": "",
-		"uniques": ["Immediately creates a cheapest available cultural building in each of your first 4 cities for free"],
-		"policies": [
-			{
-				"name": "Special Projects",
-				"effect": "",
-				"uniques": ["+[20]% Production when constructing [Wonders]"],
-				"row": 1,
-				"column": 1
-			},
-			{
-				"name": "Nationalization",
-				"effect": "",
-				"uniques": ["[Great Engineer] is earned [25]% faster","+[20]% [Production] from every [Council]"],
-				"row": 1,
-				"column": 2
-			},			
-			{
-				"name": "Inheritance",
-				"effect": "",
-				"uniques": ["[+1 Science, +3 Culture] from every Wonder"],
-				"row": 1,
-				"column": 3
-			},
-			{
-				"name": "Endurance Programme",
-				"effect": "",
-				"uniques": ["Cost of purchasing [Culture] buildings reduced by [50]%","+[15]% Production when constructing [Culture] buildings"],
-				"requires": ["Special Projects"],
-				"row": 2,
-				"column": 1
-			},
-			{
-				"name": "Unity",
-				"effect": "",
-				"uniques": ["[+1 Production, +1 Culture] per [5] population in all cities"],
-				"requires": ["Nationalization"],
-				"row": 2,
-				"column": 2
-			},
-			{
-				"name": "Vision",
-				"effect": "",
-				"uniques": ["+33% culture in all cities with a world wonder", "Empire enters golden age"],
-				"requires": ["Inheritance"],
-				"row": 2,
-				"column": 3
-			},			
-
-			{
-				"name": "Legacy Complete",
-				"effect": "Reduce culture cost of future policies by 10%",
-				"uniques": ["Culture cost of adopting new Policies reduced by 10%"]
-			}
-		]
-	},
-	{
-		"name": "Supremacy",
-		"era": "Modern era",
-		"effect": "-33% unit upkeep costs",
-		"uniques": ["-33% unit upkeep costs"],
-		"policies": [
-
-			{
-				"name": "Militarism",
-				"uniques": ["Gold cost of purchasing units -33%"],
-				"row": 1,
-				"column": 2
-			},		
-			{
-				"name": "Scorched Earth",
-				"uniques": ["+15% Combat Strength for all units when attacking Cities","Melee units pay no movement cost to pillage"],
-				"row": 1,
-				"column": 3
-			},	
-			{
-				"name": "Populism",
-				"uniques": ["[Wounded] units deal +[25]% damage","+10% Strength for all units during Golden Age"],
-				"requires": ["Militarism"],
-				"row": 2,
-				"column": 1
-			},			
-			{
-				"name": "Police State",
-				"uniques": ["[+1 Happiness] from every [Town Hall]","[+3 Happiness] from every [Courthouse]","[+5 Happiness] from every [Prison Camp]"],
-				"requires": ["Scorched Earth","Militarism"],
-				"row": 2,
-				"column": 3
-			},		
-			{
-				"name": "Total War",
-				"uniques": ["+[15]% Production when constructing [military units]", "New military units start with [15] Experience"],
-				"requires": ["Populism"],
-				"row": 3,
-				"column": 1
-			},
-		
-			{
-				"name": "Fascism",
-				"uniques": ["Quantity of strategic resources produced by the empire increased by 100%","[-2 Food] from every [Courthouse]","[-6 Food, +4 Production] from every [Prison Camp]"],
-				"requires": ["Police State"],
-				"row": 3,
-				"column": 3
-			},		
-			{
-				"name": "Supremacy Complete",
-				"uniques": ["+20% attack bonus to all Military Units for 30 turns"]
-			}
-		]
-	}
+	
 ]

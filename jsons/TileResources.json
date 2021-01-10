@@ -1,33 +1,6 @@
 [	
 	// Bonus resources
 	{
-		"name": "Cattle",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Grassland"],
-		"food": 1,
-		"improvement": "Pasture",
-		"improvementStats": {"food": 1},
-		"building": "Cold Store"
-	},
-	{
-		"name": "Goats",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Plains","Hill"],
-		"food": 1,
-		"improvement": "Pasture",
-		"improvementStats": {"food": 1},
-		"building": "Cold Store"
-	},
-	{
-		"name": "Deer",
-		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Tundra"],
-		"food": 1,
-		"improvement": "Camp",
-		"improvementStats": {"food": 1},
-		"building": "Cold Store"
-	},
-	{
 		"name": "Wheat",
 		"resourceType": "Bonus",
 		"terrainsCanBeFoundOn": ["Plains","Flood plains","Desert"],
@@ -47,18 +20,7 @@
 		"building": "Cold Store"
 	},	
 
-	
-	{
-		// aquifier hardcoded bonus
-		"name": "Water",
-		"resourceType": "Bonus",
-		"revealedBy": "Radar",
-		"terrainsCanBeFoundOn": ["Desert","Plains","Grassland","Tundra","Toxic Waste","Snow"],
-	//	"gold": 1,
-		"improvement": "Water pump",
-		"improvementStats": {"gold": 1},
-		"building": "Water Plant"
-	},		
+		
 	{
 		"name": "Tubers",
 		"resourceType": "Bonus",
@@ -89,13 +51,12 @@
 		"building": "Blast Furnace"
 	},	
 	{
-		"name": "Horses",
+		"name": "Insects",
 		"resourceType": "Bonus",
-		"terrainsCanBeFoundOn": ["Plains"],
+		"terrainsCanBeFoundOn": ["Jungle","Forest","Toxic Waste","Fallout"],
 		"food": 1,
-		"improvement": "Pasture",
-		"improvementStats": {"production": 2},
-		"building": "Stable"
+		"improvement": "Camp",
+		"improvementStats": {"food": 1},
 	},
 	{
 		"name": "Plastics",
@@ -117,6 +78,15 @@
 		"improvementStats": {"production": 1}
 		"building": "Plastics Reprocessor"
 	},
+	{
+		"name": "Horses",
+		"resourceType": "Bonus",
+		"terrainsCanBeFoundOn": ["Plains"],
+		"food": 1,
+		"improvement": "Pasture",
+		"improvementStats": {"production": 2},
+		"building": "Stable"
+	},
 
 	// Strategic resources
 	
@@ -134,7 +104,7 @@
 		"name": "Oil",
 		"resourceType": "Strategic",
 	//	"revealedBy": "Secrets of the Past",
-		"terrainsCanBeFoundOn": ["Desert","Tundra","Snow"],
+		"terrainsCanBeFoundOn": ["Desert","Tundra","Snow","Coast"],
 		"production": 1,
 		"improvement": "Oil well",
 		"improvementStats": {"production": 1},
@@ -169,7 +139,7 @@
 	{
 		"name": "Uranium",
 		"resourceType": "Strategic",
-		"revealedBy": "Decryption",
+		"revealedBy": "Writing",
 		"terrainsCanBeFoundOn": ["Plains","Desert","Tundra","Hill","Snow","Toxic Waste","Grassland"],
 		"production": 1,
 		"improvement": "Mine",
@@ -186,8 +156,6 @@
 	},	
 
 
-
-	// Luxury resources
 	
 	//tech mining	
 	{
@@ -224,8 +192,115 @@
 //luxury	
 	
 	{
+		"name": "Machinery",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest"],
+		"improvement": "Salvage site",
+		"improvementStats": {"production": 1},
+		"building": "Factory"
+	},
+	{
+		"name": "Electronics",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Jungle","Forest"],
+		"improvement": "Salvage site",
+		"improvementStats": {"science": 1},
+		"building": "Market"
+	},
+	{
+		"name": "Water",
+		"resourceType": "Luxury",
+		"revealedBy": "Radar",
+		"terrainsCanBeFoundOn": ["Desert","Plains","Grassland","Tundra","Toxic Waste","Snow"],
+		"improvement": "Water pump",
+		"improvementStats": {"gold": 1},
+		"building": "Water Plant"
+	},	
+	{
 		"name": "Soft Drinks",
 		"resourceType": "Luxury",
+	},	
+	{
+		"name": "Alcohol",
+		"resourceType": "Luxury",
+	},
+	{
+		"name": "Harvested Organs",
+		"resourceType": "Luxury",
+	},
+	{
+		"name": "Narcotics",
+		"resourceType": "Luxury",
+	},
+	{
+		"name": "Refined Narcotics",
+		"resourceType": "Luxury",
+	},
+	{
+		"name": "Cattle",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Grassland"],
+		"food": 1,
+		"improvement": "Pasture",
+		"improvementStats": {"food": 1},
+		"building": "Cold Store"
+	},
+	{
+		"name": "Goats",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Plains","Hill"],
+		"food": 1,
+		"improvement": "Pasture",
+		"improvementStats": {"food": 1},
+		"building": "Cold Store"
+	},
+	{
+		"name": "Deer",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Tundra"],
+		"food": 1,
+		"improvement": "Camp",
+		"improvementStats": {"food": 1},
+		"building": "Cold Store"
+	},
+	{
+		"name": "Furs",
+		"resourceType": "Luxury",
+	//	"revealedBy": "Redomestication",
+		"terrainsCanBeFoundOn": ["Tundra","Grassland","Jungle","Forest"],
+		"food": 1,
+		"improvement": "Camp",
+		"improvementStats": {"production": 1},
+		"building": "Market"
+	},	
+	{
+		"name": "Fungus",
+		"resourceType": "Luxury",
+	//	"revealedBy": "Botany",
+		"terrainsCanBeFoundOn": ["Hill","Toxic Waste","Jungle"],
+		"food": 1,
+		"improvement": "Camp",
+		"improvementStats": {"culture": 1},
+		"building": "Market"
+	},	
+	{
+		"name": "Hostile Fauna",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Toxic Waste", "Fallout"],
+		"food": 1,
+	//	"revealedBy": "Redomestication",
+		"improvement": "Camp",
+		"improvementStats": {"food": 2, "culture": 1, "science": 1},
+		"building": "Market"
+	},
+	{
+		"name": "Salt",
+		"resourceType": "Luxury",
+		"terrainsCanBeFoundOn": ["Hill","Plains","Desert","Tundra"],
+	//	"culture": 1,
+		"improvement": "Mine",
+		"improvementStats": {"food": 1},
+		"building": "Market"
 	},
 	{
 		"name": "Artifacts",
@@ -250,51 +325,18 @@
 		"name": "Gems",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Hill"],
-		"culture": 1,
+	//	"culture": 1,
 		"improvement": "Mine",
-		"improvementStats": {"production": 1},
+		"improvementStats": {"culture": 1},
 		"building": "Market"
 	},
 	{
 		"name": "Silver",
 		"resourceType": "Luxury",
 		"terrainsCanBeFoundOn": ["Hill"],
-		"culture": 1,
+	//	"culture": 1,
 		"improvement": "Mine",
-		"improvementStats": {"production": 1},
-		"building": "Market"
-	},
-	
-	{
-		"name": "Furs",
-		"resourceType": "Luxury",
-		"revealedBy": "Redomestication",
-	//	"terrainsCanBeFoundOn": ["Tundra","Grassland"],
-		"terrainsCanBeFoundOn": ["Tundra","Grassland","Jungle","Forest"],
-		"production": 1,
-		"improvement": "Camp",
-		"improvementStats": {"food": 1},
-		"building": "Market"
-	},	
-	{
-	//fungus
-		"name": "Fungus",
-		"resourceType": "Luxury",
-		"revealedBy": "Botany",
-		"terrainsCanBeFoundOn": ["Hill","Toxic Waste","Jungle"],
-		"food": 1,
-		"improvement": "Camp",
 		"improvementStats": {"culture": 1},
-		"building": "Market"
-	},	
-	{
-		"name": "Hostile Fauna",
-		"resourceType": "Luxury",
-		"terrainsCanBeFoundOn": ["Toxic Waste", "Fallout"],
-		"food": 1,
-		"revealedBy": "Redomestication",
-		"improvement": "Camp",
-		"improvementStats": {"food": 2, "culture": 1, "science": 1},
 		"building": "Market"
 	},
 	

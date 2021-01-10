@@ -174,26 +174,6 @@
 		"occursOn": ["Tundra","Plains","Grassland"]
 		"uniques": ["Rare feature","Fresh water"]
 	},	
-	/*{
-		"name": "Mountain Spring",
-		"type": "TerrainFeature",
-		"gold": 1,
-		"occursOn": ["Hill"],
-		"production": 1,
-		"movementCost": 2,
-		"defenceBonus": 0.25,
-		"overrideStats": true,
-		"uniques": ["Rare feature","Fresh water"]
-	},*/
-	/*{
-		"name": "Village",
-		"type": "TerrainFeature",
-		"food": 1,
-		"gold": 1,
-		"culture": 1,
-		"occursOn": ["Snow","Tundra","Plains","Grassland","Hill"],
-		"uniques": ["Rare feature"]
-	},	*/
 	{
 		"name": "Fallout",
 		"type": "TerrainFeature",
@@ -226,7 +206,7 @@
 		"movementCost": 2,
 	//	"food": 1,
 		"production": 1,
-		"defenceBonus": 0.1,
+		"defenceBonus": 0.2,
 		"occursOn": ["Coast"],
 		"uniques": ["Rare feature"]
 	},

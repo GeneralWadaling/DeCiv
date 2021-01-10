@@ -15,7 +15,7 @@
 	{
 		"name": "Reconnaissance II",
 		"prerequisites": ["Reconnaissance I"],
-		"uniques": ["+1 Movement","No movement cost to pillage","[25]% Bonus XP gain","[Great General] is earned [-20]% faster"],
+		"uniques": ["+1 Movement","No movement cost to pillage"],
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},		
 	{
@@ -41,10 +41,10 @@
 	{
 		"name": "Smokescreen",
 		"prerequisites": ["Entrench","Forage"],
-		"uniques": ["+[20]% Strength vs [Ranged]"],
+		"uniques": ["+[33]% Strength vs [Ranged]","+[10]% Strength vs [Low Tech]","+[10]% Strength vs [City]"],
 		"unitTypes": ["Melee"]
 	},
-	//defense in depth]
+	//assault
 
 	//sentry
 	//medic
@@ -70,15 +70,15 @@
 		"unitTypes": ["Mounted","Armor"]
 	},
 	{
-		"name": "Defense in Depth",
+		"name": "Assault",
 		"prerequisites": ["Entrench","Forage","Loose Formation","Shock"],
-		"uniques": ["+[15]% Strength when defending"],
+		"uniques": ["+[10]% Strength when attacking"],
 		"unitTypes": ["Melee","Mounted"]
 	},	
 	{
 		"name": "Pursuit",
 		"prerequisites": ["Loose Formation","Shock"],
-		"uniques": ["+[33]% Strength vs [wounded units]","Heals [25] damage if it kills a unit"],
+		"uniques": ["+[25]% Strength vs [wounded units]","Heals [25] damage if it kills a unit"],
 		"unitTypes": ["Mounted"]
 	},
 
@@ -94,7 +94,7 @@
 	{
 		"name": "Awe",
 		"prerequisites": ["Hull Down","Shock"],
-		"uniques": ["Bonus vs wounded units 33%","+[10]% Strength when attacking"],
+		"uniques": ["+[25]% Strength vs [wounded units]","+[10]% Strength when attacking"],
 		"unitTypes": ["Armor"]
 	},
 	{
@@ -103,13 +103,20 @@
 		"uniques": ["+1 Movement"],
 		"unitTypes": ["Armor"]
 	},
+	{
+		"name": "Formation",
+		"prerequisites": ["Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I"],
+		"uniques": ["+[33]% Strength vs [Mounted]"],
+		"unitTypes": ["Melee","Mounted"]
+	},	
 	
 	{
-		"name": "Blitz",
-		"prerequisites": ["Smokescreen","Defense in Depth","Pursuit","Maneuver","Awe"],
-		"uniques": ["1 additional attack per turn"],
+		"name": "Ambush",
+		"prerequisites": ["Entrench","Forage","Loose Formation","Shock","Hull Down","Guerilla Warfare I","Urban Warfare I"],
+		"uniques": ["+[33]% Strength vs [Armor]"],
 		"unitTypes": ["Melee","Mounted","Armor"]
-	},
+	},		
+	
 	//resupply [siege]
 	
 	//											type RANGED
@@ -125,21 +132,15 @@
 	{
 		"name": "Precision",
 		"prerequisites": ["Entrench","Skirmish"],
-		"uniques": ["+[33]% Strength vs [wounded units]"],
+		"uniques": ["+[25]% Strength vs [wounded units]"],
 		"unitTypes": ["Ranged"]
 	},
 	{
 		"name": "Suppression",
 		"prerequisites": ["Entrench","Skirmish"],
-		"uniques": ["+[20]% Strength vs [Melee]"],
+		"uniques": ["+[33]% Strength vs [Melee]"],
 		"unitTypes": ["Ranged"]
 	},		
-	{
-		"name": "March",
-		"prerequisites": ["Smokescreen","Defense in Depth","Pursuit","Precision","Suppression","Reconnaissance III"],
-		"uniques": ["Unit will heal every turn, even if it performs an action"],
-		"unitTypes": ["Melee","Ranged","Mounted","Scout"]
-	},
 	//logistics
 	//extended range [siege]
 	
@@ -195,7 +196,7 @@
 	},
 	{
 		"name": "Exploit Weakness",
-		"uniques": ["+[33]% Strength vs [wounded units]"],
+		"uniques": ["+[25]% Strength vs [wounded units]"],
 		"prerequisites": ["Evasion","Strike"],
 		"unitTypes": ["WaterMelee"]
 	},
@@ -223,20 +224,20 @@
 	},
 	{
 		"name": "Flight Deck II",
-		"prerequisites": ["Flight Deck I"],
+		"prerequisites": ["Flight Deck I","Armor Plating"],
 		"uniques": [ "Can carry 1 extra air unit"],
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
 		"name": "Flight Deck III",
-		"prerequisites": ["Flight Deck II"],
+		"prerequisites": ["Flight Deck II","Damage Control","Close-In Weapons System"],
 		"uniques": [ "Can carry 1 extra air unit"],
 		"unitTypes": ["WaterAircraftCarrier"]
 	},
 	{
 		"name": "Damage Control",
 		"prerequisites": ["Bombardment","Targeting","Armor Plating","Flight Deck I"],
-		"uniques": ["This unit and all others in adjacent tiles heal 5 additional HP.","Unit will heal every turn, even if it performs an action"],
+		"uniques": ["This unit and all others in adjacent tiles heal 5 additional HP.","Heal adjacent units for an additional 15 HP per turn"],
 		"unitTypes": ["WaterRanged","WaterAircraftCarrier"]
 	},
 	{
@@ -267,19 +268,37 @@
 
 	{
 		"name": "Flank Speed",
-		"prerequisites": ["Littoral Warfare","Exploit Weakness","Damage Control","Close-In Weapons System","Flight Deck II","Wolfpack I"],
+		"prerequisites": ["Littoral Warfare","Exploit Weakness","Damage Control","Close-In Weapons System","Sentry","Flight Deck II","Wolfpack I"],
 		"uniques": ["+1 Movement"],
 		"unitTypes": ["WaterMelee","WaterRanged","WaterAircraftCarrier","WaterSubmarine"]
 	},
 	{
 		"name": "Convoy",
-		"prerequisites": ["Littoral Warfare","Exploit Weakness","Damage Control","Close-In Weapons System","Flight Deck II"],
+		"prerequisites": ["Littoral Warfare","Exploit Weakness","Damage Control","Close-In Weapons System","Sentry","Flight Deck II"],
 		"uniques": ["+10 HP when healing"],
 		"unitTypes": ["WaterMelee","WaterRanged","WaterAircraftCarrier","WaterSubmarine","Wolfpack II"]
 	},	
 	{
+		"name": "Sentry",
+		"prerequisites": ["Skirmish","Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I","Reconnaissance I","Bombardment","Targeting","Evasion","Strike"],
+		"uniques": ["+1 Visibility Range"],
+		"unitTypes": ["Melee","Ranged","Mounted","Scout","WaterRanged","WaterMelee"]
+	},	
+	{
+		"name": "Blitz",
+		"prerequisites": ["Smokescreen","Assault","Pursuit","Maneuver","Awe","Formation","Ambush","Sentry"],
+		"uniques": ["1 additional attack per turn"],
+		"unitTypes": ["Melee","Mounted","Armor"]
+	},
+	{
+		"name": "March",
+		"prerequisites": ["Smokescreen","Assault","Pursuit","Precision","Suppression","Formation","Ambush","Sentry","Reconnaissance III","Medic II"],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes": ["Melee","Ranged","Mounted","Scout"]
+	},
+	{
 		"name": "Extended Range",
-		"prerequisites": ["Precision","Suppression","Barrage","Resupply","Flank Speed","Convoy"],
+		"prerequisites": ["Precision","Suppression","Sentry","Barrage","Resupply","Flank Speed","Convoy"],
 		"uniques": ["+1 Range"],
 		"unitTypes": ["Ranged","Siege","WaterRanged"]
 	},	
@@ -292,14 +311,14 @@
 	},
 	{
 		"name": "Siege II",
-		"prerequisites": ["Siege I"],
+		"prerequisites": ["Siege I","Bombardment","Targeting"],
 		"uniques": ["+[33]% Strength vs [City]"],
 		"unitTypes": ["Bomber"]
 	},
 	{
 		"name": "Siege III",
-		"prerequisites": ["Siege II"],
-		"uniques": ["+[33]% Strength vs [City]"],
+		"prerequisites": ["Siege II","Operational Range"],
+		"uniques": ["+[34]% Strength vs [City]"],
 		"unitTypes": ["Bomber"]
 	},
 	
@@ -311,13 +330,13 @@
 	},
 	{
 		"name": "Interception II",
-		"prerequisites": ["Interception I"],
+		"prerequisites": ["Interception I","Bombardment","Targeting"],
 		"uniques": ["Bonus when intercepting [33]%"],
 		"unitTypes": ["Fighter"]
 	},
 	{
 		"name": "Interception III",
-		"prerequisites": ["Interception II"],
+		"prerequisites": ["Interception II","Operational Range"],
 		"uniques": ["Bonus when intercepting [34]%"],
 		"unitTypes": ["Fighter"]
 	},
@@ -344,7 +363,7 @@
 	},
 	{
 		"name": "Air Repair",
-		"prerequisites": ["Interception III", "Siege III","Sortie","Operational Range","Evasive Maneuvers"],
+		"prerequisites": ["Interception III", "Siege III","Sortie","Evasive Maneuvers"],
 		"uniques": ["Unit will heal every turn, even if it performs an action"],
 		"unitTypes": ["Fighter","Bomber"]
 	},	
@@ -380,10 +399,9 @@
 		"uniques": ["+[30]% combat bonus in [Jungle]","+[30]% combat bonus in [Forest]","+[30]% Strength vs [City]"],
 		"unitTypes": ["Melee","Ranged","Mounted","Scout"]
 	},
-		//type MIXED
 	{
 		"name": "Medic",
-		"prerequisites": ["Skirmish","Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I"],
+		"prerequisites": ["Smokescreen","Assault","Pursuit","Formation","Ambush","Precision","Suppression","Sentry","Guerilla Warfare II","Urban Warfare II","Reconnaissance I"],
 		"uniques": ["This unit and all others in adjacent tiles heal 5 additional HP per turn"],
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},
@@ -394,33 +412,15 @@
 		"unitTypes": ["Melee","Mounted","Ranged","Scout"]
 	},
 
-	{
-		"name": "Sentry",
-		"prerequisites": ["Skirmish","Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I","Bombardment","Targeting","Evasion","Strike"],
-		"uniques": ["+1 Visibility Range"],
-		"unitTypes": ["Melee","Ranged","Mounted","Scout","WaterRanged","WaterMelee"]
-	},	
 	
-	{
-		"name": "Formation",
-		"prerequisites": ["Entrench","Forage","Loose Formation","Shock","Guerilla Warfare I","Urban Warfare I"],
-		"uniques": ["+[33]% Strength vs [Mounted]"],
-		"unitTypes": ["Melee","Mounted"]
-	},	
 	
-	{
-		"name": "Ambush",
-		"prerequisites": ["Entrench","Forage","Loose Formation","Shock","Hull Down","Guerilla Warfare I","Urban Warfare I"],
-		"uniques": ["+[33]% Strength vs [Armor]"],
-		"unitTypes": ["Melee","Mounted","Armor"]
-	},		
 
 	
 	//drone tree
 	
 	{
 		"name": "Drone Recon",
-		"uniques": ["+1 Visibility Range","[25]% Bonus XP gain","[Great General] is earned [-20]% faster"],
+		"uniques": ["+1 Visibility Range","Can attack submarines","[25]% Bonus XP gain","[Great General] is earned [-20]% faster"],
 	},	
 	{
 		"name": "Drone Support",
@@ -494,7 +494,7 @@
 	},
 	{
 		"name": "Infantry Weapons",
-		"uniques": ["+[5]% Strength vs [Melee]"]
+		"uniques": ["+[25]% Strength vs [Low Tech]","+[50]% Strength vs [City]"]
 	},
 	{
 		"name": "Artillery",
@@ -504,7 +504,14 @@
 		"name": "Advanced Weapons",
 		"uniques": ["+[5]% Strength when attacking"]
 	},	
-	
+	{
+		"name": "Automated",
+		"uniques": ["Automated","+[20]% Strength vs [wounded units]","+[20]% Strength vs [City]"]
+	},	
+	/*{	
+		"name": "Thermoptic Camouflage"
+		"uniques": ["Invisible to others"]
+	},*/
 
 	
 	// Uniques		
@@ -534,12 +541,20 @@
 		"uniques": ["Gas Mask","No defensive terrain penalty"],
 	},
 	{
-		"name": "Martyrdom",
-		"uniques": ["I live. I die. I live again","Earn [100]% of [military] opponent's [Strength] as [Culture] for kills","+[20]% Strength when attacking"],//
+		"name": "Headhunter",
+		"uniques": ["Earn [-10]% of [military] opponent's [Cost] as [Gold] for kills","+[25]% Strength vs [wounded units]"],
+	},
+	{
+		"name": "Raider",
+		"uniques": ["[-50]% Bonus XP gain","[Great General] is earned [250]% faster"],
+	},
+	{
+		"name": "Clansman",
+		"uniques": ["Clansman","Earn [10]% of [military] opponent's [Cost] as [Gold] for kills","[-50]% Bonus XP gain","[Great General] is earned [250]% faster"],
 	},
 	{
 		"name": "Hazard Pay",
-		"uniques": ["Earn [-10]% of [military] opponent's [Strength] as [Gold] for kills"],
+		"uniques": ["Earn [-10]% of [military] opponent's [Strength] as [Gold] for kills","Can move immediately once bought"],
 	},
 
 

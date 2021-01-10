@@ -13,7 +13,7 @@
 		"cost": 600,
 	//	"requiredTech": "Avionics",
 		"requiredResource": "Uranium",
-        "uniques": ["Will not be displayed in Civilopedia","Unbuildable"],
+        "uniques": ["Nuclear weapon","Will not be displayed in Civilopedia","Unbuildable"],
 		"hurryCostModifier": 20
 	},
 	{
@@ -26,7 +26,7 @@
 		"cost": 600,
 		"requiredTech": "Gyroscopes",
 		"requiredResource": "Uranium",
-		"uniques": ["Requires [Manhattan Project]"],
+		"uniques": ["Nuclear weapon","Requires [Manhattan Project]"],
 		"hurryCostModifier": 20
 	},
 	{
@@ -39,7 +39,7 @@
 		"cost": 1000,
 		"requiredTech": "Rocketry",
 		"requiredResource": "Uranium",
-		"uniques": ["Requires [Manhattan Project]"],
+		"uniques": ["Nuclear weapon","Requires [Manhattan Project]"],
 		"hurryCostModifier": 20
 	},
 	
@@ -108,7 +108,7 @@
 		"obsoleteTech": "Rifling",
 		"requiredResource": "Slaves",
 		"uniques": ["Low Tech","+[50]% Strength vs [Mounted]","Will not be displayed in Civilopedia"],
-		"promotions": ["Martyrdom"],
+		"promotions": ["Raider"],
 		"attackSound": "nonmetalhit"
 	},		
 
@@ -140,6 +140,20 @@
 		"attackSound": "nonmetalhit"
 	},
 	{
+		"name": "Clansman",
+		"unitType": "Melee",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 20,
+		"cost": 50,
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Militia",
+		"uniques": ["Low Tech","Requires [Clubhouse]","+[50]% Strength vs [Mounted]","Will not be displayed in Civilopedia"],
+		"promotions": ["Clansman"],
+		"attackSound": "metalhit"
+	},	
+	{
 		"name": "Auxiliary",
 		"unitType": "Melee",
 		"movement": 2,
@@ -148,9 +162,24 @@
 		"requiredResource": "Slaves",
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Militia",
-		"uniques": ["Low Tech","Can construct roads","+[50]% Strength vs [Mounted]","Not displayed as an available construction without [Slaves]"],
+		"uniques": ["Low Tech","Can construct roads","+[50]% Strength vs [Mounted]","Not displayed as an available construction without [Slaves]","Will not be displayed in Civilopedia"],
 		"attackSound": "metalhit"
 	},	
+	{
+		"name": "Rubble Gang",
+		"unitType": "Melee",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Auxiliary",
+		"movement": 2,
+		"strength": 18,
+		"cost": 15,
+		"requiredResource": "Slaves",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Rubble Militia",
+		"uniques": ["Low Tech","Not displayed as an available construction without [Slaves]"],
+		"promotions": ["Forage","Urban Warfare I"],
+		"attackSound": "nonmetalhit"
+	},
 	{
 		"name": "Surveyor",
 		"unitType": "Melee",
@@ -163,7 +192,7 @@
 		"hurryCostModifier": 20,
 		"obsoleteTech": "Rifling",
 		"uniques": ["Low Tech","Can construct roads","+[50]% Strength when defending"],
-		"promotions": ["Medic","Drone Recon"],
+		"promotions": ["Medic"],
 		"attackSound": "nonmetalhit"
 	},
 	{
@@ -210,7 +239,41 @@
 		"uniques": ["Low Tech","+[33]% Strength vs [Low Tech]"],
 		"attackSound": "arrow"
 	},		
-
+	{
+		"name": "Crossbowman",
+		"unitType": "Ranged",
+		"range": 1,
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 15,
+		"cost": 35,
+		"hurryCostModifier": 20,
+		"requiredResource": "Slaves",
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Gunman",
+		"uniques": ["Low Tech","Can construct roads","+[33]% Strength vs [Low Tech]","Not displayed as an available construction without [Slaves]","Will not be displayed in Civilopedia"],
+		"attackSound": "arrow"
+	},		
+	{
+		"name": "Rubble Archer",
+		"unitType": "Ranged",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Crossbowman",
+		"range": 1,
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 15,
+		"cost": 35,
+		"hurryCostModifier": 20,
+		"requiredResource": "Slaves",
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Rubble Gunman",
+		"uniques": ["Low Tech","+[33]% Strength vs [Low Tech]","Not displayed as an available construction without [Slaves]","Will not be displayed in Civilopedia"],
+		"promotions": ["Urban Warfare I"],
+		"attackSound": "arrow"
+	},	
 	//cavalry
 	{
 		"name": "Horseman",
@@ -222,7 +285,8 @@
 		"obsoleteTech": "Rifling",
 	//	"requiredResource": "Horses",
 		"upgradesTo": "Hussar",
-		"uniques": ["Low Tech","+[50]% Strength vs [Low Tech]","No defensive terrain bonus","Can move after attacking","-[25]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Low Tech","+[50]% Strength vs [Low Tech]","No defensive terrain bonus","Can move after attacking","-[25]% Strength vs [City]","Requires [Stable]",
+			"Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},	
@@ -237,7 +301,8 @@
 		"obsoleteTech": "Replaceable Parts",
 		"upgradesTo": "Cavalry",
 		"requiredResource": "Weapons",
-		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","-[50]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","-[50]% Strength vs [City]","Requires [Stable]",
+			"Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},	
@@ -250,7 +315,8 @@
 		"cost": 120,
 		"requiredTech": "Rifling",
 		"upgradesTo": "Tank",
-		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","-[50]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Personnel","No defensive terrain bonus","Can move after attacking","-[50]% Strength vs [City]","Requires [Stable]",
+			"Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -266,7 +332,8 @@
 		"obsoleteTech": "Rifling",
 	//	"requiredResource": "Horses",
 		"upgradesTo": "Dragoon",
-		"uniques": ["Low Tech","Can move after attacking","+[33]% Strength vs [Low Tech]","-[33]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Low Tech","Can move after attacking","+[33]% Strength vs [Low Tech]","-[33]% Strength vs [City]","Requires [Stable]",
+			"Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
 	},	
@@ -282,7 +349,8 @@
 		"obsoleteTech": "Replaceable Parts",
 		"requiredResource": "Weapons",
 		"upgradesTo": "Light Cavalry",
-		"uniques": ["Personnel","Can move after attacking","-[33]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Personnel","Can move after attacking","-[33]% Strength vs [City]","Requires [Stable]",
+			"Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},
@@ -296,7 +364,8 @@
 		"cost": 115,
 		"requiredTech": "Rifling",
 		"upgradesTo": "Helicopter",
-		"uniques": ["Personnel","Can move after attacking","-[33]% Strength vs [City]","Requires [Stable]","Not displayed as an available construction without [Stable]"],
+		"uniques": ["Personnel","Can move after attacking","-[33]% Strength vs [City]","Requires [Stable]",
+			"Not displayed as an available construction without [Stable]"],
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},	
@@ -307,8 +376,7 @@
 		"movement": 2,
 		"strength": 36,
 		"cost": 190,
-		"obsoleteTech": "Electricity",
-		"upgradesTo": "Contractor",		
+		"upgradesTo": "Infantry",		
 		"uniques": ["Personnel","Unbuildable"],
 		"promotions": ["Hazard Pay","Tear Gas"],
 		"hurryCostModifier": -33,
@@ -349,8 +417,6 @@
 	},	
 
 
-
-
 	//t1
 		
 	{
@@ -378,7 +444,39 @@
 		"hurryCostModifier": 20,
 		"requiredResource": "Slaves",
 		"requiredTech": "Rifling",	
-		"uniques": ["Personnel","Can construct roads","Not displayed as an available construction without [Slaves]"],
+		"obsoleteTech": "Combined Arms",		
+		"uniques": ["Personnel","Can construct roads","Not displayed as an available construction without [Slaves]","Will not be displayed in Civilopedia"],
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "Rubble Militia",
+		"unitType": "Melee",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Conscript",
+		"interceptRange": 1,
+		"movement": 2,
+		"strength": 36,
+		"cost": 60,
+		"upgradesTo": "Henchman",
+		"hurryCostModifier": 20,
+		"requiredResource": "Slaves",
+		"requiredTech": "Rifling",	
+		"obsoleteTech": "Combined Arms",		
+		"uniques": ["Low Tech","Can construct roads","Not displayed as an available construction without [Slaves]","Will not be displayed in Civilopedia"],
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "Infantry",
+		"unitType": "Melee",
+		"interceptRange": 1,
+		"movement": 2,
+		"strength": 45,
+		"cost": 125,
+		"requiredTech": "Replaceable Parts",
+		"upgradesTo": "NBC Infantry",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,		
+		"uniques": ["Personnel"],
 		"attackSound": "machinegun"
 	},	
 	{
@@ -390,27 +488,12 @@
 		"movement": 2,
 		"strength": 45,
 		"cost": 225,
-		"upgradesTo": "Modern Infantry",
+		"upgradesTo": "NBC Infantry",
 		"requiredResource": "Weapons",
-		"requiredTech": "Electricity",
-	//	"obsoleteTech": "Mobile Tactics",		
-		"uniques": ["Personnel","Can move immediately once bought"],
-		"promotions": ["Hazard Pay","Drone Recon"],
-		"hurryCostModifier": -33,
-		"attackSound": "machinegun"
-	},	
-	{
-		"name": "Infantry",
-		"unitType": "Melee",
-		"interceptRange": 1,
-		"movement": 2,
-		"strength": 45,
-		"cost": 125,
-		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "Modern Infantry",
-		"requiredResource": "Weapons",
-		"hurryCostModifier": 20,		
+		"requiredTech": "Currency",	
 		"uniques": ["Personnel"],
+		"promotions": ["Hazard Pay","Drone Recon"],
+		"hurryCostModifier": -25,
 		"attackSound": "machinegun"
 	},	
 	{
@@ -424,7 +507,7 @@
 		"strength": 45,
 		"cost": 175,
 		"requiredTech": "The Wheel",
-		"upgradesTo": "Modern Infantry",
+		"upgradesTo": "NBC Infantry",
 		"requiredResource": "Weapons",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Requires [Armory]"],
@@ -432,7 +515,81 @@
 		"attackSound": "machinegun"
 	},	
 	{
-		"name": "Modern Infantry",
+		"name": "Black Hand",
+		"unitType": "Melee",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Infantry",
+		"interceptRange": 1,
+		"movement": 2,
+		"strength": 45,
+		"cost": 225,
+		"requiredResource": "Weapons",
+		"requiredTech": "Currency",	
+		"uniques": ["Personnel","Requires [Grand Clan Manor]"],
+		"promotions": ["Gas Mask","Reconnaissance I"],
+		"hurryCostModifier": 25,
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "NBC Infantry",
+		"unitType": "Melee",
+		"interceptRange": 1,
+		"movement": 2,
+		"strength": 45,
+		"cost": 230,
+		"requiredTech": "Plastics",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,
+		"uniques": ["Personnel","Requires [Factory]"],
+		"promotions": ["Gas Mask"],
+		"attackSound": "machinegun"
+	},	
+	{
+		"name": "NBC Conscript",
+		"unitType": "Melee",
+		"interceptRange": 1,
+		"movement": 2,
+		"strength": 36,
+		"cost": 125,
+		"requiredTech": "Plastics",
+	//	"upgradesTo": "NBC Infantry", ??
+		"requiredResource": "Slaves",
+		"hurryCostModifier": 20,
+		"uniques": ["Personnel","Requires [Factory]","Can construct roads","Not displayed as an available construction without [Slaves]","Will not be displayed in Civilopedia"],
+		"promotions": ["Gas Mask"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Henchman",
+		"unitType": "Melee",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "NBC Conscript",
+		"interceptRange": 1,
+		"movement": 2,
+		"strength": 36,
+		"cost": 125,
+		"requiredTech": "Plastics",
+		"requiredResource": "Slaves",
+		"hurryCostModifier": 20,
+		"uniques": ["Low Tech","Requires [Factory]","Can construct roads","Not displayed as an available construction without [Slaves]","Will not be displayed in Civilopedia"],
+		"promotions": ["Gas Mask"],
+		"attackSound": "machinegun"
+	},
+	/*{
+		"name": "Exo-Suit",
+		"unitType": "Armor",
+		"interceptRange": 1,
+		"movement": 2,
+		"strength": 60,
+		"cost": 460,
+		"requiredTech": "Future Materials",
+		"requiredResource": "Aluminum",
+		"hurryCostModifier": 50,
+		"uniques": ["Requires [Factory]"],
+		"attackSound": "machinegun"
+	},*/
+	/*{
+		"name": "Combat Suit",
 		"unitType": "Melee",
 		"interceptRange": 1,
 		"movement": 2,
@@ -440,10 +597,12 @@
 		"cost": 230,
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,
-		"uniques": ["Personnel","Requires [Factory]"],
-		"promotions": ["Gas Mask"],
+		"uniques": ["Requires [Suit Factory]","No defensive terrain bonus"],
 		"attackSound": "machinegun"
-	},
+	},*/
+	//range
+	
+	
 	{
 		"name": "Gunman",
 		"unitType": "Ranged",
@@ -461,11 +620,49 @@
 		"attackSound": "shot"
 	},		
 	{
+		"name": "Hitman",
+		"unitType": "Ranged",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Gunman",
+		"range": 1,
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 24,
+		"cost": 90,
+		"requiredTech": "The Wheel",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Assassin",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,		
+		"uniques": ["Personnel"],
+		"promotions": ["Headhunter","Skirmish","Reconnaissance I"],
+		"attackSound": "shot"
+	},		
+	{
+		"name": "Rubble Gunman",
+		"unitType": "Ranged",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Archer",
+		"range": 1,
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 24,
+		"cost": 90,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Combined Arms",
+		"upgradesTo": "Machine Gun",
+		"requiredResource": "Slaves",
+		"hurryCostModifier": 20,		
+		"uniques": ["Low Tech","Can construct roads","Not displayed as an available construction without [Slaves]","Will not be displayed in Civilopedia"],
+		"promotions": ["Urban Warfare I"],
+		"attackSound": "shot"
+	},	
+	{
 		"name": "Rifleman",
 		"unitType": "Ranged",
 		"range": 1,
 		"movement": 2,
-		"strength": 40,
+		"strength": 35,
 		"rangedStrength": 30,
 		"cost": 120,
 		"requiredTech": "Rifling",
@@ -484,13 +681,31 @@
 		"rangedStrength": 35,
 		"cost": 125,
 		"requiredTech": "Replaceable Parts",
-		"upgradesTo": "Sharpshooter",
+		"upgradesTo": "NBC Marksman",
 		"requiredResource": "Weapons",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel"],
 		"promotions": ["Reconnaissance I"],
 		"attackSound": "shot"
-	},				
+	},	
+	{
+		"name": "Sniper",
+		"unitType": "Ranged",
+		"uniqueTo": "The Patriots",
+		"replaces": "Marksman",
+		"range": 1,
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 35,
+		"cost": 175,
+		"requiredTech": "Replaceable Parts",
+		"upgradesTo": "NBC Marksman",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,		
+		"uniques": ["Personnel"],
+		"promotions": ["Reconnaissance I","Extended Range"],
+		"attackSound": "shot"
+	},			
 	{
 		"name": "Spec Ops",
 		"unitType": "Ranged",
@@ -505,9 +720,26 @@
 		"requiredTech": "The Wheel",
 		"requiredResource": "Weapons",		
 		"uniques": ["Personnel","Requires [Armory]"],
-		"promotions": ["Reconnaissance I","Amphibious","Ambush","Drone Recon","Gas Mask"],
+		"promotions": ["Reconnaissance I","Amphibious","Ambush","Gas Mask"],
 		"attackSound": "machinegun"
 	},	
+	{
+		"name": "Assassin",
+		"unitType": "Ranged",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Marksman",
+		"range": 1,
+		"movement": 2,
+		"strength": 30,
+		"rangedStrength": 35,
+		"cost": 200,
+		"requiredTech": "Currency",
+		"requiredResource": "Weapons",
+		"hurryCostModifier": 20,		
+		"uniques": ["Personnel"],
+		"promotions": ["Headhunter","Skirmish","Reconnaissance I"],
+		"attackSound": "shot"
+	},		
 	{
 		"name": "Ranger",
 		"unitType": "Ranged",
@@ -524,24 +756,23 @@
 		"attackSound": "shot"
 	},
 	{
-		"name": "Sharpshooter",
+		"name": "NBC Marksman",
 		"unitType": "Ranged",
 		"range": 1,
 		"movement": 2,
 		"strength": 30,
 		"rangedStrength": 35,
 		"cost": 225,
-		"requiredTech": "Combined Arms",
+		"requiredTech": "Plastics",
+		"requiredResource": "Weapons",		
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Requires [Factory]"],
 		"promotions": ["Reconnaissance I","Gas Mask"],
 		"attackSound": "shot"
 	},			
-	{
-		"name": "Sniper",
+	/*{
+		"name": "Stealth Suit",
 		"unitType": "Ranged",
-		"uniqueTo": "The Patriots",
-		"replaces": "Sharpshooter",
 		"range": 1,
 		"movement": 2,
 		"strength": 30,
@@ -552,7 +783,10 @@
 		"uniques": ["Personnel","Requires [Factory]"],
 		"promotions": ["Reconnaissance I","Gas Mask","Extended Range"],
 		"attackSound": "shot"
-	},
+	},*/
+	
+	//siege
+	
 	{
 		"name": "Cannon",
 		"unitType": "Siege",
@@ -661,11 +895,12 @@
 		"movement": 5,
 		"strength": 30,
 		"cost": 60,
+		"requiredTech": "Machinery",
 		"requiredResource": "Oil",
 		"upgradesTo": "Armored Car",
 		"obsoleteTech": "Combined Arms",
 		"uniques": ["+[20]% Strength vs [Low Tech]","-[66]% Strength vs [City]","Can move after attacking","No defensive terrain bonus","Rough terrain penalty","Will not be displayed in Civilopedia"],
-		"promotions": ["Martyrdom"],
+		"promotions": ["Raider"],
 		"hurryCostModifier": 20
 	},	
 	
@@ -700,7 +935,7 @@
 		"requiredResource": "Oil",
 		"upgradesTo": "Tank",
 		"obsoleteTech": "Combined Arms",
-		"uniques": ["+[50]% Strength vs [City]","+25% Defence against ranged attacks","Can move after attacking","No defensive terrain bonus","Rough terrain penalty"],
+		"uniques": ["Requires [Chop Shop]","+[50]% Strength vs [City]","+25% Defence against ranged attacks","Can move after attacking","No defensive terrain bonus","Rough terrain penalty"],
 		"hurryCostModifier": 20
 	},	
 	{
@@ -712,11 +947,11 @@
 		"movement": 4,
 		"strength": 35,
 		"cost": 140,
-		"requiredTech": "Machinery",
+		"requiredTech": "Engineering",
 		"requiredResource": "Oil",
 		"upgradesTo": "Tank",
 		"obsoleteTech": "Combined Arms",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","Rough terrain penalty"],
+		"uniques": ["Requires [Chop Shop]","Can move after attacking","No defensive terrain bonus","Rough terrain penalty"],
 		"hurryCostModifier": 20
 	},	
 	{
@@ -905,7 +1140,7 @@
 		"requiredResource": "Oil",
 		"upgradesTo": "Strike Drone",
 		"uniques": ["Requires [Factory]"],
-		"obsoleteTech": "Robotics",
+		"obsoleteTech": "Lasers",
 		"hurryCostModifier": 20,
 		"attackSound": "shot"
 	},		
@@ -918,11 +1153,11 @@
 		"rangedStrength": 50,
 		"range": 10,
 		"cost": 300,
-		"requiredTech": "Lasers"
+		"requiredTech": "Avionics",
 		"requiredResource": "Aluminum",
 		"hurryCostModifier": 20,
-		"uniques": ["6 tiles in every direction always visible",
-		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]"],
+		"uniques": ["6 tiles in every direction always visible","Requires [Factory]","Not displayed as an available construction without [Factory]"],
+		"promotions": ["Automated"],
 		"attackSound": "shot"
 	},	
 	{
@@ -933,7 +1168,7 @@
 		"rangedStrength": 50,
 		"range": 10,
 		"cost": 400,
-		"requiredTech": "Lasers",
+		"requiredTech": "Avionics",
 		"requiredResource": "Oil",
 		"hurryCostModifier": 20,
 		"uniques": ["[100]% chance to intercept air attacks",
@@ -948,7 +1183,7 @@
 		"movement": 1,
 		"strength": 35,
 		"rangedStrength": 45,
-		"range": 6,
+		"range": 8,
 		"cost": 280,
 		"requiredTech": "Robotics"
 		"requiredResource": "Aluminum",
@@ -957,6 +1192,7 @@
 		"+[100]% Strength vs [Bomber]",
 		"6 tiles in every direction always visible",
 		"Requires [Aerospace Facility]","Not displayed as an available construction without [Aerospace Facility]"],
+		"promotions": ["Automated"],
 		"attackSound": "shot"
 	},	
 
@@ -972,8 +1208,8 @@
 		"requiredTech": "Astronomy",
 		"requiredResource": "Oil",
 		"upgradesTo": "Attack Boat",
-		"obsoleteTech": "Electricity",
-		"uniques": ["Double movement in coast","May withdraw before melee ([75]%)","Can move after attacking"],
+		"obsoleteTech": "Steam Power",
+		"uniques": ["Double movement in coast","May withdraw before melee ([66]%)","Can move after attacking","Unable to capture cities"],
 		"hurryCostModifier": 20
 	},		
 	{
@@ -982,11 +1218,8 @@
 		"movement": 4,
 		"strength": 30,
 		"cost": 100,
-		"requiredTech": "Electricity",
-	//	"requiredResource": "Oil",
-	//	"upgradesTo": "Destroyer",
-	//	"obsoleteTech": "Astronomy",
-		"uniques": ["Double movement in coast","May withdraw before melee ([75]%)","Can move after attacking"],
+		"requiredTech": "Steam Power",
+		"uniques": ["Double movement in coast","May withdraw before melee ([66]%)","Can move after attacking","Unable to capture cities"],
 		"hurryCostModifier": 20
 	},		
 	{
@@ -1000,7 +1233,7 @@
 		"cost": 300,
 		"requiredResource": "Oil",
 		"requiredTech": "Radar",
-		"uniques": ["Can attack submarines","[50]% chance to intercept air attacks","Bonus vs air units 100%","May withdraw before melee ([75]%)","Requires [Factory]"], // todo: add bonus vs submarines
+		"uniques": ["Can attack submarines","[50]% chance to intercept air attacks","Bonus vs air units 100%","May withdraw before melee ([66]%)","Requires [Factory]"], // todo: add bonus vs submarines
 		"hurryCostModifier": 20
 	},
 		{
@@ -1008,7 +1241,7 @@
 		"unitType": "WaterAircraftCarrier",
 		"movement": 5,
 		"strength": 35,
-		"rangedStrength": 50,
+		"rangedStrength": 40,
 		"cost": 400,
 		"requiredResource": "Oil",
 		"requiredTech": "Radar",
@@ -1041,6 +1274,19 @@
 		"uniques": ["Bonus as Attacker [66]%", "Invisible to others", "Can only attack water", "Can attack submarines", "Can enter ice tiles","Requires [Factory]"],
 		"hurryCostModifier": 20
 	},
+	/*{
+		"name": "Nuclear Submarine",
+		"unitType": "WaterSubmarine",
+		"movement": 6,
+		"strength": 30,
+		"range": 3,
+		"rangedStrength": 70,
+		"cost": 425,
+		"requiredTech": "Computers",
+		"uniques": ["Bonus as Attacker [75]%", "Invisible to others", "Can only attack water", "Can attack submarines", "Can enter ice tiles","+1 Visibility Range"]
+		// Can carry 2 Missiles
+		// 50 strength, 85 rangedStrength, requiredTech "Telecommunications" in expansions
+	},*/
 
 	
 
@@ -1051,7 +1297,7 @@
 		"unitType": "Civilian",
 		"uniques": ["Can start an [8-]turn golden age","Can construct [Settlement]", "Great Person - [Culture]", "Unbuildable"],
 		"movement": 2
-	},	
+	},		
 	{
 		"name": "Great Prophet",
 		"uniqueTo": "Cult of Ignis",
@@ -1073,33 +1319,48 @@
 		"movement": 2
 	},
 	{
+		"name": "Smuggler",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Great Merchant",
+		"unitType": "Civilian",
+		"uniques": ["Invisible to others","Can undertake a trade mission with City-State, giving a large sum of gold and [40] Influence","Can start an [8]-turn golden age","Can construct [Narcotics farm]", "Great Person - [Gold]", "Unbuildable"],
+		"movement": 2
+	},
+	{
+		"name": "Slave Trader",
+		"uniqueTo": "Crimson Legion",
+		"replaces": "Great Merchant",
+		"unitType": "Civilian",
+		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence","Can start an [8]-turn golden age","Can construct [Prison farm]", "Great Person - [Gold]", "Unbuildable"],
+		"movement": 2
+	},
+	{
 		"name": "Great Engineer",
 		"unitType": "Civilian",
 		"uniques": ["Can speed up construction of a wonder","Can construct [Manufactory]", "Great Person - [Production]", "Unbuildable"],
 		"movement": 2
-	},
+	},	
 	{
 		"name": "Great General",
 		"unitType": "Civilian",
-		"uniques": ["Can start an [8]-turn golden age","Bonus for units in 2 tile radius 15%","Can construct [Citadel]", "Great Person - [War]", "Unbuildable"],
+		"uniques": ["Can start an [8]-turn golden age","Bonus for units in 2 tile radius 15%","Can construct [Citadel]","Great Person - [War]", "Unbuildable"],
 		"movement": 2
-	},	
+	},		
 	{
-		"name": "Standard Bearer",
-		"uniqueTo": "Crimson Legion",
+		"name": "Gangboss",
+		"uniqueTo": "Deadrock Clan",
 		"replaces": "Great General",
 		"unitType": "Civilian",
-		"uniques": ["Bonus for units in 2 tile radius 15%","This unit and all others in adjacent tiles heal 5 additional HP per turn",
-					"Can construct [Citadel]","Great Person - [War]","Uncapturable", "Unbuildable"],
-		"movement": 2,
-	},	
+		"uniques": ["Can build improvements on tiles","Can start an [8]-turn golden age","Bonus for units in 2 tile radius 15%","Can construct [Prison farm]","Great Person - [War]","Unbuildable"],
+		"movement": 2
+	},		
 	{
 		"name": "Bugler",
 		"uniqueTo": "Cult of Ignis",
 		"replaces": "Great General",
 		"unitType": "Civilian",
 		"uniques": ["Can start an [8]-turn golden age","Bonus for units in 2 tile radius 15%", "Heal adjacent units for an additional 15 HP per turn",
-					"Rough terrain penalty","Can construct [Citadel]","Great Person - [War]","Uncapturable", "Unbuildable"],
+					"Rough terrain penalty","Can construct [Outpost]","Great Person - [War]","Uncapturable","Unbuildable"],
 		"movement": 5,
 	},	
 	
@@ -1117,7 +1378,7 @@
 		"upgradesTo": "Armored Car",
 		"obsoleteTech": "Replaceable Parts",		
 		"uniques": ["Personnel","+[50]% Strength vs [Low Tech]","-[25]% Strength vs [City]","No defensive terrain bonus","Can move after attacking","Will not be displayed in Civilopedia","Can move after attacking","+10 HP when healing"],
-		"promotions": ["Forage","Skirmish","March"],
+		"promotions": ["Forage","Raider","Skirmish","March"],
 		"hurryCostModifier": 20
 	},	
 	{
@@ -1132,7 +1393,7 @@
 		"obsoleteTech": "Engineering",
 		"upgradesTo": "Soldier",			
 		"uniques": ["Low Tech","Will not be displayed in Civilopedia","+10 HP when healing"],		
-		"promotions": ["Forage"]
+		"promotions": ["Forage","Raider"]
 		"attackSound": "nonmetalhit"
 	},
 	{
@@ -1148,7 +1409,7 @@
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Soldier",		
 		"uniques": ["Personnel","Will not be displayed in Civilopedia","-[40]% Strength vs [City]","+10 HP when healing"],
-		"promotions": ["Forage"],
+		"promotions": ["Forage","Raider"],
 		"attackSound": "shot"
 	},	
 	{
@@ -1165,7 +1426,7 @@
 		"obsoleteTech": "Rifling",
 		"upgradesTo": "Rifleman",	
 		"uniques": ["Low Tech","+[33]% Strength vs [Low Tech]","Will not be displayed in Civilopedia","+10 HP when healing"],
-		"promotions": ["Skirmish"],
+		"promotions": ["Skirmish","Raider"],
 		"attackSound": "arrow"
 	},		
 	{
@@ -1183,6 +1444,7 @@
 		"upgradesTo": "Rifleman",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Will not be displayed in Civilopedia","-[33]% Strength vs [City]","+10 HP when healing"],
+		"promotions": ["Raider"],
 		"attackSound": "shot"
 	},		
 	{
@@ -1198,7 +1460,7 @@
 		"obsoleteTech": "Combined Arms",
 		"upgradesTo": "Infantry",		
 		"uniques": ["Personnel","Will not be displayed in Civilopedia","+[100]% Strength vs [City]","+10 HP when healing"],
-		"promotions": ["Forage","Entrench","Guerilla Warfare I","Urban Warfare I","Ambush"],
+		"promotions": ["Forage","Raider","Entrench","Guerilla Warfare I","Urban Warfare I","Ambush"],
 		"attackSound": "shot"
 	},	
 	{
@@ -1213,17 +1475,17 @@
 		"cost": 120,
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Combined Arms",
-		"upgradesTo": "Sharpshooter",
+		"upgradesTo": "NBC Marksman",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Will not be displayed in Civilopedia","+[100]% Strength vs [City]","+10 HP when healing"],
-		"promotions": ["Skirmish","Entrench","Guerilla Warfare I","Urban Warfare I"],
+		"promotions": ["Skirmish","Raider","Entrench","Guerilla Warfare I","Urban Warfare I"],
 		"attackSound": "shot"
 	},	
 	{
 		"name": "Insurgent",
 		"unitType": "Melee",
 		"uniqueTo": "Barbarians",
-		"replaces": "Modern Infantry",
+		"replaces": "NBC Infantry",
 		"interceptRange": 1,
 		"movement": 2,
 		"strength": 45,
@@ -1231,14 +1493,14 @@
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,		
 		"uniques": ["Personnel","Will not be displayed in Civilopedia","+[100]% Strength vs [City]","+10 HP when healing"],
-		"promotions": ["Skirmish","Entrench","Forage","Guerilla Warfare I","Guerilla Warfare II","Urban Warfare I","Urban Warfare II","Antitank Missile","Surface-to-Air Missile","March"],
+		"promotions": ["Skirmish","Raider","Entrench","Forage","Guerilla Warfare I","Guerilla Warfare II","Urban Warfare I","Urban Warfare II","Antitank Missile","Surface-to-Air Missile","March"],
 		"attackSound": "machinegun"
 	},
 	{
 		"name": "Partisan",
 		"unitType": "Ranged",
 		"uniqueTo": "Barbarians",
-		"replaces": "Sharpshooter",
+		"replaces": "NBC Marksman",
 		"range": 1,
 		"movement": 2,
 		"strength": 30,
@@ -1247,7 +1509,7 @@
 		"requiredTech": "Combined Arms",
 		"hurryCostModifier": 20,
 		"uniques": ["Personnel","Will not be displayed in Civilopedia","+[100]% Strength vs [City]","+10 HP when healing","-[20]% Strength vs [Armor]"],
-		"promotions": ["Skirmish","Entrench","Extended Range","Guerilla Warfare I","Guerilla Warfare II","Urban Warfare I","Urban Warfare II","Precision","March"],		
+		"promotions": ["Skirmish","Raider","Entrench","Extended Range","Guerilla Warfare I","Guerilla Warfare II","Urban Warfare I","Urban Warfare II","Precision","March"],		
 		"attackSound": "shot"
 	},			
 
@@ -1440,6 +1702,36 @@
 		"attackSound": "metalhit"
 	},	
 	{
+		"name": "Igniscantbuildarcher",
+		"unitType": "Melee",
+		"uniqueTo": "Cult of Ignis",
+		"replaces": "Archer",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},	
+	{
+		"name": "Clancantbuildhorseman",
+		"unitType": "Melee",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Horseman",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},	
+	{
+		"name": "Clancantbuildskirmisher",
+		"unitType": "Melee",
+		"uniqueTo": "Deadrock Clan",
+		"replaces": "Skirmisher",
+		"strength": 1,
+		"cost": 1,
+		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
+		"attackSound": "metalhit"
+	},	
+	{
 		"name": "Patriotscantbuildspearman",
 		"unitType": "Melee",
 		"uniqueTo": "The Patriots",
@@ -1460,20 +1752,20 @@
 		"attackSound": "metalhit"
 	},		
 	{
-		"name": "Patriotscantbuildskirmisher",
+		"name": "Patriotscantbuildhorseman",
 		"unitType": "Melee",
 		"uniqueTo": "The Patriots",
-		"replaces": "Skirmisher",
+		"replaces": "Horseman",
 		"strength": 1,
 		"cost": 1,
 		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
 		"attackSound": "metalhit"
 	},	
 	{
-		"name": "Patriotscantbuildhorseman",
+		"name": "Patriotscantbuildskirmisher",
 		"unitType": "Melee",
 		"uniqueTo": "The Patriots",
-		"replaces": "Horseman",
+		"replaces": "Skirmisher",
 		"strength": 1,
 		"cost": 1,
 		"uniques": ["Unbuildable","Will not be displayed in Civilopedia"],
