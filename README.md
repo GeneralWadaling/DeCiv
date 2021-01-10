@@ -1,15 +1,23 @@
 # DeCiv
-DeCiv 1.47
-13.12.20
+DeCiv 1.5
+10.01.21
 
-POWER UP
+TECHNOLOGICAL DISPARITY
 
-- Build wind turbines and solar panels anywhere
-- Chop Shop replaces Forge for Cult; build armored units from broken cars you find lyin' around
-- Naval and air promotion trees have been remade in line with land units
-- Balance changes: More Power generated from coal and nuclear plants. Administrator specialists provide Happiness and Culture. Reduced XP bonuses from promotions and added Great General generation penalties for these promotions (since they depend on XP). Commonwealth Rangers will be generated at a reduced rate. Base units will no longer start with "Infantry Weapons" promotion. Settlement great improvement now gains bonii based on adjacent tiles
+A major update which adds new buildings and mechanics, plus a new playable faction.
 
-The nations of the past are no more. Rebuild one that can survive in the new world, if you can.
+Highlights:
+- Some factions now start with techs already researched, but suffer from a research penalty at the start of the game
+
+- New faction: Deadrock Clan
+The Deadrock Clan is a forward thinking, family-run business, who pride themselves on their strong values and traditions. Where some see disaster, they see opportunity!
+
+- Claim or produce new luxury resources including Salt (NaCl), Machinery and Electronics
+
+- New faction-specific art for Corporate and Gang factions
+
+- Various balance fixes and adjustments to promotion and policy trees
+
 
 Thanks for trying DeCiv. The game has been rebalanced; food and resources are scarce. Barbarians are more dangerous than you might expect.
 
